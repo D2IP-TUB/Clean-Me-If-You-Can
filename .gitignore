@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets
+.env
+.env.*
+
+# Data (hosted separately on HuggingFace)
+data/
+
+# Analysis outputs
+dataset_analysis/output/
+
+# Pipeline runtime outputs
+dataset_creation/data/wdc/
+dataset_creation/data/extracted*/
+dataset_creation/data/validated*/
+dataset_creation/data/dataset/
+dataset_creation/osm-nominatim/mount/
+*.json.error
+*.stats.json
+
+# Experiment run artifacts
+experiments/harness/logs/
+experiments/harness/results*/
+experiments/harness/horizon_build/
+experiments/baselines/**/models/
+experiments/baselines/**/raha-baran-results*/
+
+# IDE / OS
+.vscode/
+.DS_Store
+*~
+experiments/baselines/uniclean/effectiveness/
+experiments/baselines/uniclean/Uniclean_cleaned_data/
+experiments/baselines/uniclean/Uniclean_results/
+experiments/baselines/uniclean/baseline_cleaned_data/
+experiments/baselines/uniclean/baseline_cleaning_systems_results/
+experiments/baselines/uniclean/baseline_cleaning_systems_logs/
+experiments/baselines/uniclean/Uniclean_cleaner_workflow_logs/
+experiments/baselines/uniclean/datasets_and_rules/
+experiments/baselines/uniclean/uniclean_cleaners/sysFlowVisualizer/cleanCache/
+experiments/baselines/uniclean/uniclean_cleaners/TestDataset/result/
+experiments/baselines/uniclean/uniclean_cleaners/**/ModuleTest/logs/
+experiments/baselines/uniclean/results_summary.csv

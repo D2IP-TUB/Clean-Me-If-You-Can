@@ -1,0 +1,175 @@
+{
+  "_SETUP": "Before first run: update paths.datasets_dir to your merged_named CSV directory (HuggingFace download), set systems.holoclean.db_* and HOLOCLEAN_DB_PWD env var, set systems.glocks.api_key_env, and install the Horizon commons-collections4-4.3.jar into baselines/horizon/. See experiments/README.md.",
+  "paths": {
+    "baselines_dir": "../baselines",
+    "datasets_dir": "../../data/merged_named",
+    "results_dir": "./results",
+    "experiment_datasets_dir": "./experiment_datasets",
+    "manuscript_results_dir": "../manuscript_results",
+    "fds_file": "../rules/fds/fds_full_full_indexed.txt",
+    "holoclean_fds_file": "../rules/fds/fds_full_full_holoclean.txt",
+    "uniclean_rules_dir": "../rules/fds"
+  },
+  "dataset": {
+    "id_column": "",
+    "data_columns": [
+      "name",
+      "house_number",
+      "road",
+      "postcode",
+      "locality",
+      "region",
+      "country",
+      "country_code"
+    ],
+    "all_columns": [
+      "name",
+      "house_number",
+      "road",
+      "postcode",
+      "locality",
+      "region",
+      "country",
+      "country_code"
+    ]
+  },
+  "effectiveness": {
+    "error_rates": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "full_dataset": {
+      "dirty": "full_dirty.csv",
+      "clean": "full_clean.csv",
+      "sample_size": 10000,
+      "name": "full"
+    },
+    "de_slice": {
+      "dirty": "slice_de_dirty.csv",
+      "clean": "slice_de_clean.csv",
+      "sample_size": 10000,
+      "name": "de"
+    },
+    "russia_slice": {
+      "dirty": "russia/full_dirty_russia.csv",
+      "clean": "russia/full_clean_russia.csv",
+      "sample_size": 10000,
+      "name": "russia"
+    },
+    "poi_slices": [
+      {
+        "name": "Library",
+        "dirty": "../subsets/Library/named/dirty.csv",
+        "clean": "../subsets/Library/named/clean.csv"
+      },
+      {
+        "name": "ShoppingCenter",
+        "dirty": "../subsets/ShoppingCenter/named/dirty.csv",
+        "clean": "../subsets/ShoppingCenter/named/clean.csv"
+      }
+    ]
+  },
+  "runtime": {
+    "sample_sizes": [
+      10000,
+      100000,
+      500000,
+      1000000
+    ],
+    "source_dirty": "full_dirty.csv",
+    "source_clean": "full_clean.csv",
+    "name": "full"
+  },
+  "systems": {
+    "raha": {
+      "enabled": true,
+      "labeling_budget": 20,
+      "task": "detection"
+    },
+    "baran": {
+      "enabled": true,
+      "labeling_budget": 20,
+      "task": "correction"
+    },
+    "datawig": {
+      "enabled": true,
+      "confidence_threshold": 0.5,
+      "num_training_samples": 20,
+      "task": "both"
+    },
+    "holoclean": {
+      "enabled": true,
+      "db_name": "holo",
+      "db_user": "holocleanuser",
+      "db_pwd_env": "HOLOCLEAN_DB_PWD",
+      "db_host": "localhost",
+      "db_port": "5436",
+      "epochs": 10,
+      "threads": 1,
+      "task": "both"
+    },
+    "horizon": {
+      "enabled": true,
+      "algo": 2,
+      "jar": "../baselines/horizon/commons-collections4-4.3.jar",
+      "src_dir": "../baselines/horizon/src",
+      "task": "both"
+    },
+    "uniclean": {
+      "enabled": true,
+      "single_max": 10000,
+      "spark_memory": "8g",
+      "spark_partitions": 8,
+      "spark_executor_memory": "8g",
+      "spark_driver_memory": "8g",
+      "uniclean_dir": "../baselines/uniclean/uniclean_cleaners",
+      "task": "both"
+    },
+    "glocks": {
+      "enabled": true,
+      "use_batch_api": true,
+      "llm_package": "google",
+      "modelname": "gemini-2.5-flash-lite",
+      "base_url": "",
+      "api_key_env": "GOOGLE_API_KEY",
+      "glocks_dir": "../baselines/glocks/pci-llm-toolkit/error-detection-cleaning-llm/code",
+      "prompt_file": "../prompts/glocks/prompt.json",
+      "detection_prompt_id": "p6",
+      "correction_prompt_id": "p10",
+      "max_threads": 10,
+      "task": "both",
+      "prompt_id_map": {
+        "de": {
+          "detection": "p5",
+          "correction": "p9"
+        },
+        "full": {
+          "detection": "p6",
+          "correction": "p10"
+        },
+        "russia": {
+          "detection": "p16",
+          "correction": "p20"
+        },
+        "poi_Library": {
+          "detection": "p14",
+          "correction": "p18"
+        },
+        "poi_ShoppingCenter": {
+          "detection": "p15",
+          "correction": "p19"
+        }
+      }
+    }
+  },
+  "tane": {
+    "max_rows": 10000
+  },
+  "experiment": {
+    "time_limit_seconds": 36000,
+    "memory_limit_fraction": 0.8,
+    "n_runtime_runs": 1,
+    "n_effectiveness_runs": 1
+  }
+}

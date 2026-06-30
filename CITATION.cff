@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+title: "Clean Me If You Can: A Large Collection of Real-World Addresses for Data Cleaning Benchmarking"
+message: "If you use this dataset or code, please cite our paper."
+authors:
+  - family-names: Ahmadi
+    given-names: Fatemeh
+    affiliation: "TU Berlin & BIFOLD"
+  - family-names: Bernhard
+    given-names: Tobias
+    affiliation: "TU Berlin"
+  - family-names: Abdelmaksoud
+    given-names: Mohamed
+    affiliation: "TU Berlin & BIFOLD"
+  - family-names: Zecchini
+    given-names: Luca
+    affiliation: "TU Berlin & BIFOLD"
+  - family-names: Rabl
+    given-names: Tilmann
+    affiliation: "Hasso Plattner Institute"
+  - family-names: Abedjan
+    given-names: Ziawasch
+    affiliation: "TU Berlin & BIFOLD"
+repository-code: "https://github.com/D2IP-TUB/Clean-Me-If-You-Can"
+license: MIT
+keywords:
+  - data cleaning
+  - benchmark
+  - postal addresses
+  - ground truth
+  - error detection
+  - error correction

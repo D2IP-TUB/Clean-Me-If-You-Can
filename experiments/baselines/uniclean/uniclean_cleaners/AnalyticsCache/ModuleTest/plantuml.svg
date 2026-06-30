@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" height="232px" preserveAspectRatio="none"
+     style="width:672px;height:232px;background:#FFFFFF;" version="1.1" viewBox="0 0 672 232" width="672px"
+     zoomAndPan="magnify">
+    <defs/>
+    <g>
+        <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+              textLength="462" x="98" y="22.9951">Coarse-grained Cleaner Execution Order Recommendation
+        </text><!--class SINGLE_END-->
+        <g id="elem_SINGLE_END">
+            <rect codeLine="16" fill="#F1F1F1" height="32" id="SINGLE_END" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="118" x="277" y="193.8869"/>
+            <ellipse cx="292" cy="209.8869" fill="#DA70D6" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M292.1094,205.465 Q291.1719,205.465 290.7344,206.465 Q290.3125,207.465 290.3125,209.6994 Q290.3125,211.9338 290.7344,212.9338 Q291.1719,213.9338 292.1094,213.9338 Q293.0625,213.9338 293.4844,212.9338 Q293.9219,211.9338 293.9219,209.6994 Q293.9219,207.465 293.4844,206.465 Q293.0625,205.465 292.1094,205.465 Z M287.7656,209.6994 Q287.7656,206.5275 288.8594,204.9025 Q289.9688,203.2619 292.1094,203.2619 Q294.2656,203.2619 295.3594,204.9025 Q296.4688,206.5275 296.4688,209.6994 Q296.4688,212.8713 295.3594,214.4963 Q294.2656,216.1213 292.1094,216.1213 Q289.9688,216.1213 288.8594,214.4963 Q287.7656,212.8713 287.7656,209.6994 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="86" x="306"
+                  y="214.7336">SINGLE_END
+            </text>
+        </g><!--class Pattern_operator_2-->
+        <g id="elem_Pattern_operator_2">
+            <rect codeLine="18" fill="#F1F1F1" height="72.5938" id="Pattern_operator_2" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="164" x="7" y="44.2969"/>
+            <ellipse cx="22" cy="60.2969" fill="#DA70D6" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M22.1094,55.875 Q21.1719,55.875 20.7344,56.875 Q20.3125,57.875 20.3125,60.1094 Q20.3125,62.3438 20.7344,63.3438 Q21.1719,64.3438 22.1094,64.3438 Q23.0625,64.3438 23.4844,63.3438 Q23.9219,62.3438 23.9219,60.1094 Q23.9219,57.875 23.4844,56.875 Q23.0625,55.875 22.1094,55.875 Z M17.7656,60.1094 Q17.7656,56.9375 18.8594,55.3125 Q19.9688,53.6719 22.1094,53.6719 Q24.2656,53.6719 25.3594,55.3125 Q26.4688,56.9375 26.4688,60.1094 Q26.4688,63.2813 25.3594,64.9063 Q24.2656,66.5313 22.1094,66.5313 Q19.9688,66.5313 18.8594,64.9063 Q17.7656,63.2813 17.7656,60.1094 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132" x="36"
+                  y="65.1436">Pattern_operator_2
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="170" y1="76.2969" y2="76.2969"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="13"
+                  y="93.292">attr:gender
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="13"
+                  y="109.5889">format:[M|F]
+            </text>
+        </g><!--class Pattern_operator_3-->
+        <g id="elem_Pattern_operator_3">
+            <rect codeLine="21" fill="#F1F1F1" height="72.5938" id="Pattern_operator_3" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="164" x="254" y="44.2969"/>
+            <ellipse cx="269" cy="60.2969" fill="#DA70D6" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M269.1094,55.875 Q268.1719,55.875 267.7344,56.875 Q267.3125,57.875 267.3125,60.1094 Q267.3125,62.3438 267.7344,63.3438 Q268.1719,64.3438 269.1094,64.3438 Q270.0625,64.3438 270.4844,63.3438 Q270.9219,62.3438 270.9219,60.1094 Q270.9219,57.875 270.4844,56.875 Q270.0625,55.875 269.1094,55.875 Z M264.7656,60.1094 Q264.7656,56.9375 265.8594,55.3125 Q266.9688,53.6719 269.1094,53.6719 Q271.2656,53.6719 272.3594,55.3125 Q273.4688,56.9375 273.4688,60.1094 Q273.4688,63.2813 272.3594,64.9063 Q271.2656,66.5313 269.1094,66.5313 Q266.9688,66.5313 265.8594,64.9063 Q264.7656,63.2813 264.7656,60.1094 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132" x="283"
+                  y="65.1436">Pattern_operator_3
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="255" x2="417" y1="76.2969" y2="76.2969"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="260"
+                  y="93.292">attr:areacode
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="260"
+                  y="109.5889">format:[0-9]{3}
+            </text>
+        </g><!--class Pattern_operator_4-->
+        <g id="elem_Pattern_operator_4">
+            <rect codeLine="25" fill="#F1F1F1" height="72.5938" id="Pattern_operator_4" rx="2.5" ry="2.5"
+                  style="stroke:#181818;stroke-width:0.5;" width="164" x="501" y="44.2969"/>
+            <ellipse cx="516" cy="60.2969" fill="#DA70D6" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M516.1094,55.875 Q515.1719,55.875 514.7344,56.875 Q514.3125,57.875 514.3125,60.1094 Q514.3125,62.3438 514.7344,63.3438 Q515.1719,64.3438 516.1094,64.3438 Q517.0625,64.3438 517.4844,63.3438 Q517.9219,62.3438 517.9219,60.1094 Q517.9219,57.875 517.4844,56.875 Q517.0625,55.875 516.1094,55.875 Z M511.7656,60.1094 Q511.7656,56.9375 512.8594,55.3125 Q513.9688,53.6719 516.1094,53.6719 Q518.2656,53.6719 519.3594,55.3125 Q520.4688,56.9375 520.4688,60.1094 Q520.4688,63.2813 519.3594,64.9063 Q518.2656,66.5313 516.1094,66.5313 Q513.9688,66.5313 512.8594,64.9063 Q511.7656,63.2813 511.7656,60.1094 Z "
+                  fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132" x="530"
+                  y="65.1436">Pattern_operator_4
+            </text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="502" x2="664" y1="76.2969" y2="76.2969"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="507"
+                  y="93.292">attr:state
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="507"
+                  y="109.5889">format:[A-Z]{2}
+            </text>
+        </g><!--link Pattern_operator_2 to SINGLE_END-->
+        <g id="link_Pattern_operator_2_SINGLE_END">
+            <path codeLine="20" d="M158.13,117.2169 C206.8,142.2969 264.2066,171.8883 300.6866,190.6883 " fill="none"
+                  id="Pattern_operator_2-to-SINGLE_END" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818"
+                     points="306.02,193.4369,299.8523,185.7584,301.5755,191.1464,296.1875,192.8696,306.02,193.4369"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="28" x="243"
+                  y="159.9538">next
+            </text>
+        </g><!--link Pattern_operator_2 to Pattern_operator_3-->
+        <g id="link_Pattern_operator_2_Pattern_operator_3">
+            <path codeLine="23" d="M177.25,80.5869 C203.77,80.5869 221.16,80.5869 247.69,80.5869 " fill="none"
+                  id="Pattern_operator_2-Pattern_operator_3" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="171.25,80.5869,180.25,84.5869,176.25,80.5869,180.25,76.5869,171.25,80.5869"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="253.69,80.5869,244.69,76.5869,248.69,80.5869,244.69,84.5869,253.69,80.5869"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46"
+                  x="189.5" y="73.6538">parallel
+            </text>
+        </g><!--link Pattern_operator_3 to SINGLE_END-->
+        <g id="link_Pattern_operator_3_SINGLE_END">
+            <path codeLine="24" d="M336,117.0469 C336,142.2069 336,168.7369 336,187.5569 " fill="none"
+                  id="Pattern_operator_3-to-SINGLE_END" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="336,193.5569,340,184.5569,336,188.5569,332,184.5569,336,193.5569"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="28" x="337"
+                  y="159.9538">next
+            </text>
+        </g><!--link Pattern_operator_3 to Pattern_operator_4-->
+        <g id="link_Pattern_operator_3_Pattern_operator_4">
+            <path codeLine="27" d="M424.25,80.5869 C450.77,80.5869 468.16,80.5869 494.69,80.5869 " fill="none"
+                  id="Pattern_operator_3-Pattern_operator_4" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="418.25,80.5869,427.25,84.5869,423.25,80.5869,427.25,76.5869,418.25,80.5869"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="500.69,80.5869,491.69,76.5869,495.69,80.5869,491.69,84.5869,500.69,80.5869"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46"
+                  x="436.5" y="73.6538">parallel
+            </text>
+        </g><!--link Pattern_operator_4 to SINGLE_END-->
+        <g id="link_Pattern_operator_4_SINGLE_END">
+            <path codeLine="28" d="M513.87,117.2169 C465.2,142.2969 407.7934,171.8883 371.3134,190.6883 " fill="none"
+                  id="Pattern_operator_4-to-SINGLE_END" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818"
+                     points="365.98,193.4369,375.8125,192.8696,370.4245,191.1464,372.1477,185.7584,365.98,193.4369"
+                     style="stroke:#181818;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="28" x="454"
+                  y="159.9538">next
+            </text>
+        </g><!--SRC=[dPBFQnf15CVlyrUydbJeGeXU8ij2DAOKJ2pjhOt8iFDS5sTdvEs81YCKsaDAKiYrxQbGQ4z2RmaX_ZNPcFmNcJKLRRiOo1m_yzxxVkR7Cu7jK26yHjyqUaZSQCeF2-1B7iSm1DU5VECvQF8xeIY0vp4MTqFLuyGZ8Dl4LI0HHWpigd2_6v3kAr7LKfFhDZmFwc7GCHNPnuSIJG9flWqLQUldT9j83rRXc34J6ZkugZd5w0J4hQM0gaIkaA0sHBzlGgsWaSvBzNKKeH8yXOpbPZylxxxykBuuIJvzddtzc9n_I7w_lvrCPrSJPa-2W57F78B0sAUmDszQmH6QZXRnAcg7A2rXVrtKcvVxB-grLcr_f_3FpYjk399gwJ-WjLbW_pCeWsLK3gmvqe5gQuguAR_REzfjPfKxGW-Kuy4orqvGE3IFX1SpmekBS4x8VIrm6R_XR3L7nN6MWUjG-fxM8NDW-Y-aH9aLzrJvKePyQI4V6svMpBUTjytHvZWhVervQQrvQOrvBfcStXoV9T-cjzz_tGC0]-->
+    </g>
+</svg>

@@ -1,0 +1,34 @@
+@startuml
+!define RectOperator(x) class x << (O, orchid) >>
+
+skinparam rectangle {
+    BackgroundColor<<O>> LightBlue
+    BorderColor Black
+    ArrowColor Black
+}
+
+title 算子粗粒度推荐情况
+
+'移除之前的布局设置
+hide empty description
+hide empty methods
+hide empty fields
+
+RectOperator(SINGLE_END)
+
+RectOperator(FunctionalDependency(ID:operator_3))
+
+RectOperator(FunctionalDependency(ID:operator_4))
+
+RectOperator(FunctionalDependency(ID:operator_5))
+
+RectOperator(FunctionalDependency(ID:operator_6))
+
+SINGLE_END -down-> FunctionalDependency(ID:operator_5) : 下一步
+SINGLE_END -down-> FunctionalDependency(ID:operator_4) : 下一步
+FunctionalDependency(ID:operator_5) <-right-> FunctionalDependency(ID:operator_4) : 并行
+SINGLE_END -down-> FunctionalDependency(ID:operator_3) : 下一步
+FunctionalDependency(ID:operator_4) <-right-> FunctionalDependency(ID:operator_3) : 并行
+FunctionalDependency(ID:operator_5) -down-> FunctionalDependency(ID:operator_6) : 下一步
+'完成图表
+@enduml

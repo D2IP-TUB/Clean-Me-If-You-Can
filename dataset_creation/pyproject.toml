@@ -1,0 +1,64 @@
+[project]
+name = "postalcrawl"
+version = "0.1.0"
+description = "Extract postal addresses from WDC N-Quads, validate via Nominatim, pack into CSV datasets"
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+include = [
+    "postalcrawl"
+]
+dependencies = [
+    "httpx>=0.28.1",
+    "joblib>=1.5.1",
+    "loguru>=0.7.3",
+    "msgspec>=0.19.0",
+    "niquests>=3.15.2",
+    "pandas>=2.3.1",
+    "pandas-stubs==2.3.0.250703",
+    "polars>=1.31.0",
+    "pyarrow>=21.0.0",
+    "pydantic>=2.11.7",
+    "requests>=2.32.4",
+    "tqdm>=4.67.1",
+    "yarl>=1.20.1",
+    "rapidfuzz (>=3.14.1,<4.0.0)",
+    "regex (>=2025.9.1,<2026.0.0)",
+    "matplotlib (>=3.10.6,<4.0.0)",
+    "pycountry (>=24.6.1,<25.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)",
+    "ftfy>=6.2.0",
+    "postal>=1.1.11",
+]
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+    "marimo>=0.17.0",
+    "pyright>=1.1.403",
+    "pytest>=8.4.1",
+    "pytest-asyncio>=1.1.0",
+    "pytest-clarity>=1.0.1",
+    "ruff>=0.12.9",
+]
+
+[tool.ruff]
+# Set the max line length to 100 characters.
+line-length = 100
+
+[tool.pyright]
+# Ignore all missing type stubs as well
+#reportMissingTypeStubs = "none"
+reportMissingImports = "none"
+# Set strictness defaults
+typeCheckingMode = "basic"   # or "basic", "off"
+
+[tool.pytest.ini_options]
+addopts = '-s -vv -m "not dev"'
+asyncio_mode = "auto"
+markers = [
+"dev: tests that are only for development purposes",
+]
+
+# [build-system]
+# requires = ["uv_build >= 0.8.17, <0.9.0"]
+# build-backend = "uv_build"

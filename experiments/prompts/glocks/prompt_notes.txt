@@ -1,0 +1,27 @@
+Glocks LLM prompts for the address data cleaning benchmark.
+
+Schema (all slice-specific prompts): name, house_number, road, postcode, locality, region, country, country_code
+
+Legacy / generic prompts (p1–p4):
+  p1: generic detection (yes/no per field)
+  p2: generic correction (output corrected values)
+  p4: generic detection + correction combined
+
+Detection prompts (yes/no per field):
+  p5:  de slice
+  p6:  full slice
+  p14: poi_Library
+  p15: poi_ShoppingCenter
+  p16: russia slice
+
+Correction prompts (oracle — error fields provided in prompt):
+  p9:  de slice
+  p10: full slice
+  p18: poi_Library
+  p19: poi_ShoppingCenter
+  p20: russia slice
+
+Slice → prompt IDs are configured in experiments/harness/config.json under systems.glocks.prompt_id_map.
+
+Canonical location: experiments/prompts/glocks/prompt.json
+Copy for standalone toolkit runs: experiments/baselines/glocks/pci-llm-toolkit/error-detection-cleaning-llm/data/address/

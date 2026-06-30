@@ -1,0 +1,24 @@
+{
+    "location":"test",
+    "modelConfigName": "vllAi",
+    "whichColMatchDict": "address",
+    "test":{    
+        "Paths":{
+            "Prompt":"experiments/baselines/glocks/pci-llm-toolkit/error-detection-cleaning-llm/data/address",
+            "Data":"experiments/baselines/glocks/pci-llm-toolkit/error-detection-cleaning-llm/data/address",
+            "Result":"experiments/baselines/glocks/pci-llm-toolkit/error-detection-cleaning-llm/data/address"
+        },
+        "File":{
+	        "Input":["1"]
+        }
+    },
+    "Files":{
+        "1":{
+            "name": "sample_de_dirty.csv",
+            "encoding":"None",
+            "delimiter":"None",
+            "OutputSuffix":"sample_dirty",
+            "prompt_ids": ["p10"]
+        }}
+}
+

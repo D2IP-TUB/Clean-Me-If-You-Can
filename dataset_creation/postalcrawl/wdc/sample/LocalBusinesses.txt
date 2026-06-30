@@ -1,0 +1,1000 @@
+_:nb70815cb0e4943039b7432ffccbacdfcxb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://www.dd-baumaschinen-augsburg.de/eurocomach-raupenkompaktlader>   .
+_:nb70815cb0e4943039b7432ffccbacdfcxb0 <http://schema.org/address> _:nb70815cb0e4943039b7432ffccbacdfcxb1 <https://www.dd-baumaschinen-augsburg.de/eurocomach-raupenkompaktlader>   .
+_:nb70815cb0e4943039b7432ffccbacdfcxb0 <http://schema.org/latitude> "4.84116136E1"^^<http://www.w3.org/2001/XMLSchema#double> <https://www.dd-baumaschinen-augsburg.de/eurocomach-raupenkompaktlader>   .
+_:nb70815cb0e4943039b7432ffccbacdfcxb0 <http://schema.org/logo> </-_-/resources/images/files/9c807c92-bd94-4086-9b4b-803d39768eb1/389f8d32-7938-4330-b8ff-192333e7cda0?o=rs:fill:1751:756:1:1/g:sm/> <https://www.dd-baumaschinen-augsburg.de/eurocomach-raupenkompaktlader>   .
+_:nb70815cb0e4943039b7432ffccbacdfcxb0 <http://schema.org/longitude> "1.08711442E1"^^<http://www.w3.org/2001/XMLSchema#double> <https://www.dd-baumaschinen-augsburg.de/eurocomach-raupenkompaktlader>   .
+_:nb70815cb0e4943039b7432ffccbacdfcxb0 <http://schema.org/name> "Mirco Dacic" <https://www.dd-baumaschinen-augsburg.de/eurocomach-raupenkompaktlader>   .
+_:nb70815cb0e4943039b7432ffccbacdfcxb0 <http://schema.org/openingHours> "Mo 07:00-17:00" <https://www.dd-baumaschinen-augsburg.de/eurocomach-raupenkompaktlader>   .
+_:nb70815cb0e4943039b7432ffccbacdfcxb0 <http://schema.org/openingHours> "Tu 07:00-17:00" <https://www.dd-baumaschinen-augsburg.de/eurocomach-raupenkompaktlader>   .
+_:nb70815cb0e4943039b7432ffccbacdfcxb0 <http://schema.org/openingHours> "We 07:00-17:00" <https://www.dd-baumaschinen-augsburg.de/eurocomach-raupenkompaktlader>   .
+_:nb70815cb0e4943039b7432ffccbacdfcxb0 <http://schema.org/openingHours> "Th 07:00-17:00" <https://www.dd-baumaschinen-augsburg.de/eurocomach-raupenkompaktlader>   .
+_:nb70815cb0e4943039b7432ffccbacdfcxb0 <http://schema.org/openingHours> "Fr 07:00-17:00" <https://www.dd-baumaschinen-augsburg.de/eurocomach-raupenkompaktlader>   .
+_:nb70815cb0e4943039b7432ffccbacdfcxb0 <http://schema.org/openingHours> "Sa " <https://www.dd-baumaschinen-augsburg.de/eurocomach-raupenkompaktlader>   .
+_:nb70815cb0e4943039b7432ffccbacdfcxb0 <http://schema.org/openingHours> "Su " <https://www.dd-baumaschinen-augsburg.de/eurocomach-raupenkompaktlader>   .
+_:nb70815cb0e4943039b7432ffccbacdfcxb0 <http://schema.org/sameAs> <https://www.dd-baumaschinen-augsburg.de/eurocomach-raupenkompaktlader> <https://www.dd-baumaschinen-augsburg.de/eurocomach-raupenkompaktlader>   .
+_:nb70815cb0e4943039b7432ffccbacdfcxb0 <http://schema.org/telephone> "+49 821 4480657" <https://www.dd-baumaschinen-augsburg.de/eurocomach-raupenkompaktlader>   .
+_:nb70815cb0e4943039b7432ffccbacdfcxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://www.dd-baumaschinen-augsburg.de/eurocomach-raupenkompaktlader>   .
+_:nb70815cb0e4943039b7432ffccbacdfcxb1 <http://schema.org/addressLocality> "Gersthofen" <https://www.dd-baumaschinen-augsburg.de/eurocomach-raupenkompaktlader>   .
+_:nb70815cb0e4943039b7432ffccbacdfcxb1 <http://schema.org/streetAddress> "Wernher-von-Braun-StraÃŸe 3" <https://www.dd-baumaschinen-augsburg.de/eurocomach-raupenkompaktlader>   .
+<https://dd-clinic.com.ua/#logo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ImageObject> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/#logo> <http://schema.org/caption> "DD-clinic" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/#logo> <http://schema.org/contentUrl> <https://dd-clinic.com.ua/wp-content/uploads/2020/10/cropped-logos444.png> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/#logo> <http://schema.org/height> "247"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/#logo> <http://schema.org/inLanguage> "ru" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/#logo> <http://schema.org/url> <https://dd-clinic.com.ua/wp-content/uploads/2020/10/cropped-logos444.png> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/#logo> <http://schema.org/width> "470"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/#organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/#organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/#organization> <http://schema.org/address> _:n06b32538af1043b68fd539959b6f9b27xb0 <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/#organization> <http://schema.org/image> <https://dd-clinic.com.ua/#logo> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/#organization> <http://schema.org/logo> <https://dd-clinic.com.ua/#logo> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/#organization> <http://schema.org/name> "DD-clinic" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/#organization> <http://schema.org/openingHours> "Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 09:00-17:00" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/#organization> <http://schema.org/url> <https://dd-clinic.com.ua/> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/#website> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebSite> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/#website> <http://schema.org/alternateName> "DD-clinic" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/#website> <http://schema.org/inLanguage> "ru" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/#website> <http://schema.org/name> "DD-clinic" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/#website> <http://schema.org/publisher> <https://dd-clinic.com.ua/#organization> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/#website> <http://schema.org/url> <https://dd-clinic.com.ua> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/ru/lechenie-narkomanii/#schema-45148> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Service> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/ru/lechenie-narkomanii/#schema-45148> <http://schema.org/image> <https://dd-clinic.com.ua/wp-content/uploads/2020/10/cropped-logos444.png> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/ru/lechenie-narkomanii/#schema-45148> <http://schema.org/mainEntityOfPage> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/#webpage> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/ru/lechenie-narkomanii/#webpage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebPage> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/ru/lechenie-narkomanii/#webpage> <http://schema.org/breadcrumb> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/#breadcrumb> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/ru/lechenie-narkomanii/#webpage> <http://schema.org/dateModified> "2024-02-26T11:27:32+00:00"^^<http://schema.org/Date> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/ru/lechenie-narkomanii/#webpage> <http://schema.org/datePublished> "2023-10-11T15:32:45+00:00"^^<http://schema.org/Date> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/ru/lechenie-narkomanii/#webpage> <http://schema.org/inLanguage> "ru" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/ru/lechenie-narkomanii/#webpage> <http://schema.org/isPartOf> <https://dd-clinic.com.ua/#website> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/ru/lechenie-narkomanii/#webpage> <http://schema.org/name> "Ð›ÐµÑ‡ÐµÐ½Ð¸Ðµ Ð½Ð°Ñ€ÐºÐ¾Ð¼Ð°Ð½Ð¸Ð¸ Ð² ÐšÐ¸ÐµÐ²Ðµ âž¤ Ñ†ÐµÐ½Ð° Ð½Ð° Ð»ÐµÑ‡ÐµÐ½Ð¸Ðµ Ð½Ð°Ñ€ÐºÐ¾Ð·Ð°Ð²Ð¸ÑÐ¸Ð¼Ð¾ÑÑ‚Ð¸ â€¢ dd-clinic" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/ru/lechenie-narkomanii/#webpage> <http://schema.org/primaryImageOfPage> <https://dd-clinic.com.ua/wp-content/uploads/2020/10/cropped-logos444.png> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/ru/lechenie-narkomanii/#webpage> <http://schema.org/url> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/wp-content/uploads/2020/10/cropped-logos444.png> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ImageObject> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/wp-content/uploads/2020/10/cropped-logos444.png> <http://schema.org/height> "200"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/wp-content/uploads/2020/10/cropped-logos444.png> <http://schema.org/inLanguage> "ru" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/wp-content/uploads/2020/10/cropped-logos444.png> <http://schema.org/url> <https://dd-clinic.com.ua/wp-content/uploads/2020/10/cropped-logos444.png> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+<https://dd-clinic.com.ua/wp-content/uploads/2020/10/cropped-logos444.png> <http://schema.org/width> "200"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n06b32538af1043b68fd539959b6f9b27xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n06b32538af1043b68fd539959b6f9b27xb0 <http://schema.org/addressLocality> "Ð²ÑƒÐ». Ð“Ð°Ð¹Ð¾Ð²Ð°" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n06b32538af1043b68fd539959b6f9b27xb0 <http://schema.org/addressRegion> "ÐšÐ¸ÐµÐ²" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n06b32538af1043b68fd539959b6f9b27xb0 <http://schema.org/streetAddress> "2" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n06b32538af1043b68fd539959b6f9b27xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/CreativeWorkSeries> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n06b32538af1043b68fd539959b6f9b27xb1 <http://schema.org/aggregateRating> _:n06b32538af1043b68fd539959b6f9b27xb2 <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n06b32538af1043b68fd539959b6f9b27xb1 <http://schema.org/name> "Ð›ÐµÑ‡ÐµÐ½Ð¸Ðµ Ð½Ð°Ñ€ÐºÐ¾Ð¼Ð°Ð½Ð¸Ð¸ Ð² ÐšÐ¸ÐµÐ²Ðµ âž¤ Ñ†ÐµÐ½Ð° Ð½Ð° Ð»ÐµÑ‡ÐµÐ½Ð¸Ðµ Ð½Ð°Ñ€ÐºÐ¾Ð·Ð°Ð²Ð¸ÑÐ¸Ð¼Ð¾ÑÑ‚Ð¸ â€¢ dd-clinic" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n06b32538af1043b68fd539959b6f9b27xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/AggregateRating> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n06b32538af1043b68fd539959b6f9b27xb2 <http://schema.org/bestRating> "5" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n06b32538af1043b68fd539959b6f9b27xb2 <http://schema.org/ratingCount> "17" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n06b32538af1043b68fd539959b6f9b27xb2 <http://schema.org/ratingValue> "5" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/FAQPage> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb0 <http://schema.org/mainEntity> _:n76c4f3785269462ab34bb6eccdab2befxb1 <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb0 <http://schema.org/mainEntity> _:n76c4f3785269462ab34bb6eccdab2befxb3 <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb0 <http://schema.org/mainEntity> _:n76c4f3785269462ab34bb6eccdab2befxb5 <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb0 <http://schema.org/mainEntity> _:n76c4f3785269462ab34bb6eccdab2befxb7 <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb0 <http://schema.org/mainEntity> _:n76c4f3785269462ab34bb6eccdab2befxb9 <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Question> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb1 <http://schema.org/acceptedAnswer> _:n76c4f3785269462ab34bb6eccdab2befxb2 <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb1 <http://schema.org/name> "ÐšÐ°ÐºÐ¸Ðµ Ð¼ÐµÑ‚Ð¾Ð´Ñ‹ Ð»ÐµÑ‡ÐµÐ½Ð¸Ñ Ð½Ð°Ñ€ÐºÐ¾Ð¼Ð°Ð½Ð¸Ð¸ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÑŽÑ‚ÑÑ Ð² DD-clinic?" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Answer> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb10 <http://schema.org/text> "<p>Ð”Ð°, Ð¿Ð¾ÑÐ»Ðµ Ð·Ð°Ð²ÐµÑ€ÑˆÐµÐ½Ð¸Ñ Ð»ÐµÑ‡ÐµÐ½Ð¸Ñ Ð½Ð°Ñ€ÐºÐ¾Ð¼Ð°Ð½Ð¸Ð¸ Ð¼Ñ‹ Ð¿Ñ€ÐµÐ´Ð¾ÑÑ‚Ð°Ð²Ð»ÑÐµÐ¼ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÑƒ Ð¸ ÑÐ¾Ð¿Ñ€Ð¾Ð²Ð¾Ð¶Ð´ÐµÐ½Ð¸Ðµ Ð¿Ð°Ñ†Ð¸ÐµÐ½Ñ‚Ð¾Ð² Ð² Ð¿ÐµÑ€Ð¸Ð¾Ð´ Ð°Ð´Ð°Ð¿Ñ‚Ð°Ñ†Ð¸Ð¸ Ð¸ Ñ€ÐµÐ°Ð±Ð¸Ð»Ð¸Ñ‚Ð°Ñ†Ð¸Ð¸. ÐœÑ‹ Ñ‚Ð°ÐºÐ¶Ðµ Ð¿Ñ€ÐµÐ´Ð»Ð°Ð³Ð°ÐµÐ¼ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚ÑŒ ÑƒÑ‡Ð°ÑÑ‚Ð¸Ñ Ð² Ð¿Ð¾ÑÐ»ÐµÐ¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ñ… Ð³Ñ€ÑƒÐ¿Ð¿Ð¾Ð²Ñ‹Ñ… ÑÐµÑÑÐ¸ÑÑ… Ð¸ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ðµ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ¸.</p>" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Answer> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb2 <http://schema.org/text> "<p>Ð’ DD-clinic Ð¼Ñ‹ Ð¿Ñ€Ð¸Ð¼ÐµÐ½ÑÐµÐ¼ ÐºÐ¾Ð¼Ð¿Ð»ÐµÐºÑÐ½Ñ‹Ð¹ Ð¿Ð¾Ð´Ñ…Ð¾Ð´ Ðº Ð»ÐµÑ‡ÐµÐ½Ð¸ÑŽ Ð½Ð°Ñ€ÐºÐ¾Ð¼Ð°Ð½Ð¸Ð¸, Ð²ÐºÐ»ÑŽÑ‡Ð°Ñ Ð¼ÐµÐ´Ð¸ÐºÐ°Ð¼ÐµÐ½Ñ‚Ð¾Ð·Ð½ÑƒÑŽ Ñ‚ÐµÑ€Ð°Ð¿Ð¸ÑŽ, Ð¿ÑÐ¸Ñ…Ð¾Ñ‚ÐµÑ€Ð°Ð¿ÐµÐ²Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸Ðµ ÑÐµÑÑÐ¸Ð¸, Ð¸Ð½Ð´Ð¸Ð²Ð¸Ð´ÑƒÐ°Ð»ÑŒÐ½Ñ‹Ðµ Ð¸ Ð³Ñ€ÑƒÐ¿Ð¿Ð¾Ð²Ñ‹Ðµ Ð·Ð°Ð½ÑÑ‚Ð¸Ñ, Ð° Ñ‚Ð°ÐºÐ¶Ðµ Ñ€ÐµÐ°Ð±Ð¸Ð»Ð¸Ñ‚Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ðµ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹.</p>" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Question> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb3 <http://schema.org/acceptedAnswer> _:n76c4f3785269462ab34bb6eccdab2befxb4 <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb3 <http://schema.org/name> "Ð¡ÐºÐ¾Ð»ÑŒÐºÐ¾ Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸ Ð·Ð°Ð½Ð¸Ð¼Ð°ÐµÑ‚ Ð»ÐµÑ‡ÐµÐ½Ð¸Ðµ Ð½Ð°Ñ€ÐºÐ¾Ð¼Ð°Ð½Ð¸Ð¸?" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Answer> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb4 <http://schema.org/text> "<p>ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚ÑŒ Ð»ÐµÑ‡ÐµÐ½Ð¸Ñ Ð½Ð°Ñ€ÐºÐ¾Ð¼Ð°Ð½Ð¸Ð¸ Ð¼Ð¾Ð¶ÐµÑ‚ Ð²Ð°Ñ€ÑŒÐ¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒÑÑ Ð² Ð·Ð°Ð²Ð¸ÑÐ¸Ð¼Ð¾ÑÑ‚Ð¸ Ð¾Ñ‚ ÑÑ‚ÐµÐ¿ÐµÐ½Ð¸ Ð·Ð°Ð²Ð¸ÑÐ¸Ð¼Ð¾ÑÑ‚Ð¸, Ð¿ÑÐ¸Ñ…Ð¾ÑÐ¼Ð¾Ñ†Ð¸Ð¾Ð½Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ ÑÐ¾ÑÑ‚Ð¾ÑÐ½Ð¸Ñ Ð¿Ð°Ñ†Ð¸ÐµÐ½Ñ‚Ð° Ð¸ Ð´Ñ€ÑƒÐ³Ð¸Ñ… Ñ„Ð°ÐºÑ‚Ð¾Ñ€Ð¾Ð². ÐžÐ±Ñ‹Ñ‡Ð½Ð¾ Ð»ÐµÑ‡ÐµÐ½Ð¸Ðµ Ñ€Ð°ÑÑÑ‡Ð¸Ñ‚Ñ‹Ð²Ð°ÐµÑ‚ÑÑ Ð½Ð° Ð½ÐµÑÐºÐ¾Ð»ÑŒÐºÐ¾ Ð½ÐµÐ´ÐµÐ»ÑŒ Ð¸Ð»Ð¸ Ð¼ÐµÑÑÑ†ÐµÐ².</p>" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Question> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb5 <http://schema.org/acceptedAnswer> _:n76c4f3785269462ab34bb6eccdab2befxb6 <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb5 <http://schema.org/name> "ÐœÐ¾Ð³Ñƒ Ð»Ð¸ Ñ Ð¿Ð¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑŒ ÐºÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚ÑŒ Ð²Ð¾ Ð²Ñ€ÐµÐ¼Ñ Ð»ÐµÑ‡ÐµÐ½Ð¸Ñ?" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Answer> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb6 <http://schema.org/text> "<p>Ð”Ð°, Ð² DD-clinic Ð¼Ñ‹ Ð³Ð°Ñ€Ð°Ð½Ñ‚Ð¸Ñ€ÑƒÐµÐ¼ Ð°Ð½Ð¾Ð½Ð¸Ð¼Ð½Ð¾ÑÑ‚ÑŒ Ð¸ ÐºÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚ÑŒ Ð´Ð»Ñ Ð²ÑÐµÑ… Ð½Ð°ÑˆÐ¸Ñ… Ð¿Ð°Ñ†Ð¸ÐµÐ½Ñ‚Ð¾Ð². ÐœÑ‹ ÑÑ‚Ñ€Ð¾Ð³Ð¾ ÑÐ¾Ð±Ð»ÑŽÐ´Ð°ÐµÐ¼ Ð¿Ñ€Ð°Ð²Ð¸Ð»Ð° Ð·Ð°Ñ‰Ð¸Ñ‚Ñ‹ Ð»Ð¸Ñ‡Ð½Ð¾Ð¹ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¸.</p>" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Question> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb7 <http://schema.org/acceptedAnswer> _:n76c4f3785269462ab34bb6eccdab2befxb8 <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb7 <http://schema.org/name> "ÐšÐ°ÐºÐ¾Ð²Ñ‹ Ð·Ð°Ñ‚Ñ€Ð°Ñ‚Ñ‹ Ð½Ð° Ð»ÐµÑ‡ÐµÐ½Ð¸Ðµ Ð½Ð°Ñ€ÐºÐ¾Ð¼Ð°Ð½Ð¸Ð¸ Ð² DD-clinic?" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Answer> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb8 <http://schema.org/text> "<p>Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð»ÐµÑ‡ÐµÐ½Ð¸Ñ Ð½Ð°Ñ€ÐºÐ¾Ð¼Ð°Ð½Ð¸Ð¸ Ñ€Ð°ÑÑÑ‡Ð¸Ñ‚Ñ‹Ð²Ð°ÐµÑ‚ÑÑ Ð¸Ð½Ð´Ð¸Ð²Ð¸Ð´ÑƒÐ°Ð»ÑŒÐ½Ð¾ Ð´Ð»Ñ ÐºÐ°Ð¶Ð´Ð¾Ð³Ð¾ Ð¿Ð°Ñ†Ð¸ÐµÐ½Ñ‚Ð°, Ð¸ÑÑ…Ð¾Ð´Ñ Ð¸Ð· Ð´Ð¸Ð°Ð³Ð½Ð¾ÑÑ‚Ð¸ÐºÐ¸, Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð½Ð¾Ð¹ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹ Ð»ÐµÑ‡ÐµÐ½Ð¸Ñ Ð¸ Ð´Ð¾Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ñ… ÑƒÑÐ»ÑƒÐ³. ÐœÑ‹ Ð¿Ñ€ÐµÐ´Ð¾ÑÑ‚Ð°Ð²Ð»ÑÐµÐ¼ Ñ€Ð°Ð·Ð»Ð¸Ñ‡Ð½Ñ‹Ðµ Ð²Ð°Ñ€Ð¸Ð°Ð½Ñ‚Ñ‹ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹ Ð¸ ÑÑ‚Ñ€ÐµÐ¼Ð¸Ð¼ÑÑ Ð¿Ñ€ÐµÐ´Ð»Ð¾Ð¶Ð¸Ñ‚ÑŒ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹Ðµ Ñ†ÐµÐ½Ñ‹.</p>" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Question> <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb9 <http://schema.org/acceptedAnswer> _:n76c4f3785269462ab34bb6eccdab2befxb10 <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:n76c4f3785269462ab34bb6eccdab2befxb9 <http://schema.org/name> "ÐŸÑ€ÐµÐ´Ð¾ÑÑ‚Ð°Ð²Ð»ÑÐµÑ‚ÑÑ Ð»Ð¸ Ð¿Ð¾ÑÐ»ÐµÐ¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð°Ñ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ°?" <https://dd-clinic.com.ua/ru/lechenie-narkomanii/>   .
+_:nf76aba30b1ee4799bd4edfdcfde1267fxb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-datenschutz.de/>   .
+_:nf76aba30b1ee4799bd4edfdcfde1267fxb0 <http://schema.org/aggregateRating> _:nf76aba30b1ee4799bd4edfdcfde1267fxb1 <https://dd-datenschutz.de/>   .
+_:nf76aba30b1ee4799bd4edfdcfde1267fxb0 <http://schema.org/description> "Datenschutzbeauftragter Dresden" <https://dd-datenschutz.de/>   .
+_:nf76aba30b1ee4799bd4edfdcfde1267fxb0 <http://schema.org/image> <https://dd-datenschutz.de/wp-content/uploads/2021/08/dresden-elbe-blau.jpg> <https://dd-datenschutz.de/>   .
+_:nf76aba30b1ee4799bd4edfdcfde1267fxb0 <http://schema.org/name> "Datenschutzbeauftragter Dresden" <https://dd-datenschutz.de/>   .
+_:nf76aba30b1ee4799bd4edfdcfde1267fxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/AggregateRating> <https://dd-datenschutz.de/>   .
+_:nf76aba30b1ee4799bd4edfdcfde1267fxb1 <http://schema.org/bestRating> "5" <https://dd-datenschutz.de/>   .
+_:nf76aba30b1ee4799bd4edfdcfde1267fxb1 <http://schema.org/ratingCount> "158" <https://dd-datenschutz.de/>   .
+_:nf76aba30b1ee4799bd4edfdcfde1267fxb1 <http://schema.org/ratingValue> "4.9" <https://dd-datenschutz.de/>   .
+_:nb9da154787fb4d749240f13ce966a7ddxb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-datenschutz.de/impressum-datenschutz/>   .
+_:nb9da154787fb4d749240f13ce966a7ddxb0 <http://schema.org/aggregateRating> _:nb9da154787fb4d749240f13ce966a7ddxb1 <https://dd-datenschutz.de/impressum-datenschutz/>   .
+_:nb9da154787fb4d749240f13ce966a7ddxb0 <http://schema.org/description> "Impressum | Datenschutz" <https://dd-datenschutz.de/impressum-datenschutz/>   .
+_:nb9da154787fb4d749240f13ce966a7ddxb0 <http://schema.org/image> <https://dd-datenschutz.de/wp-content/uploads/2020/02/datenschutz-internet.png> <https://dd-datenschutz.de/impressum-datenschutz/>   .
+_:nb9da154787fb4d749240f13ce966a7ddxb0 <http://schema.org/name> "Impressum | Datenschutz" <https://dd-datenschutz.de/impressum-datenschutz/>   .
+_:nb9da154787fb4d749240f13ce966a7ddxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/AggregateRating> <https://dd-datenschutz.de/impressum-datenschutz/>   .
+_:nb9da154787fb4d749240f13ce966a7ddxb1 <http://schema.org/bestRating> "5" <https://dd-datenschutz.de/impressum-datenschutz/>   .
+_:nb9da154787fb4d749240f13ce966a7ddxb1 <http://schema.org/ratingCount> "55" <https://dd-datenschutz.de/impressum-datenschutz/>   .
+_:nb9da154787fb4d749240f13ce966a7ddxb1 <http://schema.org/ratingValue> "4.8" <https://dd-datenschutz.de/impressum-datenschutz/>   .
+_:n8fea153ddcb143f2aae83274896e84e2xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-datenschutz.de/kostenloser-dsgvo-webseiten-check/>   .
+_:n8fea153ddcb143f2aae83274896e84e2xb0 <http://schema.org/aggregateRating> _:n8fea153ddcb143f2aae83274896e84e2xb1 <https://dd-datenschutz.de/kostenloser-dsgvo-webseiten-check/>   .
+_:n8fea153ddcb143f2aae83274896e84e2xb0 <http://schema.org/description> "Kostenloser DSGVO Webseiten Check" <https://dd-datenschutz.de/kostenloser-dsgvo-webseiten-check/>   .
+_:n8fea153ddcb143f2aae83274896e84e2xb0 <http://schema.org/image> <https://dd-datenschutz.de/wp-content/uploads/2021/08/homepage-dresden-webseite-1.jpg> <https://dd-datenschutz.de/kostenloser-dsgvo-webseiten-check/>   .
+_:n8fea153ddcb143f2aae83274896e84e2xb0 <http://schema.org/name> "Kostenloser DSGVO Webseiten Check" <https://dd-datenschutz.de/kostenloser-dsgvo-webseiten-check/>   .
+_:n8fea153ddcb143f2aae83274896e84e2xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/AggregateRating> <https://dd-datenschutz.de/kostenloser-dsgvo-webseiten-check/>   .
+_:n8fea153ddcb143f2aae83274896e84e2xb1 <http://schema.org/bestRating> "5" <https://dd-datenschutz.de/kostenloser-dsgvo-webseiten-check/>   .
+_:n8fea153ddcb143f2aae83274896e84e2xb1 <http://schema.org/ratingCount> "353" <https://dd-datenschutz.de/kostenloser-dsgvo-webseiten-check/>   .
+_:n8fea153ddcb143f2aae83274896e84e2xb1 <http://schema.org/ratingValue> "4.9" <https://dd-datenschutz.de/kostenloser-dsgvo-webseiten-check/>   .
+<https://dd-fleet.com/> <http://www.w3.org/1999/xhtml/microdata#item> _:node1ifernl21x5395405 <https://dd-fleet.com/>   .
+_:node1ifernl21x5395405 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-fleet.com/>   .
+_:node1ifernl21x5395405 <http://schema.org/openingHours> "\n              9:00â€“18:00            " <https://dd-fleet.com/>   .
+_:node1ifernl21x5395405 <http://schema.org/openingHours> "\n              9:00â€“18:00            " <https://dd-fleet.com/>   .
+_:node1ifernl21x5395405 <http://schema.org/openingHours> "\n              9:00â€“18:00            " <https://dd-fleet.com/>   .
+_:node1ifernl21x5395405 <http://schema.org/openingHours> "\n              9:00â€“18:00            " <https://dd-fleet.com/>   .
+_:node1ifernl21x5395405 <http://schema.org/openingHours> "\n              9:00â€“18:00            " <https://dd-fleet.com/>   .
+_:na0d7b879daf94f8ea5abcad597ec15cdxb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebSite> <https://www.dd-fliesen.de/>   .
+_:na0d7b879daf94f8ea5abcad597ec15cdxb0 <http://schema.org/name> "DD Fliesen" <https://www.dd-fliesen.de/>   .
+_:na0d7b879daf94f8ea5abcad597ec15cdxb0 <http://schema.org/url> <https://www.dd-fliesen.de> <https://www.dd-fliesen.de/>   .
+_:nf7ad534152424286bbcfecb8e9dd3d07xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://www.dd-fliesen.de/>   .
+_:nf7ad534152424286bbcfecb8e9dd3d07xb0 <http://schema.org/address> _:nf7ad534152424286bbcfecb8e9dd3d07xb1 <https://www.dd-fliesen.de/>   .
+_:nf7ad534152424286bbcfecb8e9dd3d07xb0 <http://schema.org/image> <https://static.wixstatic.com/media/1ff227_bc7ce1037382447898e7b47d71c93788~mv2.png> <https://www.dd-fliesen.de/>   .
+_:nf7ad534152424286bbcfecb8e9dd3d07xb0 <http://schema.org/name> "DD Fliesen" <https://www.dd-fliesen.de/>   .
+_:nf7ad534152424286bbcfecb8e9dd3d07xb0 <http://schema.org/telephone> "0173 720 3598" <https://www.dd-fliesen.de/>   .
+_:nf7ad534152424286bbcfecb8e9dd3d07xb0 <http://schema.org/url> <https://www.dd-fliesen.de> <https://www.dd-fliesen.de/>   .
+_:nf7ad534152424286bbcfecb8e9dd3d07xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://www.dd-fliesen.de/>   .
+_:nf7ad534152424286bbcfecb8e9dd3d07xb1 <http://schema.org/addressCountry> "DE" <https://www.dd-fliesen.de/>   .
+_:nf7ad534152424286bbcfecb8e9dd3d07xb1 <http://schema.org/addressLocality> "Stuttgart" <https://www.dd-fliesen.de/>   .
+_:nf7ad534152424286bbcfecb8e9dd3d07xb1 <http://schema.org/addressRegion> "Baden-WÃ¼rttemberg" <https://www.dd-fliesen.de/>   .
+_:nf7ad534152424286bbcfecb8e9dd3d07xb1 <http://schema.org/postalCode> "70619" <https://www.dd-fliesen.de/>   .
+_:nf7ad534152424286bbcfecb8e9dd3d07xb1 <http://schema.org/streetAddress> "79 Walter-Flex-StraÃŸe" <https://www.dd-fliesen.de/>   .
+<https://dd-l.name/2016/08/27/15-elementov-marketinga-dlya-sayta/> <http://www.w3.org/1999/xhtml/microdata#item> _:node1ifencfsix34817000 <https://dd-l.name/2016/08/27/15-elementov-marketinga-dlya-sayta/>   .
+_:node1ifencfsix34817000 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-l.name/2016/08/27/15-elementov-marketinga-dlya-sayta/>   .
+_:node1ifencfsix34817000 <http://schema.org/address> _:node1ifencfsix34817001 <https://dd-l.name/2016/08/27/15-elementov-marketinga-dlya-sayta/>   .
+_:node1ifencfsix34817000 <http://schema.org/name> "Ð¡Ñ‚ÑƒÐ´Ð¸Ñ Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸Ñ Ð±Ð¸Ð·Ð½ÐµÑÐ° DIGITLE LIFE"@ru-RU <https://dd-l.name/2016/08/27/15-elementov-marketinga-dlya-sayta/>   .
+_:node1ifencfsix34817000 <http://schema.org/description> "ÐÐ°ÑˆÐ° Ð¡Ñ‚ÑƒÐ´Ð¸Ñ Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸Ñ Ð±Ð¸Ð·Ð½ÐµÑÐ° DIGITLE LIFE Ð·Ð°Ð½Ð¸Ð¼Ð°ÐµÑ‚ÑÑ Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ¾Ð¹ Ð¸Ð½Ð´Ð¸Ð²Ð¸Ð´ÑƒÐ°Ð»ÑŒÐ½Ñ‹Ñ… ÑÐ°Ð¹Ñ‚Ð¾Ð², ÑÐ¸ÑÑ‚ÐµÐ¼ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ñ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð°Ð¼Ð¸, ÑÐ¸ÑÑ‚ÐµÐ¼ Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ð´ÐµÑÑ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸ Ð¾Ñ€Ð³Ð°Ð½Ð¸Ð·Ð°Ñ†Ð¸Ð¹ Â«Bitrix24Â», ÑÐ¾Ð·Ð´Ð°Ð½Ð¸ÐµÐ¼ Ð¸ Ð²ÐµÐ´ÐµÐ½Ð¸ÐµÐ¼ Ñ€ÐµÐºÐ»Ð°Ð¼Ð½Ñ‹Ñ… ÐºÐ°Ð¼Ð¿Ð°Ð½Ð¸Ð¹ Ð¸ Ð¿Ð¾Ð¸ÑÐºÐ¾Ð²Ð¾Ð¹ Ð¾Ð¿Ñ‚Ð¸Ð¼Ð¸Ð·Ð°Ñ†Ð¸ÐµÐ¹."@ru-RU <https://dd-l.name/2016/08/27/15-elementov-marketinga-dlya-sayta/>   .
+_:node1ifencfsix34817001 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://dd-l.name/2016/08/27/15-elementov-marketinga-dlya-sayta/>   .
+_:node1ifencfsix34817001 <http://schema.org/addressCountry> "Ð Ð¾ÑÑÐ¸Ñ"@ru-RU <https://dd-l.name/2016/08/27/15-elementov-marketinga-dlya-sayta/>   .
+_:node1ifencfsix34817001 <http://schema.org/streetAddress> "ÑƒÐ». Ð›ÑŒÐ²Ð° Ð¢Ð¾Ð»ÑÑ‚Ð¾Ð³Ð¾, 110, Ð¢ÑƒÐ»Ð°, Ð¢ÑƒÐ»ÑŒÑÐºÐ°Ñ Ð¾Ð±Ð»."@ru-RU <https://dd-l.name/2016/08/27/15-elementov-marketinga-dlya-sayta/>   .
+_:node1ifencfsix34817001 <http://schema.org/postalCode> "300041"@ru-RU <https://dd-l.name/2016/08/27/15-elementov-marketinga-dlya-sayta/>   .
+_:node1ifencfsix34817001 <http://schema.org/telephone> "+74872751102"@ru-RU <https://dd-l.name/2016/08/27/15-elementov-marketinga-dlya-sayta/>   .
+_:node1ifencfsix34817001 <http://schema.org/url> "http://dd-l.name"@ru-RU <https://dd-l.name/2016/08/27/15-elementov-marketinga-dlya-sayta/>   .
+<https://dd-l.name/2016/09/30/samsung-pay-kak-eto-rabotaet/> <http://www.w3.org/1999/xhtml/microdata#item> _:node1ifenc54px25200970 <https://dd-l.name/2016/09/30/samsung-pay-kak-eto-rabotaet/>   .
+_:node1ifenc54px25200970 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-l.name/2016/09/30/samsung-pay-kak-eto-rabotaet/>   .
+_:node1ifenc54px25200970 <http://schema.org/address> _:node1ifenc54px25200971 <https://dd-l.name/2016/09/30/samsung-pay-kak-eto-rabotaet/>   .
+_:node1ifenc54px25200970 <http://schema.org/name> "Ð¡Ñ‚ÑƒÐ´Ð¸Ñ Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸Ñ Ð±Ð¸Ð·Ð½ÐµÑÐ° DIGITLE LIFE"@ru-RU <https://dd-l.name/2016/09/30/samsung-pay-kak-eto-rabotaet/>   .
+_:node1ifenc54px25200970 <http://schema.org/description> "ÐÐ°ÑˆÐ° Ð¡Ñ‚ÑƒÐ´Ð¸Ñ Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸Ñ Ð±Ð¸Ð·Ð½ÐµÑÐ° DIGITLE LIFE Ð·Ð°Ð½Ð¸Ð¼Ð°ÐµÑ‚ÑÑ Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ¾Ð¹ Ð¸Ð½Ð´Ð¸Ð²Ð¸Ð´ÑƒÐ°Ð»ÑŒÐ½Ñ‹Ñ… ÑÐ°Ð¹Ñ‚Ð¾Ð², ÑÐ¸ÑÑ‚ÐµÐ¼ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ñ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð°Ð¼Ð¸, ÑÐ¸ÑÑ‚ÐµÐ¼ Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ð´ÐµÑÑ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸ Ð¾Ñ€Ð³Ð°Ð½Ð¸Ð·Ð°Ñ†Ð¸Ð¹ Â«Bitrix24Â», ÑÐ¾Ð·Ð´Ð°Ð½Ð¸ÐµÐ¼ Ð¸ Ð²ÐµÐ´ÐµÐ½Ð¸ÐµÐ¼ Ñ€ÐµÐºÐ»Ð°Ð¼Ð½Ñ‹Ñ… ÐºÐ°Ð¼Ð¿Ð°Ð½Ð¸Ð¹ Ð¸ Ð¿Ð¾Ð¸ÑÐºÐ¾Ð²Ð¾Ð¹ Ð¾Ð¿Ñ‚Ð¸Ð¼Ð¸Ð·Ð°Ñ†Ð¸ÐµÐ¹."@ru-RU <https://dd-l.name/2016/09/30/samsung-pay-kak-eto-rabotaet/>   .
+_:node1ifenc54px25200971 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://dd-l.name/2016/09/30/samsung-pay-kak-eto-rabotaet/>   .
+_:node1ifenc54px25200971 <http://schema.org/addressCountry> "Ð Ð¾ÑÑÐ¸Ñ"@ru-RU <https://dd-l.name/2016/09/30/samsung-pay-kak-eto-rabotaet/>   .
+_:node1ifenc54px25200971 <http://schema.org/streetAddress> "ÑƒÐ». Ð›ÑŒÐ²Ð° Ð¢Ð¾Ð»ÑÑ‚Ð¾Ð³Ð¾, 110, Ð¢ÑƒÐ»Ð°, Ð¢ÑƒÐ»ÑŒÑÐºÐ°Ñ Ð¾Ð±Ð»."@ru-RU <https://dd-l.name/2016/09/30/samsung-pay-kak-eto-rabotaet/>   .
+_:node1ifenc54px25200971 <http://schema.org/postalCode> "300041"@ru-RU <https://dd-l.name/2016/09/30/samsung-pay-kak-eto-rabotaet/>   .
+_:node1ifenc54px25200971 <http://schema.org/telephone> "+74872751102"@ru-RU <https://dd-l.name/2016/09/30/samsung-pay-kak-eto-rabotaet/>   .
+_:node1ifenc54px25200971 <http://schema.org/url> "http://dd-l.name"@ru-RU <https://dd-l.name/2016/09/30/samsung-pay-kak-eto-rabotaet/>   .
+<https://dd-l.name/2018/01/18/studiya-razvitiya-aleksey-kulpin-formula-rosta/> <http://www.w3.org/1999/xhtml/microdata#item> _:node1iff0qq3ox5406518 <https://dd-l.name/2018/01/18/studiya-razvitiya-aleksey-kulpin-formula-rosta/>   .
+_:node1iff0qq3ox5406518 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-l.name/2018/01/18/studiya-razvitiya-aleksey-kulpin-formula-rosta/>   .
+_:node1iff0qq3ox5406518 <http://schema.org/address> _:node1iff0qq3ox5406519 <https://dd-l.name/2018/01/18/studiya-razvitiya-aleksey-kulpin-formula-rosta/>   .
+_:node1iff0qq3ox5406518 <http://schema.org/name> "Ð¡Ñ‚ÑƒÐ´Ð¸Ñ Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸Ñ Ð±Ð¸Ð·Ð½ÐµÑÐ° DIGITLE LIFE"@ru-RU <https://dd-l.name/2018/01/18/studiya-razvitiya-aleksey-kulpin-formula-rosta/>   .
+_:node1iff0qq3ox5406518 <http://schema.org/description> "ÐÐ°ÑˆÐ° Ð¡Ñ‚ÑƒÐ´Ð¸Ñ Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸Ñ Ð±Ð¸Ð·Ð½ÐµÑÐ° DIGITLE LIFE Ð·Ð°Ð½Ð¸Ð¼Ð°ÐµÑ‚ÑÑ Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ¾Ð¹ Ð¸Ð½Ð´Ð¸Ð²Ð¸Ð´ÑƒÐ°Ð»ÑŒÐ½Ñ‹Ñ… ÑÐ°Ð¹Ñ‚Ð¾Ð², ÑÐ¸ÑÑ‚ÐµÐ¼ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ñ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð°Ð¼Ð¸, ÑÐ¸ÑÑ‚ÐµÐ¼ Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ð´ÐµÑÑ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸ Ð¾Ñ€Ð³Ð°Ð½Ð¸Ð·Ð°Ñ†Ð¸Ð¹ Â«Bitrix24Â», ÑÐ¾Ð·Ð´Ð°Ð½Ð¸ÐµÐ¼ Ð¸ Ð²ÐµÐ´ÐµÐ½Ð¸ÐµÐ¼ Ñ€ÐµÐºÐ»Ð°Ð¼Ð½Ñ‹Ñ… ÐºÐ°Ð¼Ð¿Ð°Ð½Ð¸Ð¹ Ð¸ Ð¿Ð¾Ð¸ÑÐºÐ¾Ð²Ð¾Ð¹ Ð¾Ð¿Ñ‚Ð¸Ð¼Ð¸Ð·Ð°Ñ†Ð¸ÐµÐ¹."@ru-RU <https://dd-l.name/2018/01/18/studiya-razvitiya-aleksey-kulpin-formula-rosta/>   .
+_:node1iff0qq3ox5406519 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://dd-l.name/2018/01/18/studiya-razvitiya-aleksey-kulpin-formula-rosta/>   .
+_:node1iff0qq3ox5406519 <http://schema.org/addressCountry> "Ð Ð¾ÑÑÐ¸Ñ"@ru-RU <https://dd-l.name/2018/01/18/studiya-razvitiya-aleksey-kulpin-formula-rosta/>   .
+_:node1iff0qq3ox5406519 <http://schema.org/streetAddress> "ÑƒÐ». Ð›ÑŒÐ²Ð° Ð¢Ð¾Ð»ÑÑ‚Ð¾Ð³Ð¾, 110, Ð¢ÑƒÐ»Ð°, Ð¢ÑƒÐ»ÑŒÑÐºÐ°Ñ Ð¾Ð±Ð»."@ru-RU <https://dd-l.name/2018/01/18/studiya-razvitiya-aleksey-kulpin-formula-rosta/>   .
+_:node1iff0qq3ox5406519 <http://schema.org/postalCode> "300041"@ru-RU <https://dd-l.name/2018/01/18/studiya-razvitiya-aleksey-kulpin-formula-rosta/>   .
+_:node1iff0qq3ox5406519 <http://schema.org/telephone> "+74872751102"@ru-RU <https://dd-l.name/2018/01/18/studiya-razvitiya-aleksey-kulpin-formula-rosta/>   .
+_:node1iff0qq3ox5406519 <http://schema.org/url> "http://dd-l.name"@ru-RU <https://dd-l.name/2018/01/18/studiya-razvitiya-aleksey-kulpin-formula-rosta/>   .
+<https://dd-l.name/home_slider/chernovik-4/> <http://www.w3.org/1999/xhtml/microdata#item> _:node1iff554tux464506 <https://dd-l.name/home_slider/chernovik-4/>   .
+_:node1iff554tux464506 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-l.name/home_slider/chernovik-4/>   .
+_:node1iff554tux464506 <http://schema.org/address> _:node1iff554tux464507 <https://dd-l.name/home_slider/chernovik-4/>   .
+_:node1iff554tux464506 <http://schema.org/name> "Ð¡Ñ‚ÑƒÐ´Ð¸Ñ Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸Ñ Ð±Ð¸Ð·Ð½ÐµÑÐ° DIGITLE LIFE"@ru-RU <https://dd-l.name/home_slider/chernovik-4/>   .
+_:node1iff554tux464506 <http://schema.org/description> "ÐÐ°ÑˆÐ° Ð¡Ñ‚ÑƒÐ´Ð¸Ñ Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸Ñ Ð±Ð¸Ð·Ð½ÐµÑÐ° DIGITLE LIFE Ð·Ð°Ð½Ð¸Ð¼Ð°ÐµÑ‚ÑÑ Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ¾Ð¹ Ð¸Ð½Ð´Ð¸Ð²Ð¸Ð´ÑƒÐ°Ð»ÑŒÐ½Ñ‹Ñ… ÑÐ°Ð¹Ñ‚Ð¾Ð², ÑÐ¸ÑÑ‚ÐµÐ¼ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ñ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð°Ð¼Ð¸, ÑÐ¸ÑÑ‚ÐµÐ¼ Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ð´ÐµÑÑ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸ Ð¾Ñ€Ð³Ð°Ð½Ð¸Ð·Ð°Ñ†Ð¸Ð¹ Â«Bitrix24Â», ÑÐ¾Ð·Ð´Ð°Ð½Ð¸ÐµÐ¼ Ð¸ Ð²ÐµÐ´ÐµÐ½Ð¸ÐµÐ¼ Ñ€ÐµÐºÐ»Ð°Ð¼Ð½Ñ‹Ñ… ÐºÐ°Ð¼Ð¿Ð°Ð½Ð¸Ð¹ Ð¸ Ð¿Ð¾Ð¸ÑÐºÐ¾Ð²Ð¾Ð¹ Ð¾Ð¿Ñ‚Ð¸Ð¼Ð¸Ð·Ð°Ñ†Ð¸ÐµÐ¹."@ru-RU <https://dd-l.name/home_slider/chernovik-4/>   .
+_:node1iff554tux464507 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://dd-l.name/home_slider/chernovik-4/>   .
+_:node1iff554tux464507 <http://schema.org/addressCountry> "Ð Ð¾ÑÑÐ¸Ñ"@ru-RU <https://dd-l.name/home_slider/chernovik-4/>   .
+_:node1iff554tux464507 <http://schema.org/streetAddress> "ÑƒÐ». Ð›ÑŒÐ²Ð° Ð¢Ð¾Ð»ÑÑ‚Ð¾Ð³Ð¾, 110, Ð¢ÑƒÐ»Ð°, Ð¢ÑƒÐ»ÑŒÑÐºÐ°Ñ Ð¾Ð±Ð»."@ru-RU <https://dd-l.name/home_slider/chernovik-4/>   .
+_:node1iff554tux464507 <http://schema.org/postalCode> "300041"@ru-RU <https://dd-l.name/home_slider/chernovik-4/>   .
+_:node1iff554tux464507 <http://schema.org/telephone> "+74872751102"@ru-RU <https://dd-l.name/home_slider/chernovik-4/>   .
+_:node1iff554tux464507 <http://schema.org/url> "http://dd-l.name"@ru-RU <https://dd-l.name/home_slider/chernovik-4/>   .
+<https://dd-l.name/portfolio/bsw/> <http://www.w3.org/1999/xhtml/microdata#item> _:node1iff0r2p3x2906242 <https://dd-l.name/portfolio/bsw/>   .
+_:node1iff0r2p3x2906242 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-l.name/portfolio/bsw/>   .
+_:node1iff0r2p3x2906242 <http://schema.org/address> _:node1iff0r2p3x2906243 <https://dd-l.name/portfolio/bsw/>   .
+_:node1iff0r2p3x2906242 <http://schema.org/name> "Ð¡Ñ‚ÑƒÐ´Ð¸Ñ Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸Ñ Ð±Ð¸Ð·Ð½ÐµÑÐ° DIGITLE LIFE"@ru-RU <https://dd-l.name/portfolio/bsw/>   .
+_:node1iff0r2p3x2906242 <http://schema.org/description> "ÐÐ°ÑˆÐ° Ð¡Ñ‚ÑƒÐ´Ð¸Ñ Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸Ñ Ð±Ð¸Ð·Ð½ÐµÑÐ° DIGITLE LIFE Ð·Ð°Ð½Ð¸Ð¼Ð°ÐµÑ‚ÑÑ Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ¾Ð¹ Ð¸Ð½Ð´Ð¸Ð²Ð¸Ð´ÑƒÐ°Ð»ÑŒÐ½Ñ‹Ñ… ÑÐ°Ð¹Ñ‚Ð¾Ð², ÑÐ¸ÑÑ‚ÐµÐ¼ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ñ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð°Ð¼Ð¸, ÑÐ¸ÑÑ‚ÐµÐ¼ Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ð´ÐµÑÑ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸ Ð¾Ñ€Ð³Ð°Ð½Ð¸Ð·Ð°Ñ†Ð¸Ð¹ Â«Bitrix24Â», ÑÐ¾Ð·Ð´Ð°Ð½Ð¸ÐµÐ¼ Ð¸ Ð²ÐµÐ´ÐµÐ½Ð¸ÐµÐ¼ Ñ€ÐµÐºÐ»Ð°Ð¼Ð½Ñ‹Ñ… ÐºÐ°Ð¼Ð¿Ð°Ð½Ð¸Ð¹ Ð¸ Ð¿Ð¾Ð¸ÑÐºÐ¾Ð²Ð¾Ð¹ Ð¾Ð¿Ñ‚Ð¸Ð¼Ð¸Ð·Ð°Ñ†Ð¸ÐµÐ¹."@ru-RU <https://dd-l.name/portfolio/bsw/>   .
+_:node1iff0r2p3x2906243 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://dd-l.name/portfolio/bsw/>   .
+_:node1iff0r2p3x2906243 <http://schema.org/addressCountry> "Ð Ð¾ÑÑÐ¸Ñ"@ru-RU <https://dd-l.name/portfolio/bsw/>   .
+_:node1iff0r2p3x2906243 <http://schema.org/streetAddress> "ÑƒÐ». Ð›ÑŒÐ²Ð° Ð¢Ð¾Ð»ÑÑ‚Ð¾Ð³Ð¾, 110, Ð¢ÑƒÐ»Ð°, Ð¢ÑƒÐ»ÑŒÑÐºÐ°Ñ Ð¾Ð±Ð»."@ru-RU <https://dd-l.name/portfolio/bsw/>   .
+_:node1iff0r2p3x2906243 <http://schema.org/postalCode> "300041"@ru-RU <https://dd-l.name/portfolio/bsw/>   .
+_:node1iff0r2p3x2906243 <http://schema.org/telephone> "+74872751102"@ru-RU <https://dd-l.name/portfolio/bsw/>   .
+_:node1iff0r2p3x2906243 <http://schema.org/url> "http://dd-l.name"@ru-RU <https://dd-l.name/portfolio/bsw/>   .
+<https://dd-l.name/portfolio/epd71/> <http://www.w3.org/1999/xhtml/microdata#item> _:node1ifenc54px26393423 <https://dd-l.name/portfolio/epd71/>   .
+_:node1ifenc54px26393423 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-l.name/portfolio/epd71/>   .
+_:node1ifenc54px26393423 <http://schema.org/address> _:node1ifenc54px26393424 <https://dd-l.name/portfolio/epd71/>   .
+_:node1ifenc54px26393423 <http://schema.org/name> "Ð¡Ñ‚ÑƒÐ´Ð¸Ñ Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸Ñ Ð±Ð¸Ð·Ð½ÐµÑÐ° DIGITLE LIFE"@ru-RU <https://dd-l.name/portfolio/epd71/>   .
+_:node1ifenc54px26393423 <http://schema.org/description> "ÐÐ°ÑˆÐ° Ð¡Ñ‚ÑƒÐ´Ð¸Ñ Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸Ñ Ð±Ð¸Ð·Ð½ÐµÑÐ° DIGITLE LIFE Ð·Ð°Ð½Ð¸Ð¼Ð°ÐµÑ‚ÑÑ Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ¾Ð¹ Ð¸Ð½Ð´Ð¸Ð²Ð¸Ð´ÑƒÐ°Ð»ÑŒÐ½Ñ‹Ñ… ÑÐ°Ð¹Ñ‚Ð¾Ð², ÑÐ¸ÑÑ‚ÐµÐ¼ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ñ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð°Ð¼Ð¸, ÑÐ¸ÑÑ‚ÐµÐ¼ Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ð´ÐµÑÑ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸ Ð¾Ñ€Ð³Ð°Ð½Ð¸Ð·Ð°Ñ†Ð¸Ð¹ Â«Bitrix24Â», ÑÐ¾Ð·Ð´Ð°Ð½Ð¸ÐµÐ¼ Ð¸ Ð²ÐµÐ´ÐµÐ½Ð¸ÐµÐ¼ Ñ€ÐµÐºÐ»Ð°Ð¼Ð½Ñ‹Ñ… ÐºÐ°Ð¼Ð¿Ð°Ð½Ð¸Ð¹ Ð¸ Ð¿Ð¾Ð¸ÑÐºÐ¾Ð²Ð¾Ð¹ Ð¾Ð¿Ñ‚Ð¸Ð¼Ð¸Ð·Ð°Ñ†Ð¸ÐµÐ¹."@ru-RU <https://dd-l.name/portfolio/epd71/>   .
+_:node1ifenc54px26393424 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://dd-l.name/portfolio/epd71/>   .
+_:node1ifenc54px26393424 <http://schema.org/addressCountry> "Ð Ð¾ÑÑÐ¸Ñ"@ru-RU <https://dd-l.name/portfolio/epd71/>   .
+_:node1ifenc54px26393424 <http://schema.org/streetAddress> "ÑƒÐ». Ð›ÑŒÐ²Ð° Ð¢Ð¾Ð»ÑÑ‚Ð¾Ð³Ð¾, 110, Ð¢ÑƒÐ»Ð°, Ð¢ÑƒÐ»ÑŒÑÐºÐ°Ñ Ð¾Ð±Ð»."@ru-RU <https://dd-l.name/portfolio/epd71/>   .
+_:node1ifenc54px26393424 <http://schema.org/postalCode> "300041"@ru-RU <https://dd-l.name/portfolio/epd71/>   .
+_:node1ifenc54px26393424 <http://schema.org/telephone> "+74872751102"@ru-RU <https://dd-l.name/portfolio/epd71/>   .
+_:node1ifenc54px26393424 <http://schema.org/url> "http://dd-l.name"@ru-RU <https://dd-l.name/portfolio/epd71/>   .
+<https://dd-l.name/services/site-support/> <http://www.w3.org/1999/xhtml/microdata#item> _:node1iff0qrikx2886491 <https://dd-l.name/services/site-support/>   .
+_:node1iff0qrikx2886491 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-l.name/services/site-support/>   .
+_:node1iff0qrikx2886491 <http://schema.org/address> _:node1iff0qrikx2886492 <https://dd-l.name/services/site-support/>   .
+_:node1iff0qrikx2886491 <http://schema.org/name> "Ð¡Ñ‚ÑƒÐ´Ð¸Ñ Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸Ñ Ð±Ð¸Ð·Ð½ÐµÑÐ° DIGITLE LIFE"@ru-RU <https://dd-l.name/services/site-support/>   .
+_:node1iff0qrikx2886491 <http://schema.org/description> "ÐÐ°ÑˆÐ° Ð¡Ñ‚ÑƒÐ´Ð¸Ñ Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸Ñ Ð±Ð¸Ð·Ð½ÐµÑÐ° DIGITLE LIFE Ð·Ð°Ð½Ð¸Ð¼Ð°ÐµÑ‚ÑÑ Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ¾Ð¹ Ð¸Ð½Ð´Ð¸Ð²Ð¸Ð´ÑƒÐ°Ð»ÑŒÐ½Ñ‹Ñ… ÑÐ°Ð¹Ñ‚Ð¾Ð², ÑÐ¸ÑÑ‚ÐµÐ¼ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ñ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð°Ð¼Ð¸, ÑÐ¸ÑÑ‚ÐµÐ¼ Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ð´ÐµÑÑ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸ Ð¾Ñ€Ð³Ð°Ð½Ð¸Ð·Ð°Ñ†Ð¸Ð¹ Â«Bitrix24Â», ÑÐ¾Ð·Ð´Ð°Ð½Ð¸ÐµÐ¼ Ð¸ Ð²ÐµÐ´ÐµÐ½Ð¸ÐµÐ¼ Ñ€ÐµÐºÐ»Ð°Ð¼Ð½Ñ‹Ñ… ÐºÐ°Ð¼Ð¿Ð°Ð½Ð¸Ð¹ Ð¸ Ð¿Ð¾Ð¸ÑÐºÐ¾Ð²Ð¾Ð¹ Ð¾Ð¿Ñ‚Ð¸Ð¼Ð¸Ð·Ð°Ñ†Ð¸ÐµÐ¹."@ru-RU <https://dd-l.name/services/site-support/>   .
+_:node1iff0qrikx2886492 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://dd-l.name/services/site-support/>   .
+_:node1iff0qrikx2886492 <http://schema.org/addressCountry> "Ð Ð¾ÑÑÐ¸Ñ"@ru-RU <https://dd-l.name/services/site-support/>   .
+_:node1iff0qrikx2886492 <http://schema.org/streetAddress> "ÑƒÐ». Ð›ÑŒÐ²Ð° Ð¢Ð¾Ð»ÑÑ‚Ð¾Ð³Ð¾, 110, Ð¢ÑƒÐ»Ð°, Ð¢ÑƒÐ»ÑŒÑÐºÐ°Ñ Ð¾Ð±Ð»."@ru-RU <https://dd-l.name/services/site-support/>   .
+_:node1iff0qrikx2886492 <http://schema.org/postalCode> "300041"@ru-RU <https://dd-l.name/services/site-support/>   .
+_:node1iff0qrikx2886492 <http://schema.org/telephone> "+74872751102"@ru-RU <https://dd-l.name/services/site-support/>   .
+_:node1iff0qrikx2886492 <http://schema.org/url> "http://dd-l.name"@ru-RU <https://dd-l.name/services/site-support/>   .
+<https://dd-l.name/wordpress-plugins/dl-admin-bar-bottom-position/> <http://www.w3.org/1999/xhtml/microdata#item> _:node1ifernjtix15204407 <https://dd-l.name/wordpress-plugins/dl-admin-bar-bottom-position/>   .
+_:node1ifernjtix15204407 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-l.name/wordpress-plugins/dl-admin-bar-bottom-position/>   .
+_:node1ifernjtix15204407 <http://schema.org/address> _:node1ifernjtix15204408 <https://dd-l.name/wordpress-plugins/dl-admin-bar-bottom-position/>   .
+_:node1ifernjtix15204407 <http://schema.org/name> "Ð¡Ñ‚ÑƒÐ´Ð¸Ñ Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸Ñ Ð±Ð¸Ð·Ð½ÐµÑÐ° DIGITLE LIFE"@ru-RU <https://dd-l.name/wordpress-plugins/dl-admin-bar-bottom-position/>   .
+_:node1ifernjtix15204407 <http://schema.org/description> "ÐÐ°ÑˆÐ° Ð¡Ñ‚ÑƒÐ´Ð¸Ñ Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸Ñ Ð±Ð¸Ð·Ð½ÐµÑÐ° DIGITLE LIFE Ð·Ð°Ð½Ð¸Ð¼Ð°ÐµÑ‚ÑÑ Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ¾Ð¹ Ð¸Ð½Ð´Ð¸Ð²Ð¸Ð´ÑƒÐ°Ð»ÑŒÐ½Ñ‹Ñ… ÑÐ°Ð¹Ñ‚Ð¾Ð², ÑÐ¸ÑÑ‚ÐµÐ¼ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ñ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð°Ð¼Ð¸, ÑÐ¸ÑÑ‚ÐµÐ¼ Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ð´ÐµÑÑ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸ Ð¾Ñ€Ð³Ð°Ð½Ð¸Ð·Ð°Ñ†Ð¸Ð¹ Â«Bitrix24Â», ÑÐ¾Ð·Ð´Ð°Ð½Ð¸ÐµÐ¼ Ð¸ Ð²ÐµÐ´ÐµÐ½Ð¸ÐµÐ¼ Ñ€ÐµÐºÐ»Ð°Ð¼Ð½Ñ‹Ñ… ÐºÐ°Ð¼Ð¿Ð°Ð½Ð¸Ð¹ Ð¸ Ð¿Ð¾Ð¸ÑÐºÐ¾Ð²Ð¾Ð¹ Ð¾Ð¿Ñ‚Ð¸Ð¼Ð¸Ð·Ð°Ñ†Ð¸ÐµÐ¹."@ru-RU <https://dd-l.name/wordpress-plugins/dl-admin-bar-bottom-position/>   .
+_:node1ifernjtix15204408 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://dd-l.name/wordpress-plugins/dl-admin-bar-bottom-position/>   .
+_:node1ifernjtix15204408 <http://schema.org/addressCountry> "Ð Ð¾ÑÑÐ¸Ñ"@ru-RU <https://dd-l.name/wordpress-plugins/dl-admin-bar-bottom-position/>   .
+_:node1ifernjtix15204408 <http://schema.org/streetAddress> "ÑƒÐ». Ð›ÑŒÐ²Ð° Ð¢Ð¾Ð»ÑÑ‚Ð¾Ð³Ð¾, 110, Ð¢ÑƒÐ»Ð°, Ð¢ÑƒÐ»ÑŒÑÐºÐ°Ñ Ð¾Ð±Ð»."@ru-RU <https://dd-l.name/wordpress-plugins/dl-admin-bar-bottom-position/>   .
+_:node1ifernjtix15204408 <http://schema.org/postalCode> "300041"@ru-RU <https://dd-l.name/wordpress-plugins/dl-admin-bar-bottom-position/>   .
+_:node1ifernjtix15204408 <http://schema.org/telephone> "+74872751102"@ru-RU <https://dd-l.name/wordpress-plugins/dl-admin-bar-bottom-position/>   .
+_:node1ifernjtix15204408 <http://schema.org/url> "http://dd-l.name"@ru-RU <https://dd-l.name/wordpress-plugins/dl-admin-bar-bottom-position/>   .
+<http://0b3ab78c.6b60.48c2.8e0c.5d964981b9d8.com> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-mag.com/>   .
+<http://0b3ab78c.6b60.48c2.8e0c.5d964981b9d8.com> <http://schema.org/address> _:n9647a41369184d4389ec2cabe686500fxb0 <https://dd-mag.com/>   .
+<http://0b3ab78c.6b60.48c2.8e0c.5d964981b9d8.com> <http://schema.org/geo> _:n9647a41369184d4389ec2cabe686500fxb1 <https://dd-mag.com/>   .
+<http://0b3ab78c.6b60.48c2.8e0c.5d964981b9d8.com> <http://schema.org/image> <http://img1.wsimg.com/isteam/ip/0b3ab78c-6b60-48c2-8e0c-5d964981b9d8/Details.jpg> <https://dd-mag.com/>   .
+<http://0b3ab78c.6b60.48c2.8e0c.5d964981b9d8.com> <http://schema.org/name> "Design + Decor" <https://dd-mag.com/>   .
+<http://0b3ab78c.6b60.48c2.8e0c.5d964981b9d8.com> <http://schema.org/url> <https://dd-mag.com/dd-mag.com> <https://dd-mag.com/>   .
+_:n9647a41369184d4389ec2cabe686500fxb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://dd-mag.com/>   .
+_:n9647a41369184d4389ec2cabe686500fxb0 <http://schema.org/addressCountry> "United States" <https://dd-mag.com/>   .
+_:n9647a41369184d4389ec2cabe686500fxb0 <http://schema.org/addressLocality> "Naples" <https://dd-mag.com/>   .
+_:n9647a41369184d4389ec2cabe686500fxb0 <http://schema.org/addressRegion> "FL" <https://dd-mag.com/>   .
+_:n9647a41369184d4389ec2cabe686500fxb0 <http://schema.org/postalCode> "34113" <https://dd-mag.com/>   .
+_:n9647a41369184d4389ec2cabe686500fxb0 <http://schema.org/streetAddress> "349 Forest Hills Blvd" <https://dd-mag.com/>   .
+_:n9647a41369184d4389ec2cabe686500fxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/GeoCoordinates> <https://dd-mag.com/>   .
+_:n9647a41369184d4389ec2cabe686500fxb1 <http://schema.org/latitude> "26.10266" <https://dd-mag.com/>   .
+_:n9647a41369184d4389ec2cabe686500fxb1 <http://schema.org/longitude> "-81.73189" <https://dd-mag.com/>   .
+_:n4be246306ba84470a200b789813c3bc9xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebSite> <https://www.dd-mahoroba.com/>   .
+_:n4be246306ba84470a200b789813c3bc9xb0 <http://schema.org/name> "mahoroba" <https://www.dd-mahoroba.com/>   .
+_:n4be246306ba84470a200b789813c3bc9xb0 <http://schema.org/url> <https://www.dd-mahoroba.com> <https://www.dd-mahoroba.com/>   .
+_:ncec1a13d385e478fa1844beff58903fbxb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://www.dd-mahoroba.com/>   .
+_:ncec1a13d385e478fa1844beff58903fbxb0 <http://schema.org/address> _:ncec1a13d385e478fa1844beff58903fbxb1 <https://www.dd-mahoroba.com/>   .
+_:ncec1a13d385e478fa1844beff58903fbxb0 <http://schema.org/name> "åŸ¼çŽ‰çœŒç™ºé”éšœå®³è€…æ”¯æ´ã‚»ãƒ³ã‚¿ãƒ¼ã€Œã¾ã»ã‚ã°ã€" <https://www.dd-mahoroba.com/>   .
+_:ncec1a13d385e478fa1844beff58903fbxb0 <http://schema.org/telephone> "049-239-3553" <https://www.dd-mahoroba.com/>   .
+_:ncec1a13d385e478fa1844beff58903fbxb0 <http://schema.org/url> <https://www.dd-mahoroba.com> <https://www.dd-mahoroba.com/>   .
+_:ncec1a13d385e478fa1844beff58903fbxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://www.dd-mahoroba.com/>   .
+_:ncec1a13d385e478fa1844beff58903fbxb1 <http://schema.org/addressCountry> "JP" <https://www.dd-mahoroba.com/>   .
+_:ncec1a13d385e478fa1844beff58903fbxb1 <http://schema.org/addressLocality> "å·è¶Šå¸‚" <https://www.dd-mahoroba.com/>   .
+_:ncec1a13d385e478fa1844beff58903fbxb1 <http://schema.org/addressRegion> "åŸ¼çŽ‰çœŒ" <https://www.dd-mahoroba.com/>   .
+_:ncec1a13d385e478fa1844beff58903fbxb1 <http://schema.org/postalCode> "350-0813" <https://www.dd-mahoroba.com/>   .
+<https://www.trustpilot.com/review/dan.com> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-management.de/>   .
+<https://www.trustpilot.com/review/dan.com> <http://schema.org/address> _:n1a1b159912954b29a0329dc246371f69xb0 <https://dd-management.de/>   .
+<https://www.trustpilot.com/review/dan.com> <http://schema.org/aggregateRating> _:n1a1b159912954b29a0329dc246371f69xb1 <https://dd-management.de/>   .
+<https://www.trustpilot.com/review/dan.com> <http://schema.org/image> <https://s3-eu-west-1.amazonaws.com/tpd/screenshotlogo-domain/5aa29819243d5a0001f9665a/198x149.png> <https://dd-management.de/>   .
+<https://www.trustpilot.com/review/dan.com> <http://schema.org/name> "Dan.com" <https://dd-management.de/>   .
+<https://www.trustpilot.com/review/dan.com> <http://schema.org/telephone> "+1 737 218 6046" <https://dd-management.de/>   .
+<https://www.trustpilot.com/review/dan.com> <http://schema.org/url> <https://dan.com> <https://dd-management.de/>   .
+_:n1a1b159912954b29a0329dc246371f69xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://dd-management.de/>   .
+_:n1a1b159912954b29a0329dc246371f69xb0 <http://schema.org/addressCountry> "NL" <https://dd-management.de/>   .
+_:n1a1b159912954b29a0329dc246371f69xb0 <http://schema.org/addressLocality> "Amsterdam" <https://dd-management.de/>   .
+_:n1a1b159912954b29a0329dc246371f69xb0 <http://schema.org/postalCode> "1054 ET" <https://dd-management.de/>   .
+_:n1a1b159912954b29a0329dc246371f69xb0 <http://schema.org/streetAddress> "Tesselschadestraat 11" <https://dd-management.de/>   .
+_:n1a1b159912954b29a0329dc246371f69xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/AggregateRating> <https://dd-management.de/>   .
+_:n1a1b159912954b29a0329dc246371f69xb1 <http://schema.org/bestRating> "5" <https://dd-management.de/>   .
+_:n1a1b159912954b29a0329dc246371f69xb1 <http://schema.org/ratingValue> "4.0" <https://dd-management.de/>   .
+_:n1a1b159912954b29a0329dc246371f69xb1 <http://schema.org/reviewCount> "6525" <https://dd-management.de/>   .
+_:n1a1b159912954b29a0329dc246371f69xb1 <http://schema.org/worstRating> "1" <https://dd-management.de/>   .
+_:n1666bc0c6b3748aca5643d7bc741229exb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebSite> <https://www.dd-marketingagentur.com/>   .
+_:n1666bc0c6b3748aca5643d7bc741229exb0 <http://schema.org/name> "dd marketing agentur" <https://www.dd-marketingagentur.com/>   .
+_:n1666bc0c6b3748aca5643d7bc741229exb0 <http://schema.org/url> <https://www.dd-marketingagentur.com> <https://www.dd-marketingagentur.com/>   .
+_:n280f0c09089747d2aecc444be3a2b607xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://www.dd-marketingagentur.com/>   .
+_:n280f0c09089747d2aecc444be3a2b607xb0 <http://schema.org/address> _:n280f0c09089747d2aecc444be3a2b607xb1 <https://www.dd-marketingagentur.com/>   .
+_:n280f0c09089747d2aecc444be3a2b607xb0 <http://schema.org/image> <https://static.wixstatic.com/media/9797ef_115d6fa69b2945d0842c828f95f52c88~mv2.png> <https://www.dd-marketingagentur.com/>   .
+_:n280f0c09089747d2aecc444be3a2b607xb0 <http://schema.org/name> "dd marketing agentur" <https://www.dd-marketingagentur.com/>   .
+_:n280f0c09089747d2aecc444be3a2b607xb0 <http://schema.org/telephone> "+4915753117387" <https://www.dd-marketingagentur.com/>   .
+_:n280f0c09089747d2aecc444be3a2b607xb0 <http://schema.org/url> <https://www.dd-marketingagentur.com> <https://www.dd-marketingagentur.com/>   .
+_:n280f0c09089747d2aecc444be3a2b607xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://www.dd-marketingagentur.com/>   .
+_:n280f0c09089747d2aecc444be3a2b607xb1 <http://schema.org/addressCountry> "DK" <https://www.dd-marketingagentur.com/>   .
+_:n280f0c09089747d2aecc444be3a2b607xb1 <http://schema.org/addressLocality> "Esbjerg" <https://www.dd-marketingagentur.com/>   .
+_:n280f0c09089747d2aecc444be3a2b607xb1 <http://schema.org/postalCode> "6710" <https://www.dd-marketingagentur.com/>   .
+_:n280f0c09089747d2aecc444be3a2b607xb1 <http://schema.org/streetAddress> "13 VestervÃ¦nget" <https://www.dd-marketingagentur.com/>   .
+<https://www.dd-polsterwerkstatt.de/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://www.dd-polsterwerkstatt.de/>   .
+<https://www.dd-polsterwerkstatt.de/> <http://schema.org/address> _:na4764eab67aa4e5b8559e201ddf24061xb0 <https://www.dd-polsterwerkstatt.de/>   .
+<https://www.dd-polsterwerkstatt.de/> <http://schema.org/description> "D&D Polsterwerkstatt und Polsterei in Berlin Steglitz. Spezialisiert auf NeubezÃ¼ge, Reparaturen und MaÃŸanfertigungen fÃ¼r Sessel, Sofas und StÃ¼hle. Exzellenter Service fÃ¼r Berlin und Umland." <https://www.dd-polsterwerkstatt.de/>   .
+<https://www.dd-polsterwerkstatt.de/> <http://schema.org/geo> _:na4764eab67aa4e5b8559e201ddf24061xb1 <https://www.dd-polsterwerkstatt.de/>   .
+<https://www.dd-polsterwerkstatt.de/> <http://schema.org/logo> <https://www.dd-polsterwerkstatt.de/resources/Logos/Logo_gmb.png> <https://www.dd-polsterwerkstatt.de/>   .
+<https://www.dd-polsterwerkstatt.de/> <http://schema.org/name> "D&D Polsterwerkstatt" <https://www.dd-polsterwerkstatt.de/>   .
+<https://www.dd-polsterwerkstatt.de/> <http://schema.org/openingHoursSpecification> _:na4764eab67aa4e5b8559e201ddf24061xb2 <https://www.dd-polsterwerkstatt.de/>   .
+<https://www.dd-polsterwerkstatt.de/> <http://schema.org/openingHoursSpecification> _:na4764eab67aa4e5b8559e201ddf24061xb3 <https://www.dd-polsterwerkstatt.de/>   .
+<https://www.dd-polsterwerkstatt.de/> <http://schema.org/openingHoursSpecification> _:na4764eab67aa4e5b8559e201ddf24061xb4 <https://www.dd-polsterwerkstatt.de/>   .
+<https://www.dd-polsterwerkstatt.de/> <http://schema.org/openingHoursSpecification> _:na4764eab67aa4e5b8559e201ddf24061xb5 <https://www.dd-polsterwerkstatt.de/>   .
+<https://www.dd-polsterwerkstatt.de/> <http://schema.org/openingHoursSpecification> _:na4764eab67aa4e5b8559e201ddf24061xb6 <https://www.dd-polsterwerkstatt.de/>   .
+<https://www.dd-polsterwerkstatt.de/> <http://schema.org/openingHoursSpecification> _:na4764eab67aa4e5b8559e201ddf24061xb7 <https://www.dd-polsterwerkstatt.de/>   .
+<https://www.dd-polsterwerkstatt.de/> <http://schema.org/openingHoursSpecification> _:na4764eab67aa4e5b8559e201ddf24061xb8 <https://www.dd-polsterwerkstatt.de/>   .
+<https://www.dd-polsterwerkstatt.de/> <http://schema.org/telephone> "+49308334875" <https://www.dd-polsterwerkstatt.de/>   .
+<https://www.dd-polsterwerkstatt.de/> <http://schema.org/url> <https://www.dd-polsterwerkstatt.de> <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb0 <http://schema.org/addressCountry> "DE" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb0 <http://schema.org/addressLocality> "Berlin" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb0 <http://schema.org/addressRegion> "BE" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb0 <http://schema.org/postalCode> "12203" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb0 <http://schema.org/streetAddress> "Moltkestr. 30" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/GeoCoordinates> <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb1 <http://schema.org/latitude> "5.2440472E1"^^<http://www.w3.org/2001/XMLSchema#double> <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb1 <http://schema.org/longitude> "1.3315527E1"^^<http://www.w3.org/2001/XMLSchema#double> <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/OpeningHoursSpecification> <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb2 <http://schema.org/closes> "17:00" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb2 <http://schema.org/dayOfWeek> "Monday" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb2 <http://schema.org/opens> "08:30" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/OpeningHoursSpecification> <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb3 <http://schema.org/closes> "17:00" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb3 <http://schema.org/dayOfWeek> "Tuesday" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb3 <http://schema.org/opens> "08:30" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/OpeningHoursSpecification> <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb4 <http://schema.org/closes> "17:00" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb4 <http://schema.org/dayOfWeek> "Wednesday" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb4 <http://schema.org/opens> "08:30" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/OpeningHoursSpecification> <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb5 <http://schema.org/closes> "17:00" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb5 <http://schema.org/dayOfWeek> "Thursday" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb5 <http://schema.org/opens> "08:30" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/OpeningHoursSpecification> <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb6 <http://schema.org/closes> "17:00" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb6 <http://schema.org/dayOfWeek> "Friday" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb6 <http://schema.org/opens> "08:30" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/OpeningHoursSpecification> <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb7 <http://schema.org/closes> "13:00" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb7 <http://schema.org/dayOfWeek> "Saturday" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb7 <http://schema.org/opens> "09:00" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/OpeningHoursSpecification> <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb8 <http://schema.org/closes> "00:00" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb8 <http://schema.org/dayOfWeek> "Sunday" <https://www.dd-polsterwerkstatt.de/>   .
+_:na4764eab67aa4e5b8559e201ddf24061xb8 <http://schema.org/opens> "00:00" <https://www.dd-polsterwerkstatt.de/>   .
+<https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+<https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/> <http://schema.org/address> _:nc9dc7a4cd4514930ac2e0c03d09d61a4xb0 <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+<https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/> <http://schema.org/description> "Unsere Polsterei in Berlin Steglitz bietet Reparaturen fÃ¼r wackelige StÃ¼hle, aufgerissene NÃ¤hte und beschÃ¤digte Polsterungen. Hochwertige PolstermÃ¶bel-Reparaturen fÃ¼r Ihr Zuhause." <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+<https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/> <http://schema.org/geo> _:nc9dc7a4cd4514930ac2e0c03d09d61a4xb1 <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+<https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/> <http://schema.org/logo> <https://www.dd-polsterwerkstatt.de/resources/Logos/Logo_gmb.png> <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+<https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/> <http://schema.org/name> "D&D Polsterwerkstatt" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+<https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/> <http://schema.org/openingHoursSpecification> _:nc9dc7a4cd4514930ac2e0c03d09d61a4xb2 <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+<https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/> <http://schema.org/openingHoursSpecification> _:nc9dc7a4cd4514930ac2e0c03d09d61a4xb3 <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+<https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/> <http://schema.org/openingHoursSpecification> _:nc9dc7a4cd4514930ac2e0c03d09d61a4xb4 <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+<https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/> <http://schema.org/openingHoursSpecification> _:nc9dc7a4cd4514930ac2e0c03d09d61a4xb5 <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+<https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/> <http://schema.org/openingHoursSpecification> _:nc9dc7a4cd4514930ac2e0c03d09d61a4xb6 <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+<https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/> <http://schema.org/openingHoursSpecification> _:nc9dc7a4cd4514930ac2e0c03d09d61a4xb7 <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+<https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/> <http://schema.org/openingHoursSpecification> _:nc9dc7a4cd4514930ac2e0c03d09d61a4xb8 <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+<https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/> <http://schema.org/telephone> "+49308334875" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+<https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/> <http://schema.org/url> <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/> <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb0 <http://schema.org/addressCountry> "DE" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb0 <http://schema.org/addressLocality> "Berlin" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb0 <http://schema.org/addressRegion> "BE" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb0 <http://schema.org/postalCode> "12203" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb0 <http://schema.org/streetAddress> "Moltkestr. 30" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/GeoCoordinates> <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb1 <http://schema.org/latitude> "5.2440472E1"^^<http://www.w3.org/2001/XMLSchema#double> <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb1 <http://schema.org/longitude> "1.3315527E1"^^<http://www.w3.org/2001/XMLSchema#double> <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/OpeningHoursSpecification> <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb2 <http://schema.org/closes> "17:00" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb2 <http://schema.org/dayOfWeek> "Monday" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb2 <http://schema.org/opens> "08:30" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/OpeningHoursSpecification> <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb3 <http://schema.org/closes> "17:00" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb3 <http://schema.org/dayOfWeek> "Tuesday" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb3 <http://schema.org/opens> "08:30" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/OpeningHoursSpecification> <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb4 <http://schema.org/closes> "17:00" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb4 <http://schema.org/dayOfWeek> "Wednesday" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb4 <http://schema.org/opens> "08:30" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/OpeningHoursSpecification> <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb5 <http://schema.org/closes> "17:00" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb5 <http://schema.org/dayOfWeek> "Thursday" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb5 <http://schema.org/opens> "08:30" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/OpeningHoursSpecification> <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb6 <http://schema.org/closes> "17:00" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb6 <http://schema.org/dayOfWeek> "Friday" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb6 <http://schema.org/opens> "08:30" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/OpeningHoursSpecification> <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb7 <http://schema.org/closes> "13:00" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb7 <http://schema.org/dayOfWeek> "Saturday" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb7 <http://schema.org/opens> "09:00" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/OpeningHoursSpecification> <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb8 <http://schema.org/closes> "00:00" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb8 <http://schema.org/dayOfWeek> "Sunday" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+_:nc9dc7a4cd4514930ac2e0c03d09d61a4xb8 <http://schema.org/opens> "00:00" <https://www.dd-polsterwerkstatt.de/polstermoebel-reparatur/>   .
+<https://dd-sprachentraining.com/#breadcrumb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BreadcrumbList> <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/#breadcrumb> <http://schema.org/itemListElement> _:nd63f3499f05148f78cb30ea742f77a3cxb1 <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/#primaryimage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ImageObject> <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/#primaryimage> <http://schema.org/contentUrl> <https://www.dd-sprachentraining.com/wp-content/uploads/2017/03/dd_mobile_logo1x-compressor-300x79.png> <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/#primaryimage> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/#primaryimage> <http://schema.org/url> <https://www.dd-sprachentraining.com/wp-content/uploads/2017/03/dd_mobile_logo1x-compressor-300x79.png> <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/#website> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebSite> <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/description> "Sicher kommunizieren - Sprachkurs Siegen" <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/name> "DD Sprachentraining" <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/potentialAction> _:nd63f3499f05148f78cb30ea742f77a3cxb2 <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/url> <https://dd-sprachentraining.com/> <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebPage> <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/> <http://schema.org/breadcrumb> <https://dd-sprachentraining.com/#breadcrumb> <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/> <http://schema.org/dateModified> "2020-03-29T17:41:51+00:00"^^<http://schema.org/Date> <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/> <http://schema.org/datePublished> "2017-03-07T18:00:46+00:00"^^<http://schema.org/Date> <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/> <http://schema.org/description> "Sprachschule fÃ¼r sicheres Kommunizieren âœ“ schnelles & effektives Lernen âœ“ (Business) Englisch, Deutsch, FranzÃ¶sisch, Spanisch â˜… ausgebildete Sprachtrainer" <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/> <http://schema.org/image> <https://dd-sprachentraining.com/#primaryimage> <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/> <http://schema.org/isPartOf> <https://dd-sprachentraining.com/#website> <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/> <http://schema.org/name> "Sprachkurse in Siegen: Jetzt einfach neue Sprachen lernen" <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/> <http://schema.org/potentialAction> _:nd63f3499f05148f78cb30ea742f77a3cxb0 <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/> <http://schema.org/primaryImageOfPage> <https://dd-sprachentraining.com/#primaryimage> <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/> <http://schema.org/thumbnailUrl> <https://www.dd-sprachentraining.com/wp-content/uploads/2017/03/dd_mobile_logo1x-compressor-300x79.png> <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/> <http://schema.org/url> <https://dd-sprachentraining.com/> <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb0 <http://schema.org/address> _:na945bc89250b4510a932445f5e9657dfxb1 <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb0 <http://schema.org/contactPoint> _:na945bc89250b4510a932445f5e9657dfxb2 <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb0 <http://schema.org/description> "Sprachkurse & Trainings in Siegen: Mit uns kommunizieren Sie sicher. Wir bringen frischen Wind auf den Markt und bieten professionelle Sprachkurse in Englisch, Spanisch, Polnisch und natÃ¼rlich auch Deutsch als Fremdsprache an. Wir helfen Ihnen, sicher zu kommunizieren. Deshalb freuen wir uns, Sie in unserem Sprachkurs in Siegen begrÃ¼ÃŸen zu dÃ¼rfen." <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb0 <http://schema.org/geo> _:na945bc89250b4510a932445f5e9657dfxb3 <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb0 <http://schema.org/hasMap> <https://www.google.de/maps/place/DD+Sprachentraining/@50.8711914,8.0179815,17z/data=!4m5!3m4!1s0x47bc1c8dbf06e701:0xf5589b6e3fc9d480!8m2!3d50.8711914!4d8.0201702> <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb0 <http://schema.org/image> <https://dd-sprachentraining.com/wp-content/uploads/2017/03/shutterstock_530013196-compressor.jpg> <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb0 <http://schema.org/logo> <https://dd-sprachentraining.com/wp-content/uploads/2017/03/dd_logo2.png> <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb0 <http://schema.org/name> "DD Sprachentraining" <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb0 <http://schema.org/sameAs> <https://www.facebook.com/ddsprachentraining/> <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb0 <http://schema.org/telephone> "+49 (0) 27122010352" <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb0 <http://schema.org/url> <https://dd-sprachentraining.com> <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb1 <http://schema.org/addressCountry> "Deutschland" <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb1 <http://schema.org/addressLocality> "Siegen" <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb1 <http://schema.org/addressRegion> "Nordrhein-Westfalen" <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb1 <http://schema.org/postalCode> "57072" <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb1 <http://schema.org/streetAddress> "Spandauer StraÃŸe 34" <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ContactPoint> <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb2 <http://schema.org/contactType> "customer support" <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb2 <http://schema.org/email> "info@dd-sprachentraining.com" <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb2 <http://schema.org/telephone> "+49 (0) 27122010352" <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/GeoCoordinates> <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb3 <http://schema.org/latitude> "50.871191" <https://dd-sprachentraining.com/>   .
+_:na945bc89250b4510a932445f5e9657dfxb3 <http://schema.org/longitude> "8.020170" <https://dd-sprachentraining.com/>   .
+_:nd63f3499f05148f78cb30ea742f77a3cxb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ReadAction> <https://dd-sprachentraining.com/>   .
+_:nd63f3499f05148f78cb30ea742f77a3cxb0 <http://schema.org/target> <https://dd-sprachentraining.com/> <https://dd-sprachentraining.com/>   .
+_:nd63f3499f05148f78cb30ea742f77a3cxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ListItem> <https://dd-sprachentraining.com/>   .
+_:nd63f3499f05148f78cb30ea742f77a3cxb1 <http://schema.org/name> "Startseite" <https://dd-sprachentraining.com/>   .
+_:nd63f3499f05148f78cb30ea742f77a3cxb1 <http://schema.org/position> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-sprachentraining.com/>   .
+_:nd63f3499f05148f78cb30ea742f77a3cxb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/SearchAction> <https://dd-sprachentraining.com/>   .
+_:nd63f3499f05148f78cb30ea742f77a3cxb2 <http://schema.org/query-input> _:nd63f3499f05148f78cb30ea742f77a3cxb3 <https://dd-sprachentraining.com/>   .
+_:nd63f3499f05148f78cb30ea742f77a3cxb2 <http://schema.org/target> _:nd63f3499f05148f78cb30ea742f77a3cxb4 <https://dd-sprachentraining.com/>   .
+_:nd63f3499f05148f78cb30ea742f77a3cxb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValueSpecification> <https://dd-sprachentraining.com/>   .
+_:nd63f3499f05148f78cb30ea742f77a3cxb3 <http://schema.org/valueName> "search_term_string" <https://dd-sprachentraining.com/>   .
+_:nd63f3499f05148f78cb30ea742f77a3cxb3 <http://schema.org/valueRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> <https://dd-sprachentraining.com/>   .
+_:nd63f3499f05148f78cb30ea742f77a3cxb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/EntryPoint> <https://dd-sprachentraining.com/>   .
+_:nd63f3499f05148f78cb30ea742f77a3cxb4 <http://schema.org/urlTemplate> "https://dd-sprachentraining.com/?s={search_term_string}" <https://dd-sprachentraining.com/>   .
+<https://dd-sprachentraining.com/#website> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebSite> <https://dd-sprachentraining.com/author/dadmin/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/description> "Sicher kommunizieren - Sprachkurs Siegen" <https://dd-sprachentraining.com/author/dadmin/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/author/dadmin/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/name> "DD Sprachentraining" <https://dd-sprachentraining.com/author/dadmin/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/potentialAction> _:n6656bbd642f44b989abd0a06c5ee0efbxb0 <https://dd-sprachentraining.com/author/dadmin/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/url> <https://dd-sprachentraining.com/> <https://dd-sprachentraining.com/author/dadmin/>   .
+_:n6656bbd642f44b989abd0a06c5ee0efbxb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/SearchAction> <https://dd-sprachentraining.com/author/dadmin/>   .
+_:n6656bbd642f44b989abd0a06c5ee0efbxb0 <http://schema.org/query-input> _:n6656bbd642f44b989abd0a06c5ee0efbxb1 <https://dd-sprachentraining.com/author/dadmin/>   .
+_:n6656bbd642f44b989abd0a06c5ee0efbxb0 <http://schema.org/target> _:n6656bbd642f44b989abd0a06c5ee0efbxb2 <https://dd-sprachentraining.com/author/dadmin/>   .
+_:n6656bbd642f44b989abd0a06c5ee0efbxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValueSpecification> <https://dd-sprachentraining.com/author/dadmin/>   .
+_:n6656bbd642f44b989abd0a06c5ee0efbxb1 <http://schema.org/valueName> "search_term_string" <https://dd-sprachentraining.com/author/dadmin/>   .
+_:n6656bbd642f44b989abd0a06c5ee0efbxb1 <http://schema.org/valueRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> <https://dd-sprachentraining.com/author/dadmin/>   .
+_:n6656bbd642f44b989abd0a06c5ee0efbxb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/EntryPoint> <https://dd-sprachentraining.com/author/dadmin/>   .
+_:n6656bbd642f44b989abd0a06c5ee0efbxb2 <http://schema.org/urlTemplate> "https://dd-sprachentraining.com/?s={search_term_string}" <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb0 <http://schema.org/address> _:nf370975295694cd2ae41a061da014191xb1 <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb0 <http://schema.org/contactPoint> _:nf370975295694cd2ae41a061da014191xb2 <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb0 <http://schema.org/description> "Sprachkurse & Trainings in Siegen: Mit uns kommunizieren Sie sicher. Wir bringen frischen Wind auf den Markt und bieten professionelle Sprachkurse in Englisch, Spanisch, Polnisch und natÃ¼rlich auch Deutsch als Fremdsprache an. Wir helfen Ihnen, sicher zu kommunizieren. Deshalb freuen wir uns, Sie in unserem Sprachkurs in Siegen begrÃ¼ÃŸen zu dÃ¼rfen." <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb0 <http://schema.org/geo> _:nf370975295694cd2ae41a061da014191xb3 <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb0 <http://schema.org/hasMap> <https://www.google.de/maps/place/DD+Sprachentraining/@50.8711914,8.0179815,17z/data=!4m5!3m4!1s0x47bc1c8dbf06e701:0xf5589b6e3fc9d480!8m2!3d50.8711914!4d8.0201702> <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb0 <http://schema.org/image> <https://dd-sprachentraining.com/wp-content/uploads/2017/03/shutterstock_530013196-compressor.jpg> <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb0 <http://schema.org/logo> <https://dd-sprachentraining.com/wp-content/uploads/2017/03/dd_logo2.png> <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb0 <http://schema.org/name> "DD Sprachentraining" <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb0 <http://schema.org/sameAs> <https://www.facebook.com/ddsprachentraining/> <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb0 <http://schema.org/telephone> "+49 (0) 27122010352" <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb0 <http://schema.org/url> <https://dd-sprachentraining.com> <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb1 <http://schema.org/addressCountry> "Deutschland" <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb1 <http://schema.org/addressLocality> "Siegen" <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb1 <http://schema.org/addressRegion> "Nordrhein-Westfalen" <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb1 <http://schema.org/postalCode> "57072" <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb1 <http://schema.org/streetAddress> "Spandauer StraÃŸe 34" <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ContactPoint> <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb2 <http://schema.org/contactType> "customer support" <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb2 <http://schema.org/email> "info@dd-sprachentraining.com" <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb2 <http://schema.org/telephone> "+49 (0) 27122010352" <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/GeoCoordinates> <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb3 <http://schema.org/latitude> "50.871191" <https://dd-sprachentraining.com/author/dadmin/>   .
+_:nf370975295694cd2ae41a061da014191xb3 <http://schema.org/longitude> "8.020170" <https://dd-sprachentraining.com/author/dadmin/>   .
+<https://dd-sprachentraining.com/#website> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebSite> <https://dd-sprachentraining.com/datenschutz/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/description> "Sicher kommunizieren - Sprachkurs Siegen" <https://dd-sprachentraining.com/datenschutz/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/datenschutz/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/name> "DD Sprachentraining" <https://dd-sprachentraining.com/datenschutz/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/potentialAction> _:nfc0b68f91c734b79a49b7cd9dd6de3baxb3 <https://dd-sprachentraining.com/datenschutz/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/url> <https://dd-sprachentraining.com/> <https://dd-sprachentraining.com/datenschutz/>   .
+<https://dd-sprachentraining.com/datenschutz/#breadcrumb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BreadcrumbList> <https://dd-sprachentraining.com/datenschutz/>   .
+<https://dd-sprachentraining.com/datenschutz/#breadcrumb> <http://schema.org/itemListElement> _:nfc0b68f91c734b79a49b7cd9dd6de3baxb1 <https://dd-sprachentraining.com/datenschutz/>   .
+<https://dd-sprachentraining.com/datenschutz/#breadcrumb> <http://schema.org/itemListElement> _:nfc0b68f91c734b79a49b7cd9dd6de3baxb2 <https://dd-sprachentraining.com/datenschutz/>   .
+<https://dd-sprachentraining.com/datenschutz/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebPage> <https://dd-sprachentraining.com/datenschutz/>   .
+<https://dd-sprachentraining.com/datenschutz/> <http://schema.org/breadcrumb> <https://dd-sprachentraining.com/datenschutz/#breadcrumb> <https://dd-sprachentraining.com/datenschutz/>   .
+<https://dd-sprachentraining.com/datenschutz/> <http://schema.org/dateModified> "2022-11-02T09:55:39+00:00"^^<http://schema.org/Date> <https://dd-sprachentraining.com/datenschutz/>   .
+<https://dd-sprachentraining.com/datenschutz/> <http://schema.org/datePublished> "2017-03-07T17:40:59+00:00"^^<http://schema.org/Date> <https://dd-sprachentraining.com/datenschutz/>   .
+<https://dd-sprachentraining.com/datenschutz/> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/datenschutz/>   .
+<https://dd-sprachentraining.com/datenschutz/> <http://schema.org/isPartOf> <https://dd-sprachentraining.com/#website> <https://dd-sprachentraining.com/datenschutz/>   .
+<https://dd-sprachentraining.com/datenschutz/> <http://schema.org/name> "Datenschutz &#8226; DD Sprachentraining" <https://dd-sprachentraining.com/datenschutz/>   .
+<https://dd-sprachentraining.com/datenschutz/> <http://schema.org/potentialAction> _:nfc0b68f91c734b79a49b7cd9dd6de3baxb0 <https://dd-sprachentraining.com/datenschutz/>   .
+<https://dd-sprachentraining.com/datenschutz/> <http://schema.org/url> <https://dd-sprachentraining.com/datenschutz/> <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb0 <http://schema.org/address> _:n632ac3c1691a43dfbc86f17c846000a9xb1 <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb0 <http://schema.org/contactPoint> _:n632ac3c1691a43dfbc86f17c846000a9xb2 <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb0 <http://schema.org/description> "Sprachkurse & Trainings in Siegen: Mit uns kommunizieren Sie sicher. Wir bringen frischen Wind auf den Markt und bieten professionelle Sprachkurse in Englisch, Spanisch, Polnisch und natÃ¼rlich auch Deutsch als Fremdsprache an. Wir helfen Ihnen, sicher zu kommunizieren. Deshalb freuen wir uns, Sie in unserem Sprachkurs in Siegen begrÃ¼ÃŸen zu dÃ¼rfen." <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb0 <http://schema.org/geo> _:n632ac3c1691a43dfbc86f17c846000a9xb3 <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb0 <http://schema.org/hasMap> <https://www.google.de/maps/place/DD+Sprachentraining/@50.8711914,8.0179815,17z/data=!4m5!3m4!1s0x47bc1c8dbf06e701:0xf5589b6e3fc9d480!8m2!3d50.8711914!4d8.0201702> <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb0 <http://schema.org/image> <https://dd-sprachentraining.com/wp-content/uploads/2017/03/shutterstock_530013196-compressor.jpg> <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb0 <http://schema.org/logo> <https://dd-sprachentraining.com/wp-content/uploads/2017/03/dd_logo2.png> <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb0 <http://schema.org/name> "DD Sprachentraining" <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb0 <http://schema.org/sameAs> <https://www.facebook.com/ddsprachentraining/> <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb0 <http://schema.org/telephone> "+49 (0) 27122010352" <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb0 <http://schema.org/url> <https://dd-sprachentraining.com> <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb1 <http://schema.org/addressCountry> "Deutschland" <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb1 <http://schema.org/addressLocality> "Siegen" <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb1 <http://schema.org/addressRegion> "Nordrhein-Westfalen" <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb1 <http://schema.org/postalCode> "57072" <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb1 <http://schema.org/streetAddress> "Spandauer StraÃŸe 34" <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ContactPoint> <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb2 <http://schema.org/contactType> "customer support" <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb2 <http://schema.org/email> "info@dd-sprachentraining.com" <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb2 <http://schema.org/telephone> "+49 (0) 27122010352" <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/GeoCoordinates> <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb3 <http://schema.org/latitude> "50.871191" <https://dd-sprachentraining.com/datenschutz/>   .
+_:n632ac3c1691a43dfbc86f17c846000a9xb3 <http://schema.org/longitude> "8.020170" <https://dd-sprachentraining.com/datenschutz/>   .
+_:nfc0b68f91c734b79a49b7cd9dd6de3baxb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ReadAction> <https://dd-sprachentraining.com/datenschutz/>   .
+_:nfc0b68f91c734b79a49b7cd9dd6de3baxb0 <http://schema.org/target> <https://dd-sprachentraining.com/datenschutz/> <https://dd-sprachentraining.com/datenschutz/>   .
+_:nfc0b68f91c734b79a49b7cd9dd6de3baxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ListItem> <https://dd-sprachentraining.com/datenschutz/>   .
+_:nfc0b68f91c734b79a49b7cd9dd6de3baxb1 <http://schema.org/item> "https://dd-sprachentraining.com/" <https://dd-sprachentraining.com/datenschutz/>   .
+_:nfc0b68f91c734b79a49b7cd9dd6de3baxb1 <http://schema.org/name> "Startseite" <https://dd-sprachentraining.com/datenschutz/>   .
+_:nfc0b68f91c734b79a49b7cd9dd6de3baxb1 <http://schema.org/position> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-sprachentraining.com/datenschutz/>   .
+_:nfc0b68f91c734b79a49b7cd9dd6de3baxb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ListItem> <https://dd-sprachentraining.com/datenschutz/>   .
+_:nfc0b68f91c734b79a49b7cd9dd6de3baxb2 <http://schema.org/name> "Datenschutz" <https://dd-sprachentraining.com/datenschutz/>   .
+_:nfc0b68f91c734b79a49b7cd9dd6de3baxb2 <http://schema.org/position> "2"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-sprachentraining.com/datenschutz/>   .
+_:nfc0b68f91c734b79a49b7cd9dd6de3baxb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/SearchAction> <https://dd-sprachentraining.com/datenschutz/>   .
+_:nfc0b68f91c734b79a49b7cd9dd6de3baxb3 <http://schema.org/query-input> _:nfc0b68f91c734b79a49b7cd9dd6de3baxb4 <https://dd-sprachentraining.com/datenschutz/>   .
+_:nfc0b68f91c734b79a49b7cd9dd6de3baxb3 <http://schema.org/target> _:nfc0b68f91c734b79a49b7cd9dd6de3baxb5 <https://dd-sprachentraining.com/datenschutz/>   .
+_:nfc0b68f91c734b79a49b7cd9dd6de3baxb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValueSpecification> <https://dd-sprachentraining.com/datenschutz/>   .
+_:nfc0b68f91c734b79a49b7cd9dd6de3baxb4 <http://schema.org/valueName> "search_term_string" <https://dd-sprachentraining.com/datenschutz/>   .
+_:nfc0b68f91c734b79a49b7cd9dd6de3baxb4 <http://schema.org/valueRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> <https://dd-sprachentraining.com/datenschutz/>   .
+_:nfc0b68f91c734b79a49b7cd9dd6de3baxb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/EntryPoint> <https://dd-sprachentraining.com/datenschutz/>   .
+_:nfc0b68f91c734b79a49b7cd9dd6de3baxb5 <http://schema.org/urlTemplate> "https://dd-sprachentraining.com/?s={search_term_string}" <https://dd-sprachentraining.com/datenschutz/>   .
+<https://dd-sprachentraining.com/#website> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebSite> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/description> "Sicher kommunizieren - Sprachkurs Siegen" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/name> "DD Sprachentraining" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/potentialAction> _:ncc3887c4890c4392b6dc74ba21cfe858xb3 <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/url> <https://dd-sprachentraining.com/> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/grundkurs-englisch/#breadcrumb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BreadcrumbList> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/grundkurs-englisch/#breadcrumb> <http://schema.org/itemListElement> _:ncc3887c4890c4392b6dc74ba21cfe858xb1 <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/grundkurs-englisch/#breadcrumb> <http://schema.org/itemListElement> _:ncc3887c4890c4392b6dc74ba21cfe858xb2 <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/grundkurs-englisch/#primaryimage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ImageObject> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/grundkurs-englisch/#primaryimage> <http://schema.org/caption> "Smalltalk auf Englisch" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/grundkurs-englisch/#primaryimage> <http://schema.org/contentUrl> <https://dd-sprachentraining.com/wp-content/uploads/2017/12/smalltalk-englisch.jpg> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/grundkurs-englisch/#primaryimage> <http://schema.org/height> "350"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/grundkurs-englisch/#primaryimage> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/grundkurs-englisch/#primaryimage> <http://schema.org/url> <https://dd-sprachentraining.com/wp-content/uploads/2017/12/smalltalk-englisch.jpg> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/grundkurs-englisch/#primaryimage> <http://schema.org/width> "800"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/grundkurs-englisch/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebPage> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/grundkurs-englisch/> <http://schema.org/breadcrumb> <https://dd-sprachentraining.com/grundkurs-englisch/#breadcrumb> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/grundkurs-englisch/> <http://schema.org/dateModified> "2020-03-27T13:46:14+00:00"^^<http://schema.org/Date> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/grundkurs-englisch/> <http://schema.org/datePublished> "2017-12-05T14:49:12+00:00"^^<http://schema.org/Date> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/grundkurs-englisch/> <http://schema.org/image> <https://dd-sprachentraining.com/grundkurs-englisch/#primaryimage> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/grundkurs-englisch/> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/grundkurs-englisch/> <http://schema.org/isPartOf> <https://dd-sprachentraining.com/#website> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/grundkurs-englisch/> <http://schema.org/name> "Grundkurs Englisch &#8226; DD Sprachentraining" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/grundkurs-englisch/> <http://schema.org/potentialAction> _:ncc3887c4890c4392b6dc74ba21cfe858xb0 <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/grundkurs-englisch/> <http://schema.org/primaryImageOfPage> <https://dd-sprachentraining.com/grundkurs-englisch/#primaryimage> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/grundkurs-englisch/> <http://schema.org/thumbnailUrl> <https://dd-sprachentraining.com/wp-content/uploads/2017/12/smalltalk-englisch.jpg> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/grundkurs-englisch/> <http://schema.org/url> <https://dd-sprachentraining.com/grundkurs-englisch/> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb0 <http://schema.org/address> _:nb596a1df22544fa298b206ef98eeaa3bxb1 <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb0 <http://schema.org/contactPoint> _:nb596a1df22544fa298b206ef98eeaa3bxb2 <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb0 <http://schema.org/description> "Sprachkurse & Trainings in Siegen: Mit uns kommunizieren Sie sicher. Wir bringen frischen Wind auf den Markt und bieten professionelle Sprachkurse in Englisch, Spanisch, Polnisch und natÃ¼rlich auch Deutsch als Fremdsprache an. Wir helfen Ihnen, sicher zu kommunizieren. Deshalb freuen wir uns, Sie in unserem Sprachkurs in Siegen begrÃ¼ÃŸen zu dÃ¼rfen." <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb0 <http://schema.org/geo> _:nb596a1df22544fa298b206ef98eeaa3bxb3 <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb0 <http://schema.org/hasMap> <https://www.google.de/maps/place/DD+Sprachentraining/@50.8711914,8.0179815,17z/data=!4m5!3m4!1s0x47bc1c8dbf06e701:0xf5589b6e3fc9d480!8m2!3d50.8711914!4d8.0201702> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb0 <http://schema.org/image> <https://dd-sprachentraining.com/wp-content/uploads/2017/03/shutterstock_530013196-compressor.jpg> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb0 <http://schema.org/logo> <https://dd-sprachentraining.com/wp-content/uploads/2017/03/dd_logo2.png> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb0 <http://schema.org/name> "DD Sprachentraining" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb0 <http://schema.org/sameAs> <https://www.facebook.com/ddsprachentraining/> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb0 <http://schema.org/telephone> "+49 (0) 27122010352" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb0 <http://schema.org/url> <https://dd-sprachentraining.com> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb1 <http://schema.org/addressCountry> "Deutschland" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb1 <http://schema.org/addressLocality> "Siegen" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb1 <http://schema.org/addressRegion> "Nordrhein-Westfalen" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb1 <http://schema.org/postalCode> "57072" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb1 <http://schema.org/streetAddress> "Spandauer StraÃŸe 34" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ContactPoint> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb2 <http://schema.org/contactType> "customer support" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb2 <http://schema.org/email> "info@dd-sprachentraining.com" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb2 <http://schema.org/telephone> "+49 (0) 27122010352" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/GeoCoordinates> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb3 <http://schema.org/latitude> "50.871191" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:nb596a1df22544fa298b206ef98eeaa3bxb3 <http://schema.org/longitude> "8.020170" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:ncc3887c4890c4392b6dc74ba21cfe858xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ReadAction> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:ncc3887c4890c4392b6dc74ba21cfe858xb0 <http://schema.org/target> <https://dd-sprachentraining.com/grundkurs-englisch/> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:ncc3887c4890c4392b6dc74ba21cfe858xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ListItem> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:ncc3887c4890c4392b6dc74ba21cfe858xb1 <http://schema.org/item> "https://dd-sprachentraining.com/" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:ncc3887c4890c4392b6dc74ba21cfe858xb1 <http://schema.org/name> "Startseite" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:ncc3887c4890c4392b6dc74ba21cfe858xb1 <http://schema.org/position> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:ncc3887c4890c4392b6dc74ba21cfe858xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ListItem> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:ncc3887c4890c4392b6dc74ba21cfe858xb2 <http://schema.org/name> "Grundkurs Englisch" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:ncc3887c4890c4392b6dc74ba21cfe858xb2 <http://schema.org/position> "2"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:ncc3887c4890c4392b6dc74ba21cfe858xb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/SearchAction> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:ncc3887c4890c4392b6dc74ba21cfe858xb3 <http://schema.org/query-input> _:ncc3887c4890c4392b6dc74ba21cfe858xb4 <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:ncc3887c4890c4392b6dc74ba21cfe858xb3 <http://schema.org/target> _:ncc3887c4890c4392b6dc74ba21cfe858xb5 <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:ncc3887c4890c4392b6dc74ba21cfe858xb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValueSpecification> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:ncc3887c4890c4392b6dc74ba21cfe858xb4 <http://schema.org/valueName> "search_term_string" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:ncc3887c4890c4392b6dc74ba21cfe858xb4 <http://schema.org/valueRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:ncc3887c4890c4392b6dc74ba21cfe858xb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/EntryPoint> <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+_:ncc3887c4890c4392b6dc74ba21cfe858xb5 <http://schema.org/urlTemplate> "https://dd-sprachentraining.com/?s={search_term_string}" <https://dd-sprachentraining.com/grundkurs-englisch/>   .
+<https://dd-sprachentraining.com/#website> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebSite> <https://dd-sprachentraining.com/impressum/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/description> "Sicher kommunizieren - Sprachkurs Siegen" <https://dd-sprachentraining.com/impressum/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/impressum/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/name> "DD Sprachentraining" <https://dd-sprachentraining.com/impressum/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/potentialAction> _:na0f7797889a140ac8647b11e0c8707b2xb3 <https://dd-sprachentraining.com/impressum/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/url> <https://dd-sprachentraining.com/> <https://dd-sprachentraining.com/impressum/>   .
+<https://dd-sprachentraining.com/impressum/#breadcrumb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BreadcrumbList> <https://dd-sprachentraining.com/impressum/>   .
+<https://dd-sprachentraining.com/impressum/#breadcrumb> <http://schema.org/itemListElement> _:na0f7797889a140ac8647b11e0c8707b2xb1 <https://dd-sprachentraining.com/impressum/>   .
+<https://dd-sprachentraining.com/impressum/#breadcrumb> <http://schema.org/itemListElement> _:na0f7797889a140ac8647b11e0c8707b2xb2 <https://dd-sprachentraining.com/impressum/>   .
+<https://dd-sprachentraining.com/impressum/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebPage> <https://dd-sprachentraining.com/impressum/>   .
+<https://dd-sprachentraining.com/impressum/> <http://schema.org/breadcrumb> <https://dd-sprachentraining.com/impressum/#breadcrumb> <https://dd-sprachentraining.com/impressum/>   .
+<https://dd-sprachentraining.com/impressum/> <http://schema.org/dateModified> "2020-05-10T08:45:17+00:00"^^<http://schema.org/Date> <https://dd-sprachentraining.com/impressum/>   .
+<https://dd-sprachentraining.com/impressum/> <http://schema.org/datePublished> "2017-03-07T16:55:45+00:00"^^<http://schema.org/Date> <https://dd-sprachentraining.com/impressum/>   .
+<https://dd-sprachentraining.com/impressum/> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/impressum/>   .
+<https://dd-sprachentraining.com/impressum/> <http://schema.org/isPartOf> <https://dd-sprachentraining.com/#website> <https://dd-sprachentraining.com/impressum/>   .
+<https://dd-sprachentraining.com/impressum/> <http://schema.org/name> "Impressum DD Sprachentraining &#8226; DD Sprachentraining" <https://dd-sprachentraining.com/impressum/>   .
+<https://dd-sprachentraining.com/impressum/> <http://schema.org/potentialAction> _:na0f7797889a140ac8647b11e0c8707b2xb0 <https://dd-sprachentraining.com/impressum/>   .
+<https://dd-sprachentraining.com/impressum/> <http://schema.org/url> <https://dd-sprachentraining.com/impressum/> <https://dd-sprachentraining.com/impressum/>   .
+_:na0f7797889a140ac8647b11e0c8707b2xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ReadAction> <https://dd-sprachentraining.com/impressum/>   .
+_:na0f7797889a140ac8647b11e0c8707b2xb0 <http://schema.org/target> <https://dd-sprachentraining.com/impressum/> <https://dd-sprachentraining.com/impressum/>   .
+_:na0f7797889a140ac8647b11e0c8707b2xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ListItem> <https://dd-sprachentraining.com/impressum/>   .
+_:na0f7797889a140ac8647b11e0c8707b2xb1 <http://schema.org/item> "https://dd-sprachentraining.com/" <https://dd-sprachentraining.com/impressum/>   .
+_:na0f7797889a140ac8647b11e0c8707b2xb1 <http://schema.org/name> "Startseite" <https://dd-sprachentraining.com/impressum/>   .
+_:na0f7797889a140ac8647b11e0c8707b2xb1 <http://schema.org/position> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-sprachentraining.com/impressum/>   .
+_:na0f7797889a140ac8647b11e0c8707b2xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ListItem> <https://dd-sprachentraining.com/impressum/>   .
+_:na0f7797889a140ac8647b11e0c8707b2xb2 <http://schema.org/name> "Impressum DD Sprachentraining" <https://dd-sprachentraining.com/impressum/>   .
+_:na0f7797889a140ac8647b11e0c8707b2xb2 <http://schema.org/position> "2"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-sprachentraining.com/impressum/>   .
+_:na0f7797889a140ac8647b11e0c8707b2xb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/SearchAction> <https://dd-sprachentraining.com/impressum/>   .
+_:na0f7797889a140ac8647b11e0c8707b2xb3 <http://schema.org/query-input> _:na0f7797889a140ac8647b11e0c8707b2xb4 <https://dd-sprachentraining.com/impressum/>   .
+_:na0f7797889a140ac8647b11e0c8707b2xb3 <http://schema.org/target> _:na0f7797889a140ac8647b11e0c8707b2xb5 <https://dd-sprachentraining.com/impressum/>   .
+_:na0f7797889a140ac8647b11e0c8707b2xb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValueSpecification> <https://dd-sprachentraining.com/impressum/>   .
+_:na0f7797889a140ac8647b11e0c8707b2xb4 <http://schema.org/valueName> "search_term_string" <https://dd-sprachentraining.com/impressum/>   .
+_:na0f7797889a140ac8647b11e0c8707b2xb4 <http://schema.org/valueRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> <https://dd-sprachentraining.com/impressum/>   .
+_:na0f7797889a140ac8647b11e0c8707b2xb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/EntryPoint> <https://dd-sprachentraining.com/impressum/>   .
+_:na0f7797889a140ac8647b11e0c8707b2xb5 <http://schema.org/urlTemplate> "https://dd-sprachentraining.com/?s={search_term_string}" <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb0 <http://schema.org/address> _:nb3ee81821dc446be8b79a967ba7b68aaxb1 <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb0 <http://schema.org/contactPoint> _:nb3ee81821dc446be8b79a967ba7b68aaxb2 <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb0 <http://schema.org/description> "Sprachkurse & Trainings in Siegen: Mit uns kommunizieren Sie sicher. Wir bringen frischen Wind auf den Markt und bieten professionelle Sprachkurse in Englisch, Spanisch, Polnisch und natÃ¼rlich auch Deutsch als Fremdsprache an. Wir helfen Ihnen, sicher zu kommunizieren. Deshalb freuen wir uns, Sie in unserem Sprachkurs in Siegen begrÃ¼ÃŸen zu dÃ¼rfen." <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb0 <http://schema.org/geo> _:nb3ee81821dc446be8b79a967ba7b68aaxb3 <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb0 <http://schema.org/hasMap> <https://www.google.de/maps/place/DD+Sprachentraining/@50.8711914,8.0179815,17z/data=!4m5!3m4!1s0x47bc1c8dbf06e701:0xf5589b6e3fc9d480!8m2!3d50.8711914!4d8.0201702> <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb0 <http://schema.org/image> <https://dd-sprachentraining.com/wp-content/uploads/2017/03/shutterstock_530013196-compressor.jpg> <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb0 <http://schema.org/logo> <https://dd-sprachentraining.com/wp-content/uploads/2017/03/dd_logo2.png> <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb0 <http://schema.org/name> "DD Sprachentraining" <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb0 <http://schema.org/sameAs> <https://www.facebook.com/ddsprachentraining/> <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb0 <http://schema.org/telephone> "+49 (0) 27122010352" <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb0 <http://schema.org/url> <https://dd-sprachentraining.com> <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb1 <http://schema.org/addressCountry> "Deutschland" <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb1 <http://schema.org/addressLocality> "Siegen" <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb1 <http://schema.org/addressRegion> "Nordrhein-Westfalen" <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb1 <http://schema.org/postalCode> "57072" <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb1 <http://schema.org/streetAddress> "Spandauer StraÃŸe 34" <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ContactPoint> <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb2 <http://schema.org/contactType> "customer support" <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb2 <http://schema.org/email> "info@dd-sprachentraining.com" <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb2 <http://schema.org/telephone> "+49 (0) 27122010352" <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/GeoCoordinates> <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb3 <http://schema.org/latitude> "50.871191" <https://dd-sprachentraining.com/impressum/>   .
+_:nb3ee81821dc446be8b79a967ba7b68aaxb3 <http://schema.org/longitude> "8.020170" <https://dd-sprachentraining.com/impressum/>   .
+<https://dd-sprachentraining.com/#website> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebSite> <https://dd-sprachentraining.com/kontakt/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/description> "Sicher kommunizieren - Sprachkurs Siegen" <https://dd-sprachentraining.com/kontakt/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/kontakt/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/name> "DD Sprachentraining" <https://dd-sprachentraining.com/kontakt/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/potentialAction> _:nd562eec215dd44d088076c72291d75d5xb3 <https://dd-sprachentraining.com/kontakt/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/url> <https://dd-sprachentraining.com/> <https://dd-sprachentraining.com/kontakt/>   .
+<https://dd-sprachentraining.com/kontakt/#breadcrumb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BreadcrumbList> <https://dd-sprachentraining.com/kontakt/>   .
+<https://dd-sprachentraining.com/kontakt/#breadcrumb> <http://schema.org/itemListElement> _:nd562eec215dd44d088076c72291d75d5xb1 <https://dd-sprachentraining.com/kontakt/>   .
+<https://dd-sprachentraining.com/kontakt/#breadcrumb> <http://schema.org/itemListElement> _:nd562eec215dd44d088076c72291d75d5xb2 <https://dd-sprachentraining.com/kontakt/>   .
+<https://dd-sprachentraining.com/kontakt/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebPage> <https://dd-sprachentraining.com/kontakt/>   .
+<https://dd-sprachentraining.com/kontakt/> <http://schema.org/breadcrumb> <https://dd-sprachentraining.com/kontakt/#breadcrumb> <https://dd-sprachentraining.com/kontakt/>   .
+<https://dd-sprachentraining.com/kontakt/> <http://schema.org/dateModified> "2020-03-18T12:07:57+00:00"^^<http://schema.org/Date> <https://dd-sprachentraining.com/kontakt/>   .
+<https://dd-sprachentraining.com/kontakt/> <http://schema.org/datePublished> "2016-04-06T19:43:59+00:00"^^<http://schema.org/Date> <https://dd-sprachentraining.com/kontakt/>   .
+<https://dd-sprachentraining.com/kontakt/> <http://schema.org/description> "Nehmen Sie Kontakt auf. Lernen Sie uns kennen. Einfach sicher kommunizieren. Entdecken Sie die Sprache als TÃ¼rÃ¶ffner und MÃ¶glich-Macher." <https://dd-sprachentraining.com/kontakt/>   .
+<https://dd-sprachentraining.com/kontakt/> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/kontakt/>   .
+<https://dd-sprachentraining.com/kontakt/> <http://schema.org/isPartOf> <https://dd-sprachentraining.com/#website> <https://dd-sprachentraining.com/kontakt/>   .
+<https://dd-sprachentraining.com/kontakt/> <http://schema.org/name> "Kontakt - kommunizieren Sie sicher mit uns, nehmen Sie Kontakt auf. &#8226; DD Sprachentraining" <https://dd-sprachentraining.com/kontakt/>   .
+<https://dd-sprachentraining.com/kontakt/> <http://schema.org/potentialAction> _:nd562eec215dd44d088076c72291d75d5xb0 <https://dd-sprachentraining.com/kontakt/>   .
+<https://dd-sprachentraining.com/kontakt/> <http://schema.org/url> <https://dd-sprachentraining.com/kontakt/> <https://dd-sprachentraining.com/kontakt/>   .
+_:nd562eec215dd44d088076c72291d75d5xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ReadAction> <https://dd-sprachentraining.com/kontakt/>   .
+_:nd562eec215dd44d088076c72291d75d5xb0 <http://schema.org/target> <https://dd-sprachentraining.com/kontakt/> <https://dd-sprachentraining.com/kontakt/>   .
+_:nd562eec215dd44d088076c72291d75d5xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ListItem> <https://dd-sprachentraining.com/kontakt/>   .
+_:nd562eec215dd44d088076c72291d75d5xb1 <http://schema.org/item> "https://dd-sprachentraining.com/" <https://dd-sprachentraining.com/kontakt/>   .
+_:nd562eec215dd44d088076c72291d75d5xb1 <http://schema.org/name> "Startseite" <https://dd-sprachentraining.com/kontakt/>   .
+_:nd562eec215dd44d088076c72291d75d5xb1 <http://schema.org/position> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-sprachentraining.com/kontakt/>   .
+_:nd562eec215dd44d088076c72291d75d5xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ListItem> <https://dd-sprachentraining.com/kontakt/>   .
+_:nd562eec215dd44d088076c72291d75d5xb2 <http://schema.org/name> "Kontakt &#8211; kommunizieren Sie sicher mit uns, nehmen Sie Kontakt auf." <https://dd-sprachentraining.com/kontakt/>   .
+_:nd562eec215dd44d088076c72291d75d5xb2 <http://schema.org/position> "2"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-sprachentraining.com/kontakt/>   .
+_:nd562eec215dd44d088076c72291d75d5xb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/SearchAction> <https://dd-sprachentraining.com/kontakt/>   .
+_:nd562eec215dd44d088076c72291d75d5xb3 <http://schema.org/query-input> _:nd562eec215dd44d088076c72291d75d5xb4 <https://dd-sprachentraining.com/kontakt/>   .
+_:nd562eec215dd44d088076c72291d75d5xb3 <http://schema.org/target> _:nd562eec215dd44d088076c72291d75d5xb5 <https://dd-sprachentraining.com/kontakt/>   .
+_:nd562eec215dd44d088076c72291d75d5xb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValueSpecification> <https://dd-sprachentraining.com/kontakt/>   .
+_:nd562eec215dd44d088076c72291d75d5xb4 <http://schema.org/valueName> "search_term_string" <https://dd-sprachentraining.com/kontakt/>   .
+_:nd562eec215dd44d088076c72291d75d5xb4 <http://schema.org/valueRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> <https://dd-sprachentraining.com/kontakt/>   .
+_:nd562eec215dd44d088076c72291d75d5xb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/EntryPoint> <https://dd-sprachentraining.com/kontakt/>   .
+_:nd562eec215dd44d088076c72291d75d5xb5 <http://schema.org/urlTemplate> "https://dd-sprachentraining.com/?s={search_term_string}" <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb0 <http://schema.org/address> _:nff8d4704c2354e0b804fa4fc5039eb0exb1 <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb0 <http://schema.org/contactPoint> _:nff8d4704c2354e0b804fa4fc5039eb0exb2 <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb0 <http://schema.org/description> "Sprachkurse & Trainings in Siegen: Mit uns kommunizieren Sie sicher. Wir bringen frischen Wind auf den Markt und bieten professionelle Sprachkurse in Englisch, Spanisch, Polnisch und natÃ¼rlich auch Deutsch als Fremdsprache an. Wir helfen Ihnen, sicher zu kommunizieren. Deshalb freuen wir uns, Sie in unserem Sprachkurs in Siegen begrÃ¼ÃŸen zu dÃ¼rfen." <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb0 <http://schema.org/geo> _:nff8d4704c2354e0b804fa4fc5039eb0exb3 <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb0 <http://schema.org/hasMap> <https://www.google.de/maps/place/DD+Sprachentraining/@50.8711914,8.0179815,17z/data=!4m5!3m4!1s0x47bc1c8dbf06e701:0xf5589b6e3fc9d480!8m2!3d50.8711914!4d8.0201702> <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb0 <http://schema.org/image> <https://dd-sprachentraining.com/wp-content/uploads/2017/03/shutterstock_530013196-compressor.jpg> <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb0 <http://schema.org/logo> <https://dd-sprachentraining.com/wp-content/uploads/2017/03/dd_logo2.png> <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb0 <http://schema.org/name> "DD Sprachentraining" <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb0 <http://schema.org/sameAs> <https://www.facebook.com/ddsprachentraining/> <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb0 <http://schema.org/telephone> "+49 (0) 27122010352" <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb0 <http://schema.org/url> <https://dd-sprachentraining.com> <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb1 <http://schema.org/addressCountry> "Deutschland" <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb1 <http://schema.org/addressLocality> "Siegen" <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb1 <http://schema.org/addressRegion> "Nordrhein-Westfalen" <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb1 <http://schema.org/postalCode> "57072" <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb1 <http://schema.org/streetAddress> "Spandauer StraÃŸe 34" <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ContactPoint> <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb2 <http://schema.org/contactType> "customer support" <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb2 <http://schema.org/email> "info@dd-sprachentraining.com" <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb2 <http://schema.org/telephone> "+49 (0) 27122010352" <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/GeoCoordinates> <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb3 <http://schema.org/latitude> "50.871191" <https://dd-sprachentraining.com/kontakt/>   .
+_:nff8d4704c2354e0b804fa4fc5039eb0exb3 <http://schema.org/longitude> "8.020170" <https://dd-sprachentraining.com/kontakt/>   .
+<https://dd-sprachentraining.com/#website> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebSite> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/description> "Sicher kommunizieren - Sprachkurs Siegen" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/name> "DD Sprachentraining" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/potentialAction> _:n9b7dea5f36884e72977c19f5a8e4b5e3xb3 <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/url> <https://dd-sprachentraining.com/> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/online-sprachkurs/#breadcrumb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BreadcrumbList> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/online-sprachkurs/#breadcrumb> <http://schema.org/itemListElement> _:n9b7dea5f36884e72977c19f5a8e4b5e3xb1 <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/online-sprachkurs/#breadcrumb> <http://schema.org/itemListElement> _:n9b7dea5f36884e72977c19f5a8e4b5e3xb2 <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/online-sprachkurs/#primaryimage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ImageObject> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/online-sprachkurs/#primaryimage> <http://schema.org/contentUrl> <https://www.dd-sprachentraining.com/wp-content/uploads/2017/06/rohrsystem-technik-gmbh.png> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/online-sprachkurs/#primaryimage> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/online-sprachkurs/#primaryimage> <http://schema.org/url> <https://www.dd-sprachentraining.com/wp-content/uploads/2017/06/rohrsystem-technik-gmbh.png> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/online-sprachkurs/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebPage> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/online-sprachkurs/> <http://schema.org/breadcrumb> <https://dd-sprachentraining.com/online-sprachkurs/#breadcrumb> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/online-sprachkurs/> <http://schema.org/dateModified> "2021-08-20T06:58:41+00:00"^^<http://schema.org/Date> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/online-sprachkurs/> <http://schema.org/datePublished> "2020-03-27T14:50:41+00:00"^^<http://schema.org/Date> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/online-sprachkurs/> <http://schema.org/image> <https://dd-sprachentraining.com/online-sprachkurs/#primaryimage> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/online-sprachkurs/> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/online-sprachkurs/> <http://schema.org/isPartOf> <https://dd-sprachentraining.com/#website> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/online-sprachkurs/> <http://schema.org/name> "Online-Sprachkurs | Virtuelles Klassenzimmer zu Hause | mobiler Sprachkurs | Flexibel und persÃ¶nlich &#8226; DD Sprachentraining" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/online-sprachkurs/> <http://schema.org/potentialAction> _:n9b7dea5f36884e72977c19f5a8e4b5e3xb0 <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/online-sprachkurs/> <http://schema.org/primaryImageOfPage> <https://dd-sprachentraining.com/online-sprachkurs/#primaryimage> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/online-sprachkurs/> <http://schema.org/thumbnailUrl> <https://www.dd-sprachentraining.com/wp-content/uploads/2017/06/rohrsystem-technik-gmbh.png> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/online-sprachkurs/> <http://schema.org/url> <https://dd-sprachentraining.com/online-sprachkurs/> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:n9b7dea5f36884e72977c19f5a8e4b5e3xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ReadAction> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:n9b7dea5f36884e72977c19f5a8e4b5e3xb0 <http://schema.org/target> <https://dd-sprachentraining.com/online-sprachkurs/> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:n9b7dea5f36884e72977c19f5a8e4b5e3xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ListItem> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:n9b7dea5f36884e72977c19f5a8e4b5e3xb1 <http://schema.org/item> "https://dd-sprachentraining.com/" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:n9b7dea5f36884e72977c19f5a8e4b5e3xb1 <http://schema.org/name> "Startseite" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:n9b7dea5f36884e72977c19f5a8e4b5e3xb1 <http://schema.org/position> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:n9b7dea5f36884e72977c19f5a8e4b5e3xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ListItem> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:n9b7dea5f36884e72977c19f5a8e4b5e3xb2 <http://schema.org/name> "Online-Sprachkurs | Virtuelles Klassenzimmer zu Hause | mobiler Sprachkurs | Flexibel und persÃ¶nlich" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:n9b7dea5f36884e72977c19f5a8e4b5e3xb2 <http://schema.org/position> "2"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:n9b7dea5f36884e72977c19f5a8e4b5e3xb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/SearchAction> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:n9b7dea5f36884e72977c19f5a8e4b5e3xb3 <http://schema.org/query-input> _:n9b7dea5f36884e72977c19f5a8e4b5e3xb4 <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:n9b7dea5f36884e72977c19f5a8e4b5e3xb3 <http://schema.org/target> _:n9b7dea5f36884e72977c19f5a8e4b5e3xb5 <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:n9b7dea5f36884e72977c19f5a8e4b5e3xb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValueSpecification> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:n9b7dea5f36884e72977c19f5a8e4b5e3xb4 <http://schema.org/valueName> "search_term_string" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:n9b7dea5f36884e72977c19f5a8e4b5e3xb4 <http://schema.org/valueRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:n9b7dea5f36884e72977c19f5a8e4b5e3xb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/EntryPoint> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:n9b7dea5f36884e72977c19f5a8e4b5e3xb5 <http://schema.org/urlTemplate> "https://dd-sprachentraining.com/?s={search_term_string}" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb0 <http://schema.org/address> _:na5c2dff50f5e4986979079a6af0f553bxb1 <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb0 <http://schema.org/contactPoint> _:na5c2dff50f5e4986979079a6af0f553bxb2 <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb0 <http://schema.org/description> "Sprachkurse & Trainings in Siegen: Mit uns kommunizieren Sie sicher. Wir bringen frischen Wind auf den Markt und bieten professionelle Sprachkurse in Englisch, Spanisch, Polnisch und natÃ¼rlich auch Deutsch als Fremdsprache an. Wir helfen Ihnen, sicher zu kommunizieren. Deshalb freuen wir uns, Sie in unserem Sprachkurs in Siegen begrÃ¼ÃŸen zu dÃ¼rfen." <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb0 <http://schema.org/geo> _:na5c2dff50f5e4986979079a6af0f553bxb3 <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb0 <http://schema.org/hasMap> <https://www.google.de/maps/place/DD+Sprachentraining/@50.8711914,8.0179815,17z/data=!4m5!3m4!1s0x47bc1c8dbf06e701:0xf5589b6e3fc9d480!8m2!3d50.8711914!4d8.0201702> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb0 <http://schema.org/image> <https://dd-sprachentraining.com/wp-content/uploads/2017/03/shutterstock_530013196-compressor.jpg> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb0 <http://schema.org/logo> <https://dd-sprachentraining.com/wp-content/uploads/2017/03/dd_logo2.png> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb0 <http://schema.org/name> "DD Sprachentraining" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb0 <http://schema.org/sameAs> <https://www.facebook.com/ddsprachentraining/> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb0 <http://schema.org/telephone> "+49 (0) 27122010352" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb0 <http://schema.org/url> <https://dd-sprachentraining.com> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb1 <http://schema.org/addressCountry> "Deutschland" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb1 <http://schema.org/addressLocality> "Siegen" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb1 <http://schema.org/addressRegion> "Nordrhein-Westfalen" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb1 <http://schema.org/postalCode> "57072" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb1 <http://schema.org/streetAddress> "Spandauer StraÃŸe 34" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ContactPoint> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb2 <http://schema.org/contactType> "customer support" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb2 <http://schema.org/email> "info@dd-sprachentraining.com" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb2 <http://schema.org/telephone> "+49 (0) 27122010352" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/GeoCoordinates> <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb3 <http://schema.org/latitude> "50.871191" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+_:na5c2dff50f5e4986979079a6af0f553bxb3 <http://schema.org/longitude> "8.020170" <https://dd-sprachentraining.com/online-sprachkurs/>   .
+<https://dd-sprachentraining.com/#website> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebSite> <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/description> "Sicher kommunizieren - Sprachkurs Siegen" <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/name> "DD Sprachentraining" <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/potentialAction> _:n85f84978c51e4a02aa44010ac5cfd0f6xb3 <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/url> <https://dd-sprachentraining.com/> <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/referenzen/#breadcrumb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BreadcrumbList> <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/referenzen/#breadcrumb> <http://schema.org/itemListElement> _:n85f84978c51e4a02aa44010ac5cfd0f6xb1 <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/referenzen/#breadcrumb> <http://schema.org/itemListElement> _:n85f84978c51e4a02aa44010ac5cfd0f6xb2 <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/referenzen/#primaryimage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ImageObject> <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/referenzen/#primaryimage> <http://schema.org/contentUrl> <https://www.dd-sprachentraining.com/wp-content/uploads/2017/06/rohrsystem-technik-gmbh.png> <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/referenzen/#primaryimage> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/referenzen/#primaryimage> <http://schema.org/url> <https://www.dd-sprachentraining.com/wp-content/uploads/2017/06/rohrsystem-technik-gmbh.png> <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/referenzen/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebPage> <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/referenzen/> <http://schema.org/breadcrumb> <https://dd-sprachentraining.com/referenzen/#breadcrumb> <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/referenzen/> <http://schema.org/dateModified> "2017-10-20T12:32:11+00:00"^^<http://schema.org/Date> <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/referenzen/> <http://schema.org/datePublished> "2017-06-18T19:40:31+00:00"^^<http://schema.org/Date> <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/referenzen/> <http://schema.org/description> "Referenzen von DD Sprachentraining: Was sagen unsere bisherigen Kunden Ã¼ber Sprachkurse bei DD Sprachentraining?" <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/referenzen/> <http://schema.org/image> <https://dd-sprachentraining.com/referenzen/#primaryimage> <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/referenzen/> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/referenzen/> <http://schema.org/isPartOf> <https://dd-sprachentraining.com/#website> <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/referenzen/> <http://schema.org/name> "Referenzen &#8226; DD Sprachentraining" <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/referenzen/> <http://schema.org/potentialAction> _:n85f84978c51e4a02aa44010ac5cfd0f6xb0 <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/referenzen/> <http://schema.org/primaryImageOfPage> <https://dd-sprachentraining.com/referenzen/#primaryimage> <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/referenzen/> <http://schema.org/thumbnailUrl> <https://www.dd-sprachentraining.com/wp-content/uploads/2017/06/rohrsystem-technik-gmbh.png> <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/referenzen/> <http://schema.org/url> <https://dd-sprachentraining.com/referenzen/> <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb0 <http://schema.org/address> _:n52cfe3fe11bb42d4ac73ae81fe12f950xb1 <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb0 <http://schema.org/contactPoint> _:n52cfe3fe11bb42d4ac73ae81fe12f950xb2 <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb0 <http://schema.org/description> "Sprachkurse & Trainings in Siegen: Mit uns kommunizieren Sie sicher. Wir bringen frischen Wind auf den Markt und bieten professionelle Sprachkurse in Englisch, Spanisch, Polnisch und natÃ¼rlich auch Deutsch als Fremdsprache an. Wir helfen Ihnen, sicher zu kommunizieren. Deshalb freuen wir uns, Sie in unserem Sprachkurs in Siegen begrÃ¼ÃŸen zu dÃ¼rfen." <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb0 <http://schema.org/geo> _:n52cfe3fe11bb42d4ac73ae81fe12f950xb3 <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb0 <http://schema.org/hasMap> <https://www.google.de/maps/place/DD+Sprachentraining/@50.8711914,8.0179815,17z/data=!4m5!3m4!1s0x47bc1c8dbf06e701:0xf5589b6e3fc9d480!8m2!3d50.8711914!4d8.0201702> <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb0 <http://schema.org/image> <https://dd-sprachentraining.com/wp-content/uploads/2017/03/shutterstock_530013196-compressor.jpg> <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb0 <http://schema.org/logo> <https://dd-sprachentraining.com/wp-content/uploads/2017/03/dd_logo2.png> <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb0 <http://schema.org/name> "DD Sprachentraining" <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb0 <http://schema.org/sameAs> <https://www.facebook.com/ddsprachentraining/> <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb0 <http://schema.org/telephone> "+49 (0) 27122010352" <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb0 <http://schema.org/url> <https://dd-sprachentraining.com> <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb1 <http://schema.org/addressCountry> "Deutschland" <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb1 <http://schema.org/addressLocality> "Siegen" <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb1 <http://schema.org/addressRegion> "Nordrhein-Westfalen" <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb1 <http://schema.org/postalCode> "57072" <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb1 <http://schema.org/streetAddress> "Spandauer StraÃŸe 34" <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ContactPoint> <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb2 <http://schema.org/contactType> "customer support" <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb2 <http://schema.org/email> "info@dd-sprachentraining.com" <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb2 <http://schema.org/telephone> "+49 (0) 27122010352" <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/GeoCoordinates> <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb3 <http://schema.org/latitude> "50.871191" <https://dd-sprachentraining.com/referenzen/>   .
+_:n52cfe3fe11bb42d4ac73ae81fe12f950xb3 <http://schema.org/longitude> "8.020170" <https://dd-sprachentraining.com/referenzen/>   .
+_:n85f84978c51e4a02aa44010ac5cfd0f6xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ReadAction> <https://dd-sprachentraining.com/referenzen/>   .
+_:n85f84978c51e4a02aa44010ac5cfd0f6xb0 <http://schema.org/target> <https://dd-sprachentraining.com/referenzen/> <https://dd-sprachentraining.com/referenzen/>   .
+_:n85f84978c51e4a02aa44010ac5cfd0f6xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ListItem> <https://dd-sprachentraining.com/referenzen/>   .
+_:n85f84978c51e4a02aa44010ac5cfd0f6xb1 <http://schema.org/item> "https://dd-sprachentraining.com/" <https://dd-sprachentraining.com/referenzen/>   .
+_:n85f84978c51e4a02aa44010ac5cfd0f6xb1 <http://schema.org/name> "Startseite" <https://dd-sprachentraining.com/referenzen/>   .
+_:n85f84978c51e4a02aa44010ac5cfd0f6xb1 <http://schema.org/position> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-sprachentraining.com/referenzen/>   .
+_:n85f84978c51e4a02aa44010ac5cfd0f6xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ListItem> <https://dd-sprachentraining.com/referenzen/>   .
+_:n85f84978c51e4a02aa44010ac5cfd0f6xb2 <http://schema.org/name> "Referenzen" <https://dd-sprachentraining.com/referenzen/>   .
+_:n85f84978c51e4a02aa44010ac5cfd0f6xb2 <http://schema.org/position> "2"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-sprachentraining.com/referenzen/>   .
+_:n85f84978c51e4a02aa44010ac5cfd0f6xb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/SearchAction> <https://dd-sprachentraining.com/referenzen/>   .
+_:n85f84978c51e4a02aa44010ac5cfd0f6xb3 <http://schema.org/query-input> _:n85f84978c51e4a02aa44010ac5cfd0f6xb4 <https://dd-sprachentraining.com/referenzen/>   .
+_:n85f84978c51e4a02aa44010ac5cfd0f6xb3 <http://schema.org/target> _:n85f84978c51e4a02aa44010ac5cfd0f6xb5 <https://dd-sprachentraining.com/referenzen/>   .
+_:n85f84978c51e4a02aa44010ac5cfd0f6xb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValueSpecification> <https://dd-sprachentraining.com/referenzen/>   .
+_:n85f84978c51e4a02aa44010ac5cfd0f6xb4 <http://schema.org/valueName> "search_term_string" <https://dd-sprachentraining.com/referenzen/>   .
+_:n85f84978c51e4a02aa44010ac5cfd0f6xb4 <http://schema.org/valueRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> <https://dd-sprachentraining.com/referenzen/>   .
+_:n85f84978c51e4a02aa44010ac5cfd0f6xb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/EntryPoint> <https://dd-sprachentraining.com/referenzen/>   .
+_:n85f84978c51e4a02aa44010ac5cfd0f6xb5 <http://schema.org/urlTemplate> "https://dd-sprachentraining.com/?s={search_term_string}" <https://dd-sprachentraining.com/referenzen/>   .
+<https://dd-sprachentraining.com/#/schema/person/fedd93dae7b669ae525fa5bafa0013a8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/#/schema/person/fedd93dae7b669ae525fa5bafa0013a8> <http://schema.org/description> "Co-Founder von DD Sprachentraining, Sprachencoach und Bloggerin. Im Blog teilt sie ihre Gedanken und Inspirationen zum Sprachenerwerb mit. StÃ¤ndig auf der Suche nach modernen Lernmethoden: mit Begeisterung, EffektivitÃ¤t - und Ihnen mittendrin." <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/#/schema/person/fedd93dae7b669ae525fa5bafa0013a8> <http://schema.org/image> <https://dd-sprachentraining.com/#/schema/person/image/> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/#/schema/person/fedd93dae7b669ae525fa5bafa0013a8> <http://schema.org/name> "Daria Szypula" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/#/schema/person/fedd93dae7b669ae525fa5bafa0013a8> <http://schema.org/url> <https://dd-sprachentraining.com/author/daria-szypula/> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/#/schema/person/image/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ImageObject> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/#/schema/person/image/> <http://schema.org/caption> "Daria Szypula" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/#/schema/person/image/> <http://schema.org/contentUrl> <https://secure.gravatar.com/avatar/9a703eba4b9298bf6b652711d046d421?s=96&d=blank&r=g> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/#/schema/person/image/> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/#/schema/person/image/> <http://schema.org/url> <https://secure.gravatar.com/avatar/9a703eba4b9298bf6b652711d046d421?s=96&d=blank&r=g> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/#website> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebSite> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/description> "Sicher kommunizieren - Sprachkurs Siegen" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/name> "DD Sprachentraining" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/potentialAction> _:n120e70a64ba54c0ca390a222287fc3a6xb3 <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/url> <https://dd-sprachentraining.com/> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/#breadcrumb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BreadcrumbList> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/#breadcrumb> <http://schema.org/itemListElement> _:n120e70a64ba54c0ca390a222287fc3a6xb1 <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/#breadcrumb> <http://schema.org/itemListElement> _:n120e70a64ba54c0ca390a222287fc3a6xb2 <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/#primaryimage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ImageObject> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/#primaryimage> <http://schema.org/contentUrl> <https://www.dd-sprachentraining.com/wp-content/uploads/2017/04/woman-hand-desk-office.jpg> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/#primaryimage> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/#primaryimage> <http://schema.org/url> <https://www.dd-sprachentraining.com/wp-content/uploads/2017/04/woman-hand-desk-office.jpg> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebPage> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/> <http://schema.org/author> <https://dd-sprachentraining.com/#/schema/person/fedd93dae7b669ae525fa5bafa0013a8> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/> <http://schema.org/breadcrumb> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/#breadcrumb> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/> <http://schema.org/dateModified> "2017-04-23T19:50:22+00:00"^^<http://schema.org/Date> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/> <http://schema.org/datePublished> "2017-04-23T19:50:22+00:00"^^<http://schema.org/Date> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/> <http://schema.org/image> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/#primaryimage> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/> <http://schema.org/isPartOf> <https://dd-sprachentraining.com/#website> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/> <http://schema.org/name> "Schneller lernen â€“ machÂ´s intelligent! &#8226; DD Sprachentraining" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/> <http://schema.org/potentialAction> _:n120e70a64ba54c0ca390a222287fc3a6xb0 <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/> <http://schema.org/primaryImageOfPage> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/#primaryimage> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/> <http://schema.org/thumbnailUrl> <https://www.dd-sprachentraining.com/wp-content/uploads/2017/04/woman-hand-desk-office.jpg> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/> <http://schema.org/url> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:n120e70a64ba54c0ca390a222287fc3a6xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ReadAction> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:n120e70a64ba54c0ca390a222287fc3a6xb0 <http://schema.org/target> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:n120e70a64ba54c0ca390a222287fc3a6xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ListItem> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:n120e70a64ba54c0ca390a222287fc3a6xb1 <http://schema.org/item> "https://dd-sprachentraining.com/" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:n120e70a64ba54c0ca390a222287fc3a6xb1 <http://schema.org/name> "Startseite" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:n120e70a64ba54c0ca390a222287fc3a6xb1 <http://schema.org/position> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:n120e70a64ba54c0ca390a222287fc3a6xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ListItem> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:n120e70a64ba54c0ca390a222287fc3a6xb2 <http://schema.org/name> "Schneller lernen â€“ machÂ´s intelligent!" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:n120e70a64ba54c0ca390a222287fc3a6xb2 <http://schema.org/position> "2"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:n120e70a64ba54c0ca390a222287fc3a6xb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/SearchAction> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:n120e70a64ba54c0ca390a222287fc3a6xb3 <http://schema.org/query-input> _:n120e70a64ba54c0ca390a222287fc3a6xb4 <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:n120e70a64ba54c0ca390a222287fc3a6xb3 <http://schema.org/target> _:n120e70a64ba54c0ca390a222287fc3a6xb5 <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:n120e70a64ba54c0ca390a222287fc3a6xb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValueSpecification> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:n120e70a64ba54c0ca390a222287fc3a6xb4 <http://schema.org/valueName> "search_term_string" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:n120e70a64ba54c0ca390a222287fc3a6xb4 <http://schema.org/valueRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:n120e70a64ba54c0ca390a222287fc3a6xb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/EntryPoint> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:n120e70a64ba54c0ca390a222287fc3a6xb5 <http://schema.org/urlTemplate> "https://dd-sprachentraining.com/?s={search_term_string}" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/LocalBusiness> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb0 <http://schema.org/address> _:ne395f9d557b54ff3bf64510b43082f36xb1 <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb0 <http://schema.org/contactPoint> _:ne395f9d557b54ff3bf64510b43082f36xb2 <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb0 <http://schema.org/description> "Sprachkurse & Trainings in Siegen: Mit uns kommunizieren Sie sicher. Wir bringen frischen Wind auf den Markt und bieten professionelle Sprachkurse in Englisch, Spanisch, Polnisch und natÃ¼rlich auch Deutsch als Fremdsprache an. Wir helfen Ihnen, sicher zu kommunizieren. Deshalb freuen wir uns, Sie in unserem Sprachkurs in Siegen begrÃ¼ÃŸen zu dÃ¼rfen." <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb0 <http://schema.org/geo> _:ne395f9d557b54ff3bf64510b43082f36xb3 <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb0 <http://schema.org/hasMap> <https://www.google.de/maps/place/DD+Sprachentraining/@50.8711914,8.0179815,17z/data=!4m5!3m4!1s0x47bc1c8dbf06e701:0xf5589b6e3fc9d480!8m2!3d50.8711914!4d8.0201702> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb0 <http://schema.org/image> <https://dd-sprachentraining.com/wp-content/uploads/2017/03/shutterstock_530013196-compressor.jpg> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb0 <http://schema.org/logo> <https://dd-sprachentraining.com/wp-content/uploads/2017/03/dd_logo2.png> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb0 <http://schema.org/name> "DD Sprachentraining" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb0 <http://schema.org/sameAs> <https://www.facebook.com/ddsprachentraining/> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb0 <http://schema.org/telephone> "+49 (0) 27122010352" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb0 <http://schema.org/url> <https://dd-sprachentraining.com> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb1 <http://schema.org/addressCountry> "Deutschland" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb1 <http://schema.org/addressLocality> "Siegen" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb1 <http://schema.org/addressRegion> "Nordrhein-Westfalen" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb1 <http://schema.org/postalCode> "57072" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb1 <http://schema.org/streetAddress> "Spandauer StraÃŸe 34" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ContactPoint> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb2 <http://schema.org/contactType> "customer support" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb2 <http://schema.org/email> "info@dd-sprachentraining.com" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb2 <http://schema.org/telephone> "+49 (0) 27122010352" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/GeoCoordinates> <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb3 <http://schema.org/latitude> "50.871191" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+_:ne395f9d557b54ff3bf64510b43082f36xb3 <http://schema.org/longitude> "8.020170" <https://dd-sprachentraining.com/schneller-lernen-machs-intelligent/>   .
+<https://dd-sprachentraining.com/#website> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebSite> <https://dd-sprachentraining.com/sprachcoaches/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/description> "Sicher kommunizieren - Sprachkurs Siegen" <https://dd-sprachentraining.com/sprachcoaches/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/sprachcoaches/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/name> "DD Sprachentraining" <https://dd-sprachentraining.com/sprachcoaches/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/potentialAction> _:n1ef7fd8571ae4d7f8017a3b96310e07fxb3 <https://dd-sprachentraining.com/sprachcoaches/>   .
+<https://dd-sprachentraining.com/#website> <http://schema.org/url> <https://dd-sprachentraining.com/> <https://dd-sprachentraining.com/sprachcoaches/>   .
+<https://dd-sprachentraining.com/sprachcoaches/#breadcrumb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BreadcrumbList> <https://dd-sprachentraining.com/sprachcoaches/>   .
+<https://dd-sprachentraining.com/sprachcoaches/#breadcrumb> <http://schema.org/itemListElement> _:n1ef7fd8571ae4d7f8017a3b96310e07fxb1 <https://dd-sprachentraining.com/sprachcoaches/>   .
+<https://dd-sprachentraining.com/sprachcoaches/#breadcrumb> <http://schema.org/itemListElement> _:n1ef7fd8571ae4d7f8017a3b96310e07fxb2 <https://dd-sprachentraining.com/sprachcoaches/>   .
+<https://dd-sprachentraining.com/sprachcoaches/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/WebPage> <https://dd-sprachentraining.com/sprachcoaches/>   .
+<https://dd-sprachentraining.com/sprachcoaches/> <http://schema.org/breadcrumb> <https://dd-sprachentraining.com/sprachcoaches/#breadcrumb> <https://dd-sprachentraining.com/sprachcoaches/>   .
+<https://dd-sprachentraining.com/sprachcoaches/> <http://schema.org/dateModified> "2020-03-30T14:26:24+00:00"^^<http://schema.org/Date> <https://dd-sprachentraining.com/sprachcoaches/>   .
+<https://dd-sprachentraining.com/sprachcoaches/> <http://schema.org/datePublished> "2015-02-02T19:39:07+00:00"^^<http://schema.org/Date> <https://dd-sprachentraining.com/sprachcoaches/>   .
+<https://dd-sprachentraining.com/sprachcoaches/> <http://schema.org/description> "Ihre Sprachcoaches Zwei PersÃ¶nlichkeiten, zwei Leben, eine Geschichte Wir, das sind Daniel und Daria, haben unser Leben den Sprachen verschrieben." <https://dd-sprachentraining.com/sprachcoaches/>   .
+<https://dd-sprachentraining.com/sprachcoaches/> <http://schema.org/inLanguage> "de-DE" <https://dd-sprachentraining.com/sprachcoaches/>   .
+<https://dd-sprachentraining.com/sprachcoaches/> <http://schema.org/isPartOf> <https://dd-sprachentraining.com/#website> <https://dd-sprachentraining.com/sprachcoaches/>   .
+<https://dd-sprachentraining.com/sprachcoaches/> <http://schema.org/name> "Ihre Sprachcoaches - Sprachdozenten in Siegen &#8226; DD Sprachentraining" <https://dd-sprachentraining.com/sprachcoaches/>   .
+<https://dd-sprachentraining.com/sprachcoaches/> <http://schema.org/potentialAction> _:n1ef7fd8571ae4d7f8017a3b96310e07fxb0 <https://dd-sprachentraining.com/sprachcoaches/>   .
+<https://dd-sprachentraining.com/sprachcoaches/> <http://schema.org/url> <https://dd-sprachentraining.com/sprachcoaches/> <https://dd-sprachentraining.com/sprachcoaches/>   .
+_:n1ef7fd8571ae4d7f8017a3b96310e07fxb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ReadAction> <https://dd-sprachentraining.com/sprachcoaches/>   .
+_:n1ef7fd8571ae4d7f8017a3b96310e07fxb0 <http://schema.org/target> <https://dd-sprachentraining.com/sprachcoaches/> <https://dd-sprachentraining.com/sprachcoaches/>   .
+_:n1ef7fd8571ae4d7f8017a3b96310e07fxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ListItem> <https://dd-sprachentraining.com/sprachcoaches/>   .
+_:n1ef7fd8571ae4d7f8017a3b96310e07fxb1 <http://schema.org/item> "https://dd-sprachentraining.com/" <https://dd-sprachentraining.com/sprachcoaches/>   .
+_:n1ef7fd8571ae4d7f8017a3b96310e07fxb1 <http://schema.org/name> "Startseite" <https://dd-sprachentraining.com/sprachcoaches/>   .
+_:n1ef7fd8571ae4d7f8017a3b96310e07fxb1 <http://schema.org/position> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-sprachentraining.com/sprachcoaches/>   .
+_:n1ef7fd8571ae4d7f8017a3b96310e07fxb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ListItem> <https://dd-sprachentraining.com/sprachcoaches/>   .
+_:n1ef7fd8571ae4d7f8017a3b96310e07fxb2 <http://schema.org/name> "Ihre Sprachcoaches &#8211; Sprachdozenten in Siegen" <https://dd-sprachentraining.com/sprachcoaches/>   .
+_:n1ef7fd8571ae4d7f8017a3b96310e07fxb2 <http://schema.org/position> "2"^^<http://www.w3.org/2001/XMLSchema#integer> <https://dd-sprachentraining.com/sprachcoaches/>   .
+_:n1ef7fd8571ae4d7f8017a3b96310e07fxb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/SearchAction> <https://dd-sprachentraining.com/sprachcoaches/>   .
+_:n1ef7fd8571ae4d7f8017a3b96310e07fxb3 <http://schema.org/query-input> _:n1ef7fd8571ae4d7f8017a3b96310e07fxb4 <https://dd-sprachentraining.com/sprachcoaches/>   .
+_:n1ef7fd8571ae4d7f8017a3b96310e07fxb3 <http://schema.org/target> _:n1ef7fd8571ae4d7f8017a3b96310e07fxb5 <https://dd-sprachentraining.com/sprachcoaches/>   .
+_:n1ef7fd8571ae4d7f8017a3b96310e07fxb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValueSpecification> <https://dd-sprachentraining.com/sprachcoaches/>   .
+_:n1ef7fd8571ae4d7f8017a3b96310e07fxb4 <http://schema.org/valueName> "search_term_string" <https://dd-sprachentraining.com/sprachcoaches/>   .
+_:n1ef7fd8571ae4d7f8017a3b96310e07fxb4 <http://schema.org/valueRequired> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> <https://dd-sprachentraining.com/sprachcoaches/>   .
+_:n1ef7fd8571ae4d7f8017a3b96310e07fxb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/EntryPoint> <https://dd-sprachentraining.com/sprachcoaches/>   .
+_:n1ef7fd8571ae4d7f8017a3b96310e07fxb5 <http://schema.org/urlTemplate> "https://dd-sprachentraining.com/?s={search_term_string}" <https://dd-sprachentraining.com/sprachcoaches/>   .

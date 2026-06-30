@@ -1,0 +1,1000 @@
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb0 <http://schema.org/address> _:ndc72fa7a528b47bc9f06e14de9d85cd8xb1 <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb0 <http://schema.org/geo> _:ndc72fa7a528b47bc9f06e14de9d85cd8xb2 <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb0 <http://schema.org/image> <https://www.e081.com/himawari/images/maternity1.jpg> <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb0 <http://schema.org/logo> <https://www.e081.com/himawari/images/logo.png> <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb0 <http://schema.org/name> "ã²ã¾ã‚ã‚ŠåŠ©ç”£é™¢" <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb0 <http://schema.org/openingHoursSpecification> _:ndc72fa7a528b47bc9f06e14de9d85cd8xb3 <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb0 <http://schema.org/openingHoursSpecification> _:ndc72fa7a528b47bc9f06e14de9d85cd8xb4 <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb0 <http://schema.org/telephone> "+81-566-27-3613" <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb0 <http://schema.org/url> <https://www.e081.com/himawari> <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb1 <http://schema.org/addressCountry> "JP" <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb1 <http://schema.org/addressLocality> "åˆˆè°·å¸‚" <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb1 <http://schema.org/addressRegion> "æ„›çŸ¥çœŒ" <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb1 <http://schema.org/postalCode> "448-0044" <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb1 <http://schema.org/streetAddress> "æ± ç”°ç”º1-1-9" <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/GeoCoordinates> <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb2 <http://schema.org/latitude> "35.004626" <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb2 <http://schema.org/longitude> "137.007181" <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/OpeningHoursSpecification> <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb3 <http://schema.org/closes> "14:00" <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb3 <http://schema.org/dayOfWeek> "Monday" <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb3 <http://schema.org/dayOfWeek> "Tuesday" <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb3 <http://schema.org/dayOfWeek> "Wednesday" <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb3 <http://schema.org/dayOfWeek> "Thursday" <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb3 <http://schema.org/dayOfWeek> "Friday" <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb3 <http://schema.org/opens> "09:00" <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/OpeningHoursSpecification> <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb4 <http://schema.org/closes> "11:00" <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb4 <http://schema.org/dayOfWeek> "Saturday" <https://e081.com/himawari/>   .
+_:ndc72fa7a528b47bc9f06e14de9d85cd8xb4 <http://schema.org/opens> "9:00" <https://e081.com/himawari/>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:n5acf72bf3aa54abb95da1b6f988da00axb0 <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "æ€¥è¯Šç§‘" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "å¦‡å¥³çš„æŠ¤ç†" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "Labor & Delivery FAQ" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "åº·å¤æœåŠ¡" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "è¥å…»æ•™è‚²" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "è¿åŠ¨åŒ»å­¦" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "è¾“æ¶²æ²»ç–—" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "è¡Œä¸ºå¥åº·æœåŠ¡" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "å¿ƒè„ç—…å­¦" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "Cardiac åº·å¤æœåŠ¡" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "ç™Œç—‡æ²»ç–—" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "Nurse Navigator Program" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "æµ·ä¼å¾·ä¹³æˆ¿ä¸­å¿ƒ" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "LDCT Lung Cancer Screening" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "Group Fitness ç±»" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "å¥åº· & å¥èº«ä¸­å¿ƒ " <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "Personal Training" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "Body Fat Testing (InBody)" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "Indoor Pool" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "Massage Therapy" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "Nursery" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "The STEP Program" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "Youth Programs & ç±»" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "Senior Advantage Plans" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "Gym ç±» & Schedule" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "å®¶å±…ç…§é¡¾æœåŠ¡" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "ä¸´ç»ˆå…³æ€€å’Œå§‘æ¯æ²»ç–—" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "ä»‹å…¥ç–¼ç—› " <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "èŒä¸šå¥åº·" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "æ•´å½¢å¤–ç§‘" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "ç—…äººè´¢åŠ¡èµ„æ–™" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "è€å¿ƒçš„æŒ‡å¯¼" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "ä¸æ­§è§† & ç—…äººçš„éšç§" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "åŒ»ç–—è®°å½•" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "æµ·ä¼å¾·åŒ»ç–—æ°´ç–—ä¸­å¿ƒ" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "è‚ºéƒ¨æŠ¤ç†" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "å„¿ç§‘æŠ¤ç†" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "åˆçº§æŠ¤ç†" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "æˆåƒ" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "æ•´å½¢æ‰‹æœ¯" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "ç¡çœ ä¸­å¿ƒ" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "ç´§æ€¥æŠ¤ç†" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "ä¼¤å£æŠ¤ç†" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "é™è„‰ä¸­å¿ƒ" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "è„Šæ¤Žä¿å¥" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "å¤–ç§‘æœåŠ¡" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "èƒƒè‚ ç—…å­¦" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "æ‰‹æœ¯å‡è‚¥" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "Vascular Screening" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "REACH Your Full Potential!" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "Ophthalmology" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "G3 - Clinical Fitness Program" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "Colon å¥åº·" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "Physician and Provider Opportunities" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/availableService> "Haywood å¥åº·care Scholars Program" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:n5acf72bf3aa54abb95da1b6f988da00axb1 <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "&#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/sameAs> <http://www.instagram.com/myhaywoodregional/> <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/sameAs> <http://www.facebook.com/MyHaywoodRegional/> <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/sameAs> <http://twitter.com/HaywoodRegional> <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/sameAs> <http://www.youtube.com/user/medwesthealth#g/u> <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/>   .
+_:n5acf72bf3aa54abb95da1b6f988da00axb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/>   .
+_:n5acf72bf3aa54abb95da1b6f988da00axb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/>   .
+_:n5acf72bf3aa54abb95da1b6f988da00axb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/>   .
+_:n5acf72bf3aa54abb95da1b6f988da00axb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/>   .
+_:n5acf72bf3aa54abb95da1b6f988da00axb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/>   .
+_:n5acf72bf3aa54abb95da1b6f988da00axb1 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/ambulatory-infusion>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:n4c44cb922a42411f9af64d56e3bcda62xb0 <http://llwlzi.qo12.com/ambulatory-infusion>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:n4c44cb922a42411f9af64d56e3bcda62xb1 <http://llwlzi.qo12.com/ambulatory-infusion>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/ambulatory-infusion>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:n4c44cb922a42411f9af64d56e3bcda62xb2 <http://llwlzi.qo12.com/ambulatory-infusion>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/ambulatory-infusion>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/ambulatory-infusion>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/ambulatory-infusion>   .
+_:n4c44cb922a42411f9af64d56e3bcda62xb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/ambulatory-infusion>   .
+_:n4c44cb922a42411f9af64d56e3bcda62xb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/ambulatory-infusion>   .
+_:n4c44cb922a42411f9af64d56e3bcda62xb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/ambulatory-infusion>   .
+_:n4c44cb922a42411f9af64d56e3bcda62xb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/ambulatory-infusion>   .
+_:n4c44cb922a42411f9af64d56e3bcda62xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/ambulatory-infusion>   .
+_:n4c44cb922a42411f9af64d56e3bcda62xb1 <http://schema.org/description> "  Endocrinologicéšœç¢  Gastroenterological Disorders (Crohn&rsquo;s disease, Ulcerative Colitis, etc.)  è¡€æ¶²ç³»ç»Ÿç–¾ç—…(è´«è¡€ã€ç¼ºé“æ€§è´«è¡€ç­‰.)  ä½Žä¸™çƒè›‹ç™½è¡€ç—‡  Infect" <http://llwlzi.qo12.com/ambulatory-infusion>   .
+_:n4c44cb922a42411f9af64d56e3bcda62xb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/infusionwebsite.jpg> <http://llwlzi.qo12.com/ambulatory-infusion>   .
+_:n4c44cb922a42411f9af64d56e3bcda62xb1 <http://schema.org/name> "è¾“æ¶²æ²»ç–—" <http://llwlzi.qo12.com/ambulatory-infusion>   .
+_:n4c44cb922a42411f9af64d56e3bcda62xb1 <http://schema.org/url> <http://llwlzi.qo12.com/ambulatory-infusion> <http://llwlzi.qo12.com/ambulatory-infusion>   .
+_:n4c44cb922a42411f9af64d56e3bcda62xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/ambulatory-infusion>   .
+_:n4c44cb922a42411f9af64d56e3bcda62xb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/ambulatory-infusion>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/behavioral-health>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:n91357dd42dbf48619a245edf5e4263b2xb0 <http://llwlzi.qo12.com/behavioral-health>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:n91357dd42dbf48619a245edf5e4263b2xb1 <http://llwlzi.qo12.com/behavioral-health>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/behavioral-health>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:n91357dd42dbf48619a245edf5e4263b2xb2 <http://llwlzi.qo12.com/behavioral-health>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "&#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;" <http://llwlzi.qo12.com/behavioral-health>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/behavioral-health>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/behavioral-health>   .
+_:n91357dd42dbf48619a245edf5e4263b2xb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/behavioral-health>   .
+_:n91357dd42dbf48619a245edf5e4263b2xb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/behavioral-health>   .
+_:n91357dd42dbf48619a245edf5e4263b2xb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/behavioral-health>   .
+_:n91357dd42dbf48619a245edf5e4263b2xb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/behavioral-health>   .
+_:n91357dd42dbf48619a245edf5e4263b2xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/behavioral-health>   .
+_:n91357dd42dbf48619a245edf5e4263b2xb1 <http://schema.org/description> "åœ¨æµ·ä¼å¾·åœ°åŒºè¡Œä¸ºå¥åº·ä¸­å¿ƒ, we are devoted to helping patients heal mentally and emotionally by providing exceptional behavioral healthcare to expedite the recovery of adults and seniors in" <http://llwlzi.qo12.com/behavioral-health>   .
+_:n91357dd42dbf48619a245edf5e4263b2xb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/shutterstock_119344633.jpg> <http://llwlzi.qo12.com/behavioral-health>   .
+_:n91357dd42dbf48619a245edf5e4263b2xb1 <http://schema.org/name> "è¡Œä¸ºå¥åº·æœåŠ¡" <http://llwlzi.qo12.com/behavioral-health>   .
+_:n91357dd42dbf48619a245edf5e4263b2xb1 <http://schema.org/url> <http://llwlzi.qo12.com/behavioral-health> <http://llwlzi.qo12.com/behavioral-health>   .
+_:n91357dd42dbf48619a245edf5e4263b2xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/behavioral-health>   .
+_:n91357dd42dbf48619a245edf5e4263b2xb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/behavioral-health>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/cancer-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:nc27565591d6b4a0091fe1f8fdd53ce56xb0 <http://llwlzi.qo12.com/cancer-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:nc27565591d6b4a0091fe1f8fdd53ce56xb1 <http://llwlzi.qo12.com/cancer-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/cancer-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:nc27565591d6b4a0091fe1f8fdd53ce56xb2 <http://llwlzi.qo12.com/cancer-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/cancer-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/cancer-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/cancer-care>   .
+_:nc27565591d6b4a0091fe1f8fdd53ce56xb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/cancer-care>   .
+_:nc27565591d6b4a0091fe1f8fdd53ce56xb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/cancer-care>   .
+_:nc27565591d6b4a0091fe1f8fdd53ce56xb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/cancer-care>   .
+_:nc27565591d6b4a0091fe1f8fdd53ce56xb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/cancer-care>   .
+_:nc27565591d6b4a0091fe1f8fdd53ce56xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/cancer-care>   .
+_:nc27565591d6b4a0091fe1f8fdd53ce56xb1 <http://schema.org/description> "å¾ˆå°‘æœ‰ç»åŽ†èƒ½åƒè¢«è¯Šæ–­å‡ºç™Œç—‡é‚£æ ·æ”¹å˜äººç”Ÿ. ä½†æ¯”è¯Šæ–­ç»“æžœæ›´é‡è¦çš„æ˜¯æŽ¥ä¸‹æ¥ä¼šå‘ç”Ÿä»€ä¹ˆ. ç™Œç—‡æ˜¯å¯ä»¥æ²»ç–—çš„. If you or someone you love has received a can" <http://llwlzi.qo12.com/cancer-care>   .
+_:nc27565591d6b4a0091fe1f8fdd53ce56xb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/shutterstock_492562735.jpg> <http://llwlzi.qo12.com/cancer-care>   .
+_:nc27565591d6b4a0091fe1f8fdd53ce56xb1 <http://schema.org/name> "ç™Œç—‡æ²»ç–—" <http://llwlzi.qo12.com/cancer-care>   .
+_:nc27565591d6b4a0091fe1f8fdd53ce56xb1 <http://schema.org/url> <http://llwlzi.qo12.com/cancer-care> <http://llwlzi.qo12.com/cancer-care>   .
+_:nc27565591d6b4a0091fe1f8fdd53ce56xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/cancer-care>   .
+_:nc27565591d6b4a0091fe1f8fdd53ce56xb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/cancer-care>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/cardiology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:n10449e21e52f4da98be190e19ba4132bxb0 <http://llwlzi.qo12.com/cardiology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:n10449e21e52f4da98be190e19ba4132bxb1 <http://llwlzi.qo12.com/cardiology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/cardiology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:n10449e21e52f4da98be190e19ba4132bxb2 <http://llwlzi.qo12.com/cardiology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/cardiology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/cardiology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/cardiology>   .
+_:n10449e21e52f4da98be190e19ba4132bxb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/cardiology>   .
+_:n10449e21e52f4da98be190e19ba4132bxb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/cardiology>   .
+_:n10449e21e52f4da98be190e19ba4132bxb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/cardiology>   .
+_:n10449e21e52f4da98be190e19ba4132bxb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/cardiology>   .
+_:n10449e21e52f4da98be190e19ba4132bxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/cardiology>   .
+_:n10449e21e52f4da98be190e19ba4132bxb1 <http://schema.org/description> "Maintaining a strong heart means getting to know your heart and staying on top of factors that play into its health, æ¯”å¦‚è¡€åŽ‹, èƒ†å›ºé†‡æ°´å¹³, å®¶æ—å²å’Œé”»ç‚¼. And when you " <http://llwlzi.qo12.com/cardiology>   .
+_:n10449e21e52f4da98be190e19ba4132bxb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/shutterstock_1257159196.jpg> <http://llwlzi.qo12.com/cardiology>   .
+_:n10449e21e52f4da98be190e19ba4132bxb1 <http://schema.org/name> "å¿ƒè„ç—…å­¦" <http://llwlzi.qo12.com/cardiology>   .
+_:n10449e21e52f4da98be190e19ba4132bxb1 <http://schema.org/url> <http://llwlzi.qo12.com/cardiology> <http://llwlzi.qo12.com/cardiology>   .
+_:n10449e21e52f4da98be190e19ba4132bxb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/cardiology>   .
+_:n10449e21e52f4da98be190e19ba4132bxb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/cardiology>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/emergency-department>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:n34772013228a4dec896e678a9315b24exb0 <http://llwlzi.qo12.com/emergency-department>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:n34772013228a4dec896e678a9315b24exb1 <http://llwlzi.qo12.com/emergency-department>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/emergency-department>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:n34772013228a4dec896e678a9315b24exb2 <http://llwlzi.qo12.com/emergency-department>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/emergency-department>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/emergency-department>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/emergency-department>   .
+_:n34772013228a4dec896e678a9315b24exb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/emergency-department>   .
+_:n34772013228a4dec896e678a9315b24exb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/emergency-department>   .
+_:n34772013228a4dec896e678a9315b24exb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/emergency-department>   .
+_:n34772013228a4dec896e678a9315b24exb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/emergency-department>   .
+_:n34772013228a4dec896e678a9315b24exb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/emergency-department>   .
+_:n34772013228a4dec896e678a9315b24exb1 <http://schema.org/description> "åœ¨&#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;, our Emergency Room (ER) team is staffed 24/7 with emergency board-certified physicians, æŽ¥å—è¿‡ç´§æ€¥æŠ¤ç†åŸ¹è®­çš„æŠ¤å£«å’Œå·¥ä½œäººå‘˜. Our team combi" <http://llwlzi.qo12.com/emergency-department>   .
+_:n34772013228a4dec896e678a9315b24exb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/ed_photo.jpg> <http://llwlzi.qo12.com/emergency-department>   .
+_:n34772013228a4dec896e678a9315b24exb1 <http://schema.org/name> "æ€¥è¯Šç§‘" <http://llwlzi.qo12.com/emergency-department>   .
+_:n34772013228a4dec896e678a9315b24exb1 <http://schema.org/url> <http://llwlzi.qo12.com/emergency-department> <http://llwlzi.qo12.com/emergency-department>   .
+_:n34772013228a4dec896e678a9315b24exb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/emergency-department>   .
+_:n34772013228a4dec896e678a9315b24exb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/emergency-department>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/gastroenterology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:n5365bb6ecc2a43e3bba824dd162a97f5xb0 <http://llwlzi.qo12.com/gastroenterology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:n5365bb6ecc2a43e3bba824dd162a97f5xb1 <http://llwlzi.qo12.com/gastroenterology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/gastroenterology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:n5365bb6ecc2a43e3bba824dd162a97f5xb2 <http://llwlzi.qo12.com/gastroenterology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/gastroenterology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/gastroenterology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/gastroenterology>   .
+_:n5365bb6ecc2a43e3bba824dd162a97f5xb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/gastroenterology>   .
+_:n5365bb6ecc2a43e3bba824dd162a97f5xb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/gastroenterology>   .
+_:n5365bb6ecc2a43e3bba824dd162a97f5xb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/gastroenterology>   .
+_:n5365bb6ecc2a43e3bba824dd162a97f5xb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/gastroenterology>   .
+_:n5365bb6ecc2a43e3bba824dd162a97f5xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/gastroenterology>   .
+_:n5365bb6ecc2a43e3bba824dd162a97f5xb1 <http://schema.org/description> "    &#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;æä¾›ä¸€ç³»åˆ—èƒƒè‚ ç—…å­¦è¯Šæ–­æµ‹è¯•å’Œç¨‹åºï¼ŒåŒ…æ‹¬åœ¨&#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;çš„é—¨è¯ŠæŠ¤ç†ä¸­å¿ƒè¿›è¡Œçš„å†…çª¥é•œæ£€æŸ¥. èƒƒè‚ ç—…å­¦ services are a" <http://llwlzi.qo12.com/gastroenterology>   .
+_:n5365bb6ecc2a43e3bba824dd162a97f5xb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/shutterstock_1907051818_0.jpg> <http://llwlzi.qo12.com/gastroenterology>   .
+_:n5365bb6ecc2a43e3bba824dd162a97f5xb1 <http://schema.org/name> "èƒƒè‚ ç—…å­¦" <http://llwlzi.qo12.com/gastroenterology>   .
+_:n5365bb6ecc2a43e3bba824dd162a97f5xb1 <http://schema.org/url> <http://llwlzi.qo12.com/gastroenterology> <http://llwlzi.qo12.com/gastroenterology>   .
+_:n5365bb6ecc2a43e3bba824dd162a97f5xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/gastroenterology>   .
+_:n5365bb6ecc2a43e3bba824dd162a97f5xb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/gastroenterology>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/health>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:nd3be4620e29f4987bb61141bb2d771e8xb0 <http://llwlzi.qo12.com/health>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:nd3be4620e29f4987bb61141bb2d771e8xb1 <http://llwlzi.qo12.com/health>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/health>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:nd3be4620e29f4987bb61141bb2d771e8xb2 <http://llwlzi.qo12.com/health>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/health>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/health>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/health>   .
+_:nd3be4620e29f4987bb61141bb2d771e8xb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/health>   .
+_:nd3be4620e29f4987bb61141bb2d771e8xb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/health>   .
+_:nd3be4620e29f4987bb61141bb2d771e8xb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/health>   .
+_:nd3be4620e29f4987bb61141bb2d771e8xb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/health>   .
+_:nd3be4620e29f4987bb61141bb2d771e8xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/health>   .
+_:nd3be4620e29f4987bb61141bb2d771e8xb1 <http://schema.org/description> "åœ¨&#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;, &#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;ç›¸ä¿¡æ¯ä¸ªäººéƒ½èƒ½ä»Žå¥åº·å’Œå¥èº«è®¡åˆ’ä¸­å—ç›Š. &#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;54000å¹³æ–¹è‹±å°ºçš„å¥åº· &amp; å¥èº«ä¸­å¿ƒå¯ä»¥ä½¿æ‰€æœ‰å¹´é¾„çš„äººå—ç›Š, background a" <http://llwlzi.qo12.com/health>   .
+_:nd3be4620e29f4987bb61141bb2d771e8xb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/fronthfc_0.jpg> <http://llwlzi.qo12.com/health>   .
+_:nd3be4620e29f4987bb61141bb2d771e8xb1 <http://schema.org/name> "å¥åº· & å¥èº«ä¸­å¿ƒ " <http://llwlzi.qo12.com/health>   .
+_:nd3be4620e29f4987bb61141bb2d771e8xb1 <http://schema.org/url> <http://llwlzi.qo12.com/health> <http://llwlzi.qo12.com/health>   .
+_:nd3be4620e29f4987bb61141bb2d771e8xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/health>   .
+_:nd3be4620e29f4987bb61141bb2d771e8xb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/health>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/home-care-services>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:nd0968a99972a4a298f4de227296f7a3dxb0 <http://llwlzi.qo12.com/home-care-services>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:nd0968a99972a4a298f4de227296f7a3dxb1 <http://llwlzi.qo12.com/home-care-services>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/home-care-services>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:nd0968a99972a4a298f4de227296f7a3dxb2 <http://llwlzi.qo12.com/home-care-services>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/home-care-services>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/home-care-services>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/home-care-services>   .
+_:nd0968a99972a4a298f4de227296f7a3dxb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/home-care-services>   .
+_:nd0968a99972a4a298f4de227296f7a3dxb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/home-care-services>   .
+_:nd0968a99972a4a298f4de227296f7a3dxb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/home-care-services>   .
+_:nd0968a99972a4a298f4de227296f7a3dxb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/home-care-services>   .
+_:nd0968a99972a4a298f4de227296f7a3dxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/home-care-services>   .
+_:nd0968a99972a4a298f4de227296f7a3dxb1 <http://schema.org/description> "å®¶åº­ä¿å¥ä¸“ä¸šäººå‘˜ç»è¿‡ä¸“é—¨åŸ¹è®­ï¼Œå¯ä»¥æä¾›é«˜è´¨é‡çš„æŠ¤ç†ï¼Œå¸®åŠ©æ‚£è€…åº·å¤å’Œæ¢å¤ä½“åŠ›, å¥åº·, å’Œç‹¬ç«‹. &#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;çš„ä¸“ä¸šæŠ¤å£«, æ²»ç–—å¸ˆ, and social " <http://llwlzi.qo12.com/home-care-services>   .
+_:nd0968a99972a4a298f4de227296f7a3dxb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/shutterstock_308066894.jpg> <http://llwlzi.qo12.com/home-care-services>   .
+_:nd0968a99972a4a298f4de227296f7a3dxb1 <http://schema.org/name> "å®¶å±…ç…§é¡¾æœåŠ¡" <http://llwlzi.qo12.com/home-care-services>   .
+_:nd0968a99972a4a298f4de227296f7a3dxb1 <http://schema.org/url> <http://llwlzi.qo12.com/home-care-services> <http://llwlzi.qo12.com/home-care-services>   .
+_:nd0968a99972a4a298f4de227296f7a3dxb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/home-care-services>   .
+_:nd0968a99972a4a298f4de227296f7a3dxb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/home-care-services>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/hospice-and-palliative-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:n353164c9a11f4a2085fb1c5c35ddc39axb0 <http://llwlzi.qo12.com/hospice-and-palliative-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:n353164c9a11f4a2085fb1c5c35ddc39axb1 <http://llwlzi.qo12.com/hospice-and-palliative-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/hospice-and-palliative-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:n353164c9a11f4a2085fb1c5c35ddc39axb2 <http://llwlzi.qo12.com/hospice-and-palliative-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/hospice-and-palliative-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/hospice-and-palliative-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/hospice-and-palliative-care>   .
+_:n353164c9a11f4a2085fb1c5c35ddc39axb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/hospice-and-palliative-care>   .
+_:n353164c9a11f4a2085fb1c5c35ddc39axb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/hospice-and-palliative-care>   .
+_:n353164c9a11f4a2085fb1c5c35ddc39axb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/hospice-and-palliative-care>   .
+_:n353164c9a11f4a2085fb1c5c35ddc39axb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/hospice-and-palliative-care>   .
+_:n353164c9a11f4a2085fb1c5c35ddc39axb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/hospice-and-palliative-care>   .
+_:n353164c9a11f4a2085fb1c5c35ddc39axb1 <http://schema.org/description> "ä¸´ç»ˆå…³æ€€æ˜¯ä¸€ç§ç‰¹æ®Šçš„æ–¹å¼æ¥ç…§é¡¾ç—…äººå’Œå®¶äººåº”å¯¹é™åˆ¶ç”Ÿå‘½çš„ç–¾ç—…. è¿™äº›éœ€æ±‚å¯ä»¥é€šè¿‡æµ·ä¼å¾·ä¸´ç»ˆå…³æ€€å’Œå§‘æ¯æ²»ç–—çš„åŒæƒ…å’Œä¸“ä¸šçŸ¥è¯†æ¥æ»¡è¶³. Profess" <http://llwlzi.qo12.com/hospice-and-palliative-care>   .
+_:n353164c9a11f4a2085fb1c5c35ddc39axb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/shutterstock_106829255.jpg> <http://llwlzi.qo12.com/hospice-and-palliative-care>   .
+_:n353164c9a11f4a2085fb1c5c35ddc39axb1 <http://schema.org/name> "ä¸´ç»ˆå…³æ€€å’Œå§‘æ¯æ²»ç–—" <http://llwlzi.qo12.com/hospice-and-palliative-care>   .
+_:n353164c9a11f4a2085fb1c5c35ddc39axb1 <http://schema.org/url> <http://llwlzi.qo12.com/hospice-and-palliative-care> <http://llwlzi.qo12.com/hospice-and-palliative-care>   .
+_:n353164c9a11f4a2085fb1c5c35ddc39axb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/hospice-and-palliative-care>   .
+_:n353164c9a11f4a2085fb1c5c35ddc39axb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/hospice-and-palliative-care>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/imaging>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:nd43ab8730a754e61aa7623f0d2f63c95xb0 <http://llwlzi.qo12.com/imaging>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:nd43ab8730a754e61aa7623f0d2f63c95xb1 <http://llwlzi.qo12.com/imaging>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/imaging>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:nd43ab8730a754e61aa7623f0d2f63c95xb2 <http://llwlzi.qo12.com/imaging>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/imaging>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/imaging>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/imaging>   .
+_:nd43ab8730a754e61aa7623f0d2f63c95xb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/imaging>   .
+_:nd43ab8730a754e61aa7623f0d2f63c95xb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/imaging>   .
+_:nd43ab8730a754e61aa7623f0d2f63c95xb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/imaging>   .
+_:nd43ab8730a754e61aa7623f0d2f63c95xb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/imaging>   .
+_:nd43ab8730a754e61aa7623f0d2f63c95xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/imaging>   .
+_:nd43ab8730a754e61aa7623f0d2f63c95xb1 <http://schema.org/description> "&#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;åœ¨èˆ’é€‚çš„çŽ¯å¢ƒä¸­æä¾›å…¨é¢çš„å½±åƒè¯Šæ–­å’Œä»‹å…¥æœåŠ¡, ä¾¿åˆ©çš„çŽ¯å¢ƒ. &#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;å¾ˆè‡ªè±ªèƒ½æä¾›ä¸€ä¸ªæ²¡æœ‰ç”µå½±çš„çŽ¯å¢ƒ, complete wi" <http://llwlzi.qo12.com/imaging>   .
+_:nd43ab8730a754e61aa7623f0d2f63c95xb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/shutterstock_1243953511_0.jpg> <http://llwlzi.qo12.com/imaging>   .
+_:nd43ab8730a754e61aa7623f0d2f63c95xb1 <http://schema.org/name> "æˆåƒ" <http://llwlzi.qo12.com/imaging>   .
+_:nd43ab8730a754e61aa7623f0d2f63c95xb1 <http://schema.org/url> <http://llwlzi.qo12.com/imaging> <http://llwlzi.qo12.com/imaging>   .
+_:nd43ab8730a754e61aa7623f0d2f63c95xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/imaging>   .
+_:nd43ab8730a754e61aa7623f0d2f63c95xb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/imaging>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/interventional-pain>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:n40466940adbe48308814c694f31093dfxb0 <http://llwlzi.qo12.com/interventional-pain>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:n40466940adbe48308814c694f31093dfxb1 <http://llwlzi.qo12.com/interventional-pain>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/interventional-pain>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:n40466940adbe48308814c694f31093dfxb2 <http://llwlzi.qo12.com/interventional-pain>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/interventional-pain>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/interventional-pain>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/interventional-pain>   .
+_:n40466940adbe48308814c694f31093dfxb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/interventional-pain>   .
+_:n40466940adbe48308814c694f31093dfxb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/interventional-pain>   .
+_:n40466940adbe48308814c694f31093dfxb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/interventional-pain>   .
+_:n40466940adbe48308814c694f31093dfxb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/interventional-pain>   .
+_:n40466940adbe48308814c694f31093dfxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/interventional-pain>   .
+_:n40466940adbe48308814c694f31093dfxb1 <http://schema.org/description> "&#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;çš„é‡ç‚¹æ˜¯å‡å°‘ç—…äººçš„ç—›è‹¦å’Œæé«˜ç”Ÿæ´»è´¨é‡. &#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;æä¾›è¯Šæ–­å’Œæ²»ç–—ç–¼ç—›çš„è§£å†³æ–¹æ¡ˆï¼Œä»¥åŠä»‹å…¥æ€§ç–¼ç—›æ²»ç–—. Our specialists have dedicated thei" <http://llwlzi.qo12.com/interventional-pain>   .
+_:n40466940adbe48308814c694f31093dfxb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/shutterstock_1765949750_small.jpg> <http://llwlzi.qo12.com/interventional-pain>   .
+_:n40466940adbe48308814c694f31093dfxb1 <http://schema.org/name> "ä»‹å…¥ç–¼ç—› " <http://llwlzi.qo12.com/interventional-pain>   .
+_:n40466940adbe48308814c694f31093dfxb1 <http://schema.org/url> <http://llwlzi.qo12.com/interventional-pain> <http://llwlzi.qo12.com/interventional-pain>   .
+_:n40466940adbe48308814c694f31093dfxb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/interventional-pain>   .
+_:n40466940adbe48308814c694f31093dfxb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/interventional-pain>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/lung>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:nc17dba01235d412495b46812e7168875xb0 <http://llwlzi.qo12.com/lung>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:nc17dba01235d412495b46812e7168875xb1 <http://llwlzi.qo12.com/lung>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/lung>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:nc17dba01235d412495b46812e7168875xb2 <http://llwlzi.qo12.com/lung>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/lung>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/lung>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/lung>   .
+_:nc17dba01235d412495b46812e7168875xb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/lung>   .
+_:nc17dba01235d412495b46812e7168875xb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/lung>   .
+_:nc17dba01235d412495b46812e7168875xb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/lung>   .
+_:nc17dba01235d412495b46812e7168875xb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/lung>   .
+_:nc17dba01235d412495b46812e7168875xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/lung>   .
+_:nc17dba01235d412495b46812e7168875xb1 <http://schema.org/description> "åšä¸€ä¸ªè‚ºéƒ¨å¥åº·è¯„ä¼°  è‚ºéƒ¨æœåŠ¡ä¸ºæ‰€æœ‰å¹´é¾„çš„æ‚£è€…æä¾›å¹¿æ³›çš„å‘¼å¸æŠ¤ç†. Staffed with registered/certified respiratory therapists and technicians, the de" <http://llwlzi.qo12.com/lung>   .
+_:nc17dba01235d412495b46812e7168875xb1 <http://schema.org/name> "è‚ºéƒ¨æŠ¤ç†" <http://llwlzi.qo12.com/lung>   .
+_:nc17dba01235d412495b46812e7168875xb1 <http://schema.org/url> <http://llwlzi.qo12.com/lung> <http://llwlzi.qo12.com/lung>   .
+_:nc17dba01235d412495b46812e7168875xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/lung>   .
+_:nc17dba01235d412495b46812e7168875xb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/lung>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/medical-records>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:nb666c188046a4bf39f6d3303cd4fb70dxb0 <http://llwlzi.qo12.com/medical-records>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:nb666c188046a4bf39f6d3303cd4fb70dxb1 <http://llwlzi.qo12.com/medical-records>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/medical-records>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:nb666c188046a4bf39f6d3303cd4fb70dxb2 <http://llwlzi.qo12.com/medical-records>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/medical-records>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/medical-records>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/medical-records>   .
+_:nb666c188046a4bf39f6d3303cd4fb70dxb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/medical-records>   .
+_:nb666c188046a4bf39f6d3303cd4fb70dxb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/medical-records>   .
+_:nb666c188046a4bf39f6d3303cd4fb70dxb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/medical-records>   .
+_:nb666c188046a4bf39f6d3303cd4fb70dxb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/medical-records>   .
+_:nb666c188046a4bf39f6d3303cd4fb70dxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/medical-records>   .
+_:nb666c188046a4bf39f6d3303cd4fb70dxb1 <http://schema.org/description> "æ¬¢è¿Žæ¥åˆ°&#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;ç—…åŽ†! &#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;å¾ˆé«˜å…´ä¸ºæ‚¨æä¾›å¦‚ä½•èŽ·å–æ‚¨çš„åŒ»ç–—è®°å½•çš„ä¿¡æ¯. We believe the more information you have about yo" <http://llwlzi.qo12.com/medical-records>   .
+_:nb666c188046a4bf39f6d3303cd4fb70dxb1 <http://schema.org/name> "åŒ»ç–—è®°å½•" <http://llwlzi.qo12.com/medical-records>   .
+_:nb666c188046a4bf39f6d3303cd4fb70dxb1 <http://schema.org/url> <http://llwlzi.qo12.com/medical-records> <http://llwlzi.qo12.com/medical-records>   .
+_:nb666c188046a4bf39f6d3303cd4fb70dxb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/medical-records>   .
+_:nb666c188046a4bf39f6d3303cd4fb70dxb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/medical-records>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/medspa>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:nfae96062a54b43298b255c326f8d81baxb0 <http://llwlzi.qo12.com/medspa>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:nfae96062a54b43298b255c326f8d81baxb1 <http://llwlzi.qo12.com/medspa>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/medspa>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:nfae96062a54b43298b255c326f8d81baxb2 <http://llwlzi.qo12.com/medspa>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/medspa>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/medspa>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/medspa>   .
+_:nfae96062a54b43298b255c326f8d81baxb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/medspa>   .
+_:nfae96062a54b43298b255c326f8d81baxb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/medspa>   .
+_:nfae96062a54b43298b255c326f8d81baxb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/medspa>   .
+_:nfae96062a54b43298b255c326f8d81baxb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/medspa>   .
+_:nfae96062a54b43298b255c326f8d81baxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/medspa>   .
+_:nfae96062a54b43298b255c326f8d81baxb1 <http://schema.org/description> "å¯¹è‡ªå·±çš„å¤–è¡¨æ„Ÿè§‰å¾ˆå¥½  æµ·ä¼å¾·åŒ»ç–—æ°´ç–—ä¸­å¿ƒæä¾›å„ç§ç¾Žå®¹æœåŠ¡ï¼Œä»¥é€‚åº”æ‚¨çš„ç”Ÿæ´»ï¼Œåœ¨æ‚¨çš„æ—¶é—´.Whether you want voluminous lips or to soften fine lines, we can help you look y" <http://llwlzi.qo12.com/medspa>   .
+_:nfae96062a54b43298b255c326f8d81baxb1 <http://schema.org/name> "æµ·ä¼å¾·åŒ»ç–—æ°´ç–—ä¸­å¿ƒ" <http://llwlzi.qo12.com/medspa>   .
+_:nfae96062a54b43298b255c326f8d81baxb1 <http://schema.org/url> <http://llwlzi.qo12.com/medspa> <http://llwlzi.qo12.com/medspa>   .
+_:nfae96062a54b43298b255c326f8d81baxb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/medspa>   .
+_:nfae96062a54b43298b255c326f8d81baxb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/medspa>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/neurology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:nbae5c41befa54ba9bbf32d7261f6f65exb0 <http://llwlzi.qo12.com/neurology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:nbae5c41befa54ba9bbf32d7261f6f65exb1 <http://llwlzi.qo12.com/neurology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/neurology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:nbae5c41befa54ba9bbf32d7261f6f65exb2 <http://llwlzi.qo12.com/neurology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/neurology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/neurology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/neurology>   .
+_:nbae5c41befa54ba9bbf32d7261f6f65exb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/neurology>   .
+_:nbae5c41befa54ba9bbf32d7261f6f65exb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/neurology>   .
+_:nbae5c41befa54ba9bbf32d7261f6f65exb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/neurology>   .
+_:nbae5c41befa54ba9bbf32d7261f6f65exb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/neurology>   .
+_:nbae5c41befa54ba9bbf32d7261f6f65exb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/neurology>   .
+_:nbae5c41befa54ba9bbf32d7261f6f65exb1 <http://schema.org/description> "åœ¨&#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;, &#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;åœ¨è¿™é‡Œæä¾›é«˜è´¨é‡çš„æŠ¤ç†ï¼Œæ²»ç–—å½±å“å¤§è„‘çš„æŸä¼¤å’Œç–¾ç—…. æä¾›å¯Œæœ‰åŒæƒ…å¿ƒ, ç»¼åˆæ²»ç–—è€å¹´ç—´å‘†ç—‡" <http://llwlzi.qo12.com/neurology>   .
+_:nbae5c41befa54ba9bbf32d7261f6f65exb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/shutterstock_1243951690.jpg> <http://llwlzi.qo12.com/neurology>   .
+_:nbae5c41befa54ba9bbf32d7261f6f65exb1 <http://schema.org/name> "ç¥žç»å­¦" <http://llwlzi.qo12.com/neurology>   .
+_:nbae5c41befa54ba9bbf32d7261f6f65exb1 <http://schema.org/url> <http://llwlzi.qo12.com/neurology> <http://llwlzi.qo12.com/neurology>   .
+_:nbae5c41befa54ba9bbf32d7261f6f65exb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/neurology>   .
+_:nbae5c41befa54ba9bbf32d7261f6f65exb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/neurology>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/non-discrimination-patient-privacy>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:n5c0bc9acba714be1b8522091e253ec1dxb0 <http://llwlzi.qo12.com/non-discrimination-patient-privacy>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:n5c0bc9acba714be1b8522091e253ec1dxb1 <http://llwlzi.qo12.com/non-discrimination-patient-privacy>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/non-discrimination-patient-privacy>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:n5c0bc9acba714be1b8522091e253ec1dxb2 <http://llwlzi.qo12.com/non-discrimination-patient-privacy>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "&#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;" <http://llwlzi.qo12.com/non-discrimination-patient-privacy>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/non-discrimination-patient-privacy>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/non-discrimination-patient-privacy>   .
+_:n5c0bc9acba714be1b8522091e253ec1dxb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/non-discrimination-patient-privacy>   .
+_:n5c0bc9acba714be1b8522091e253ec1dxb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/non-discrimination-patient-privacy>   .
+_:n5c0bc9acba714be1b8522091e253ec1dxb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/non-discrimination-patient-privacy>   .
+_:n5c0bc9acba714be1b8522091e253ec1dxb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/non-discrimination-patient-privacy>   .
+_:n5c0bc9acba714be1b8522091e253ec1dxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/non-discrimination-patient-privacy>   .
+_:n5c0bc9acba714be1b8522091e253ec1dxb1 <http://schema.org/description> "æœ¬è®¾æ–½åŠå…¶é™„å±žæœºæž„éµå®ˆé€‚ç”¨çš„è”é‚¦æ°‘æƒæ³•ï¼Œä¸å­˜åœ¨ç§æ—æ­§è§†, color, å›½å®¶çš„èµ·æº, å¹´é¾„, æ®‹ç–¾, æˆ–æ€§. This facility and its a" <http://llwlzi.qo12.com/non-discrimination-patient-privacy>   .
+_:n5c0bc9acba714be1b8522091e253ec1dxb1 <http://schema.org/name> "ä¸æ­§è§† & ç—…äººçš„éšç§" <http://llwlzi.qo12.com/non-discrimination-patient-privacy>   .
+_:n5c0bc9acba714be1b8522091e253ec1dxb1 <http://schema.org/url> <http://llwlzi.qo12.com/non-discrimination-patient-privacy> <http://llwlzi.qo12.com/non-discrimination-patient-privacy>   .
+_:n5c0bc9acba714be1b8522091e253ec1dxb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/non-discrimination-patient-privacy>   .
+_:n5c0bc9acba714be1b8522091e253ec1dxb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/non-discrimination-patient-privacy>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/nutrition-education>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:nc114aabdd58943759100b6d9da4ae611xb0 <http://llwlzi.qo12.com/nutrition-education>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:nc114aabdd58943759100b6d9da4ae611xb1 <http://llwlzi.qo12.com/nutrition-education>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/nutrition-education>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:nc114aabdd58943759100b6d9da4ae611xb2 <http://llwlzi.qo12.com/nutrition-education>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/nutrition-education>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/nutrition-education>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/nutrition-education>   .
+_:nc114aabdd58943759100b6d9da4ae611xb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/nutrition-education>   .
+_:nc114aabdd58943759100b6d9da4ae611xb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/nutrition-education>   .
+_:nc114aabdd58943759100b6d9da4ae611xb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/nutrition-education>   .
+_:nc114aabdd58943759100b6d9da4ae611xb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/nutrition-education>   .
+_:nc114aabdd58943759100b6d9da4ae611xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/nutrition-education>   .
+_:nc114aabdd58943759100b6d9da4ae611xb1 <http://schema.org/description> "&#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;çš„ç³–å°¿ç—…å’Œè¥å…»æ•™è‚²ä¸­å¿ƒæä¾›ä¸ªæ€§åŒ–çš„è¥å…»å’¨è¯¢å’Œç³–å°¿ç—…æ•™è‚²ï¼Œå¸®åŠ©æ‚¨è§£å†³ä¸Žè¥å…»ç›¸å…³çš„é—®é¢˜." <http://llwlzi.qo12.com/nutrition-education>   .
+_:nc114aabdd58943759100b6d9da4ae611xb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/shutterstock_730277116_1.jpg> <http://llwlzi.qo12.com/nutrition-education>   .
+_:nc114aabdd58943759100b6d9da4ae611xb1 <http://schema.org/name> "è¥å…»æ•™è‚²" <http://llwlzi.qo12.com/nutrition-education>   .
+_:nc114aabdd58943759100b6d9da4ae611xb1 <http://schema.org/url> <http://llwlzi.qo12.com/nutrition-education> <http://llwlzi.qo12.com/nutrition-education>   .
+_:nc114aabdd58943759100b6d9da4ae611xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/nutrition-education>   .
+_:nc114aabdd58943759100b6d9da4ae611xb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/nutrition-education>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/occu>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:na256ad2687e24f028ec70e58a91b957axb0 <http://llwlzi.qo12.com/occu>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:na256ad2687e24f028ec70e58a91b957axb1 <http://llwlzi.qo12.com/occu>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/occu>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:na256ad2687e24f028ec70e58a91b957axb2 <http://llwlzi.qo12.com/occu>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/occu>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/occu>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/occu>   .
+_:na256ad2687e24f028ec70e58a91b957axb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/occu>   .
+_:na256ad2687e24f028ec70e58a91b957axb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/occu>   .
+_:na256ad2687e24f028ec70e58a91b957axb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/occu>   .
+_:na256ad2687e24f028ec70e58a91b957axb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/occu>   .
+_:na256ad2687e24f028ec70e58a91b957axb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/occu>   .
+_:na256ad2687e24f028ec70e58a91b957axb1 <http://schema.org/description> "&#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;ä¸ºæ‚¨æä¾›å…¨é¢çš„åŒ»ç–—æœåŠ¡, ä¼˜è´¨çš„èŒä¸šå¥åº·æœåŠ¡ï¼Œæ–¹ä¾¿æ‚¨å’Œæ‚¨çš„å‘˜å·¥. We offer a walk-in clinic in Canton to provide urge" <http://llwlzi.qo12.com/occu>   .
+_:na256ad2687e24f028ec70e58a91b957axb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/shutterstock_535964890.jpg> <http://llwlzi.qo12.com/occu>   .
+_:na256ad2687e24f028ec70e58a91b957axb1 <http://schema.org/name> "èŒä¸šå¥åº·" <http://llwlzi.qo12.com/occu>   .
+_:na256ad2687e24f028ec70e58a91b957axb1 <http://schema.org/url> <http://llwlzi.qo12.com/occu> <http://llwlzi.qo12.com/occu>   .
+_:na256ad2687e24f028ec70e58a91b957axb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/occu>   .
+_:na256ad2687e24f028ec70e58a91b957axb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/occu>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/orthopedics>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:nda9ddc5e561047f5a86ef2a1202a57a3xb0 <http://llwlzi.qo12.com/orthopedics>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:nda9ddc5e561047f5a86ef2a1202a57a3xb1 <http://llwlzi.qo12.com/orthopedics>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/orthopedics>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:nda9ddc5e561047f5a86ef2a1202a57a3xb2 <http://llwlzi.qo12.com/orthopedics>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/orthopedics>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/orthopedics>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/orthopedics>   .
+_:nda9ddc5e561047f5a86ef2a1202a57a3xb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/orthopedics>   .
+_:nda9ddc5e561047f5a86ef2a1202a57a3xb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/orthopedics>   .
+_:nda9ddc5e561047f5a86ef2a1202a57a3xb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/orthopedics>   .
+_:nda9ddc5e561047f5a86ef2a1202a57a3xb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/orthopedics>   .
+_:nda9ddc5e561047f5a86ef2a1202a57a3xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/orthopedics>   .
+_:nda9ddc5e561047f5a86ef2a1202a57a3xb1 <http://schema.org/description> "<a href='http://w2u.qo12.com/'>&#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;</a>çš„éª¨ç§‘åŒ»ç”Ÿä¸“é—¨ä»Žäº‹æ™®é€šéª¨ç§‘, è¶³éƒ¨åŠè¸å…³èŠ‚æ‰‹æœ¯, å…³èŠ‚ç½®æ¢å’Œè¿åŠ¨åŒ»å­¦.  We are excited to share that HRMC is now also of" <http://llwlzi.qo12.com/orthopedics>   .
+_:nda9ddc5e561047f5a86ef2a1202a57a3xb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/marlon-lara-1151959-unsplash.jpg> <http://llwlzi.qo12.com/orthopedics>   .
+_:nda9ddc5e561047f5a86ef2a1202a57a3xb1 <http://schema.org/name> "æ•´å½¢å¤–ç§‘" <http://llwlzi.qo12.com/orthopedics>   .
+_:nda9ddc5e561047f5a86ef2a1202a57a3xb1 <http://schema.org/url> <http://llwlzi.qo12.com/orthopedics> <http://llwlzi.qo12.com/orthopedics>   .
+_:nda9ddc5e561047f5a86ef2a1202a57a3xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/orthopedics>   .
+_:nda9ddc5e561047f5a86ef2a1202a57a3xb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/orthopedics>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/patient-financial-information>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:n40b9aafee31c4557ba0b5f19e2979a8bxb0 <http://llwlzi.qo12.com/patient-financial-information>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:n40b9aafee31c4557ba0b5f19e2979a8bxb1 <http://llwlzi.qo12.com/patient-financial-information>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/patient-financial-information>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:n40b9aafee31c4557ba0b5f19e2979a8bxb2 <http://llwlzi.qo12.com/patient-financial-information>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/patient-financial-information>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/patient-financial-information>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/patient-financial-information>   .
+_:n40b9aafee31c4557ba0b5f19e2979a8bxb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/patient-financial-information>   .
+_:n40b9aafee31c4557ba0b5f19e2979a8bxb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/patient-financial-information>   .
+_:n40b9aafee31c4557ba0b5f19e2979a8bxb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/patient-financial-information>   .
+_:n40b9aafee31c4557ba0b5f19e2979a8bxb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/patient-financial-information>   .
+_:n40b9aafee31c4557ba0b5f19e2979a8bxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/patient-financial-information>   .
+_:n40b9aafee31c4557ba0b5f19e2979a8bxb1 <http://schema.org/description> "æ ¹æ®å¹³ä»·åŒ»ç–—æ³•æ¡ˆ, å…ç¨Žç»„ç»‡éƒ¨åˆ†æˆ–å…¨éƒ¨æ‹¥æœ‰çš„åŒ»é™¢é€šå¸¸å¿…é¡»éµå¾ªæŸäº›è¦æ±‚. è¿™äº›éœ€æ±‚, which are defined in Section 50" <http://llwlzi.qo12.com/patient-financial-information>   .
+_:n40b9aafee31c4557ba0b5f19e2979a8bxb1 <http://schema.org/name> "ç—…äººè´¢åŠ¡èµ„æ–™" <http://llwlzi.qo12.com/patient-financial-information>   .
+_:n40b9aafee31c4557ba0b5f19e2979a8bxb1 <http://schema.org/url> <http://llwlzi.qo12.com/patient-financial-information> <http://llwlzi.qo12.com/patient-financial-information>   .
+_:n40b9aafee31c4557ba0b5f19e2979a8bxb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/patient-financial-information>   .
+_:n40b9aafee31c4557ba0b5f19e2979a8bxb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/patient-financial-information>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/patient-guide>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:n8c3dd2fdb98041069e979430fa5d8adexb0 <http://llwlzi.qo12.com/patient-guide>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:n8c3dd2fdb98041069e979430fa5d8adexb1 <http://llwlzi.qo12.com/patient-guide>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/patient-guide>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:n8c3dd2fdb98041069e979430fa5d8adexb2 <http://llwlzi.qo12.com/patient-guide>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/patient-guide>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/patient-guide>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/patient-guide>   .
+_:n8c3dd2fdb98041069e979430fa5d8adexb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/patient-guide>   .
+_:n8c3dd2fdb98041069e979430fa5d8adexb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/patient-guide>   .
+_:n8c3dd2fdb98041069e979430fa5d8adexb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/patient-guide>   .
+_:n8c3dd2fdb98041069e979430fa5d8adexb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/patient-guide>   .
+_:n8c3dd2fdb98041069e979430fa5d8adexb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/patient-guide>   .
+_:n8c3dd2fdb98041069e979430fa5d8adexb1 <http://schema.org/description> "" <http://llwlzi.qo12.com/patient-guide>   .
+_:n8c3dd2fdb98041069e979430fa5d8adexb1 <http://schema.org/name> "è€å¿ƒçš„æŒ‡å¯¼" <http://llwlzi.qo12.com/patient-guide>   .
+_:n8c3dd2fdb98041069e979430fa5d8adexb1 <http://schema.org/url> <http://llwlzi.qo12.com/patient-guide> <http://llwlzi.qo12.com/patient-guide>   .
+_:n8c3dd2fdb98041069e979430fa5d8adexb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/patient-guide>   .
+_:n8c3dd2fdb98041069e979430fa5d8adexb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/patient-guide>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/pediatric-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:ndf6c1993d94546408434d8ca52c33cf7xb0 <http://llwlzi.qo12.com/pediatric-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:ndf6c1993d94546408434d8ca52c33cf7xb1 <http://llwlzi.qo12.com/pediatric-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/pediatric-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:ndf6c1993d94546408434d8ca52c33cf7xb2 <http://llwlzi.qo12.com/pediatric-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/pediatric-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/pediatric-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/pediatric-care>   .
+_:ndf6c1993d94546408434d8ca52c33cf7xb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/pediatric-care>   .
+_:ndf6c1993d94546408434d8ca52c33cf7xb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/pediatric-care>   .
+_:ndf6c1993d94546408434d8ca52c33cf7xb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/pediatric-care>   .
+_:ndf6c1993d94546408434d8ca52c33cf7xb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/pediatric-care>   .
+_:ndf6c1993d94546408434d8ca52c33cf7xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/pediatric-care>   .
+_:ndf6c1993d94546408434d8ca52c33cf7xb1 <http://schema.org/description> "&#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;ä¸ºæ‰€æœ‰å¹´é¾„æ®µçš„å„¿ç«¥æä¾›æŠ¤ç†. ä»Žæ–°ç”Ÿå„¿ã€å­¦æ­¥å„¿ç«¥åˆ°é’å°‘å¹´ï¼Œå†åˆ°å¤§å­¦, we are proud to provide exceptional services for our young " <http://llwlzi.qo12.com/pediatric-care>   .
+_:ndf6c1993d94546408434d8ca52c33cf7xb1 <http://schema.org/name> "å„¿ç§‘æŠ¤ç†" <http://llwlzi.qo12.com/pediatric-care>   .
+_:ndf6c1993d94546408434d8ca52c33cf7xb1 <http://schema.org/url> <http://llwlzi.qo12.com/pediatric-care> <http://llwlzi.qo12.com/pediatric-care>   .
+_:ndf6c1993d94546408434d8ca52c33cf7xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/pediatric-care>   .
+_:ndf6c1993d94546408434d8ca52c33cf7xb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/pediatric-care>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/plastic-surgery>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:n8df37e39bf304ce4ae88354dbaf18d2exb0 <http://llwlzi.qo12.com/plastic-surgery>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:n8df37e39bf304ce4ae88354dbaf18d2exb1 <http://llwlzi.qo12.com/plastic-surgery>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/plastic-surgery>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:n8df37e39bf304ce4ae88354dbaf18d2exb2 <http://llwlzi.qo12.com/plastic-surgery>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/plastic-surgery>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/plastic-surgery>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/plastic-surgery>   .
+_:n8df37e39bf304ce4ae88354dbaf18d2exb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/plastic-surgery>   .
+_:n8df37e39bf304ce4ae88354dbaf18d2exb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/plastic-surgery>   .
+_:n8df37e39bf304ce4ae88354dbaf18d2exb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/plastic-surgery>   .
+_:n8df37e39bf304ce4ae88354dbaf18d2exb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/plastic-surgery>   .
+_:n8df37e39bf304ce4ae88354dbaf18d2exb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/plastic-surgery>   .
+_:n8df37e39bf304ce4ae88354dbaf18d2exb1 <http://schema.org/description> "  Ryan Marshall, DOå§”å‘˜ä¼šè®¤è¯çš„æ•´å½¢ï¼Œç¾Žå®¹å’Œé‡å»ºå¤–ç§‘åŒ»ç”Ÿ  Dr. Marshall is a board certified plastic and reconstructive surgeon with expertise in cosmetic as well as reconstructi" <http://llwlzi.qo12.com/plastic-surgery>   .
+_:n8df37e39bf304ce4ae88354dbaf18d2exb1 <http://schema.org/name> "æ•´å½¢æ‰‹æœ¯" <http://llwlzi.qo12.com/plastic-surgery>   .
+_:n8df37e39bf304ce4ae88354dbaf18d2exb1 <http://schema.org/url> <http://llwlzi.qo12.com/plastic-surgery> <http://llwlzi.qo12.com/plastic-surgery>   .
+_:n8df37e39bf304ce4ae88354dbaf18d2exb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/plastic-surgery>   .
+_:n8df37e39bf304ce4ae88354dbaf18d2exb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/plastic-surgery>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/primary-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:n6669666182b94542b0860d2f09be75d6xb0 <http://llwlzi.qo12.com/primary-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:n6669666182b94542b0860d2f09be75d6xb1 <http://llwlzi.qo12.com/primary-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/primary-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:n6669666182b94542b0860d2f09be75d6xb2 <http://llwlzi.qo12.com/primary-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/primary-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/primary-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/primary-care>   .
+_:n6669666182b94542b0860d2f09be75d6xb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/primary-care>   .
+_:n6669666182b94542b0860d2f09be75d6xb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/primary-care>   .
+_:n6669666182b94542b0860d2f09be75d6xb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/primary-care>   .
+_:n6669666182b94542b0860d2f09be75d6xb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/primary-care>   .
+_:n6669666182b94542b0860d2f09be75d6xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/primary-care>   .
+_:n6669666182b94542b0860d2f09be75d6xb1 <http://schema.org/description> "å®¶åº­åŒ»å­¦  å®¶åº­åŒ»å­¦ä¸ºä¸ªäººå’Œå®¶åº­æä¾›æŒç»­ã€å…¨é¢çš„ä¿å¥æœåŠ¡. Family medicine&rsquo;s scope encompasses all ages and genders, æ¯ä¸ªå™¨å®˜ç³»ç»Ÿ, and ev" <http://llwlzi.qo12.com/primary-care>   .
+_:n6669666182b94542b0860d2f09be75d6xb1 <http://schema.org/name> "åˆçº§æŠ¤ç†" <http://llwlzi.qo12.com/primary-care>   .
+_:n6669666182b94542b0860d2f09be75d6xb1 <http://schema.org/url> <http://llwlzi.qo12.com/primary-care> <http://llwlzi.qo12.com/primary-care>   .
+_:n6669666182b94542b0860d2f09be75d6xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/primary-care>   .
+_:n6669666182b94542b0860d2f09be75d6xb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/primary-care>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/rheumatology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:nbf418aeb664e40a49cc1343a3a02c921xb0 <http://llwlzi.qo12.com/rheumatology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:nbf418aeb664e40a49cc1343a3a02c921xb1 <http://llwlzi.qo12.com/rheumatology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/rheumatology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:nbf418aeb664e40a49cc1343a3a02c921xb2 <http://llwlzi.qo12.com/rheumatology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/rheumatology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/rheumatology>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/rheumatology>   .
+_:nbf418aeb664e40a49cc1343a3a02c921xb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/rheumatology>   .
+_:nbf418aeb664e40a49cc1343a3a02c921xb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/rheumatology>   .
+_:nbf418aeb664e40a49cc1343a3a02c921xb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/rheumatology>   .
+_:nbf418aeb664e40a49cc1343a3a02c921xb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/rheumatology>   .
+_:nbf418aeb664e40a49cc1343a3a02c921xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/rheumatology>   .
+_:nbf418aeb664e40a49cc1343a3a02c921xb1 <http://schema.org/description> "æœ‰æ—¶ï¼Œå…³èŠ‚ã€è‚Œè‚‰æˆ–éª¨éª¼ç–¼ç—›ä¸¥é‡æˆ–æŒç»­æ•°å¤©ä»¥ä¸Š. åœ¨è¿™ç§æƒ…å†µä¸‹ï¼Œä½ åº”è¯¥åŽ»çœ‹åŒ»ç”Ÿ. Many types of rheumatic diseases are not easily identified" <http://llwlzi.qo12.com/rheumatology>   .
+_:nbf418aeb664e40a49cc1343a3a02c921xb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/shutterstock_1110302153.jpg> <http://llwlzi.qo12.com/rheumatology>   .
+_:nbf418aeb664e40a49cc1343a3a02c921xb1 <http://schema.org/name> "é£Žæ¹¿ç—…å­¦" <http://llwlzi.qo12.com/rheumatology>   .
+_:nbf418aeb664e40a49cc1343a3a02c921xb1 <http://schema.org/url> <http://llwlzi.qo12.com/rheumatology> <http://llwlzi.qo12.com/rheumatology>   .
+_:nbf418aeb664e40a49cc1343a3a02c921xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/rheumatology>   .
+_:nbf418aeb664e40a49cc1343a3a02c921xb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/rheumatology>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/sleep-center>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:na68504f5cb384af4ab8e46c655d59342xb0 <http://llwlzi.qo12.com/sleep-center>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:na68504f5cb384af4ab8e46c655d59342xb1 <http://llwlzi.qo12.com/sleep-center>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/sleep-center>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:na68504f5cb384af4ab8e46c655d59342xb2 <http://llwlzi.qo12.com/sleep-center>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/sleep-center>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/sleep-center>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/sleep-center>   .
+_:na68504f5cb384af4ab8e46c655d59342xb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/sleep-center>   .
+_:na68504f5cb384af4ab8e46c655d59342xb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/sleep-center>   .
+_:na68504f5cb384af4ab8e46c655d59342xb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/sleep-center>   .
+_:na68504f5cb384af4ab8e46c655d59342xb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/sleep-center>   .
+_:na68504f5cb384af4ab8e46c655d59342xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/sleep-center>   .
+_:na68504f5cb384af4ab8e46c655d59342xb1 <http://schema.org/description> "ç¡çœ ä¸è¶³ä¼šå½±å“æ³¨æ„åŠ›é›†ä¸­ã€å®Œæˆä»»åŠ¡å’Œå¤„ç†å°çƒ¦æ¼çš„èƒ½åŠ›. å®ƒä¼šå½±å“è®°å¿†å’ŒæŽ¨ç†. å¦‚æžœä½ æœ‰ç¡çœ é—®é¢˜, a sleep study may be the nex" <http://llwlzi.qo12.com/sleep-center>   .
+_:na68504f5cb384af4ab8e46c655d59342xb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/img_5882_edited_sleep_center.jpg> <http://llwlzi.qo12.com/sleep-center>   .
+_:na68504f5cb384af4ab8e46c655d59342xb1 <http://schema.org/name> "ç¡çœ ä¸­å¿ƒ" <http://llwlzi.qo12.com/sleep-center>   .
+_:na68504f5cb384af4ab8e46c655d59342xb1 <http://schema.org/url> <http://llwlzi.qo12.com/sleep-center> <http://llwlzi.qo12.com/sleep-center>   .
+_:na68504f5cb384af4ab8e46c655d59342xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/sleep-center>   .
+_:na68504f5cb384af4ab8e46c655d59342xb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/sleep-center>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/spine-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:n2c1d263e264a47c1b2091db7fe28abf8xb0 <http://llwlzi.qo12.com/spine-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:n2c1d263e264a47c1b2091db7fe28abf8xb1 <http://llwlzi.qo12.com/spine-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/spine-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:n2c1d263e264a47c1b2091db7fe28abf8xb2 <http://llwlzi.qo12.com/spine-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/spine-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/spine-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/spine-care>   .
+_:n2c1d263e264a47c1b2091db7fe28abf8xb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/spine-care>   .
+_:n2c1d263e264a47c1b2091db7fe28abf8xb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/spine-care>   .
+_:n2c1d263e264a47c1b2091db7fe28abf8xb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/spine-care>   .
+_:n2c1d263e264a47c1b2091db7fe28abf8xb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/spine-care>   .
+_:n2c1d263e264a47c1b2091db7fe28abf8xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/spine-care>   .
+_:n2c1d263e264a47c1b2091db7fe28abf8xb1 <http://schema.org/description> "Spinal problems are among the most common&mdash;and challenging&mdash;orthopedic conditions, å¹¶ä¸”ç»å¸¸åŒ…å«ç¥žç»é—®é¢˜. &#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;çš„ç†ç–—å¸ˆå›¢é˜Ÿ, éº»é†‰åŒ»å¸ˆ, ç‰©ç†æ²»ç–—å¸ˆ, " <http://llwlzi.qo12.com/spine-care>   .
+_:n2c1d263e264a47c1b2091db7fe28abf8xb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/shutterstock_272147675_2.jpg> <http://llwlzi.qo12.com/spine-care>   .
+_:n2c1d263e264a47c1b2091db7fe28abf8xb1 <http://schema.org/name> "è„Šæ¤Žä¿å¥" <http://llwlzi.qo12.com/spine-care>   .
+_:n2c1d263e264a47c1b2091db7fe28abf8xb1 <http://schema.org/url> <http://llwlzi.qo12.com/spine-care> <http://llwlzi.qo12.com/spine-care>   .
+_:n2c1d263e264a47c1b2091db7fe28abf8xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/spine-care>   .
+_:n2c1d263e264a47c1b2091db7fe28abf8xb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/spine-care>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/sports-medicine>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:n09144c88608e4c8d9658bac7c3feb38axb0 <http://llwlzi.qo12.com/sports-medicine>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:n09144c88608e4c8d9658bac7c3feb38axb1 <http://llwlzi.qo12.com/sports-medicine>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/sports-medicine>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:n09144c88608e4c8d9658bac7c3feb38axb2 <http://llwlzi.qo12.com/sports-medicine>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/sports-medicine>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/sports-medicine>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/sports-medicine>   .
+_:n09144c88608e4c8d9658bac7c3feb38axb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/sports-medicine>   .
+_:n09144c88608e4c8d9658bac7c3feb38axb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/sports-medicine>   .
+_:n09144c88608e4c8d9658bac7c3feb38axb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/sports-medicine>   .
+_:n09144c88608e4c8d9658bac7c3feb38axb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/sports-medicine>   .
+_:n09144c88608e4c8d9658bac7c3feb38axb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/sports-medicine>   .
+_:n09144c88608e4c8d9658bac7c3feb38axb1 <http://schema.org/description> "æµ·ä¼å¾·åŒºåŸŸåŒ»ç–—ä¸­å¿ƒè¿åŠ¨åŒ»å­¦å›¢é˜Ÿå°†è¿åŠ¨åŒ»å­¦çš„æ¦‚å¿µæå‡åˆ°ä¸€ä¸ªæ–°çš„æ°´å¹³. &#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;é€šè¿‡æä¾›é¢„é˜²æœåŠ¡æ¥ä¿æŒæœ€é«˜çš„æŠ¤ç†æ ‡å‡†, è¯Šæ–­, rehabil" <http://llwlzi.qo12.com/sports-medicine>   .
+_:n09144c88608e4c8d9658bac7c3feb38axb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/shutterstock_74606422.jpg> <http://llwlzi.qo12.com/sports-medicine>   .
+_:n09144c88608e4c8d9658bac7c3feb38axb1 <http://schema.org/name> "è¿åŠ¨åŒ»å­¦" <http://llwlzi.qo12.com/sports-medicine>   .
+_:n09144c88608e4c8d9658bac7c3feb38axb1 <http://schema.org/url> <http://llwlzi.qo12.com/sports-medicine> <http://llwlzi.qo12.com/sports-medicine>   .
+_:n09144c88608e4c8d9658bac7c3feb38axb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/sports-medicine>   .
+_:n09144c88608e4c8d9658bac7c3feb38axb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/sports-medicine>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/surgical-services>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:n752d43dd7a7a441695aa02ddf24ebc1bxb0 <http://llwlzi.qo12.com/surgical-services>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:n752d43dd7a7a441695aa02ddf24ebc1bxb1 <http://llwlzi.qo12.com/surgical-services>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/surgical-services>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:n752d43dd7a7a441695aa02ddf24ebc1bxb2 <http://llwlzi.qo12.com/surgical-services>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/surgical-services>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/surgical-services>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/surgical-services>   .
+_:n752d43dd7a7a441695aa02ddf24ebc1bxb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/surgical-services>   .
+_:n752d43dd7a7a441695aa02ddf24ebc1bxb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/surgical-services>   .
+_:n752d43dd7a7a441695aa02ddf24ebc1bxb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/surgical-services>   .
+_:n752d43dd7a7a441695aa02ddf24ebc1bxb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/surgical-services>   .
+_:n752d43dd7a7a441695aa02ddf24ebc1bxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/surgical-services>   .
+_:n752d43dd7a7a441695aa02ddf24ebc1bxb1 <http://schema.org/description> "å¤–ç§‘æœåŠ¡éƒ¨æ˜¯&#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;çš„ä¸€ä¸ªéƒ¨é—¨. å¤–ç§‘æœåŠ¡æ‰§è¡Œå¹¿æ³›çš„ç¨‹åº. è¿™äº›æœåŠ¡åŒ…æ‹¬å½“æ—¥æ‰‹æœ¯, operating and endoscopic procedure " <http://llwlzi.qo12.com/surgical-services>   .
+_:n752d43dd7a7a441695aa02ddf24ebc1bxb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/luis-melendez-530478-unsplash.jpg> <http://llwlzi.qo12.com/surgical-services>   .
+_:n752d43dd7a7a441695aa02ddf24ebc1bxb1 <http://schema.org/name> "å¤–ç§‘æœåŠ¡" <http://llwlzi.qo12.com/surgical-services>   .
+_:n752d43dd7a7a441695aa02ddf24ebc1bxb1 <http://schema.org/url> <http://llwlzi.qo12.com/surgical-services> <http://llwlzi.qo12.com/surgical-services>   .
+_:n752d43dd7a7a441695aa02ddf24ebc1bxb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/surgical-services>   .
+_:n752d43dd7a7a441695aa02ddf24ebc1bxb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/surgical-services>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/surgical-weight-loss>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:n3ea8eb9d64c6424ab4f398d732ec265fxb0 <http://llwlzi.qo12.com/surgical-weight-loss>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:n3ea8eb9d64c6424ab4f398d732ec265fxb1 <http://llwlzi.qo12.com/surgical-weight-loss>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/surgical-weight-loss>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:n3ea8eb9d64c6424ab4f398d732ec265fxb2 <http://llwlzi.qo12.com/surgical-weight-loss>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/surgical-weight-loss>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/surgical-weight-loss>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/surgical-weight-loss>   .
+_:n3ea8eb9d64c6424ab4f398d732ec265fxb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/surgical-weight-loss>   .
+_:n3ea8eb9d64c6424ab4f398d732ec265fxb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/surgical-weight-loss>   .
+_:n3ea8eb9d64c6424ab4f398d732ec265fxb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/surgical-weight-loss>   .
+_:n3ea8eb9d64c6424ab4f398d732ec265fxb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/surgical-weight-loss>   .
+_:n3ea8eb9d64c6424ab4f398d732ec265fxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/surgical-weight-loss>   .
+_:n3ea8eb9d64c6424ab4f398d732ec265fxb1 <http://schema.org/description> "ä»Šå¤©å°±åœ¨æ‚¨é™„è¿‘çš„æ•‘ç”Ÿç‚¹è®¾æ–½å¼€å§‹æ‚¨çš„æ—…ç¨‹  ç”Ÿæ´»å……æ»¡äº†è®¸å¤šå°æ—¶åˆ». å¯¹äºŽé‚£äº›ä¸Žè¶…é‡æ–—äº‰çš„äºº, é‚£äº›å°å°çš„æ—¶åˆ»å¯èƒ½ä¼šå˜æˆè‹¦éš¾, even a s" <http://llwlzi.qo12.com/surgical-weight-loss>   .
+_:n3ea8eb9d64c6424ab4f398d732ec265fxb1 <http://schema.org/name> "æ‰‹æœ¯å‡è‚¥" <http://llwlzi.qo12.com/surgical-weight-loss>   .
+_:n3ea8eb9d64c6424ab4f398d732ec265fxb1 <http://schema.org/url> <http://llwlzi.qo12.com/surgical-weight-loss> <http://llwlzi.qo12.com/surgical-weight-loss>   .
+_:n3ea8eb9d64c6424ab4f398d732ec265fxb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/surgical-weight-loss>   .
+_:n3ea8eb9d64c6424ab4f398d732ec265fxb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/surgical-weight-loss>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/urgentcare>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:nc8a74a5d5cff440e9944cf69087ee935xb0 <http://llwlzi.qo12.com/urgentcare>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:nc8a74a5d5cff440e9944cf69087ee935xb1 <http://llwlzi.qo12.com/urgentcare>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/urgentcare>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:nc8a74a5d5cff440e9944cf69087ee935xb2 <http://llwlzi.qo12.com/urgentcare>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/urgentcare>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/urgentcare>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/urgentcare>   .
+_:nc8a74a5d5cff440e9944cf69087ee935xb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/urgentcare>   .
+_:nc8a74a5d5cff440e9944cf69087ee935xb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/urgentcare>   .
+_:nc8a74a5d5cff440e9944cf69087ee935xb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/urgentcare>   .
+_:nc8a74a5d5cff440e9944cf69087ee935xb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/urgentcare>   .
+_:nc8a74a5d5cff440e9944cf69087ee935xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/urgentcare>   .
+_:nc8a74a5d5cff440e9944cf69087ee935xb1 <http://schema.org/description> "&nbsp;  å½“ä½ ä¸‹ç­åŽæˆ–å‘¨æœ«éœ€è¦æŠ¤ç†æ—¶ï¼Œæµ·ä¼å¾·æ€¥æ•‘ä¸­å¿ƒåœ¨è¿™é‡Œä¸ºä½ æœåŠ¡ï¼Œ  2æœˆ19æ—¥å¼€å§‹, ç´§æ€¥æŠ¤ç†å¹¿å·žå’Œç´§æ€¥æŠ¤ç†éŸ¦æ©æ–¯ç»´å°”å°†å¼€æ”¾ä¸€å‘¨7å¤©, 8 am - 6:" <http://llwlzi.qo12.com/urgentcare>   .
+_:nc8a74a5d5cff440e9944cf69087ee935xb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/shutterstock_106829255_1.jpg> <http://llwlzi.qo12.com/urgentcare>   .
+_:nc8a74a5d5cff440e9944cf69087ee935xb1 <http://schema.org/name> "ç´§æ€¥æŠ¤ç†" <http://llwlzi.qo12.com/urgentcare>   .
+_:nc8a74a5d5cff440e9944cf69087ee935xb1 <http://schema.org/url> <http://llwlzi.qo12.com/urgentcare> <http://llwlzi.qo12.com/urgentcare>   .
+_:nc8a74a5d5cff440e9944cf69087ee935xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/urgentcare>   .
+_:nc8a74a5d5cff440e9944cf69087ee935xb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/urgentcare>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/vein>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:nabe02b42df93493d8eea14f99d9187e5xb0 <http://llwlzi.qo12.com/vein>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:nabe02b42df93493d8eea14f99d9187e5xb1 <http://llwlzi.qo12.com/vein>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/vein>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:nabe02b42df93493d8eea14f99d9187e5xb2 <http://llwlzi.qo12.com/vein>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/vein>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/vein>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/vein>   .
+_:nabe02b42df93493d8eea14f99d9187e5xb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/vein>   .
+_:nabe02b42df93493d8eea14f99d9187e5xb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/vein>   .
+_:nabe02b42df93493d8eea14f99d9187e5xb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/vein>   .
+_:nabe02b42df93493d8eea14f99d9187e5xb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/vein>   .
+_:nabe02b42df93493d8eea14f99d9187e5xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/vein>   .
+_:nabe02b42df93493d8eea14f99d9187e5xb1 <http://schema.org/description> "ä½ æœ‰é™è„‰æ›²å¼ å—? ä½ æ˜¯é•¿æ—¶é—´åç€è¿˜æ˜¯ç«™ç€? ä½ æ›¾å¤šæ¬¡æ€€å­•å—?æ‚¨çš„å®¶åº­æˆå‘˜ä¸­æ˜¯å¦æœ‰äººæ‚£æœ‰é™è„‰æ›²å¼ æˆ–æŽ¥å—è¿‡é™è„‰ç–¾ç—…çš„æ²»ç–—" <http://llwlzi.qo12.com/vein>   .
+_:nabe02b42df93493d8eea14f99d9187e5xb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/shutterstock_1229178862_0.jpg> <http://llwlzi.qo12.com/vein>   .
+_:nabe02b42df93493d8eea14f99d9187e5xb1 <http://schema.org/name> "é™è„‰ä¸­å¿ƒ" <http://llwlzi.qo12.com/vein>   .
+_:nabe02b42df93493d8eea14f99d9187e5xb1 <http://schema.org/url> <http://llwlzi.qo12.com/vein> <http://llwlzi.qo12.com/vein>   .
+_:nabe02b42df93493d8eea14f99d9187e5xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/vein>   .
+_:nabe02b42df93493d8eea14f99d9187e5xb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/vein>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/womens-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:n662e39f08c3f43e19e8ea4e806e6e3b6xb0 <http://llwlzi.qo12.com/womens-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:n662e39f08c3f43e19e8ea4e806e6e3b6xb1 <http://llwlzi.qo12.com/womens-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/womens-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:n662e39f08c3f43e19e8ea4e806e6e3b6xb2 <http://llwlzi.qo12.com/womens-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/womens-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/womens-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/womens-care>   .
+_:n662e39f08c3f43e19e8ea4e806e6e3b6xb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/womens-care>   .
+_:n662e39f08c3f43e19e8ea4e806e6e3b6xb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/womens-care>   .
+_:n662e39f08c3f43e19e8ea4e806e6e3b6xb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/womens-care>   .
+_:n662e39f08c3f43e19e8ea4e806e6e3b6xb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/womens-care>   .
+_:n662e39f08c3f43e19e8ea4e806e6e3b6xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/womens-care>   .
+_:n662e39f08c3f43e19e8ea4e806e6e3b6xb1 <http://schema.org/description> "&#30343;&#20896;&#97;&#112;&#112;&#23433;&#21331;&#19979;&#36733;&#23433;&#35013;çš„å¦‡å¥³æŠ¤ç†ä¸­å¿ƒä¸ºä½ æä¾›ä»Žäº§å‰åˆ°åˆ†å¨©çš„æœåŠ¡, æ—©å¹´åŠä»¥åŽ. &nbsp;Haywood Regional Medical Center offers you and your childre" <http://llwlzi.qo12.com/womens-care>   .
+_:n662e39f08c3f43e19e8ea4e806e6e3b6xb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/shutterstock_371287948.jpg> <http://llwlzi.qo12.com/womens-care>   .
+_:n662e39f08c3f43e19e8ea4e806e6e3b6xb1 <http://schema.org/name> "å¦‡å¥³çš„æŠ¤ç†" <http://llwlzi.qo12.com/womens-care>   .
+_:n662e39f08c3f43e19e8ea4e806e6e3b6xb1 <http://schema.org/url> <http://llwlzi.qo12.com/womens-care> <http://llwlzi.qo12.com/womens-care>   .
+_:n662e39f08c3f43e19e8ea4e806e6e3b6xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/womens-care>   .
+_:n662e39f08c3f43e19e8ea4e806e6e3b6xb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/womens-care>   .
+<http://llwlzi.qo12.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/wound-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/address> _:ne56fca1b4eb14e73926f538dc221b44dxb0 <http://llwlzi.qo12.com/wound-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/department> _:ne56fca1b4eb14e73926f538dc221b44dxb1 <http://llwlzi.qo12.com/wound-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/logo> <http://llwlzi.qo12.com/logo_haywoodregional_dukelp.png> <http://llwlzi.qo12.com/wound-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/memberOf> _:ne56fca1b4eb14e73926f538dc221b44dxb2 <http://llwlzi.qo12.com/wound-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/name> "Haywood Regional Medical Center" <http://llwlzi.qo12.com/wound-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/telephone> "+18284567311" <http://llwlzi.qo12.com/wound-care>   .
+<http://llwlzi.qo12.com/> <http://schema.org/url> <http://llwlzi.qo12.com/> <http://llwlzi.qo12.com/wound-care>   .
+_:ne56fca1b4eb14e73926f538dc221b44dxb0 <http://schema.org/addressLocality> "Clyde" <http://llwlzi.qo12.com/wound-care>   .
+_:ne56fca1b4eb14e73926f538dc221b44dxb0 <http://schema.org/addressRegion> "NC" <http://llwlzi.qo12.com/wound-care>   .
+_:ne56fca1b4eb14e73926f538dc221b44dxb0 <http://schema.org/postalCode> "28721" <http://llwlzi.qo12.com/wound-care>   .
+_:ne56fca1b4eb14e73926f538dc221b44dxb0 <http://schema.org/streetAddress> "Leroy Georgeè·¯262å·" <http://llwlzi.qo12.com/wound-care>   .
+_:ne56fca1b4eb14e73926f538dc221b44dxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://llwlzi.qo12.com/wound-care>   .
+_:ne56fca1b4eb14e73926f538dc221b44dxb1 <http://schema.org/description> "æµ·ä¼å¾·ä¼¤å£æ„ˆåˆæœ¯ &amp; é«˜åŽ‹æ°§ä¸­å¿ƒï¼Œç”±Healogics, Inc .ç®¡ç†., ä¸ºæ…¢æ€§æˆ–ä¸æ„ˆåˆçš„ä¼¤å£æä¾›ä¸“é—¨æ²»ç–—, which are defined as sores or wounds that have not signific" <http://llwlzi.qo12.com/wound-care>   .
+_:ne56fca1b4eb14e73926f538dc221b44dxb1 <http://schema.org/image> <http://llwlzi.qo12.com/sites/haywood/assets/pages/shutterstock_186289124_0.jpg> <http://llwlzi.qo12.com/wound-care>   .
+_:ne56fca1b4eb14e73926f538dc221b44dxb1 <http://schema.org/name> "ä¼¤å£æŠ¤ç†" <http://llwlzi.qo12.com/wound-care>   .
+_:ne56fca1b4eb14e73926f538dc221b44dxb1 <http://schema.org/url> <http://llwlzi.qo12.com/wound-care> <http://llwlzi.qo12.com/wound-care>   .
+_:ne56fca1b4eb14e73926f538dc221b44dxb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MedicalOrganization> <http://llwlzi.qo12.com/wound-care>   .
+_:ne56fca1b4eb14e73926f538dc221b44dxb2 <http://schema.org/name> "LifePoint å¥åº·" <http://llwlzi.qo12.com/wound-care>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "Obstetrics " <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "Pre Conceptional Counselling" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "Antenatal Care" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "High Risk Pregnancies" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "Natural Birthing" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "Cesarean Delivery" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "Post Natal Care" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "Painless Labour" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "Abortion" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "Gynecology" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "Infertility Treatment" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "Laparoscopy And Hysteroscopy" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "Well Women Clinic" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "PCOD Management" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "Menopause" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "Abnormal Uterine Bleeding" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "Pediatric" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "Well Baby Clinic" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "Trained Specialist" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "New born Care" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "Vaccination" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "Lactation Counselling" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/MedicalSpecialty> "Nutritionist" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/address> _:n0022d243fa1d47cd96611f6a38022fd9xb1 <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/aggregateRating> _:n0022d243fa1d47cd96611f6a38022fd9xb2 <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/areaServed> "Ravet" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/currenciesAccepted> "INR" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/description> "24 Bliss Mother & Child Care, Pune: Complete women's healthcare - Gynaecology, Laparoscopy, Infertility, & maternity expertise. Personalized care for every woman." <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/email> "snehal.tate221@gmail.com" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/geo> _:n0022d243fa1d47cd96611f6a38022fd9xb3 <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/hasMap> <https://www.google.com/maps/place/24+Bliss+Mother+and+Child+Care+Hospital+-+Gynaecologist+in+Ravet,+Akurdi+%7C+Laparoscopic+Surgeon+in+Ravet+%7C+Maternity+Hospital/@18.6451815,73.7569889,15z/data=!4m2!3m1!1s0x0:0x394f4f26c2fc244d?sa=X&ved=1t:2428&ictx=111> <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/image> <https://24blisshospital.com/images/logo1.png> <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/name> "24 Bliss Mother and Child Care" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/openingHoursSpecification> _:n0022d243fa1d47cd96611f6a38022fd9xb4 <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/paymentAccepted> "Card, Cash" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/priceRange> "variable" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/sameAs> <https://www.facebook.com/p/24-Bliss-Mother-And-Child-Care-100089156490188/> <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/telephone> "9011124024, +91 8459430803 " <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb0 <http://schema.org/url> <https://24blisshospital.com/> <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb1 <http://schema.org/addressCountry> "IN" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb1 <http://schema.org/addressLocality> "Pune" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb1 <http://schema.org/addressRegion> "Maharashtra" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb1 <http://schema.org/postalCode> "412101" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb1 <http://schema.org/streetAddress> "Ground Floor, Daya Villa, 102, DY Patil College Rd, next to Golden Bliss Apartment, Shinde Vasti, Ravet, Pimpri-Chinchwad, Pune" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/AggregateRating> <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb2 <http://schema.org/ratingValue> "5.0" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb2 <http://schema.org/reviewCount> "24" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/GeoCoordinates> <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb3 <http://schema.org/latitude> "1.86451815E1"^^<http://www.w3.org/2001/XMLSchema#double> <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb3 <http://schema.org/longitude> "7.37569889E1"^^<http://www.w3.org/2001/XMLSchema#double> <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/OpeningHoursSpecification> <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb4 <http://schema.org/closes> "22:00" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb4 <http://schema.org/dayOfWeek> "Monday" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb4 <http://schema.org/dayOfWeek> "Tuesday" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb4 <http://schema.org/dayOfWeek> "Wednesday" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb4 <http://schema.org/dayOfWeek> "Thursday" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb4 <http://schema.org/dayOfWeek> "Friday" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb4 <http://schema.org/dayOfWeek> "Saturday" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb4 <http://schema.org/dayOfWeek> "Sunday" <http://24blisshospital.com/index.html>   .
+_:n0022d243fa1d47cd96611f6a38022fd9xb4 <http://schema.org/opens> "10:00" <http://24blisshospital.com/index.html>   .
+_:n2a9ca63d55914faa9f6a2db861a5629axb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/BreadcrumbList> <http://24blisshospital.com/index.html>   .
+_:n2a9ca63d55914faa9f6a2db861a5629axb0 <http://schema.org/itemListElement> _:n2a9ca63d55914faa9f6a2db861a5629axb1 <http://24blisshospital.com/index.html>   .
+_:n2a9ca63d55914faa9f6a2db861a5629axb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ListItem> <http://24blisshospital.com/index.html>   .
+_:n2a9ca63d55914faa9f6a2db861a5629axb1 <http://schema.org/item> "https://24blisshospital.com/" <http://24blisshospital.com/index.html>   .
+_:n2a9ca63d55914faa9f6a2db861a5629axb1 <http://schema.org/name> "Home" <http://24blisshospital.com/index.html>   .
+_:n2a9ca63d55914faa9f6a2db861a5629axb1 <http://schema.org/position> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <http://24blisshospital.com/index.html>   .
+_:n8ee4858a2dde4c09b3a90fc5d453abf2xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <https://www.dr-masaki.com/archive>   .
+_:n8ee4858a2dde4c09b3a90fc5d453abf2xb0 <http://schema.org/address> _:n8ee4858a2dde4c09b3a90fc5d453abf2xb1 <https://www.dr-masaki.com/archive>   .
+_:n8ee4858a2dde4c09b3a90fc5d453abf2xb0 <http://schema.org/faxNumber> "03-5428-4226" <https://www.dr-masaki.com/archive>   .
+_:n8ee4858a2dde4c09b3a90fc5d453abf2xb0 <http://schema.org/founder> "çœŸå´Ž ä¿¡è¡Œ" <https://www.dr-masaki.com/archive>   .
+_:n8ee4858a2dde4c09b3a90fc5d453abf2xb0 <http://schema.org/image> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/top/2x/kv.jpg> <https://www.dr-masaki.com/archive>   .
+_:n8ee4858a2dde4c09b3a90fc5d453abf2xb0 <http://schema.org/logo> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/common/2x/img_header-logo_top.jpg> <https://www.dr-masaki.com/archive>   .
+_:n8ee4858a2dde4c09b3a90fc5d453abf2xb0 <http://schema.org/name> "çœŸå´ŽåŒ»é™¢" <https://www.dr-masaki.com/archive>   .
+_:n8ee4858a2dde4c09b3a90fc5d453abf2xb0 <http://schema.org/openingHours> "Mo,Tu,We,Th,Fr,Sa 10:00-20:00" <https://www.dr-masaki.com/archive>   .
+_:n8ee4858a2dde4c09b3a90fc5d453abf2xb0 <http://schema.org/telephone> "03-5428-4225" <https://www.dr-masaki.com/archive>   .
+_:n8ee4858a2dde4c09b3a90fc5d453abf2xb0 <http://schema.org/url> <http://www.dr-masaki.com/> <https://www.dr-masaki.com/archive>   .
+_:n8ee4858a2dde4c09b3a90fc5d453abf2xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://www.dr-masaki.com/archive>   .
+_:n8ee4858a2dde4c09b3a90fc5d453abf2xb1 <http://schema.org/addressLocality> "æ¸‹è°·åŒº" <https://www.dr-masaki.com/archive>   .
+_:n8ee4858a2dde4c09b3a90fc5d453abf2xb1 <http://schema.org/addressRegion> "æ±äº¬éƒ½" <https://www.dr-masaki.com/archive>   .
+_:n8ee4858a2dde4c09b3a90fc5d453abf2xb1 <http://schema.org/postalCode> "150-0033" <https://www.dr-masaki.com/archive>   .
+_:n8ee4858a2dde4c09b3a90fc5d453abf2xb1 <http://schema.org/streetAddress> "çŒ¿æ¥½ç”º9-8 URBAN PARKä»£å®˜å±± I 101" <https://www.dr-masaki.com/archive>   .
+_:n36970e56b81d4e91a56b8203309a1182xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <https://www.dr-masaki.com/case/botox/1726.html>   .
+_:n36970e56b81d4e91a56b8203309a1182xb0 <http://schema.org/address> _:n36970e56b81d4e91a56b8203309a1182xb1 <https://www.dr-masaki.com/case/botox/1726.html>   .
+_:n36970e56b81d4e91a56b8203309a1182xb0 <http://schema.org/faxNumber> "03-5428-4226" <https://www.dr-masaki.com/case/botox/1726.html>   .
+_:n36970e56b81d4e91a56b8203309a1182xb0 <http://schema.org/founder> "çœŸå´Ž ä¿¡è¡Œ" <https://www.dr-masaki.com/case/botox/1726.html>   .
+_:n36970e56b81d4e91a56b8203309a1182xb0 <http://schema.org/image> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/top/2x/kv.jpg> <https://www.dr-masaki.com/case/botox/1726.html>   .
+_:n36970e56b81d4e91a56b8203309a1182xb0 <http://schema.org/logo> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/common/2x/img_header-logo_top.jpg> <https://www.dr-masaki.com/case/botox/1726.html>   .
+_:n36970e56b81d4e91a56b8203309a1182xb0 <http://schema.org/name> "çœŸå´ŽåŒ»é™¢" <https://www.dr-masaki.com/case/botox/1726.html>   .
+_:n36970e56b81d4e91a56b8203309a1182xb0 <http://schema.org/openingHours> "Mo,Tu,We,Th,Fr,Sa 10:00-20:00" <https://www.dr-masaki.com/case/botox/1726.html>   .
+_:n36970e56b81d4e91a56b8203309a1182xb0 <http://schema.org/telephone> "03-5428-4225" <https://www.dr-masaki.com/case/botox/1726.html>   .
+_:n36970e56b81d4e91a56b8203309a1182xb0 <http://schema.org/url> <http://www.dr-masaki.com/> <https://www.dr-masaki.com/case/botox/1726.html>   .
+_:n36970e56b81d4e91a56b8203309a1182xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://www.dr-masaki.com/case/botox/1726.html>   .
+_:n36970e56b81d4e91a56b8203309a1182xb1 <http://schema.org/addressLocality> "æ¸‹è°·åŒº" <https://www.dr-masaki.com/case/botox/1726.html>   .
+_:n36970e56b81d4e91a56b8203309a1182xb1 <http://schema.org/addressRegion> "æ±äº¬éƒ½" <https://www.dr-masaki.com/case/botox/1726.html>   .
+_:n36970e56b81d4e91a56b8203309a1182xb1 <http://schema.org/postalCode> "150-0033" <https://www.dr-masaki.com/case/botox/1726.html>   .
+_:n36970e56b81d4e91a56b8203309a1182xb1 <http://schema.org/streetAddress> "çŒ¿æ¥½ç”º9-8 URBAN PARKä»£å®˜å±± I 101" <https://www.dr-masaki.com/case/botox/1726.html>   .
+_:n1e04ba14b3484ab595784ee7acd7958dxb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <https://www.dr-masaki.com/case/botox/1744.html>   .
+_:n1e04ba14b3484ab595784ee7acd7958dxb0 <http://schema.org/address> _:n1e04ba14b3484ab595784ee7acd7958dxb1 <https://www.dr-masaki.com/case/botox/1744.html>   .
+_:n1e04ba14b3484ab595784ee7acd7958dxb0 <http://schema.org/faxNumber> "03-5428-4226" <https://www.dr-masaki.com/case/botox/1744.html>   .
+_:n1e04ba14b3484ab595784ee7acd7958dxb0 <http://schema.org/founder> "çœŸå´Ž ä¿¡è¡Œ" <https://www.dr-masaki.com/case/botox/1744.html>   .
+_:n1e04ba14b3484ab595784ee7acd7958dxb0 <http://schema.org/image> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/top/2x/kv.jpg> <https://www.dr-masaki.com/case/botox/1744.html>   .
+_:n1e04ba14b3484ab595784ee7acd7958dxb0 <http://schema.org/logo> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/common/2x/img_header-logo_top.jpg> <https://www.dr-masaki.com/case/botox/1744.html>   .
+_:n1e04ba14b3484ab595784ee7acd7958dxb0 <http://schema.org/name> "çœŸå´ŽåŒ»é™¢" <https://www.dr-masaki.com/case/botox/1744.html>   .
+_:n1e04ba14b3484ab595784ee7acd7958dxb0 <http://schema.org/openingHours> "Mo,Tu,We,Th,Fr,Sa 10:00-20:00" <https://www.dr-masaki.com/case/botox/1744.html>   .
+_:n1e04ba14b3484ab595784ee7acd7958dxb0 <http://schema.org/telephone> "03-5428-4225" <https://www.dr-masaki.com/case/botox/1744.html>   .
+_:n1e04ba14b3484ab595784ee7acd7958dxb0 <http://schema.org/url> <http://www.dr-masaki.com/> <https://www.dr-masaki.com/case/botox/1744.html>   .
+_:n1e04ba14b3484ab595784ee7acd7958dxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://www.dr-masaki.com/case/botox/1744.html>   .
+_:n1e04ba14b3484ab595784ee7acd7958dxb1 <http://schema.org/addressLocality> "æ¸‹è°·åŒº" <https://www.dr-masaki.com/case/botox/1744.html>   .
+_:n1e04ba14b3484ab595784ee7acd7958dxb1 <http://schema.org/addressRegion> "æ±äº¬éƒ½" <https://www.dr-masaki.com/case/botox/1744.html>   .
+_:n1e04ba14b3484ab595784ee7acd7958dxb1 <http://schema.org/postalCode> "150-0033" <https://www.dr-masaki.com/case/botox/1744.html>   .
+_:n1e04ba14b3484ab595784ee7acd7958dxb1 <http://schema.org/streetAddress> "çŒ¿æ¥½ç”º9-8 URBAN PARKä»£å®˜å±± I 101" <https://www.dr-masaki.com/case/botox/1744.html>   .
+_:nb3448e3b32804071b4dffb7bca3de20axb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <https://www.dr-masaki.com/case/botox/1754.html>   .
+_:nb3448e3b32804071b4dffb7bca3de20axb0 <http://schema.org/address> _:nb3448e3b32804071b4dffb7bca3de20axb1 <https://www.dr-masaki.com/case/botox/1754.html>   .
+_:nb3448e3b32804071b4dffb7bca3de20axb0 <http://schema.org/faxNumber> "03-5428-4226" <https://www.dr-masaki.com/case/botox/1754.html>   .
+_:nb3448e3b32804071b4dffb7bca3de20axb0 <http://schema.org/founder> "çœŸå´Ž ä¿¡è¡Œ" <https://www.dr-masaki.com/case/botox/1754.html>   .
+_:nb3448e3b32804071b4dffb7bca3de20axb0 <http://schema.org/image> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/top/2x/kv.jpg> <https://www.dr-masaki.com/case/botox/1754.html>   .
+_:nb3448e3b32804071b4dffb7bca3de20axb0 <http://schema.org/logo> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/common/2x/img_header-logo_top.jpg> <https://www.dr-masaki.com/case/botox/1754.html>   .
+_:nb3448e3b32804071b4dffb7bca3de20axb0 <http://schema.org/name> "çœŸå´ŽåŒ»é™¢" <https://www.dr-masaki.com/case/botox/1754.html>   .
+_:nb3448e3b32804071b4dffb7bca3de20axb0 <http://schema.org/openingHours> "Mo,Tu,We,Th,Fr,Sa 10:00-20:00" <https://www.dr-masaki.com/case/botox/1754.html>   .
+_:nb3448e3b32804071b4dffb7bca3de20axb0 <http://schema.org/telephone> "03-5428-4225" <https://www.dr-masaki.com/case/botox/1754.html>   .
+_:nb3448e3b32804071b4dffb7bca3de20axb0 <http://schema.org/url> <http://www.dr-masaki.com/> <https://www.dr-masaki.com/case/botox/1754.html>   .
+_:nb3448e3b32804071b4dffb7bca3de20axb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://www.dr-masaki.com/case/botox/1754.html>   .
+_:nb3448e3b32804071b4dffb7bca3de20axb1 <http://schema.org/addressLocality> "æ¸‹è°·åŒº" <https://www.dr-masaki.com/case/botox/1754.html>   .
+_:nb3448e3b32804071b4dffb7bca3de20axb1 <http://schema.org/addressRegion> "æ±äº¬éƒ½" <https://www.dr-masaki.com/case/botox/1754.html>   .
+_:nb3448e3b32804071b4dffb7bca3de20axb1 <http://schema.org/postalCode> "150-0033" <https://www.dr-masaki.com/case/botox/1754.html>   .
+_:nb3448e3b32804071b4dffb7bca3de20axb1 <http://schema.org/streetAddress> "çŒ¿æ¥½ç”º9-8 URBAN PARKä»£å®˜å±± I 101" <https://www.dr-masaki.com/case/botox/1754.html>   .
+_:n236b817e12b1454a87ddcc5d812417abxb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <https://www.dr-masaki.com/case/eyes-sekkai/2468.html>   .
+_:n236b817e12b1454a87ddcc5d812417abxb0 <http://schema.org/address> _:n236b817e12b1454a87ddcc5d812417abxb1 <https://www.dr-masaki.com/case/eyes-sekkai/2468.html>   .
+_:n236b817e12b1454a87ddcc5d812417abxb0 <http://schema.org/faxNumber> "03-5428-4226" <https://www.dr-masaki.com/case/eyes-sekkai/2468.html>   .
+_:n236b817e12b1454a87ddcc5d812417abxb0 <http://schema.org/founder> "çœŸå´Ž ä¿¡è¡Œ" <https://www.dr-masaki.com/case/eyes-sekkai/2468.html>   .
+_:n236b817e12b1454a87ddcc5d812417abxb0 <http://schema.org/image> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/top/2x/kv.jpg> <https://www.dr-masaki.com/case/eyes-sekkai/2468.html>   .
+_:n236b817e12b1454a87ddcc5d812417abxb0 <http://schema.org/logo> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/common/2x/img_header-logo_top.jpg> <https://www.dr-masaki.com/case/eyes-sekkai/2468.html>   .
+_:n236b817e12b1454a87ddcc5d812417abxb0 <http://schema.org/name> "çœŸå´ŽåŒ»é™¢" <https://www.dr-masaki.com/case/eyes-sekkai/2468.html>   .
+_:n236b817e12b1454a87ddcc5d812417abxb0 <http://schema.org/openingHours> "Mo,Tu,We,Th,Fr,Sa 10:00-20:00" <https://www.dr-masaki.com/case/eyes-sekkai/2468.html>   .
+_:n236b817e12b1454a87ddcc5d812417abxb0 <http://schema.org/telephone> "03-5428-4225" <https://www.dr-masaki.com/case/eyes-sekkai/2468.html>   .
+_:n236b817e12b1454a87ddcc5d812417abxb0 <http://schema.org/url> <http://www.dr-masaki.com/> <https://www.dr-masaki.com/case/eyes-sekkai/2468.html>   .
+_:n236b817e12b1454a87ddcc5d812417abxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://www.dr-masaki.com/case/eyes-sekkai/2468.html>   .
+_:n236b817e12b1454a87ddcc5d812417abxb1 <http://schema.org/addressLocality> "æ¸‹è°·åŒº" <https://www.dr-masaki.com/case/eyes-sekkai/2468.html>   .
+_:n236b817e12b1454a87ddcc5d812417abxb1 <http://schema.org/addressRegion> "æ±äº¬éƒ½" <https://www.dr-masaki.com/case/eyes-sekkai/2468.html>   .
+_:n236b817e12b1454a87ddcc5d812417abxb1 <http://schema.org/postalCode> "150-0033" <https://www.dr-masaki.com/case/eyes-sekkai/2468.html>   .
+_:n236b817e12b1454a87ddcc5d812417abxb1 <http://schema.org/streetAddress> "çŒ¿æ¥½ç”º9-8 URBAN PARKä»£å®˜å±± I 101" <https://www.dr-masaki.com/case/eyes-sekkai/2468.html>   .
+_:na8fe0bbb6df2425f834a4657c719096cxb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <https://www.dr-masaki.com/case/eyes/age1>   .
+_:na8fe0bbb6df2425f834a4657c719096cxb0 <http://schema.org/address> _:na8fe0bbb6df2425f834a4657c719096cxb1 <https://www.dr-masaki.com/case/eyes/age1>   .
+_:na8fe0bbb6df2425f834a4657c719096cxb0 <http://schema.org/faxNumber> "03-5428-4226" <https://www.dr-masaki.com/case/eyes/age1>   .
+_:na8fe0bbb6df2425f834a4657c719096cxb0 <http://schema.org/founder> "çœŸå´Ž ä¿¡è¡Œ" <https://www.dr-masaki.com/case/eyes/age1>   .
+_:na8fe0bbb6df2425f834a4657c719096cxb0 <http://schema.org/image> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/top/2x/kv.jpg> <https://www.dr-masaki.com/case/eyes/age1>   .
+_:na8fe0bbb6df2425f834a4657c719096cxb0 <http://schema.org/logo> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/common/2x/img_header-logo_top.jpg> <https://www.dr-masaki.com/case/eyes/age1>   .
+_:na8fe0bbb6df2425f834a4657c719096cxb0 <http://schema.org/name> "çœŸå´ŽåŒ»é™¢" <https://www.dr-masaki.com/case/eyes/age1>   .
+_:na8fe0bbb6df2425f834a4657c719096cxb0 <http://schema.org/openingHours> "Mo,Tu,We,Th,Fr,Sa 10:00-20:00" <https://www.dr-masaki.com/case/eyes/age1>   .
+_:na8fe0bbb6df2425f834a4657c719096cxb0 <http://schema.org/telephone> "03-5428-4225" <https://www.dr-masaki.com/case/eyes/age1>   .
+_:na8fe0bbb6df2425f834a4657c719096cxb0 <http://schema.org/url> <http://www.dr-masaki.com/> <https://www.dr-masaki.com/case/eyes/age1>   .
+_:na8fe0bbb6df2425f834a4657c719096cxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://www.dr-masaki.com/case/eyes/age1>   .
+_:na8fe0bbb6df2425f834a4657c719096cxb1 <http://schema.org/addressLocality> "æ¸‹è°·åŒº" <https://www.dr-masaki.com/case/eyes/age1>   .
+_:na8fe0bbb6df2425f834a4657c719096cxb1 <http://schema.org/addressRegion> "æ±äº¬éƒ½" <https://www.dr-masaki.com/case/eyes/age1>   .
+_:na8fe0bbb6df2425f834a4657c719096cxb1 <http://schema.org/postalCode> "150-0033" <https://www.dr-masaki.com/case/eyes/age1>   .
+_:na8fe0bbb6df2425f834a4657c719096cxb1 <http://schema.org/streetAddress> "çŒ¿æ¥½ç”º9-8 URBAN PARKä»£å®˜å±± I 101" <https://www.dr-masaki.com/case/eyes/age1>   .
+_:nea4ff7fe991646e99e3d11bd2cfc452axb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <https://www.dr-masaki.com/case/eyes/eye-other/468.html>   .
+_:nea4ff7fe991646e99e3d11bd2cfc452axb0 <http://schema.org/address> _:nea4ff7fe991646e99e3d11bd2cfc452axb1 <https://www.dr-masaki.com/case/eyes/eye-other/468.html>   .
+_:nea4ff7fe991646e99e3d11bd2cfc452axb0 <http://schema.org/faxNumber> "03-5428-4226" <https://www.dr-masaki.com/case/eyes/eye-other/468.html>   .
+_:nea4ff7fe991646e99e3d11bd2cfc452axb0 <http://schema.org/founder> "çœŸå´Ž ä¿¡è¡Œ" <https://www.dr-masaki.com/case/eyes/eye-other/468.html>   .
+_:nea4ff7fe991646e99e3d11bd2cfc452axb0 <http://schema.org/image> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/top/2x/kv.jpg> <https://www.dr-masaki.com/case/eyes/eye-other/468.html>   .
+_:nea4ff7fe991646e99e3d11bd2cfc452axb0 <http://schema.org/logo> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/common/2x/img_header-logo_top.jpg> <https://www.dr-masaki.com/case/eyes/eye-other/468.html>   .
+_:nea4ff7fe991646e99e3d11bd2cfc452axb0 <http://schema.org/name> "çœŸå´ŽåŒ»é™¢" <https://www.dr-masaki.com/case/eyes/eye-other/468.html>   .
+_:nea4ff7fe991646e99e3d11bd2cfc452axb0 <http://schema.org/openingHours> "Mo,Tu,We,Th,Fr,Sa 10:00-20:00" <https://www.dr-masaki.com/case/eyes/eye-other/468.html>   .
+_:nea4ff7fe991646e99e3d11bd2cfc452axb0 <http://schema.org/telephone> "03-5428-4225" <https://www.dr-masaki.com/case/eyes/eye-other/468.html>   .
+_:nea4ff7fe991646e99e3d11bd2cfc452axb0 <http://schema.org/url> <http://www.dr-masaki.com/> <https://www.dr-masaki.com/case/eyes/eye-other/468.html>   .
+_:nea4ff7fe991646e99e3d11bd2cfc452axb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://www.dr-masaki.com/case/eyes/eye-other/468.html>   .
+_:nea4ff7fe991646e99e3d11bd2cfc452axb1 <http://schema.org/addressLocality> "æ¸‹è°·åŒº" <https://www.dr-masaki.com/case/eyes/eye-other/468.html>   .
+_:nea4ff7fe991646e99e3d11bd2cfc452axb1 <http://schema.org/addressRegion> "æ±äº¬éƒ½" <https://www.dr-masaki.com/case/eyes/eye-other/468.html>   .
+_:nea4ff7fe991646e99e3d11bd2cfc452axb1 <http://schema.org/postalCode> "150-0033" <https://www.dr-masaki.com/case/eyes/eye-other/468.html>   .
+_:nea4ff7fe991646e99e3d11bd2cfc452axb1 <http://schema.org/streetAddress> "çŒ¿æ¥½ç”º9-8 URBAN PARKä»£å®˜å±± I 101" <https://www.dr-masaki.com/case/eyes/eye-other/468.html>   .
+_:nd4ae19886ebd4b5bbe9e980eedfdc741xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <https://www.dr-masaki.com/case/eyes/habahiro/1010.html>   .
+_:nd4ae19886ebd4b5bbe9e980eedfdc741xb0 <http://schema.org/address> _:nd4ae19886ebd4b5bbe9e980eedfdc741xb1 <https://www.dr-masaki.com/case/eyes/habahiro/1010.html>   .
+_:nd4ae19886ebd4b5bbe9e980eedfdc741xb0 <http://schema.org/faxNumber> "03-5428-4226" <https://www.dr-masaki.com/case/eyes/habahiro/1010.html>   .
+_:nd4ae19886ebd4b5bbe9e980eedfdc741xb0 <http://schema.org/founder> "çœŸå´Ž ä¿¡è¡Œ" <https://www.dr-masaki.com/case/eyes/habahiro/1010.html>   .
+_:nd4ae19886ebd4b5bbe9e980eedfdc741xb0 <http://schema.org/image> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/top/2x/kv.jpg> <https://www.dr-masaki.com/case/eyes/habahiro/1010.html>   .
+_:nd4ae19886ebd4b5bbe9e980eedfdc741xb0 <http://schema.org/logo> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/common/2x/img_header-logo_top.jpg> <https://www.dr-masaki.com/case/eyes/habahiro/1010.html>   .
+_:nd4ae19886ebd4b5bbe9e980eedfdc741xb0 <http://schema.org/name> "çœŸå´ŽåŒ»é™¢" <https://www.dr-masaki.com/case/eyes/habahiro/1010.html>   .
+_:nd4ae19886ebd4b5bbe9e980eedfdc741xb0 <http://schema.org/openingHours> "Mo,Tu,We,Th,Fr,Sa 10:00-20:00" <https://www.dr-masaki.com/case/eyes/habahiro/1010.html>   .
+_:nd4ae19886ebd4b5bbe9e980eedfdc741xb0 <http://schema.org/telephone> "03-5428-4225" <https://www.dr-masaki.com/case/eyes/habahiro/1010.html>   .
+_:nd4ae19886ebd4b5bbe9e980eedfdc741xb0 <http://schema.org/url> <http://www.dr-masaki.com/> <https://www.dr-masaki.com/case/eyes/habahiro/1010.html>   .
+_:nd4ae19886ebd4b5bbe9e980eedfdc741xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://www.dr-masaki.com/case/eyes/habahiro/1010.html>   .
+_:nd4ae19886ebd4b5bbe9e980eedfdc741xb1 <http://schema.org/addressLocality> "æ¸‹è°·åŒº" <https://www.dr-masaki.com/case/eyes/habahiro/1010.html>   .
+_:nd4ae19886ebd4b5bbe9e980eedfdc741xb1 <http://schema.org/addressRegion> "æ±äº¬éƒ½" <https://www.dr-masaki.com/case/eyes/habahiro/1010.html>   .
+_:nd4ae19886ebd4b5bbe9e980eedfdc741xb1 <http://schema.org/postalCode> "150-0033" <https://www.dr-masaki.com/case/eyes/habahiro/1010.html>   .
+_:nd4ae19886ebd4b5bbe9e980eedfdc741xb1 <http://schema.org/streetAddress> "çŒ¿æ¥½ç”º9-8 URBAN PARKä»£å®˜å±± I 101" <https://www.dr-masaki.com/case/eyes/habahiro/1010.html>   .
+_:n6c23d9d5bda94bdfa59eeb156dab31e7xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <https://www.dr-masaki.com/case/eyes/habahiro/269.html>   .
+_:n6c23d9d5bda94bdfa59eeb156dab31e7xb0 <http://schema.org/address> _:n6c23d9d5bda94bdfa59eeb156dab31e7xb1 <https://www.dr-masaki.com/case/eyes/habahiro/269.html>   .
+_:n6c23d9d5bda94bdfa59eeb156dab31e7xb0 <http://schema.org/faxNumber> "03-5428-4226" <https://www.dr-masaki.com/case/eyes/habahiro/269.html>   .
+_:n6c23d9d5bda94bdfa59eeb156dab31e7xb0 <http://schema.org/founder> "çœŸå´Ž ä¿¡è¡Œ" <https://www.dr-masaki.com/case/eyes/habahiro/269.html>   .
+_:n6c23d9d5bda94bdfa59eeb156dab31e7xb0 <http://schema.org/image> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/top/2x/kv.jpg> <https://www.dr-masaki.com/case/eyes/habahiro/269.html>   .
+_:n6c23d9d5bda94bdfa59eeb156dab31e7xb0 <http://schema.org/logo> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/common/2x/img_header-logo_top.jpg> <https://www.dr-masaki.com/case/eyes/habahiro/269.html>   .
+_:n6c23d9d5bda94bdfa59eeb156dab31e7xb0 <http://schema.org/name> "çœŸå´ŽåŒ»é™¢" <https://www.dr-masaki.com/case/eyes/habahiro/269.html>   .
+_:n6c23d9d5bda94bdfa59eeb156dab31e7xb0 <http://schema.org/openingHours> "Mo,Tu,We,Th,Fr,Sa 10:00-20:00" <https://www.dr-masaki.com/case/eyes/habahiro/269.html>   .
+_:n6c23d9d5bda94bdfa59eeb156dab31e7xb0 <http://schema.org/telephone> "03-5428-4225" <https://www.dr-masaki.com/case/eyes/habahiro/269.html>   .
+_:n6c23d9d5bda94bdfa59eeb156dab31e7xb0 <http://schema.org/url> <http://www.dr-masaki.com/> <https://www.dr-masaki.com/case/eyes/habahiro/269.html>   .
+_:n6c23d9d5bda94bdfa59eeb156dab31e7xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://www.dr-masaki.com/case/eyes/habahiro/269.html>   .
+_:n6c23d9d5bda94bdfa59eeb156dab31e7xb1 <http://schema.org/addressLocality> "æ¸‹è°·åŒº" <https://www.dr-masaki.com/case/eyes/habahiro/269.html>   .
+_:n6c23d9d5bda94bdfa59eeb156dab31e7xb1 <http://schema.org/addressRegion> "æ±äº¬éƒ½" <https://www.dr-masaki.com/case/eyes/habahiro/269.html>   .
+_:n6c23d9d5bda94bdfa59eeb156dab31e7xb1 <http://schema.org/postalCode> "150-0033" <https://www.dr-masaki.com/case/eyes/habahiro/269.html>   .
+_:n6c23d9d5bda94bdfa59eeb156dab31e7xb1 <http://schema.org/streetAddress> "çŒ¿æ¥½ç”º9-8 URBAN PARKä»£å®˜å±± I 101" <https://www.dr-masaki.com/case/eyes/habahiro/269.html>   .
+_:n4cd21a01dde14f9aa991899c6dc5168bxb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <https://www.dr-masaki.com/case/eyes/habahiro/881.html>   .
+_:n4cd21a01dde14f9aa991899c6dc5168bxb0 <http://schema.org/address> _:n4cd21a01dde14f9aa991899c6dc5168bxb1 <https://www.dr-masaki.com/case/eyes/habahiro/881.html>   .
+_:n4cd21a01dde14f9aa991899c6dc5168bxb0 <http://schema.org/faxNumber> "03-5428-4226" <https://www.dr-masaki.com/case/eyes/habahiro/881.html>   .
+_:n4cd21a01dde14f9aa991899c6dc5168bxb0 <http://schema.org/founder> "çœŸå´Ž ä¿¡è¡Œ" <https://www.dr-masaki.com/case/eyes/habahiro/881.html>   .
+_:n4cd21a01dde14f9aa991899c6dc5168bxb0 <http://schema.org/image> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/top/2x/kv.jpg> <https://www.dr-masaki.com/case/eyes/habahiro/881.html>   .
+_:n4cd21a01dde14f9aa991899c6dc5168bxb0 <http://schema.org/logo> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/common/2x/img_header-logo_top.jpg> <https://www.dr-masaki.com/case/eyes/habahiro/881.html>   .
+_:n4cd21a01dde14f9aa991899c6dc5168bxb0 <http://schema.org/name> "çœŸå´ŽåŒ»é™¢" <https://www.dr-masaki.com/case/eyes/habahiro/881.html>   .
+_:n4cd21a01dde14f9aa991899c6dc5168bxb0 <http://schema.org/openingHours> "Mo,Tu,We,Th,Fr,Sa 10:00-20:00" <https://www.dr-masaki.com/case/eyes/habahiro/881.html>   .
+_:n4cd21a01dde14f9aa991899c6dc5168bxb0 <http://schema.org/telephone> "03-5428-4225" <https://www.dr-masaki.com/case/eyes/habahiro/881.html>   .
+_:n4cd21a01dde14f9aa991899c6dc5168bxb0 <http://schema.org/url> <http://www.dr-masaki.com/> <https://www.dr-masaki.com/case/eyes/habahiro/881.html>   .
+_:n4cd21a01dde14f9aa991899c6dc5168bxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://www.dr-masaki.com/case/eyes/habahiro/881.html>   .
+_:n4cd21a01dde14f9aa991899c6dc5168bxb1 <http://schema.org/addressLocality> "æ¸‹è°·åŒº" <https://www.dr-masaki.com/case/eyes/habahiro/881.html>   .
+_:n4cd21a01dde14f9aa991899c6dc5168bxb1 <http://schema.org/addressRegion> "æ±äº¬éƒ½" <https://www.dr-masaki.com/case/eyes/habahiro/881.html>   .
+_:n4cd21a01dde14f9aa991899c6dc5168bxb1 <http://schema.org/postalCode> "150-0033" <https://www.dr-masaki.com/case/eyes/habahiro/881.html>   .
+_:n4cd21a01dde14f9aa991899c6dc5168bxb1 <http://schema.org/streetAddress> "çŒ¿æ¥½ç”º9-8 URBAN PARKä»£å®˜å±± I 101" <https://www.dr-masaki.com/case/eyes/habahiro/881.html>   .
+_:n3f7dccda563245f9a1e4b043126cace0xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <https://www.dr-masaki.com/case/eyes/habahiro/942.html>   .
+_:n3f7dccda563245f9a1e4b043126cace0xb0 <http://schema.org/address> _:n3f7dccda563245f9a1e4b043126cace0xb1 <https://www.dr-masaki.com/case/eyes/habahiro/942.html>   .
+_:n3f7dccda563245f9a1e4b043126cace0xb0 <http://schema.org/faxNumber> "03-5428-4226" <https://www.dr-masaki.com/case/eyes/habahiro/942.html>   .
+_:n3f7dccda563245f9a1e4b043126cace0xb0 <http://schema.org/founder> "çœŸå´Ž ä¿¡è¡Œ" <https://www.dr-masaki.com/case/eyes/habahiro/942.html>   .
+_:n3f7dccda563245f9a1e4b043126cace0xb0 <http://schema.org/image> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/top/2x/kv.jpg> <https://www.dr-masaki.com/case/eyes/habahiro/942.html>   .
+_:n3f7dccda563245f9a1e4b043126cace0xb0 <http://schema.org/logo> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/common/2x/img_header-logo_top.jpg> <https://www.dr-masaki.com/case/eyes/habahiro/942.html>   .
+_:n3f7dccda563245f9a1e4b043126cace0xb0 <http://schema.org/name> "çœŸå´ŽåŒ»é™¢" <https://www.dr-masaki.com/case/eyes/habahiro/942.html>   .
+_:n3f7dccda563245f9a1e4b043126cace0xb0 <http://schema.org/openingHours> "Mo,Tu,We,Th,Fr,Sa 10:00-20:00" <https://www.dr-masaki.com/case/eyes/habahiro/942.html>   .
+_:n3f7dccda563245f9a1e4b043126cace0xb0 <http://schema.org/telephone> "03-5428-4225" <https://www.dr-masaki.com/case/eyes/habahiro/942.html>   .
+_:n3f7dccda563245f9a1e4b043126cace0xb0 <http://schema.org/url> <http://www.dr-masaki.com/> <https://www.dr-masaki.com/case/eyes/habahiro/942.html>   .
+_:n3f7dccda563245f9a1e4b043126cace0xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://www.dr-masaki.com/case/eyes/habahiro/942.html>   .
+_:n3f7dccda563245f9a1e4b043126cace0xb1 <http://schema.org/addressLocality> "æ¸‹è°·åŒº" <https://www.dr-masaki.com/case/eyes/habahiro/942.html>   .
+_:n3f7dccda563245f9a1e4b043126cace0xb1 <http://schema.org/addressRegion> "æ±äº¬éƒ½" <https://www.dr-masaki.com/case/eyes/habahiro/942.html>   .
+_:n3f7dccda563245f9a1e4b043126cace0xb1 <http://schema.org/postalCode> "150-0033" <https://www.dr-masaki.com/case/eyes/habahiro/942.html>   .
+_:n3f7dccda563245f9a1e4b043126cace0xb1 <http://schema.org/streetAddress> "çŒ¿æ¥½ç”º9-8 URBAN PARKä»£å®˜å±± I 101" <https://www.dr-masaki.com/case/eyes/habahiro/942.html>   .
+_:nf91864044d7543679ce9a84bdb155546xb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <https://www.dr-masaki.com/case/eyes/habasema/1023.html>   .
+_:nf91864044d7543679ce9a84bdb155546xb0 <http://schema.org/address> _:nf91864044d7543679ce9a84bdb155546xb1 <https://www.dr-masaki.com/case/eyes/habasema/1023.html>   .
+_:nf91864044d7543679ce9a84bdb155546xb0 <http://schema.org/faxNumber> "03-5428-4226" <https://www.dr-masaki.com/case/eyes/habasema/1023.html>   .
+_:nf91864044d7543679ce9a84bdb155546xb0 <http://schema.org/founder> "çœŸå´Ž ä¿¡è¡Œ" <https://www.dr-masaki.com/case/eyes/habasema/1023.html>   .
+_:nf91864044d7543679ce9a84bdb155546xb0 <http://schema.org/image> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/top/2x/kv.jpg> <https://www.dr-masaki.com/case/eyes/habasema/1023.html>   .
+_:nf91864044d7543679ce9a84bdb155546xb0 <http://schema.org/logo> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/common/2x/img_header-logo_top.jpg> <https://www.dr-masaki.com/case/eyes/habasema/1023.html>   .
+_:nf91864044d7543679ce9a84bdb155546xb0 <http://schema.org/name> "çœŸå´ŽåŒ»é™¢" <https://www.dr-masaki.com/case/eyes/habasema/1023.html>   .
+_:nf91864044d7543679ce9a84bdb155546xb0 <http://schema.org/openingHours> "Mo,Tu,We,Th,Fr,Sa 10:00-20:00" <https://www.dr-masaki.com/case/eyes/habasema/1023.html>   .
+_:nf91864044d7543679ce9a84bdb155546xb0 <http://schema.org/telephone> "03-5428-4225" <https://www.dr-masaki.com/case/eyes/habasema/1023.html>   .
+_:nf91864044d7543679ce9a84bdb155546xb0 <http://schema.org/url> <http://www.dr-masaki.com/> <https://www.dr-masaki.com/case/eyes/habasema/1023.html>   .
+_:nf91864044d7543679ce9a84bdb155546xb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://www.dr-masaki.com/case/eyes/habasema/1023.html>   .
+_:nf91864044d7543679ce9a84bdb155546xb1 <http://schema.org/addressLocality> "æ¸‹è°·åŒº" <https://www.dr-masaki.com/case/eyes/habasema/1023.html>   .
+_:nf91864044d7543679ce9a84bdb155546xb1 <http://schema.org/addressRegion> "æ±äº¬éƒ½" <https://www.dr-masaki.com/case/eyes/habasema/1023.html>   .
+_:nf91864044d7543679ce9a84bdb155546xb1 <http://schema.org/postalCode> "150-0033" <https://www.dr-masaki.com/case/eyes/habasema/1023.html>   .
+_:nf91864044d7543679ce9a84bdb155546xb1 <http://schema.org/streetAddress> "çŒ¿æ¥½ç”º9-8 URBAN PARKä»£å®˜å±± I 101" <https://www.dr-masaki.com/case/eyes/habasema/1023.html>   .
+_:n2052100be49648a3bec607171eeef96fxb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Hospital> <https://www.dr-masaki.com/case/eyes/habasema/318.html>   .
+_:n2052100be49648a3bec607171eeef96fxb0 <http://schema.org/address> _:n2052100be49648a3bec607171eeef96fxb1 <https://www.dr-masaki.com/case/eyes/habasema/318.html>   .
+_:n2052100be49648a3bec607171eeef96fxb0 <http://schema.org/faxNumber> "03-5428-4226" <https://www.dr-masaki.com/case/eyes/habasema/318.html>   .
+_:n2052100be49648a3bec607171eeef96fxb0 <http://schema.org/founder> "çœŸå´Ž ä¿¡è¡Œ" <https://www.dr-masaki.com/case/eyes/habasema/318.html>   .
+_:n2052100be49648a3bec607171eeef96fxb0 <http://schema.org/image> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/top/2x/kv.jpg> <https://www.dr-masaki.com/case/eyes/habasema/318.html>   .
+_:n2052100be49648a3bec607171eeef96fxb0 <http://schema.org/logo> <https://www.dr-masaki.com/dr-masaki/wp-content/themes/dr-masaki_theme/images/common/2x/img_header-logo_top.jpg> <https://www.dr-masaki.com/case/eyes/habasema/318.html>   .
+_:n2052100be49648a3bec607171eeef96fxb0 <http://schema.org/name> "çœŸå´ŽåŒ»é™¢" <https://www.dr-masaki.com/case/eyes/habasema/318.html>   .
+_:n2052100be49648a3bec607171eeef96fxb0 <http://schema.org/openingHours> "Mo,Tu,We,Th,Fr,Sa 10:00-20:00" <https://www.dr-masaki.com/case/eyes/habasema/318.html>   .
+_:n2052100be49648a3bec607171eeef96fxb0 <http://schema.org/telephone> "03-5428-4225" <https://www.dr-masaki.com/case/eyes/habasema/318.html>   .
+_:n2052100be49648a3bec607171eeef96fxb0 <http://schema.org/url> <http://www.dr-masaki.com/> <https://www.dr-masaki.com/case/eyes/habasema/318.html>   .
+_:n2052100be49648a3bec607171eeef96fxb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> <https://www.dr-masaki.com/case/eyes/habasema/318.html>   .
+_:n2052100be49648a3bec607171eeef96fxb1 <http://schema.org/addressLocality> "æ¸‹è°·åŒº" <https://www.dr-masaki.com/case/eyes/habasema/318.html>   .
+_:n2052100be49648a3bec607171eeef96fxb1 <http://schema.org/addressRegion> "æ±äº¬éƒ½" <https://www.dr-masaki.com/case/eyes/habasema/318.html>   .

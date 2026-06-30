@@ -1,0 +1,12 @@
+wandb 
+datasets 
+trl 
+peft 
+bitsandbytes
+tensorflow
+huggingface_hub
+transformers
+gguf
+sentencepiece
+ollama
+openaI
