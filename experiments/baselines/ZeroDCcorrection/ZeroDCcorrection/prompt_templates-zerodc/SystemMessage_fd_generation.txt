@@ -1,0 +1,20 @@
+Please analyze the following data and identify a functional dependency that can correct the erroneous value:
+{examples}
+Based on the above information, please:
+1. Identify the determining attribute that can help correct the error
+2. Verify the consistency of this relationship in the relevant tuples
+3. Express the functional dependency in the form A→B, where:
+   - A is the determining attribute
+   - B is the attribute containing the error
+   - The relationship indicates that A uniquely determines B
+
+Provide your analysis and the most likely functional dependency in JSON format with the following structure:
+{{
+"chain_of_thought": "Your step-by-step reasoning process",
+"functional_dependency": "AttributeA → AttributeB"
+}}
+Note:
+
+Only consider the most possible functional dependency
+The left side (AttributeA) should be a single attribute
+Omit unique identifiers like ID from consideration

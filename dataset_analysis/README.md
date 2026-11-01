@@ -1,6 +1,6 @@
 # Dataset Analysis (Section 5)
 
-Statistics and the **v3 error taxonomy** for the address benchmark.
+Statistics and the multi-label error taxonomy for the address benchmark.
 
 ---
 
@@ -21,22 +21,24 @@ source .venv/bin/activate        # Linux/macOS
 
 ```bash
 pip install -r requirements.txt
-python -m nltk.downloader wordnet omw-1.4
+./install_libpostal.sh
 ```
 
-All packages in `requirements.txt` are **required** to reproduce paper numbers:
+All packages in `requirements.txt` are **required** to reproduce the taxonomy:
 
 | Package | Used for | Effect if missing |
 |---------|----------|-------------------|
-| `ftfy` | Parsing error detector (encoding artifacts) | Parsing counts silently drop to near zero |
+| `ftfy` | Encoding repair inside `Special_Character` | Encoding differences go unlabelled |
 | `pycountry` | Abbreviation detector (ISO country codes) | Country-code abbreviations undetected |
-| `lingua-language-detector` | Language error detector | Language errors classified as Misc |
-| `rapidfuzz` | Typo + Word_Variant / Word_Substitution detection | Required; will ImportError |
+| `lingua-language-detector` | Language error detector | `Language` does not fire |
+| `rapidfuzz` | Typo (Damerau-Levenshtein) | ImportError |
+| `jellyfish` | Phonetic check inside `Formatting` | ImportError |
 | `geopandas` | Geographic distribution plot | Required for Figure 2 |
 
-The `postal` package (libpostal Python binding) further improves Abbreviation
-detection but requires a manual system-level install of libpostal
-(https://github.com/openvenues/pypostal) and is **truly optional**.
+`postal` (libpostal) is required for the Abbreviation layer. `install_libpostal.sh`
+builds it without root and copies the per-language dictionaries to
+`error_taxonomy/libpostal_dictionaries/`. The classifier raises `LibpostalMissing`
+if either the binding or the dictionaries are absent.
 
 ### Data
 
@@ -51,33 +53,60 @@ data/
   full_unnamed/clean.csv
   slices/us/named/dirty.csv
   slices/us/named/clean.csv
+  slices/us/unnamed/dirty.csv
+  slices/us/unnamed/clean.csv
   slices/de/named/dirty.csv
   slices/de/named/clean.csv
+  slices/de/unnamed/dirty.csv
+  slices/de/unnamed/clean.csv
+  slices/ru/named/dirty.csv
+  slices/ru/named/clean.csv
+  slices/ru/unnamed/dirty.csv
+  slices/ru/unnamed/clean.csv
   subsets/<POI>/named/dirty.csv   # one dir per POI type
   subsets/<POI>/named/clean.csv
+  subsets/<POI>/unnamed/dirty.csv
+  subsets/<POI>/unnamed/clean.csv
+  books/dirty.csv
+  books/clean.csv
+  movies/dirty.csv          # shipped in other_domains_movies.zip
+  movies/clean.csv          # built locally; IMDb ground truth
 ```
 
 ---
 
-## Error taxonomy (13 types)
+## Error taxonomy
 
-Applied in strict priority order — each cell gets the **first** matching type:
+`classify()` in `error_taxonomy/analyze_error_types.py` returns the set of
+labels that fire. Cells are whitespace- and Unicode-normalised, then
+lower-cased. A case-only difference is `Clean`.
 
-| Priority | Type | Definition |
-|----------|------|------------|
-| 1 | Clean | dirty == clean |
-| 2 | Missing | dirty is blank, clean is not |
-| 3 | Parsing | encoding artifact (ftfy / html entity / URL decoding restores equality) |
-| 4 | Capitalization | equal after case-fold |
-| 5 | Special_Character | equal after Unicode punct/symbol stripping |
-| 6 | Name_Reformat | same tokens, different order |
-| 7 | Language | different language detected by lingua |
-| 8 | Abbreviation | abbreviation ↔ expansion (libpostal / pycountry / static map) |
-| 9 | Token_Subset | one value is a subset of the other's tokens |
-| 10 | Typo | edit distance 1 after normalization |
-| 11 | Word_Variant | same root / transliteration variant |
-| 12 | Word_Substitution | same slot, different word |
-| 13 | Misc | none of the above |
+These labels are exclusive. The first match is the only label.
+
+| Order | Type | Definition |
+|-------|------|------------|
+| 1 | Clean | dirty == clean after normalisation and lower-casing |
+| 2 | Missing | dirty is blank |
+| 3 | Special_Character | equal after punctuation/symbol strip, the German fold, or encoding repair |
+| 4 | Abbreviation | token expansion makes the two strings equal |
+| 5 | Language | lingua (or the script) disagrees, and the strings do not share a word |
+
+If abbreviation expansion changes the pair but the strings still differ, the
+cell keeps `Abbreviation` and the rules below run on the expanded pair.
+`Special_Character` and a same-token reorder stop that layer. The others can
+combine.
+
+| Type | Definition |
+|------|------------|
+| Special_Character | same test as above, after abbreviation substitution |
+| Formatting | same tokens in another order, or one token that is the same name, number, or street type in another form |
+| Token_Subset | one value's tokens are a strict subset of the other's |
+| Typo | Damerau-Levenshtein distance ≤ 2 |
+| Semantic | one token differs and the lexical resources do not relate them |
+| Unresolved_Type | nothing fired |
+
+A cell keeps every label that fires. Clean, Missing, and Error partition the
+cells. The type columns can sum to more than Error.
 
 ---
 
@@ -85,22 +114,30 @@ Applied in strict priority order — each cell gets the **first** matching type:
 
 All commands assume you are in `dataset_analysis/` with the virtualenv active.
 
-### Table 4 — error-type distribution across all slices
+### All slices
 
 ```bash
 python run_analysis.py
 ```
 
-Processes all datasets found under `../data/` in chunks of 50,000 rows.
-Runtime: ~2–4 h for the full named + unnamed datasets on a laptop.
+Classifies every dataset under `../data/` and writes:
 
-Outputs to `output/`:
-- `error_type_results_all.csv` — per-dataset counts and percentages
-- `error_type_results_progress.csv` — intermediate results (updated after each dataset)
-- `error_type_table.tex` — copy of the published LaTeX table
+- `output/multilabel/<label>/summary.json` — label counts, cardinality, co-occurrence
+- `output/multilabel/<label>/examples.csv` — a few pairs per label combination
+- `output/error_type_results_all.csv`, `output/error_type_table.tex`, and `output/error_type_table.csv` — multi-label percentages. The checked-in `error_type_table.csv` is not overwritten
 
-Also updates the checked-in Table 4 artifacts:
-- [`error_type_table.csv`](error_type_table.csv)
+`--from-summaries` rebuilds the table files from `summary.json` without classifying again.
+
+`run_analysis.py` classifies the full sets, the US, DE, and RU slices, and every `../data/subsets/<POI>/named/` pair that is present. Books and movies are a separate command.
+
+### Books and movies
+
+```bash
+python run_other_domains_multilabel.py
+python run_other_domains_multilabel.py --only books
+```
+
+Those two corpora are the only non-address domains. Output goes to `output/multilabel/books/` and `output/multilabel/movies/`.
 
 ### Single dataset with heatmaps (Figures 3–5)
 
@@ -120,10 +157,7 @@ python error_taxonomy/analyze_error_types.py \
     --output_dir output/full_named
 ```
 
-Produces in `output/full_named/`:
-- `cell_error_types.csv` — per-cell error type labels
-- `error_matrix_heatmap.pdf` — row × column error heatmap
-- `per_column_error_stack.png` — stacked bar chart per column
+Produces label sets, prevalence, cardinality, and a co-occurrence matrix.
 
 ### Geographic distribution (Figure 2)
 
@@ -158,10 +192,15 @@ Prints null rates, duplicate counts, and value-count summaries to stdout.
 
 | Path | Purpose |
 |------|---------|
-| `error_taxonomy/analyze_error_types.py` | v3 classifier — canonical implementation |
-| `error_type_table.csv` | Published Table 4 (CSV) |
-| `run_analysis.py` | Batch runner → regenerates Table 4 files |
-| `run_single_dataset.py` | One dataset → heatmaps (wrapper around classifier CLI) |
+| `error_taxonomy/analyze_error_types.py` | Multi-label classifier |
+| `error_taxonomy/analyze_error_types_multilabel.py` | Multiprocessing driver |
+| `error_taxonomy/tests/test_hierarchy.py` | Layer-order regression tests |
+| `error_type_table.csv` | Checked-in multi-label percentages for the full sets, country slices, POI subsets, books, and movies. `run_analysis.py` writes a fresh multi-label table under `output/` and leaves this file in place |
+| `run_analysis.py` | Address datasets, plus any POI subset under `../data/subsets/` |
+| `run_other_domains_multilabel.py` | Books and movies |
+| `run_single_dataset.py` | One dataset, wrapper around the classifier CLI |
+| `build_gazetteer.py` | Place-name gazetteer for locality, region, and country |
+| `install_libpostal.sh` | Build libpostal and install its dictionaries |
 | `statistics/plot_geo_distribution.py` | Geographic distribution figure |
 | `statistics/cardinalities.py` | Attribute cardinality statistics |
 | `statistics/shallow_analyze.py` | Quick null/dup/value-count scan |

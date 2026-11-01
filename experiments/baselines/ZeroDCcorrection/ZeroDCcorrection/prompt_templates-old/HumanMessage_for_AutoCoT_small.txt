@@ -1,0 +1,4 @@
+Dirty Data Tuple: {Dirty_Tuple}
+Erroneous Value: {Erroneous_value}
+Relevant Clean Tuple: {Relevant_clean_tuples}
+Correction: {Correction}

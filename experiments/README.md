@@ -1,7 +1,7 @@
 # Experiments (Section 6)
 
 Benchmark harness and baseline implementations for evaluating data cleaning systems
-on the address datasets.
+on the address datasets. Books and movies use `harness/config_other_domains.json`.
 
 ---
 
@@ -16,6 +16,7 @@ experiments/
 │   ├── holoclean/        HoloClean Python package
 │   ├── horizon/          Java Horizon repairer
 │   ├── raha/             Raha (detection) + Baran (correction)
+│   ├── katara/           KATARA domain-KB baseline
 │   ├── tane/             TANE FD discovery
 │   └── uniclean/         UniClean address benchmark scripts
 ├── prompts/glocks/       Canonical Glocks LLM prompts
@@ -139,6 +140,19 @@ baselines/tane/.venv/bin/pip install -r baselines/tane/requirements.txt
    ```
    The harness compiles Horizon's Java sources automatically on first run.
 
+#### KATARA
+
+No extra install. The harness runner is a Python port of the
+`SimplifiedPatternDiscovery` domain-KB path and reads
+`baselines/katara/dominSpecific` (type coverage > 0.2, pair
+coverage ≥ 0.15). First load of the 464 MB KB is pickled next to the
+tool directory.
+
+```bash
+python3 run_katara.py --mode effectiveness --config config.json
+python3 run_katara.py --dirty DIRTY.csv --clean CLEAN.csv --out-dir OUT
+```
+
 #### Glocks (requires an LLM API key)
 
 ```bash
@@ -179,7 +193,7 @@ Edit `harness/config.json` before the first run. All paths are relative to
 
 | Key | Default | What to set |
 |-----|---------|-------------|
-| `paths.datasets_dir` | `../../data/merged_named` | Path to the `merged_named/` CSV directory from the dataset pipeline |
+| `paths.datasets_dir` | `../../data` | Zenodo address datasets: `full_named/`, `slices/{de,ru}/named/`, `subsets/<POI>/named/` |
 | `systems.holoclean.db_*` | `holo` / `holocleanuser` / `localhost:5436` | Your PostgreSQL connection details |
 | `systems.glocks.api_key_env` | `GOOGLE_API_KEY` | Env var name holding your LLM API key |
 
@@ -243,6 +257,7 @@ python3 prepare_rules.py    --config config.json \
 
 python3 run_glocks.py   --mode effectiveness --config config.json
 python3 run_raha_baran.py --mode effectiveness --system both --config config.json
+python3 run_katara.py   --mode effectiveness --config config.json
 
 python3 collect_results.py --config config.json --results-dir ./results
 ```
@@ -253,9 +268,9 @@ python3 collect_results.py --config config.json --results-dir ./results
 
 | Slice | Source | Description |
 |-------|--------|-------------|
-| `full` | `data/merged_named/full_{dirty,clean}.csv` | Multi-country, 10k sample |
-| `de` | `data/merged_named/slice_de_{dirty,clean}.csv` | Germany-only, 10k sample |
-| `russia` | `data/merged_named/russia/full_{dirty,clean}_russia.csv` | Russia-only, 10k sample |
+| `full` | `data/full_named/{dirty,clean}.csv` | Multi-country, 10k sample |
+| `de` | `data/slices/de/named/{dirty,clean}.csv` | Germany-only, 10k sample |
+| `russia` | `data/slices/ru/named/{dirty,clean}.csv` | Russia-only, 10k sample |
 | `poi_Library` | `data/subsets/Library/named/{dirty,clean}.csv` | Schema.org Library POIs |
 | `poi_ShoppingCenter` | `data/subsets/ShoppingCenter/named/{dirty,clean}.csv` | Schema.org ShoppingCenter POIs |
 
@@ -323,5 +338,5 @@ Path overrides (all optional):
 |--------------|---------|---------|
 | `REPO_ROOT` | parent of `experiments/` | Repository root |
 | `RESULTS_DIR` | `experiments/harness/results` | Harness results tree |
-| `DATASETS_DIR` | `{REPO_ROOT}/data/merged_named` | Source merged CSVs |
+| `DATASETS_DIR` | `{REPO_ROOT}/data` | Zenodo address datasets |
 | `ANALYSIS_ERRORS_DIR` | `{REPO_ROOT}/dataset_analysis/analysis_out_errors` | Error-type outputs from `run_analysis.py` |

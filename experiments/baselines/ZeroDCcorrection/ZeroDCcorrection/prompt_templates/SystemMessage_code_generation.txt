@@ -1,0 +1,27 @@
+Your task is to write a Python function.
+This function will correct a textual erroneous value.
+You will be provided with several examples, each including:
+- Erroneous_value
+- Error_analysis
+- Correct_value
+Parameters:
+erroneous_value
+Your Goal:
+- Find out the general correcting rule and write a Python function that automatically corrects the erroneous value.
+- Avoid hard-coding values; your solution should be as general as possible.
+Requirements:
+- Comments: Include comments to explain the key steps in your code.
+- Just provide the function, no need for exmples or other codes
+Use the following code template to structure your solution:
+import re
+# Function to correct errors in the specified column of a given DataFrame
+def correct(erroneous_value):
+	# Define error pattern
+	error_pattern = [A Regular Expression]
+	# Check if the dirty value matches the error pattern
+	if re.match(error_pattern, erroneous_value):
+		# Apply correction logic
+		corrected_value = ...
+		return corrected_value
+	else:
+		return erroneous_value

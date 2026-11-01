@@ -23,7 +23,6 @@ matplotlib.use("Agg")
 
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
-import matplotlib.gridspec as gridspec
 import matplotlib.ticker as mticker
 import numpy as np
 import pandas as pd
@@ -153,39 +152,46 @@ def load_and_count(csv_path: str, column: str) -> pd.DataFrame:
     return counts.sort_values("count", ascending=False).reset_index(drop=True)
 
 
+def _load_world():
+    """Load Natural Earth low-res countries, or None if geopandas/data are missing."""
+    try:
+        import geopandas as gpd
+    except ImportError:
+        return None
+
+    candidates = list(
+        Path.home().glob(
+            ".conda/envs/*/lib/python*/site-packages/pyogrio/tests/fixtures/naturalearth_lowres/naturalearth_lowres.shp"
+        )
+    )
+    for path in candidates:
+        try:
+            return gpd.read_file(path)
+        except Exception:
+            continue
+    try:
+        return gpd.read_file(gpd.datasets.get_path("naturalearth_lowres"))
+    except Exception:
+        pass
+    try:
+        return gpd.read_file(
+            "https://naciscdn.org/naturalearth/110m/cultural/ne_110m_admin_0_countries.zip"
+        )
+    except Exception:
+        return None
+
+
 def build_figure(counts: pd.DataFrame, top_n: int, title: str, output: str):
-    """Render the combined bar chart + choropleth map."""
+    """Full-width bar chart with the choropleth inset under the longest bar."""
 
     top = counts.head(top_n).copy()
     top = top.iloc[::-1]  # reverse for horizontal bar (top country on top)
+    n_bars = len(top)
 
-    # ---- Figure layout ----
-    fig = plt.figure(figsize=(18, 9), facecolor=BG_COLOR, dpi=180)
-    gs = gridspec.GridSpec(
-        1, 2, width_ratios=[1, 1.3], wspace=0.05,
-        left=0.07, right=0.97, top=0.88, bottom=0.10,
-    )
-    ax_bar = fig.add_subplot(gs[0])
-    ax_map = fig.add_subplot(gs[1])
+    fig, ax_bar = plt.subplots(figsize=(16.5, 8.6), facecolor=BG_COLOR, dpi=180)
+    fig.subplots_adjust(left=0.17, right=0.97, top=0.97, bottom=0.12)
 
-    # ---- Title ----
-    fig.text(
-        0.50, 0.95, title,
-        ha="center", va="center",
-        fontsize=22, fontweight="bold", color=TEXT_COLOR,
-        fontfamily="serif",
-    )
-    fig.text(
-        0.50, 0.91,
-        f"Top {top_n} countries shown  ·  {counts['count'].sum():,.0f} total addresses across {len(counts)} countries",
-        ha="center", va="center",
-        fontsize=11, color="#5A6B82", fontfamily="sans-serif",
-    )
-
-    # ==================================================================
-    # BAR CHART
-    # ==================================================================
-    max_val = top["count"].max()
+    max_val = float(top["count"].max())
     bar_colors = [
         mcolors.to_hex(
             np.array(mcolors.to_rgb(ACCENT_DARK)) * (0.35 + 0.65 * v / max_val)
@@ -194,96 +200,106 @@ def build_figure(counts: pd.DataFrame, top_n: int, title: str, output: str):
         for v in top["count"]
     ]
 
-    bars = ax_bar.barh(
-        range(len(top)), top["count"],
-        color=bar_colors, edgecolor=BAR_EDGE, linewidth=0.5,
-        height=0.72, zorder=3,
+    ax_bar.barh(
+        range(n_bars), top["count"],
+        color=bar_colors, edgecolor=BAR_EDGE, linewidth=0.4,
+        height=0.62, zorder=3,
     )
-    ax_bar.set_yticks(range(len(top)))
-    ax_bar.set_yticklabels(top["country"], fontsize=12, fontweight="bold", color=TEXT_COLOR)
-    ax_bar.set_xlabel("Number of Addresses", fontsize=12, color=TEXT_COLOR, labelpad=10)
-    ax_bar.set_ylabel("Top {} Countries".format(top_n), fontsize=12, color=TEXT_COLOR, labelpad=10)
+    ax_bar.set_yticks(range(n_bars))
+    ax_bar.set_yticklabels(top["country"], fontsize=18, fontweight="bold", color=TEXT_COLOR)
+    ax_bar.set_xlabel("Number of Addresses", fontsize=18, color=TEXT_COLOR, labelpad=12)
+    ax_bar.set_ylabel("Top {} Countries".format(top_n), fontsize=16, color=TEXT_COLOR, labelpad=10)
 
-    # Value labels
-    for i, (val, bar) in enumerate(zip(top["count"], bars)):
+    for i, val in enumerate(top["count"]):
         ax_bar.text(
-            val + max_val * 0.015, i,
+            val + max_val * 0.012, i,
             f"{val:,.0f}",
             va="center", ha="left",
-            fontsize=10, fontweight="bold", color=TEXT_COLOR,
+            fontsize=15, fontweight="bold", color=TEXT_COLOR, zorder=4,
         )
 
-    ax_bar.set_xlim(0, max_val * 1.22)
-    ax_bar.xaxis.set_major_formatter(mticker.FuncFormatter(lambda x, _: f"{x/1e6:.1f}M" if x >= 1e6 else f"{x/1e3:.0f}K" if x >= 1e3 else f"{x:.0f}"))
+    ax_bar.set_xlim(0, max_val * 1.13)
+    ax_bar.set_ylim(-0.55, n_bars - 0.28)
+    ax_bar.xaxis.set_major_formatter(
+        mticker.FuncFormatter(
+            lambda x, _: f"{x/1e6:.1f}M" if x >= 1e6 else f"{x/1e3:.0f}K" if x >= 1e3 else f"{x:.0f}"
+        )
+    )
     ax_bar.xaxis.grid(True, color=GRID_COLOR, linewidth=0.6, zorder=0)
     ax_bar.set_axisbelow(True)
     ax_bar.spines["top"].set_visible(False)
     ax_bar.spines["right"].set_visible(False)
     ax_bar.spines["bottom"].set_color(GRID_COLOR)
     ax_bar.spines["left"].set_color(GRID_COLOR)
-    ax_bar.tick_params(colors=TEXT_COLOR, labelsize=10)
+    ax_bar.tick_params(colors=TEXT_COLOR, labelsize=14)
 
-    # ==================================================================
-    # CHOROPLETH MAP
-    # ==================================================================
-    try:
-        import geopandas as gpd
-        import glob
+    world = _load_world()
+    if world is not None:
+        lon0, lon1, lat0, lat1 = -170.0, 188.0, -58.0, 84.0
+        map_aspect = (lon1 - lon0) / (lat1 - lat0)
 
-        # Try multiple known locations for naturalearth shapefile
-        candidates = [
-            *glob.glob("/usr/**/naturalearth_lowres/", recursive=True),
-            *glob.glob("/usr/**/naturalearth_lowres.shp", recursive=True),
-        ]
-        if candidates:
-            world = gpd.read_file(candidates[0])
-        else:
-            # Fallback: try deprecated API or URL
-            try:
-                world = gpd.read_file(gpd.datasets.get_path("naturalearth_lowres"))
-            except Exception:
-                world = gpd.read_file("https://naciscdn.org/naturalearth/110m/cultural/ne_110m_admin_0_countries.zip")
-    except Exception:
-            # Fallback: skip the map
-            ax_map.text(0.5, 0.5, "Install geopandas for\nthe world map", transform=ax_map.transAxes,
-                        ha="center", va="center", fontsize=14, color="#999")
-            ax_map.set_axis_off()
-            plt.savefig(output, dpi=180, bbox_inches="tight", facecolor=BG_COLOR)
-            print(f"[OK] Saved → {output}  (no map — install geopandas)")
-            return
+        xlim0, xlim1 = ax_bar.get_xlim()
+        ylim0, ylim1 = ax_bar.get_ylim()
+        second = float(top["count"].iloc[:-1].max()) if n_bars > 1 else 0.0
+        # Sit just to the right of the second-longest bar's count label,
+        # and just under the longest (US) bar.
+        x0 = second + max_val * 0.09
+        us_y = n_bars - 1
+        y_top = us_y - 0.40
 
-    # Merge counts with world geometries
-    iso_counts = counts.dropna(subset=["iso3"]).groupby("iso3")["count"].sum().reset_index()
-    world = world.merge(iso_counts, how="left", left_on="iso_a3", right_on="iso3")
+        fig.canvas.draw()
+        bbox = ax_bar.get_window_extent().transformed(fig.dpi_scale_trans.inverted())
+        ax_w, ax_h = bbox.width, bbox.height
+        left_frac = (x0 - xlim0) / (xlim1 - xlim0)
+        top_frac = (y_top - ylim0) / (ylim1 - ylim0)
+        width_frac = 0.995 - left_frac
+        height_frac = (width_frac * ax_w) / map_aspect / ax_h
+        bottom_frac = top_frac - height_frac
+        # Drop the block a bit so it sits closer to the x-axis.
+        bottom_frac = max(0.10, bottom_frac - 0.13)
+        if bottom_frac + height_frac > top_frac:
+            height_frac = top_frac - bottom_frac
+            width_frac = height_frac * ax_h * map_aspect / ax_w
 
-    # Draw base (no-data countries)
-    world.plot(ax=ax_map, color="#E8EDF4", edgecolor="white", linewidth=0.3)
+        ax_map = ax_bar.inset_axes([left_frac, bottom_frac, width_frac, height_frac])
+        ax_map.set_facecolor(BG_COLOR)
+        for spine in ax_map.spines.values():
+            spine.set_visible(False)
 
-    # Draw data countries with log-scale colour
-    has_data = world.dropna(subset=["count"])
-    if not has_data.empty:
-        from matplotlib.colors import LogNorm
-        vmin = max(has_data["count"].min(), 1)
-        vmax = has_data["count"].max()
-        cmap = mcolors.LinearSegmentedColormap.from_list("navy_map", ["#D4ECFF", "#7ABDF5", "#2D8BE6", "#0F3B8A", "#08153D"])
-        norm = LogNorm(vmin=vmin, vmax=vmax)
-        has_data.plot(ax=ax_map, column="count", cmap=cmap, norm=norm,
-                      edgecolor="white", linewidth=0.3, legend=False)
+        iso_counts = counts.dropna(subset=["iso3"]).groupby("iso3")["count"].sum().reset_index()
+        world = world.merge(iso_counts, how="left", left_on="iso_a3", right_on="iso3")
+        world.plot(ax=ax_map, color="#E8EDF4", edgecolor="white", linewidth=0.25)
+        has_data = world.dropna(subset=["count"])
+        if not has_data.empty:
+            from matplotlib.colors import LogNorm
+            vmin = max(has_data["count"].min(), 1)
+            vmax = has_data["count"].max()
+            cmap = mcolors.LinearSegmentedColormap.from_list(
+                "navy_map", ["#D4ECFF", "#7ABDF5", "#2D8BE6", "#0F3B8A", "#08153D"]
+            )
+            norm = LogNorm(vmin=vmin, vmax=vmax)
+            has_data.plot(
+                ax=ax_map, column="count", cmap=cmap, norm=norm,
+                edgecolor="white", linewidth=0.25, legend=False,
+            )
+            sm = plt.cm.ScalarMappable(cmap=cmap, norm=norm)
+            sm.set_array([])
+            cax = ax_bar.inset_axes([
+                left_frac + 0.16 * width_frac,
+                max(0.02, bottom_frac - 0.09),
+                0.68 * width_frac,
+                0.05,
+            ])
+            cbar = fig.colorbar(sm, cax=cax, orientation="horizontal")
+            cbar.set_label("Number of Addresses (log scale)", fontsize=14, color=TEXT_COLOR, labelpad=6)
+            cbar.ax.tick_params(labelsize=12, colors=TEXT_COLOR, length=3)
+            cbar.outline.set_edgecolor(GRID_COLOR)
 
-        # Colourbar
-        sm = plt.cm.ScalarMappable(cmap=cmap, norm=norm)
-        sm.set_array([])
-        cbar = fig.colorbar(sm, ax=ax_map, orientation="horizontal",
-                            fraction=0.035, pad=0.04, aspect=30, shrink=0.6)
-        cbar.set_label("Number of Addresses (log scale)", fontsize=10, color=TEXT_COLOR, labelpad=8)
-        cbar.ax.tick_params(labelsize=8, colors=TEXT_COLOR)
-        cbar.outline.set_edgecolor(GRID_COLOR)
+        ax_map.set_xlim(lon0, lon1)
+        ax_map.set_ylim(lat0, lat1)
+        ax_map.set_axis_off()
+        ax_map.set_aspect("equal")
 
-    ax_map.set_xlim(-180, 180)
-    ax_map.set_ylim(-60, 85)
-    ax_map.set_axis_off()
-
-    # ---- Save ----
     plt.savefig(output, dpi=180, bbox_inches="tight", facecolor=BG_COLOR)
     plt.close()
     print(f"[OK] Saved → {output}")

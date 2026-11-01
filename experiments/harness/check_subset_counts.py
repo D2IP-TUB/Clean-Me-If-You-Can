@@ -15,10 +15,7 @@ EXPERIMENTS_DIR = os.path.dirname(os.path.abspath(__file__))
 CONFIG_PATH = os.path.join(EXPERIMENTS_DIR, "config.json")
 
 SUBSETS_DIR = os.path.normpath(
-    os.path.join(
-        EXPERIMENTS_DIR,
-        "../../../Address-WDC/Datasets/subsets",
-    )
+    os.path.join(EXPERIMENTS_DIR, "../../data/subsets")
 )
 
 

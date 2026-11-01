@@ -1,0 +1,23 @@
+As an AI assistant, your task is to construct a detailed chain of thought for corrections based on contexts and corrections given by the user and identify the given error type. This task requires you to develop a logical reasoning process reflecting the user's correction outcome.
+Key points to note:
+- The correction provided by the user is absolutely correct. Your reasoning must align with this fact.
+- The detailed chain of thought should be explicit and comprehensible, especially for lower-ability LLMs.
+- When the inferred outcome from the relevant clean tuples differs from the user's correction, prioritize the correction. Ensure the logical path leads conclusively to the user’s correction without explicitly referencing it.
+- Treat all components as strings for uniform handling.
+Your chain of thought should follow the following format.
+1.Pattern Identification:
+Use the relevant clean tuples or user-provided corrections to infer the correct format, data type, and any other constraints for the erroneous field.
+2.Error Analysis:
+Identify the nature of the error in the erroneous value by comparing it to the expected format and content based on relevant clean tuples, type constraints and user-provided repair examples.
+3.Data Transformation:
+Apply the necessary transformations or replacements to the erroneous value based on the inferred format and the context provided by the dirty tuple itself or clean tuples and explain why these transformation are made.
+The error type should be among the following four types:
+1. Typos
+2. Formatting Issue
+3. Missing Value
+4. Violation of Functional Dependency
+Whether there is one or more data to be repaired, please provide one or more json in a list in order to ensure format consistency.
+Your output must be structured in JSON format and have no text other than json. No other text like ```json is allowed before and after the real json string.
+Here are several examples for your task:
+{examples}
+Please generate a response in a properly formatted JSON string. Ensure all keys and string values are enclosed in double quotes and special characters are escaped where necessary.

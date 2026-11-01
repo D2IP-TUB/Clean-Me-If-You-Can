@@ -1,0 +1,64 @@
+## Input
+
+- Target column: {target_column}
+- Existing functions JSON: {existing_functions}
+- Current non-cumulative feedback batch: {human_feedback}
+
+The feedback batch is not cumulative. Existing functions are the retained state from earlier iterations.
+
+Feedback fields:
+
+- `original_value` and `corrected_value` are authoritative.
+- `actual_classification` is `dirty` when those values differ and `clean` when they are equal.
+- `initial_classification` is the prediction made by the existing rules.
+- `flagging_function_key` is reliable for a confirmed false positive when non-empty.
+- An empty `flagging_function_key` on dirty feedback does not mean that no rule fired.
+
+## Mandatory Feedback Audit
+
+1. List every item where `initial_classification != actual_classification`.
+2. If the list is empty, return the existing functions unchanged.
+3. A confirmed-clean item that an existing rule flags is a decisive counterexample. Delete, narrow, or replace that rule now. Do not keep it because the sampling source says `dirty_sample` or because the word looks unusual.
+4. If the same batch contains a false negative with a narrower structural pattern, replace the contradicted broad rule with that narrower rule. This is one minimal behavioral change.
+5. For a false negative, preserve unrelated functions and add or minimally expand one function only when the correction directly exposes a reusable structural mechanism. Otherwise keep the existing functions unchanged.
+
+Every returned rule must be False for every confirmed-clean item in this batch. A rule that targets an ordinary proper noun, place, language, category, title word, or free-text phrase is unsupported unless a structural pattern, not the word itself, is proven.
+
+## Authoritative Structural Edit Templates
+
+Use these templates only when the current correction pair demonstrates the stated structure and the clean feedback has no counterexample.
+
+1. **Literal marker:** when an edit removes a literal marker such as `%`, use `col.str.contains(marker, regex=False, na=False)`.
+2. **Localized suffix:** when an edit removes a repeated localized suffix, use a localized positive regex. Do not replace it with a broad word or name search.
+3. **Alphabetic numeric wrapper:** when a numeric corrected value is wrapped in alphabetic unit/package text, use `col.str.contains(r'[A-Za-z]', regex=True, na=False)` only if actual-clean values in the batch do not contain the same wrapper mechanism.
+4. **Numeric canonicalization:** when values such as `17.0` are corrected to `17` and nonzero decimals are clean, use `col.str.fullmatch(r'\d+\.0', na=False)`.
+5. **Slash-form score:** when a score form containing `/` is corrected to a scalar, use `col.str.contains('/', regex=False, na=False)`. It may be OR-combined with the numeric-canonicalization predicate when both mechanisms are confirmed.
+6. **Hour-form duration:** when a value containing an hour token is corrected to a minute-only duration, use `col.str.contains(r'\b\d+\s*(?:h|hr|hrs|hour|hours)\.?\b', regex=True, case=False, na=False)`. Never use `contains('min')` as an error rule.
+7. **Compound categorical token:** when a comma-delimited category value with `&` is corrected to atomic categories, use `col.str.contains('&', regex=False, na=False)`. Do not apply this template to unstructured prose or names.
+8. **Delimited digit grouping:** when digit separators are removed, use `col.str.contains(',', regex=False, na=False)` only for an otherwise digit-form field.
+9. **Bounded canonical identifier:** when several feedback items establish a compact grammar such as a literal prefix followed only by digits, use a negated `fullmatch` for exactly that grammar. Do not use this for names, prose, categories, or normal free text.
+10. **Sentinel:** when `null` is corrected to a concrete value, use `col.eq('null')` only if no current feedback proves that the sentinel is clean. A clean `null` is a direct counterexample and blocks this rule.
+
+## Synthetic Stateful Few-Shot Examples
+
+These examples are invented and cross-domain. They do not describe the input data.
+
+- **Delete a semantic false positive.** Existing `fun1` uses `col.str.contains('Harbor', regex=False, na=False)`. Authoritative feedback says `North Harbor` is clean and the item was flagged by `fun1`. The correct response is `{{}}`. A name word is not a corruption marker.
+- **Replace a broad unit rule.** Existing `fun1` uses `col.str.contains('min', regex=False, na=False)`. Feedback says `98 min` is clean and flagged, while `2 hr. 5 min.` is dirty and unflagged. Replace `fun1` with the hour-form duration predicate from template 6. Do not keep or append the broad minute rule.
+- **Expand one verified scalar rule.** Existing `fun1` detects `/`. Feedback says `8.0` corrected to `8` is dirty, while `8.4` is clean. Keep the slash detector and expand that same function with `| col.str.fullmatch(r'\d+\.0', na=False)`.
+- **Add a compound-category rule.** A comma-delimited field has a false negative `Research & Development` corrected to atomic categories, with no clean ampersand counterexample. Append one `contains('&')` function. Do not use it for a person name or prose field.
+- **Preserve unrelated state.** Existing `fun1` detects `%`. A false negative changes `null` to a concrete code and no feedback shows clean `null`. Keep `fun1` exactly and append one `col.eq('null')` function.
+- **Reject unsupported content replacement.** A long description is corrected to a different long description with no repeated inserted marker, canonical format, or structural suffix. Return the existing functions unchanged; do not invent a keyword rule.
+
+## Stability And Safety Rules
+
+- Make at most one minimal behavioral change per batch and add at most one new function.
+- Preserve every unrelated function source exactly.
+- Never infer a whitelist, dictionary, allowed prefix set, numeric range, complete format grammar, external domain rule, or cross-column relationship.
+- Never embed sample lists, full observed field values, correction pairs, loops, dynamic analysis, helper functions, imports, mutation, docstrings, or explanatory comments in generated code.
+- Do not retain redundant all-False placeholder functions when adding a real rule.
+- Keys and function names must be sequential: `fun1`, `fun2`, and so on.
+
+## Function And Output Contract
+
+Each JSON value is one short static Python function accepting exactly `df` and returning a boolean Pandas Series aligned to `df.index`. Assume `pd`, `np`, and `re` are available. Return one raw JSON object only, without Markdown or explanation.

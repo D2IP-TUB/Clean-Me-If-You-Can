@@ -1,0 +1,55 @@
+## Input
+
+- Target column: {target_column}
+- Error-prone retrieval sample: {dirty_table}
+- Likely-correct retrieval sample: {clean_table}
+
+Both samples are weakly labeled subsets taken from the same dirty table. A value in the error-prone sample may be valid, and a value in the likely-correct sample may still be erroneous. Membership in a group is not enough to establish a rule.
+
+## Objective
+
+Generate zero or one high-precision rule for one directly visible, reusable structural corruption mechanism in the target column. Precision and repeatability are more important than recall. If an error is a content substitution, a semantic mismatch, a typo without a repeated form, or an arbitrary missing value, return an empty object.
+
+## Evidence Hierarchy
+
+Choose the first supported mechanism. Every rule needs at least two supporting target values or one repeated structural form, plus no supplied counterexample.
+
+1. **Injected delimiter or literal marker:** a punctuation mark or short literal string is inserted into otherwise comparable values. Use one positive `contains` rule.
+2. **Localized structural suffix or token:** the same shape appears in a fixed position, such as a terminal status token, parenthetical ordinal, or two-letter suffix. Use a localized positive regex, never a broad word search.
+3. **Canonical scalar formatting:** repeated target values share an observable format mismatch with canonical values, such as digit grouping, a trailing `.0` that is normalized to an integer, a slash-formatted score, or an hour token embedded in a duration. Use `fullmatch` or a narrowly bounded regex for only that shape.
+4. **Delimited categorical legacy form:** in a comma-delimited categorical field, a repeated compound-token separator is present in candidate values while contrasting values use atomic tokens. Detect the separator only when the structural contrast is visible.
+5. **Bounded canonical identifier:** only when several supplied values establish one exact identifier grammar and candidate values violate it, a single negated `fullmatch` for that grammar is allowed. This exception is only for a compact identifier token, not names, prose, categories, dates, or arbitrary free text.
+
+If no mechanism clears this bar, return an empty object.
+
+## Hard Boundaries
+
+- A proper name, title word, language, country, place, organization, category label, ordinary unit word, or rare vocabulary item is never itself error evidence.
+- Never flag a value merely because it contains a normal word such as a person's name, a location, a language, or a single category label.
+- Do not infer a dictionary, allowed value list, numeric range, required prefix, null policy, complete grammar, or cross-column rule from the column name.
+- Do not use external knowledge or enumerate observed full values.
+- Do not create `~isin`, `~startswith`, or `~match` rules. The bounded canonical-identifier exception above may use only `~col.str.fullmatch(...)`.
+- A placeholder sentinel such as `null`, `none`, `nan`, `n/a`, or an empty value is not initial-rule evidence.
+- Do not use a marker that occurs only once, and do not use a broad rule if it also matches an ordinary supplied value.
+
+## Synthetic Mechanism Examples
+
+These are invented cross-domain illustrations, not records, column names, or rules from the input. Apply an example only when the supplied target values directly show the same structure.
+
+- Fictional `amount_text`: repeated `17.0` and `42.0` contrast with canonical integers `17` and `42`. The narrow predicate is `col.str.fullmatch(r'\d+\.0', na=False)`. It does not flag `17.5`.
+- Fictional `elapsed_text`: `1 hr. 20 min.` and `2 hours` contrast with normal `80 min` and `120 min`. The narrow predicate is `col.str.contains(r'\b\d+\s*(?:h|hr|hrs|hour|hours)\.?\b', regex=True, case=False, na=False)`. Never use `contains('min')`, because ordinary minute values are valid.
+- Fictional `tag_list`: repeated comma-delimited legacy values include compound tokens such as `Research & Development,Sales & Service`, while contrasting values contain atomic comma-separated tokens. The reusable structural predicate is `col.str.contains('&', regex=False, na=False)`.
+- Fictional `record_code`: several canonical values have the exact grammar `rk` followed by digits, while noncanonical candidates have other forms. The allowed bounded identifier predicate is `~col.str.fullmatch(r'rk\d+', na=False)`.
+- Fictional `person_list`: a clean value happens to contain the word `Harbor`. A rule targeting `Harbor` is invalid because it is a name word, not a structural corruption marker; return `{{}}`.
+
+## Generated-Code Restrictions
+
+- Return zero or one function, named `fun1`, accepting exactly one argument named `df`.
+- The function returns a boolean Pandas Series aligned to `df.index`; `True` means dirty.
+- The function is short and static: no sample arrays, hardcoded observed full values, loops, dynamic discovery, imports, mutation, helper functions, docstrings, or explanatory comments.
+- Use a local `col` variable from the current target column. Constants may only be a short structural literal, a localized regex, or the compact identifier grammar directly supported by the samples.
+- If the target column is absent, return an all-False Series. Assume `pd`, `np`, and `re` are available.
+
+## Output Contract
+
+Return one raw JSON object only, without Markdown or explanation. Return `{{}}` when evidence is insufficient. Otherwise return one key `fun1` whose value is the escaped Python source and whose function is also named `fun1`.

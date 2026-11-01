@@ -42,7 +42,9 @@ pattern_cleaners = [
 ]
 
 # ---------------------------------------------------------------------------
-# Rule set 3: Functional dependency rules (17 FDs from fds_russia_full_holoclean.txt)
+# Rule set 3: Functional dependency rules (14 active 1-column FDs; identical to the 14 FDs
+# mined by TANE on the Russia clean table, see fds_russia_full_holoclean.txt.
+# The three 3-column FDs below are commented out and not part of the mined set.)
 # ---------------------------------------------------------------------------
 fd_cleaners = [
     # --- 1-column source FDs ---

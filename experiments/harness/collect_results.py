@@ -29,9 +29,12 @@ from runner_utils import load_config, log, log_error
 SLICE_ORDER = ["full", "de", "russia", "poi_Library", "poi_ShoppingCenter"]
 
 # Systems that have a detection phase and a separate correction phase
-DETECTION_SYSTEMS = {"raha"}
+DETECTION_SYSTEMS = {"raha", "zerodc_detection"}
 CORRECTION_SYSTEMS = {"baran"}
-BOTH_SYSTEMS = {"datawig", "holoclean", "horizon", "uniclean", "glocks"}
+BOTH_SYSTEMS = {
+    "datawig", "holoclean", "horizon", "uniclean", "glocks",
+    "zerodccorrection", "zerodccorrection_zerodcprompts", "katara",
+}
 
 # Runtime-mode system names (the runners append _runtime suffix)
 RUNTIME_SUFFIX = "_runtime"
@@ -125,6 +128,8 @@ def collect_effectiveness(df: pd.DataFrame, manuscript_dir: str, cfg: dict):
         if slice_df.empty:
             continue
         for system in slice_df["system"].unique():
+            if "_smoke" in str(system):  # smoke-test runs are never part of the results
+                continue
             sys_df = slice_df[slice_df["system"] == system].copy()
 
             rows = []

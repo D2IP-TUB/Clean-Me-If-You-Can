@@ -202,7 +202,7 @@ def run_baran_effectiveness(dataset: dict, cfg: dict, results_base: str, raha_re
     log(f"  -> saved to {run_dir}")
 
 
-def run_raha_runtime(dataset: dict, cfg: dict, results_base: str):
+def run_raha_runtime(dataset: dict, cfg: dict, results_base: str, rep: int = 1):
     import raha
     sys_cfg = cfg["systems"]["raha"]
     labeling_budget = sys_cfg["labeling_budget"]
@@ -212,7 +212,7 @@ def run_raha_runtime(dataset: dict, cfg: dict, results_base: str):
     purge_raha_cache(dataset_dir)
 
     run_dir = setup_run_dir(results_base, "raha_runtime", dataset["name"])
-    log(f"Raha runtime | {dataset['name']} | n={dataset['n_records']}")
+    log(f"Raha runtime | {dataset['name']} | n={dataset['n_records']} | rep={rep}")
 
     dd = {
         "name": dataset["name"],
@@ -255,14 +255,16 @@ def run_raha_runtime(dataset: dict, cfg: dict, results_base: str):
         "n_records": dataset["n_records"],
         "labeling_budget": labeling_budget,
         "mode": "runtime",
+        "repetition": rep,
         "timed_out": timed_out,
         "oom": oom,
     }
     record_runtime(run_dir, run_config, tracker.elapsed, tracker.peak_mb)
     log(f"  -> {tracker.elapsed:.1f}s  {tracker.peak_mb:.0f}MB  timed_out={timed_out}  oom={oom}")
+    return timed_out or oom
 
 
-def run_baran_runtime(dataset: dict, cfg: dict, results_base: str):
+def run_baran_runtime(dataset: dict, cfg: dict, results_base: str, rep: int = 1):
     import raha
     sys_cfg = cfg["systems"]["baran"]
     labeling_budget = sys_cfg["labeling_budget"]
@@ -272,7 +274,7 @@ def run_baran_runtime(dataset: dict, cfg: dict, results_base: str):
     purge_raha_cache(dataset_dir)
 
     run_dir = setup_run_dir(results_base, "baran_runtime", dataset["name"])
-    log(f"Baran runtime | {dataset['name']} | n={dataset['n_records']}")
+    log(f"Baran runtime | {dataset['name']} | n={dataset['n_records']} | rep={rep}")
 
     dd = {
         "name": dataset["name"],
@@ -324,11 +326,13 @@ def run_baran_runtime(dataset: dict, cfg: dict, results_base: str):
         "n_records": dataset["n_records"],
         "labeling_budget": labeling_budget,
         "mode": "runtime",
+        "repetition": rep,
         "timed_out": timed_out,
         "oom": oom,
     }
     record_runtime(run_dir, run_config, tracker.elapsed, tracker.peak_mb)
     log(f"  -> {tracker.elapsed:.1f}s  {tracker.peak_mb:.0f}MB  timed_out={timed_out}  oom={oom}")
+    return timed_out or oom
 
 
 def main():
@@ -339,7 +343,9 @@ def main():
     parser.add_argument("--datasets-dir", default=os.path.join(EXPERIMENTS_DIR, "experiment_datasets"))
     parser.add_argument("--results-dir", default=os.path.join(EXPERIMENTS_DIR, "results"))
     parser.add_argument("--reps", type=int, default=None,
-                        help="Override n_effectiveness_runs from config")
+                        help="How many repetitions to run (default: n_effectiveness_runs)")
+    parser.add_argument("--first-rep", type=int, default=1,
+                        help="Repetition number to start from")
     parser.add_argument("--filter-datasets", default=None,
                         help="Comma-separated substrings; only datasets whose name contains at least one are run")
     args = parser.parse_args()
@@ -356,9 +362,10 @@ def main():
             filters = [f.strip() for f in args.filter_datasets.split(",") if f.strip()]
             datasets = [ds for ds in datasets if any(f in ds["name"] for f in filters)]
         n_reps = args.reps if args.reps is not None else cfg.get("experiment", {}).get("n_effectiveness_runs", 3)
-        log(f"Found {len(datasets)} effectiveness datasets, {n_reps} repetitions")
-        for rep in range(1, n_reps + 1):
-            log(f"=== Effectiveness repetition {rep}/{n_reps} ===")
+        last_rep = args.first_rep + n_reps - 1
+        log(f"Found {len(datasets)} effectiveness datasets, repetitions {args.first_rep}-{last_rep}")
+        for rep in range(args.first_rep, last_rep + 1):
+            log(f"=== Effectiveness repetition {rep}/{last_rep} ===")
             for ds in datasets:
                 if run_raha:
                     run_raha_effectiveness(ds, cfg, args.results_dir, rep=rep)
@@ -366,12 +373,26 @@ def main():
                     run_baran_effectiveness(ds, cfg, args.results_dir, rep=rep)
     else:
         datasets = list_runtime_datasets(cfg, args.datasets_dir)
-        log(f"Found {len(datasets)} runtime datasets")
-        for ds in datasets:
-            if run_raha:
-                run_raha_runtime(ds, cfg, args.results_dir)
-            if run_baran:
-                run_baran_runtime(ds, cfg, args.results_dir)
+        if args.filter_datasets:
+            filters = [f.strip() for f in args.filter_datasets.split(",") if f.strip()]
+            datasets = [ds for ds in datasets if any(f in ds["name"] for f in filters)]
+        n_reps = args.reps if args.reps is not None else cfg.get("experiment", {}).get("n_runtime_runs", 1)
+        last_rep = args.first_rep + n_reps - 1
+        log(f"Found {len(datasets)} runtime datasets, repetitions {args.first_rep}-{last_rep}")
+        stop_raha = stop_baran = False
+        for rep in range(args.first_rep, last_rep + 1):
+            log(f"=== Runtime repetition {rep}/{last_rep} ===")
+            for ds in datasets:
+                if run_raha and not stop_raha:
+                    if run_raha_runtime(ds, cfg, args.results_dir, rep=rep):
+                        log("Raha timeout/OOM — skipping remaining sizes and repetitions")
+                        stop_raha = True
+                if run_baran and not stop_baran:
+                    if run_baran_runtime(ds, cfg, args.results_dir, rep=rep):
+                        log("Baran timeout/OOM — skipping remaining sizes and repetitions")
+                        stop_baran = True
+                if (not run_raha or stop_raha) and (not run_baran or stop_baran):
+                    return
 
 
 if __name__ == "__main__":

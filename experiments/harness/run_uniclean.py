@@ -9,9 +9,13 @@ baselines/uniclean/uniclean_cleaners/:
   russia            → main_ru
   poi_Library       → main_library
   poi_ShoppingCenter → main_shopping_center
+  books             → main_books
+  movies            → main_movies
 
 Runtime experiments always use main_full on sampled full-dataset rows.
 """
+
+from __future__ import annotations  # allow `int | None` annotations on Python 3.9 (uniclean env)
 
 import argparse
 import importlib
@@ -35,11 +39,19 @@ from runner_utils import (
     get_memory_limit_mb,
     init_log_file,
 )
-from evaluate import evaluate, record_runtime, diff_repaired
+from evaluate import evaluate, record_runtime, diff_repaired, normalize
 
 UNICLEAN_DIR = os.path.normpath(
     os.path.join(EXPERIMENTS_DIR, "../baselines/uniclean/uniclean_cleaners")
 )
+
+
+def _ensure_pyspark_python() -> None:
+    """Pin Spark workers to this interpreter (avoids PATH picking another Python)."""
+    exe = sys.executable
+    os.environ["PYSPARK_PYTHON"] = exe
+    os.environ["PYSPARK_DRIVER_PYTHON"] = exe
+
 
 SLICE_TO_MAIN = {
     "full": "main_full",
@@ -47,6 +59,8 @@ SLICE_TO_MAIN = {
     "russia": "main_ru",
     "poi_Library": "main_library",
     "poi_ShoppingCenter": "main_shopping_center",
+    "books": "main_books",
+    "movies": "main_movies",
 }
 
 
@@ -63,7 +77,19 @@ def _main_module_for_dataset(dataset: dict) -> str:
         return "main_library"
     if name.startswith("poi_ShoppingCenter"):
         return "main_shopping_center"
+    if name.startswith("books_"):
+        return "main_books"
+    if name.startswith("movies_"):
+        return "main_movies"
     return "main_full"
+
+
+def _write_normalized_copy(src: str, dst: str) -> str:
+    """Write src with every cell passed through evaluate.normalize; return dst."""
+    df = pd.read_csv(src, dtype=str, keep_default_na=False, low_memory=False)
+    df = df.applymap(normalize)
+    df.to_csv(dst, index=False)
+    return dst
 
 
 def _cleaned_csv_path(save_path: str, table_name: str) -> str:
@@ -77,7 +103,17 @@ def _call_main(
     save_path: str,
     table_name: str,
 ) -> None:
-    """Invoke main_{slice}.main() with harness dataset paths."""
+    """Invoke main_{slice}.main() with harness dataset paths.
+
+    UniClean is fed case-normalized copies of the dirty/clean CSVs (evaluate.normalize:
+    HTML-unescape, whitespace collapse, strip, lower-case), matching the shared evaluation
+    and Raha/Baran: a case-only difference is not an error.
+    """
+    _ensure_pyspark_python()
+    norm_dir = os.path.join(save_path, "_normalized_input")
+    os.makedirs(norm_dir, exist_ok=True)
+    dirty_path = _write_normalized_copy(dirty_path, os.path.join(norm_dir, "dirty.csv"))
+    clean_path = _write_normalized_copy(clean_path, os.path.join(norm_dir, "clean.csv"))
     if UNICLEAN_DIR not in sys.path:
         sys.path.insert(0, UNICLEAN_DIR)
 
@@ -109,13 +145,23 @@ def _align_repaired(dirty_df: pd.DataFrame, repaired_df: pd.DataFrame) -> pd.Dat
     return repaired_df[dirty_df.columns]
 
 
-def run_uniclean_effectiveness(dataset: dict, cfg: dict, results_base: str, rep: int = 1) -> bool:
+def run_uniclean_effectiveness(
+    dataset: dict,
+    cfg: dict,
+    results_base: str,
+    rep: int = 1,
+    time_limit_seconds: int | None = None,
+) -> bool:
     module_name = _main_module_for_dataset(dataset)
     table_name = dataset["name"]
     run_dir = setup_run_dir(results_base, "uniclean", dataset["name"])
-    time_limit = cfg["experiment"]["time_limit_seconds"]
+    if time_limit_seconds is None:
+        time_limit = cfg["experiment"]["time_limit_seconds"]
+    else:
+        time_limit = time_limit_seconds
 
-    log(f"UniClean | {dataset['name']} | {module_name}")
+    log(f"UniClean | {dataset['name']} | {module_name}"
+        + (f" | time_limit={time_limit}s" if time_limit and time_limit > 0 else " | time_limit=none"))
 
     dirty_df = pd.read_csv(dataset["dirty"], dtype=str, keep_default_na=False)
     clean_df = pd.read_csv(dataset["clean"], dtype=str, keep_default_na=False)
@@ -129,8 +175,9 @@ def run_uniclean_effectiveness(dataset: dict, cfg: dict, results_base: str, rep:
             def _timeout(signum, frame):
                 raise TimeoutError()
 
-            signal.signal(signal.SIGALRM, _timeout)
-            signal.alarm(time_limit)
+            if time_limit and time_limit > 0:
+                signal.signal(signal.SIGALRM, _timeout)
+                signal.alarm(time_limit)
             try:
                 _call_main(
                     module_name,
@@ -140,7 +187,8 @@ def run_uniclean_effectiveness(dataset: dict, cfg: dict, results_base: str, rep:
                     table_name,
                 )
             finally:
-                signal.alarm(0)
+                if time_limit and time_limit > 0:
+                    signal.alarm(0)
     except TimeoutError:
         timed_out = True
         log_error(f"  UniClean timed out on {dataset['name']}")
@@ -158,6 +206,7 @@ def run_uniclean_effectiveness(dataset: dict, cfg: dict, results_base: str, rep:
         "timed_out": timed_out,
         "failed": failed,
         "repetition": rep,
+        "time_limit_seconds": time_limit if time_limit and time_limit > 0 else None,
     }
 
     cleaned_path = _cleaned_csv_path(run_dir, table_name)
@@ -184,7 +233,7 @@ def run_uniclean_effectiveness(dataset: dict, cfg: dict, results_base: str, rep:
     return True
 
 
-def run_uniclean_runtime(dataset: dict, cfg: dict, results_base: str) -> bool:
+def run_uniclean_runtime(dataset: dict, cfg: dict, results_base: str, rep: int = 1) -> bool:
     """Runtime benchmark: sample rows and run main_full."""
     import tempfile
 
@@ -193,7 +242,7 @@ def run_uniclean_runtime(dataset: dict, cfg: dict, results_base: str) -> bool:
     run_dir = setup_run_dir(results_base, "uniclean_runtime", dataset["name"])
     time_limit = cfg["experiment"]["time_limit_seconds"]
 
-    log(f"UniClean runtime | {dataset['name']} | n={dataset['n_records']}")
+    log(f"UniClean runtime | {dataset['name']} | n={dataset['n_records']} | rep={rep}")
 
     dirty_full = pd.read_csv(dataset["dirty"], dtype=str, keep_default_na=False)
     clean_full = pd.read_csv(dataset["clean"], dtype=str, keep_default_na=False)
@@ -234,12 +283,13 @@ def run_uniclean_runtime(dataset: dict, cfg: dict, results_base: str) -> bool:
         "dataset": dataset["name"],
         "n_records": dataset["n_records"],
         "mode": "runtime",
+        "repetition": rep,
         "main_module": module_name,
         "timed_out": timed_out,
         "failed": failed,
     }
     record_runtime(run_dir, run_config, tracker.elapsed, tracker.peak_mb)
-    return not (timed_out or failed)
+    return timed_out
 
 
 def main():
@@ -253,7 +303,28 @@ def main():
         default=None,
         help="Comma-separated substrings; only datasets whose name contains at least one are run",
     )
+    parser.add_argument(
+        "--reps",
+        type=int,
+        default=None,
+        help="Override experiment.n_effectiveness_runs",
+    )
+    parser.add_argument(
+        "--first-rep",
+        type=int,
+        default=1,
+        help="Repetition number to start from (use with --reps to add repetitions 2-3)",
+    )
+    parser.add_argument(
+        "--time-limit",
+        type=int,
+        default=None,
+        help="Wall-clock seconds per dataset; use -1 or 0 for no limit "
+             "(overrides experiment.time_limit_seconds)",
+    )
     args = parser.parse_args()
+
+    _ensure_pyspark_python()
 
     cfg = load_config(args.config)
     os.makedirs(args.results_dir, exist_ok=True)
@@ -264,23 +335,35 @@ def main():
         return
 
     if args.mode == "effectiveness":
-        n_reps = cfg.get("experiment", {}).get("n_effectiveness_runs", 3)
+        n_reps = args.reps if args.reps is not None else cfg.get("experiment", {}).get("n_effectiveness_runs", 3)
         datasets = list_effectiveness_datasets(cfg, args.datasets_dir)
         if args.filter_datasets:
             filters = [f.strip() for f in args.filter_datasets.split(",") if f.strip()]
             datasets = [ds for ds in datasets if any(f in ds["name"] for f in filters)]
+        time_limit = args.time_limit
         log(f"Found {len(datasets)} effectiveness datasets, {n_reps} repetitions")
-        for rep in range(1, n_reps + 1):
-            log(f"=== Effectiveness repetition {rep}/{n_reps} ===")
+        log(f"PySpark python: {os.environ.get('PYSPARK_PYTHON')}")
+        last_rep = args.first_rep + n_reps - 1
+        for rep in range(args.first_rep, last_rep + 1):
+            log(f"=== Effectiveness repetition {rep}/{last_rep} ===")
             for ds in datasets:
-                run_uniclean_effectiveness(ds, cfg, args.results_dir, rep=rep)
+                run_uniclean_effectiveness(
+                    ds, cfg, args.results_dir, rep=rep, time_limit_seconds=time_limit,
+                )
     else:
         datasets = list_runtime_datasets(cfg, args.datasets_dir)
         if args.filter_datasets:
             filters = [f.strip() for f in args.filter_datasets.split(",") if f.strip()]
             datasets = [ds for ds in datasets if any(f in ds["name"] for f in filters)]
-        for ds in datasets:
-            run_uniclean_runtime(ds, cfg, args.results_dir)
+        n_reps = args.reps if args.reps is not None else cfg.get("experiment", {}).get("n_runtime_runs", 1)
+        last_rep = args.first_rep + n_reps - 1
+        log(f"Found {len(datasets)} runtime datasets, repetitions {args.first_rep}-{last_rep}")
+        for rep in range(args.first_rep, last_rep + 1):
+            log(f"=== Runtime repetition {rep}/{last_rep} ===")
+            for ds in datasets:
+                if run_uniclean_runtime(ds, cfg, args.results_dir, rep=rep):
+                    log("UniClean timeout — skipping remaining sizes and repetitions")
+                    return
 
 
 if __name__ == "__main__":

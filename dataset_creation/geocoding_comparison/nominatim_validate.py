@@ -48,7 +48,7 @@ except ImportError:
 # ============================================================================
 
 NOMINATIM_BASE = "https://nominatim.openstreetmap.org/search"
-USER_AGENT     = "address-validation-research/1.0 (academic; contact: research@tu-berlin.de)"
+USER_AGENT     = "Clean-Me-If-You-Can/1.0"
 RATE_LIMIT_S   = 1.05   # seconds between requests (OSM ToS: max 1 req/s)
 MAX_RETRIES    = 3
 RETRY_BACKOFF  = 2.0    # seconds, doubled each retry

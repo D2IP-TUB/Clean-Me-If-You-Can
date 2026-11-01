@@ -19,6 +19,7 @@ import os
 import re
 import sys
 import threading
+import time
 from typing import Optional
 
 import pandas as pd
@@ -64,9 +65,16 @@ def _get_client(cfg: dict):
     return getClient(llm_package, api_key, base_url)
 
 
-def _build_col_match(cfg: dict) -> dict:
-    """Build the colNameMatchingDict mapping CSV column → prompt variable."""
-    all_cols = cfg["dataset"]["all_columns"]
+def _build_col_match(cfg: dict, dirty_df: Optional[pd.DataFrame] = None) -> dict:
+    """Build the colNameMatchingDict mapping CSV column → prompt variable.
+
+    Prefer columns present in dirty_df so domain tables without address
+    columns (and without an id column) do not KeyError in setValues.
+    """
+    id_col = cfg["dataset"].get("id_column", "id")
+    if dirty_df is not None:
+        return {c: c for c in dirty_df.columns if c != id_col}
+    all_cols = cfg["dataset"].get("all_columns") or cfg["dataset"].get("data_columns", [])
     return {c: c for c in all_cols}
 
 
@@ -145,8 +153,8 @@ def _prompt_ids(dataset: dict, sys_cfg: dict) -> tuple:
 
 
 # Detection prompts ask "yes or no" per field; correction prompts return proposed values.
-# p5-p6: de/full; p14-p16: poi_Library/poi_ShoppingCenter/russia
-_DETECTION_PROMPT_IDS = {"p5", "p6", "p14", "p15", "p16"}
+# Address: p5/p6/p14-p16. Other domains: p21 books, p23 movies.
+_DETECTION_PROMPT_IDS = {"p5", "p6", "p14", "p15", "p16", "p21", "p23"}
 
 
 def _process_parsed_row(
@@ -223,16 +231,16 @@ def _run_glocks_rows_batch(
 
     sys_cfg = cfg["systems"]["glocks"]
     modelname = sys_cfg["modelname"]
-    col_match = _build_col_match(cfg)
+    col_match = _build_col_match(cfg, dirty_df)
 
     client = _get_client(cfg)
     prompt_dict = _load_prompt_dict(cfg, col_match)
 
     if prompt_id not in prompt_dict:
-        log_error(f"Prompt ID '{prompt_id}' not in prompt.json")
-        return {}, {}
+        log_error(f"Prompt ID '{prompt_id}' not in prompt file")
+        return {}, {}, 0.0
 
-    id_col = cfg["dataset"]["id_column"]
+    id_col = cfg["dataset"].get("id_column", "id")
     col_name_to_idx = {c: dirty_df.columns.get_loc(c)
                        for c in dirty_df.columns if c != id_col}
 
@@ -357,12 +365,11 @@ def _run_glocks_rows(
 
     llm_package = sys_cfg["llm_package"]
     modelname = sys_cfg["modelname"]
-    col_match = _build_col_match(cfg)
+    col_match = _build_col_match(cfg, dirty_df)
 
     client = _get_client(cfg)
     prompt_dict = _load_prompt_dict(cfg, col_match)
 
-    data_cols = cfg["dataset"]["data_columns"]
     id_col = cfg["dataset"]["id_column"]
     col_name_to_idx = {c: dirty_df.columns.get_loc(c)
                        for c in dirty_df.columns if c != id_col}
@@ -447,7 +454,7 @@ def run_glocks_effectiveness(dataset: dict, cfg: dict, results_base: str, rep: i
     sys_cfg = cfg["systems"]["glocks"]
     detection_pid, correction_pid = _prompt_ids(dataset, sys_cfg)
     max_threads = sys_cfg.get("max_threads", 10)
-    time_limit = cfg["experiment"]["time_limit_seconds"]
+    time_limit = None  # LLM jobs: no 10 h wall-clock cap
 
     run_dir = setup_run_dir(results_base, "glocks", dataset["name"])
     log(f"Glocks | {dataset['name']} | detect={detection_pid} correct={correction_pid} task={task}")
@@ -474,14 +481,16 @@ def run_glocks_effectiveness(dataset: dict, cfg: dict, results_base: str, rep: i
     def _timeout(signum, frame):
         raise TimeoutError()
 
+    cap_time = (not use_batch) and bool(time_limit and time_limit > 0)
+
     try:
         with tracker:
-            if not use_batch:
+            if cap_time:
                 signal.signal(signal.SIGALRM, _timeout)
 
             # Detection pass
             if task in ("both", "detection"):
-                if not use_batch:
+                if cap_time:
                     signal.alarm(time_limit)
                 try:
                     detected, _, _pending_det = _run_glocks_rows(dirty_df, cfg, None, detection_pid, max_threads)
@@ -491,12 +500,12 @@ def run_glocks_effectiveness(dataset: dict, cfg: dict, results_base: str, rep: i
                 except Exception as e:
                     log_error(f"  Glocks detection failed on {dataset['name']}: {e}")
                 finally:
-                    if not use_batch:
+                    if cap_time:
                         signal.alarm(0)
 
             # Correction pass (or reload from existing cells.csv)
             if task == "both":
-                if not use_batch:
+                if cap_time:
                     signal.alarm(time_limit)
                 try:
                     _, corrected, _pending_cor = _run_glocks_rows(dirty_df, cfg, oracle_by_row, correction_pid, max_threads)
@@ -506,7 +515,7 @@ def run_glocks_effectiveness(dataset: dict, cfg: dict, results_base: str, rep: i
                 except Exception as e:
                     log_error(f"  Glocks correction failed on {dataset['name']}: {e}")
                 finally:
-                    if not use_batch:
+                    if cap_time:
                         signal.alarm(0)
             elif task == "detection":
                 existing = _load_corrected_from_cells_csv(results_base, dataset["name"], dirty_df)
@@ -555,56 +564,107 @@ def run_glocks_effectiveness(dataset: dict, cfg: dict, results_base: str, rep: i
     log(f"  -> {run_dir}")
 
 
-def run_glocks_runtime(dataset: dict, cfg: dict, results_base: str):
-    sys_cfg = cfg["systems"]["glocks"]
-    detection_pid, _ = _prompt_ids(dataset, sys_cfg)
-    max_threads = sys_cfg.get("max_threads", 10)
-    time_limit = cfg["experiment"]["time_limit_seconds"]
+def _glocks_oracle_by_row(dirty_df: pd.DataFrame, clean_df: pd.DataFrame) -> dict:
+    actual_errors = get_actual_errors(dirty_df, clean_df)
+    oracle_by_row: dict[int, list] = {}
+    for (row_i, col_j), _ in actual_errors.items():
+        oracle_by_row.setdefault(row_i, []).append(dirty_df.columns[col_j])
+    return oracle_by_row
 
-    run_dir = setup_run_dir(results_base, "glocks_runtime", dataset["name"])
-    log(f"Glocks runtime | {dataset['name']} | n={dataset['n_records']}")
 
-    dirty_df = pd.read_csv(dataset["dirty"], dtype=str, keep_default_na=False)
-
-    import signal
-    use_batch = sys_cfg.get("use_batch_api", False)
-    timed_out = False
-    oom = False
-    _pending_s = 0.0
-    tracker = PeakMemoryTracker(limit_mb=get_memory_limit_mb(cfg))
-    try:
-        with tracker:
-            if not use_batch:
-                def _timeout(signum, frame):
-                    raise TimeoutError()
-                signal.signal(signal.SIGALRM, _timeout)
-                signal.alarm(time_limit)
-            try:
-                _, _, _pending_s = _run_glocks_rows(dirty_df, cfg, None, detection_pid, max_threads)
-            finally:
-                if not use_batch:
-                    signal.alarm(0)
-    except TimeoutError:
-        timed_out = True
-    except MemoryError as e:
-        oom = True
-        log_error(f"  Glocks OOM on {dataset['name']}: {e}")
-    except Exception as e:
-        log_error(f"  Glocks failed: {e}")
-
+def _record_glocks_runtime_stage(
+    results_base: str,
+    dataset: dict,
+    sys_cfg: dict,
+    stage: str,
+    runtime_seconds: float,
+    peak_memory_mb: float,
+    timed_out: bool,
+    oom: bool,
+    prompt_id: str,
+):
+    run_dir = setup_run_dir(results_base, "glocks_runtime", f"{dataset['name']}_{stage}")
     run_config = {
-        "system": "glocks",
+        "system": f"glocks_{stage[0]}",
         "dataset": dataset["name"],
         "n_records": dataset["n_records"],
         "llm_package": sys_cfg["llm_package"],
         "model": sys_cfg["modelname"],
         "mode": "runtime",
+        "task": stage,
+        "prompt_id": prompt_id,
         "timed_out": timed_out,
         "oom": oom,
     }
-    _runtime = tracker.elapsed - _pending_s
-    record_runtime(run_dir, run_config, _runtime, tracker.peak_mb)
-    log(f"  -> {_runtime:.1f}s  {tracker.peak_mb:.0f}MB  timed_out={timed_out}  oom={oom}")
+    record_runtime(run_dir, run_config, runtime_seconds, peak_memory_mb)
+    log(f"  -> {stage} {runtime_seconds:.1f}s  {peak_memory_mb:.0f}MB  "
+        f"timed_out={timed_out}  oom={oom}  {run_dir}")
+    return timed_out or oom
+
+
+def run_glocks_runtime(dataset: dict, cfg: dict, results_base: str, task: str = "both"):
+    """Time detection and/or correction on dirty.csv; clean.csv is GT for oracle correction only."""
+    sys_cfg = cfg["systems"]["glocks"]
+    detection_pid, correction_pid = _prompt_ids(dataset, sys_cfg)
+    max_threads = sys_cfg.get("max_threads", 10)
+    time_limit = None  # LLM jobs: no 10 h wall-clock cap
+
+    log(f"Glocks runtime | {dataset['name']} | n={dataset['n_records']} | task={task}")
+    dirty_df = pd.read_csv(dataset["dirty"], dtype=str, keep_default_na=False)
+    clean_df = None
+    if task in ("both", "correction"):
+        clean_df = pd.read_csv(dataset["clean"], dtype=str, keep_default_na=False)
+
+    import signal
+    use_batch = sys_cfg.get("use_batch_api", False)
+    cap_time = (not use_batch) and bool(time_limit and time_limit > 0)
+    hit_limit = False
+    tracker = PeakMemoryTracker(limit_mb=get_memory_limit_mb(cfg))
+
+    def _run_stage(prompt_id, oracle, stage):
+        timed_out = oom = False
+        pending = 0.0
+        elapsed = 0.0
+        try:
+            if cap_time:
+                def _timeout(signum, frame):
+                    raise TimeoutError()
+                signal.signal(signal.SIGALRM, _timeout)
+                signal.alarm(time_limit)
+            t0 = time.monotonic()
+            try:
+                _, _, pending = _run_glocks_rows(
+                    dirty_df, cfg, oracle, prompt_id, max_threads
+                )
+            finally:
+                elapsed = time.monotonic() - t0
+                if cap_time:
+                    signal.alarm(0)
+        except TimeoutError:
+            timed_out = True
+        except MemoryError as e:
+            oom = True
+            log_error(f"  Glocks {stage} OOM on {dataset['name']}: {e}")
+        except Exception as e:
+            log_error(f"  Glocks {stage} failed on {dataset['name']}: {e}")
+        runtime = max(0.0, elapsed - pending)
+        limited = _record_glocks_runtime_stage(
+            results_base, dataset, sys_cfg, stage, runtime, tracker.peak_mb,
+            timed_out, oom, prompt_id,
+        )
+        return limited
+
+    try:
+        with tracker:
+            if task in ("both", "detection"):
+                hit_limit = _run_stage(detection_pid, None, "detection") or hit_limit
+            if task in ("both", "correction") and not hit_limit:
+                oracle = _glocks_oracle_by_row(dirty_df, clean_df)
+                hit_limit = _run_stage(correction_pid, oracle, "correction") or hit_limit
+    except MemoryError as e:
+        log_error(f"  Glocks OOM on {dataset['name']}: {e}")
+        return True
+    return hit_limit
 
 
 def main():
@@ -630,6 +690,10 @@ def main():
     parser.add_argument("--task", choices=["both", "detection", "correction"], default="both",
                         help="Which LLM pass to run: 'both' (default), 'detection' only "
                              "(loads existing correction from cells.csv), or 'correction' only")
+    parser.add_argument("--reps", type=int, default=None,
+                        help="Override experiment.n_effectiveness_runs")
+    parser.add_argument("--filter-datasets", default=None,
+                        help="Comma-separated substrings; only datasets whose name contains at least one are run")
     args = parser.parse_args()
 
     cfg = load_config(args.config)
@@ -640,20 +704,32 @@ def main():
         return
 
     if args.mode == "effectiveness":
-        n_reps = cfg.get("experiment", {}).get("n_effectiveness_runs", 3)
+        n_reps = args.reps if args.reps is not None else cfg.get("experiment", {}).get("n_effectiveness_runs", 3)
         datasets = list_effectiveness_datasets(cfg, args.datasets_dir)
         if args.slices:
             datasets = [d for d in datasets if d["slice"] in args.slices]
         if args.dataset:
             datasets = [d for d in datasets if d["name"] == args.dataset]
+        if args.filter_datasets:
+            filters = [f.strip() for f in args.filter_datasets.split(",") if f.strip()]
+            datasets = [d for d in datasets if any(f in d["name"] for f in filters)]
         log(f"Found {len(datasets)} effectiveness datasets, {n_reps} repetitions")
         for rep in range(1, n_reps + 1):
             log(f"=== Effectiveness repetition {rep}/{n_reps} ===")
             for ds in datasets:
                 run_glocks_effectiveness(ds, cfg, args.results_dir, rep=rep, task=args.task)
     else:
-        for ds in list_runtime_datasets(cfg, args.datasets_dir):
-            run_glocks_runtime(ds, cfg, args.results_dir)
+        datasets = list_runtime_datasets(cfg, args.datasets_dir)
+        if args.dataset:
+            datasets = [d for d in datasets if d["name"] == args.dataset]
+        if args.filter_datasets:
+            filters = [f.strip() for f in args.filter_datasets.split(",") if f.strip()]
+            datasets = [d for d in datasets if any(f in d["name"] for f in filters)]
+        log(f"Found {len(datasets)} runtime datasets")
+        for ds in datasets:
+            if run_glocks_runtime(ds, cfg, args.results_dir, task=args.task):
+                log("Glocks timeout/OOM — skipping remaining sizes")
+                break
 
 
 if __name__ == "__main__":

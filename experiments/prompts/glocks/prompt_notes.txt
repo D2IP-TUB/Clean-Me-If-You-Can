@@ -23,5 +23,10 @@ Correction prompts (oracle — error fields provided in prompt):
 
 Slice → prompt IDs are configured in experiments/harness/config.json under systems.glocks.prompt_id_map.
 
+Other domains (books / movies): see prompt_other_domains.json
+  p21/p22: books detection / correction
+  p23/p24: movies detection / correction
+Configured in experiments/harness/config_other_domains.json.
+
 Canonical location: experiments/prompts/glocks/prompt.json
 Copy for standalone toolkit runs: experiments/baselines/glocks/pci-llm-toolkit/error-detection-cleaning-llm/data/address/

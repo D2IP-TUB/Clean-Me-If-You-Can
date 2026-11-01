@@ -8,8 +8,9 @@ Usage
       --cell_error_types_csv  <analysis_outdir>/cell_error_types.csv \\
       [--output_csv        error_type_metrics.csv]
 
-cell_error_types.csv is produced by analyze_error_types_v3.py and contains
-one row per cell: row_index, feature, dirty_value, clean_value, error_type.
+Labels come from cell_labels.csv (`labels`) or the older cell_error_types.csv
+(`error_type`). Multiple types on one cell are separated by `|` and the cell
+is counted in every listed type.
 
 Output
 ------
@@ -28,17 +29,45 @@ from collections import defaultdict
 import pandas as pd
 
 
-# ---------------------------------------------------------------------------
-# Load cell_error_types.csv produced by analyze_error_types_v3.py
-# ---------------------------------------------------------------------------
+def parse_error_types(raw: str) -> list:
+    """Split a label field on '|'. Empty tokens and Clean are dropped."""
+    if raw is None:
+        return []
+    return [
+        part.strip()
+        for part in str(raw).split("|")
+        if part.strip() and part.strip() != "Clean"
+    ]
+
 
 def load_cell_error_types(path: str) -> dict:
-    """Return {(row_index, feature): error_type} from cell_error_types.csv."""
+    """Return {(row_index, feature): [error_type, ...]} from a label CSV."""
     result = {}
     with open(path, encoding="utf-8-sig", newline="") as f:
         for row in csv.DictReader(f):
-            result[(int(row["row_index"]), row["feature"])] = row["error_type"]
+            raw = row.get("labels")
+            if raw is None or raw == "":
+                raw = row.get("error_type", "")
+            result[(int(row["row_index"]), row["feature"])] = parse_error_types(raw)
     return result
+
+
+def _int(row, key: str) -> int:
+    value = row.get(key)
+    if value is None or value == "":
+        return 0
+    return int(float(value))
+
+
+def _types_for_cell(row, cell_dict) -> list:
+    if _int(row, "is_actual_error") == 0:
+        return ["Clean"]
+    raw = cell_dict.get((int(row["row_id"]), row["col_name"]), ["Unknown"])
+    if isinstance(raw, str):
+        types = parse_error_types(raw)
+    else:
+        types = list(raw)
+    return types or ["Unknown"]
 
 
 # ---------------------------------------------------------------------------
@@ -67,18 +96,19 @@ def evaluate(cells_csv: str, cell_dict: dict) -> pd.DataFrame:
 
     with open(cells_csv, encoding="utf-8-sig", newline="") as f:
         for row in csv.DictReader(f):
-            if int(row["is_actual_error"]) == 0:
-                et = "Clean"
-            else:
-                et = cell_dict.get((int(row["row_id"]), row["col_name"]), "Unknown")
-            s = stats[et]
-            s["n"] += 1
-            s["det_tp"] += int(row["det_tp"])
-            s["det_fp"] += int(row["det_fp"])
-            s["det_fn"] += int(row["det_fn"])
-            s["cor_tp"] += int(row["cor_tp"])
-            s["cor_fp"] += int(row["cor_fp"])
-            s["cor_fn"] += int(row["cor_fn"])
+            flags = {
+                "det_tp": _int(row, "det_tp"),
+                "det_fp": _int(row, "det_fp"),
+                "det_fn": _int(row, "det_fn"),
+                "cor_tp": _int(row, "cor_tp"),
+                "cor_fp": _int(row, "cor_fp"),
+                "cor_fn": _int(row, "cor_fn"),
+            }
+            for et in _types_for_cell(row, cell_dict):
+                s = stats[et]
+                s["n"] += 1
+                for key, value in flags.items():
+                    s[key] += value
 
     rows = []
     for et, s in sorted(stats.items()):
@@ -116,7 +146,7 @@ def main():
     )
     parser.add_argument(
         "--cell_error_types_csv", required=True,
-        help="Path to cell_error_types.csv produced by analyze_error_types_v3.py.",
+        help="Path to cell_labels.csv or cell_error_types.csv. '|' separates multiple types.",
     )
     parser.add_argument(
         "--output_csv", default=None,
@@ -150,7 +180,7 @@ def main():
     print("\n" + df[display_cols].to_string(index=False))
 
     if args.show_dict:
-        print("\nSample cell -> error_type (first 20):")
+        print("\nSample cell -> error types (first 20):")
         for k, v in list(cell_dict.items())[:20]:
             print(f"  {k} -> {v}")
 

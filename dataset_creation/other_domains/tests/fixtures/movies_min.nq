@@ -1,0 +1,8 @@
+<https://example.org/movie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Movie> <https://example.org/movie> .
+<https://example.org/movie> <http://schema.org/name> "The Godfather" <https://example.org/movie> .
+<https://example.org/movie> <http://schema.org/director> _:dir1 <https://example.org/movie> .
+_:dir1 <http://schema.org/name> "Francis Ford Coppola" <https://example.org/movie> .
+<https://example.org/movie> <http://schema.org/actor> _:act1 <https://example.org/movie> .
+_:act1 <http://schema.org/name> "Marlon Brando" <https://example.org/movie> .
+<https://example.org/movie> <http://schema.org/datePublished> "1972" <https://example.org/movie> .
+<https://example.org/empty-movie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Movie> <https://example.org/empty-movie> .

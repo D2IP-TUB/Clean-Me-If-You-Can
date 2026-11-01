@@ -26,7 +26,7 @@ from runner_utils import (
     setup_run_dir, run_with_timeout, log, log_error,
     get_memory_limit_mb, init_log_file,
 )
-from evaluate import evaluate, record_runtime, diff_repaired
+from evaluate import evaluate, record_runtime, diff_repaired, normalize
 
 BUILD_DIR = os.path.join(EXPERIMENTS_DIR, "horizon_build")
 
@@ -39,6 +39,10 @@ def _fds_path(dataset_name: str, fds_dir: str) -> str:
         canonical = "full_full"
     elif dataset_name.startswith("russia_"):
         canonical = "russia_full"
+    elif dataset_name.startswith("books_"):
+        canonical = "books"
+    elif dataset_name.startswith("movies_"):
+        canonical = "movies"
     else:
         canonical = dataset_name  # poi_Library, poi_ShoppingCenter, etc.
     return os.path.join(fds_dir, f"fds_{canonical}_indexed.txt")
@@ -52,17 +56,22 @@ def _sanitize_csv_for_horizon(src_path: str, dst_path: str) -> None:
     a field is encountered, parseCsvLine returns a truncated row with fewer
     columns than expected, causing ArrayIndexOutOfBoundsException in
     Pattern.addPattern (or a malformed output CSV).  Replacing the embedded
-    newlines with a space makes every logical row fit on one physical line.
+    newlines with a space     makes every logical row fit on one physical line.
+
+    Data cells are also passed through evaluate.normalize (HTML-unescape, whitespace
+    collapse, strip, lower-case) so Horizon sees the same case-insensitive values as the
+    shared evaluation and as Raha/Baran (a case-only difference is not an error). The header
+    row is left untouched.
     """
     with open(src_path, "r", encoding="utf-8", newline="") as fin, \
          open(dst_path, "w", encoding="utf-8", newline="") as fout:
         reader = csv.reader(fin)
         writer = csv.writer(fout, lineterminator="\n")
-        for row in reader:
-            writer.writerow([
-                val.replace("\r\n", " ").replace("\r", " ").replace("\n", " ")
-                for val in row
-            ])
+        for i, row in enumerate(reader):
+            if i == 0:
+                writer.writerow([val.replace("\r\n", " ").replace("\r", " ").replace("\n", " ") for val in row])
+                continue
+            writer.writerow([normalize(val.replace("\r\n", " ").replace("\r", " ")) for val in row])
 
 
 def compile_horizon(cfg: dict) -> bool:
@@ -138,11 +147,22 @@ def run_horizon_on_dataset(
     return result
 
 
-def run_horizon_effectiveness(dataset: dict, cfg: dict, results_base: str, fds_dir: str, rep: int = 1) -> bool:
-    """Return True on success, False on any failure."""
+def run_horizon_effectiveness(
+    dataset: dict,
+    cfg: dict,
+    results_base: str,
+    fds_dir: str,
+    rep: int = 1,
+    time_limit: int = None,
+) -> bool:
+    """Return True on success, False on any failure.
+
+    time_limit: seconds; None means no wall-clock limit (proc.wait forever).
+    """
     sys_cfg = cfg["systems"]["horizon"]
     algo = sys_cfg["algo"]
-    time_limit = cfg["experiment"]["time_limit_seconds"]
+    if time_limit is None:
+        time_limit = cfg["experiment"]["time_limit_seconds"]
 
     fds_indexed = _fds_path(dataset["name"], fds_dir)
     if not os.path.exists(fds_indexed):
@@ -233,8 +253,8 @@ def run_horizon_effectiveness(dataset: dict, cfg: dict, results_base: str, fds_d
     return True
 
 
-def run_horizon_runtime(dataset: dict, cfg: dict, results_base: str, fds_dir: str) -> bool:
-    """Run on both dirty and clean input files. Return True if both succeed."""
+def run_horizon_runtime(dataset: dict, cfg: dict, results_base: str, fds_dir: str, rep: int = 1) -> bool:
+    """Time Horizon on dirty.csv; clean.csv is the GT reference only."""
     sys_cfg = cfg["systems"]["horizon"]
     algo = sys_cfg["algo"]
     time_limit = cfg["experiment"]["time_limit_seconds"]
@@ -243,45 +263,40 @@ def run_horizon_runtime(dataset: dict, cfg: dict, results_base: str, fds_dir: st
     if not os.path.exists(fds_indexed):
         return False  # already reported by preflight
 
-    all_ok = True
-    for variant, input_path in [("dirty", dataset["dirty"]), ("clean", dataset["clean"])]:
-        run_dir = setup_run_dir(results_base, "horizon_runtime", f"{dataset['name']}_{variant}")
-        log(f"Horizon runtime | {dataset['name']} ({variant}) | n={dataset['n_records']}")
+    run_dir = setup_run_dir(results_base, "horizon_runtime", dataset["name"])
+    log(f"Horizon runtime | {dataset['name']} | n={dataset['n_records']} | rep={rep}")
 
-        # Sanitize for Horizon's line-by-line CSV reader
-        sanitize_dir = os.path.join(run_dir, "sanitized")
-        os.makedirs(sanitize_dir, exist_ok=True)
-        sanitized_input = os.path.join(sanitize_dir, f"{variant}.csv")
-        sanitized_ref = os.path.join(sanitize_dir, "clean_ref.csv")
-        _sanitize_csv_for_horizon(input_path, sanitized_input)
-        _sanitize_csv_for_horizon(dataset["clean"], sanitized_ref)
+    sanitize_dir = os.path.join(run_dir, "sanitized")
+    os.makedirs(sanitize_dir, exist_ok=True)
+    sanitized_dirty = os.path.join(sanitize_dir, "dirty.csv")
+    sanitized_clean = os.path.join(sanitize_dir, "clean.csv")
+    _sanitize_csv_for_horizon(dataset["dirty"], sanitized_dirty)
+    _sanitize_csv_for_horizon(dataset["clean"], sanitized_clean)
 
-        result = run_horizon_on_dataset(
-            sanitized_input, sanitized_ref, fds_indexed, algo, cfg, run_dir, time_limit,
-            memory_limit_mb=get_memory_limit_mb(cfg),
-        )
+    result = run_horizon_on_dataset(
+        sanitized_dirty, sanitized_clean, fds_indexed, algo, cfg, run_dir, time_limit,
+        memory_limit_mb=get_memory_limit_mb(cfg),
+    )
 
-        # Clean up the repaired file — we don't evaluate in runtime mode
-        repaired_path = result.get("repaired_path", "")
-        if os.path.exists(repaired_path):
-            os.remove(repaired_path)
+    repaired_path = result.get("repaired_path", "")
+    if os.path.exists(repaired_path):
+        os.remove(repaired_path)
 
-        run_config = {
-            "system": "horizon",
-            "dataset": dataset["name"],
-            "variant": variant,
-            "n_records": dataset["n_records"],
-            "algo": algo,
-            "mode": "runtime",
-            "timed_out": result["timed_out"],
-            "oom": result["oom"],
-        }
-        record_runtime(run_dir, run_config, result["runtime_seconds"], result["peak_memory_mb"])
-        log(f"  -> {result['runtime_seconds']:.1f}s  {result['peak_memory_mb']:.0f}MB  oom={result['oom']}")
-        if result["timed_out"] or result["oom"] or result["returncode"] != 0:
-            all_ok = False
-
-    return all_ok
+    run_config = {
+        "system": "horizon",
+        "dataset": dataset["name"],
+        "n_records": dataset["n_records"],
+        "algo": algo,
+        "mode": "runtime",
+        "repetition": rep,
+        "timed_out": result["timed_out"],
+        "oom": result["oom"],
+    }
+    record_runtime(run_dir, run_config, result["runtime_seconds"], result["peak_memory_mb"])
+    log(f"  -> {result['runtime_seconds']:.1f}s  {result['peak_memory_mb']:.0f}MB  oom={result['oom']}")
+    if result["timed_out"] or result["oom"] or result["returncode"] != 0:
+        return False
+    return True
 
 
 def main():
@@ -291,12 +306,21 @@ def main():
     parser.add_argument("--datasets-dir", default=os.path.join(EXPERIMENTS_DIR, "experiment_datasets"))
     parser.add_argument("--results-dir", default=os.path.join(EXPERIMENTS_DIR, "results"))
     parser.add_argument("--reps", type=int, default=None,
-                        help="Override n_effectiveness_runs from config")
+                        help="How many repetitions to run (default: n_effectiveness_runs)")
+    parser.add_argument("--first-rep", type=int, default=1,
+                        help="Repetition number to start from")
     parser.add_argument("--filter-datasets", default=None,
                         help="Comma-separated substrings; only datasets whose name contains at least one are run")
+    parser.add_argument("--time-limit", type=int, default=None,
+                        help="Override wall-clock seconds; use -1 for no limit")
     args = parser.parse_args()
 
     cfg = load_config(args.config)
+    if args.time_limit is not None:
+        # None disables the subprocess timeout; keep a sentinel in cfg only for logging.
+        cfg.setdefault("experiment", {})["time_limit_seconds"] = (
+            None if args.time_limit < 0 else args.time_limit
+        )
     os.makedirs(args.results_dir, exist_ok=True)
     init_log_file(os.path.join(args.results_dir, f"horizon_{args.mode}.log"))
     if not cfg["systems"]["horizon"]["enabled"]:
@@ -337,20 +361,38 @@ def main():
     n_ok = n_fail = 0
     if args.mode == "effectiveness":
         n_reps = args.reps if args.reps is not None else cfg.get("experiment", {}).get("n_effectiveness_runs", 3)
-        log(f"Found {len(datasets)} effectiveness datasets, {n_reps} repetitions")
-        for rep in range(1, n_reps + 1):
-            log(f"=== Effectiveness repetition {rep}/{n_reps} ===")
+        last_rep = args.first_rep + n_reps - 1
+        log(f"Found {len(datasets)} effectiveness datasets, repetitions {args.first_rep}-{last_rep}")
+        eff_time_limit = cfg.get("experiment", {}).get("time_limit_seconds")
+        if eff_time_limit is None:
+            log("Horizon wall-clock time limit: none")
+        else:
+            log(f"Horizon wall-clock time limit: {eff_time_limit}s")
+        for rep in range(args.first_rep, last_rep + 1):
+            log(f"=== Effectiveness repetition {rep}/{last_rep} ===")
             for ds in datasets:
-                if run_horizon_effectiveness(ds, cfg, args.results_dir, fds_dir, rep=rep):
+                if run_horizon_effectiveness(
+                    ds, cfg, args.results_dir, fds_dir, rep=rep, time_limit=eff_time_limit
+                ):
                     n_ok += 1
                 else:
                     n_fail += 1
     else:
-        for ds in datasets:
-            if run_horizon_runtime(ds, cfg, args.results_dir, fds_dir):
-                n_ok += 1
+        n_reps = args.reps if args.reps is not None else cfg.get("experiment", {}).get("n_runtime_runs", 1)
+        last_rep = args.first_rep + n_reps - 1
+        log(f"Found {len(datasets)} runtime datasets, repetitions {args.first_rep}-{last_rep}")
+        for rep in range(args.first_rep, last_rep + 1):
+            log(f"=== Runtime repetition {rep}/{last_rep} ===")
+            for ds in datasets:
+                if run_horizon_runtime(ds, cfg, args.results_dir, fds_dir, rep=rep):
+                    n_ok += 1
+                else:
+                    n_fail += 1
+                    log("Horizon timeout/OOM/fail — skipping remaining sizes and repetitions")
+                    break
             else:
-                n_fail += 1
+                continue
+            break
 
     log(f"Horizon {args.mode}: {n_ok} OK, {n_fail} failed/skipped out of {len(datasets)}")
     if n_fail > 0:

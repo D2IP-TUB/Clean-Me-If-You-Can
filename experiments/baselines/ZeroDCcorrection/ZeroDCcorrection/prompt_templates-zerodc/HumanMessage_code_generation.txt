@@ -1,0 +1,2 @@
+Here are the correction chain-of-thoughts for some representative errors, and you are supposed to compose detection regular expression and python code based on the described repair strategy.
+{examples}

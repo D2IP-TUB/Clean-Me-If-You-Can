@@ -2,9 +2,12 @@
 from google import genai
 from google.genai import types
 
-def getClient():
-    client = genai.Client()
-    return client
+def getClient(api_key=None):
+    # Prefer an explicit key from the harness; otherwise the SDK reads
+    # GOOGLE_API_KEY / GEMINI_API_KEY from the environment.
+    if api_key:
+        return genai.Client(api_key=api_key)
+    return genai.Client()
 
 def askLLM(promptStr, client, modelname, picPath=None):
     model = modelname

@@ -1,8 +1,8 @@
 {
-  "_SETUP": "Before first run: update paths.datasets_dir to your merged_named CSV directory (HuggingFace download), set systems.holoclean.db_* and HOLOCLEAN_DB_PWD env var, set systems.glocks.api_key_env, and install the Horizon commons-collections4-4.3.jar into baselines/horizon/. See experiments/README.md.",
+  "_SETUP": "Before first run: place the Zenodo address datasets under data/ (https://zenodo.org/records/20841898), set systems.holoclean.db_* and HOLOCLEAN_DB_PWD env var, set systems.glocks.api_key_env, and install the Horizon commons-collections4-4.3.jar into baselines/horizon/. See experiments/README.md.",
   "paths": {
     "baselines_dir": "../baselines",
-    "datasets_dir": "../../data/merged_named",
+    "datasets_dir": "../../data",
     "results_dir": "./results",
     "experiment_datasets_dir": "./experiment_datasets",
     "manuscript_results_dir": "../manuscript_results",
@@ -40,33 +40,33 @@
       0.2
     ],
     "full_dataset": {
-      "dirty": "full_dirty.csv",
-      "clean": "full_clean.csv",
+      "dirty": "full_named/dirty.csv",
+      "clean": "full_named/clean.csv",
       "sample_size": 10000,
       "name": "full"
     },
     "de_slice": {
-      "dirty": "slice_de_dirty.csv",
-      "clean": "slice_de_clean.csv",
+      "dirty": "slices/de/named/dirty.csv",
+      "clean": "slices/de/named/clean.csv",
       "sample_size": 10000,
       "name": "de"
     },
     "russia_slice": {
-      "dirty": "russia/full_dirty_russia.csv",
-      "clean": "russia/full_clean_russia.csv",
+      "dirty": "slices/ru/named/dirty.csv",
+      "clean": "slices/ru/named/clean.csv",
       "sample_size": 10000,
       "name": "russia"
     },
     "poi_slices": [
       {
         "name": "Library",
-        "dirty": "../subsets/Library/named/dirty.csv",
-        "clean": "../subsets/Library/named/clean.csv"
+        "dirty": "subsets/Library/named/dirty.csv",
+        "clean": "subsets/Library/named/clean.csv"
       },
       {
         "name": "ShoppingCenter",
-        "dirty": "../subsets/ShoppingCenter/named/dirty.csv",
-        "clean": "../subsets/ShoppingCenter/named/clean.csv"
+        "dirty": "subsets/ShoppingCenter/named/dirty.csv",
+        "clean": "subsets/ShoppingCenter/named/clean.csv"
       }
     ]
   },
@@ -77,8 +77,8 @@
       500000,
       1000000
     ],
-    "source_dirty": "full_dirty.csv",
-    "source_clean": "full_clean.csv",
+    "source_dirty": "full_named/dirty.csv",
+    "source_clean": "full_named/clean.csv",
     "name": "full"
   },
   "systems": {
@@ -156,11 +156,43 @@
           "detection": "p14",
           "correction": "p18"
         },
+        "poi_Library_orig": {
+          "detection": "p14",
+          "correction": "p18"
+        },
+        "poi_Library_gt": {
+          "detection": "p14",
+          "correction": "p18"
+        },
         "poi_ShoppingCenter": {
+          "detection": "p15",
+          "correction": "p19"
+        },
+        "poi_ShoppingCenter_orig": {
+          "detection": "p15",
+          "correction": "p19"
+        },
+        "poi_ShoppingCenter_gt": {
           "detection": "p15",
           "correction": "p19"
         }
       }
+    },
+    "katara": {
+      "enabled": true,
+      "kb_dir": "../baselines/katara/dominSpecific",
+      "type_coverage": 0.2,
+      "pair_coverage": 0.15,
+      "ignore_case": true,
+      "task": "both",
+      "note": "Domain-specific KATARA (REDS SimplifiedPatternDiscovery). Type coverage > 0.2, pair coverage >= 0.15. Pair repairs come from the KB subject→object map."
+    },
+    "zerodccorrection": {
+      "enabled": false,
+      "zerodccorrection_dir": "../baselines/ZeroDCcorrection/ZeroDCcorrection",
+      "human_repair_num": 20,
+      "api_key_env": "GOOGLE_API_KEY",
+      "task": "correction"
     }
   },
   "tane": {
@@ -170,6 +202,6 @@
     "time_limit_seconds": 36000,
     "memory_limit_fraction": 0.8,
     "n_runtime_runs": 1,
-    "n_effectiveness_runs": 1
+    "n_effectiveness_runs": 3
   }
 }

@@ -10,12 +10,32 @@ __pycache__/
 # Secrets
 .env
 .env.*
+*/*/archive/
 
-# Data (hosted separately on HuggingFace)
+# Data (hosted separately on Zenodo). The zips at the repo root are the
+# books release, the book experiment samples, and the movie dirty table.
+# Unpacked CSVs stay local, including the IMDb-derived movie clean tables.
 data/
+other_domains_data/
 
 # Analysis outputs
 dataset_analysis/output/
+
+# Installed by dataset_analysis/install_libpostal.sh and build_gazetteer.py
+dataset_analysis/error_taxonomy/libpostal_dictionaries/
+dataset_analysis/error_taxonomy/geodata/
+
+# Local machine paths; do not publish
+dataset_analysis/statistics/count_distinct_gt_values.py
+experiments/aggregate/eval_other_domains_by_error_type.py
+experiments/harness/queue_extra_reps.sh
+experiments/harness/run_other_domains_screens.sh
+experiments/harness/run_poi_ablation.sh
+experiments/harness/run_reps_2_3.sh
+experiments/harness/run_runtime_distinct.sh
+experiments/harness/run_runtime_table_gaps.sh
+experiments/harness/run_uniclean_poi_sm.sh
+experiments/harness/run_uniclean_relaxed_remaining.sh
 
 # Pipeline runtime outputs
 dataset_creation/data/wdc/
@@ -29,9 +49,13 @@ dataset_creation/osm-nominatim/mount/
 # Experiment run artifacts
 experiments/harness/logs/
 experiments/harness/results*/
+experiments/harness/experiment_datasets_runtime_distinct/
+experiments/harness/experiment_datasets_runtime_gaps/
+experiments/harness/experiment_datasets_runtime_all/
 experiments/harness/horizon_build/
 experiments/baselines/**/models/
 experiments/baselines/**/raha-baran-results*/
+experiments/baselines/katara/.katara_kb_cache.pkl
 
 # IDE / OS
 .vscode/

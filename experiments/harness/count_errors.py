@@ -19,7 +19,7 @@ def value_normalizer(value):
     value = html.unescape(value)
     value = re.sub(r"[\t\n ]+", " ", value)
     value = value.strip("\t\n ")
-    return value
+    return value.lower()
 
 
 def compare_csv_files(clean_path, dirty_path):

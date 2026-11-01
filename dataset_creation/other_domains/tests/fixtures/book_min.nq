@@ -1,0 +1,13 @@
+<https://example.org/trafalgar> <http://www.w3.org/1999/xhtml/microdata#item> _:book1 <https://example.org/trafalgar> .
+_:book1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Book> <https://example.org/trafalgar> .
+_:book1 <http://schema.org/name> "The Trafalgar Chronicle New Series 3" <https://example.org/trafalgar> .
+_:book1 <http://schema.org/bookFormat> "EBook" <https://example.org/trafalgar> .
+_:book1 <http://schema.org/publisher> _:org1 <https://example.org/trafalgar> .
+_:book1 <http://schema.org/author> _:person1 <https://example.org/trafalgar> .
+_:org1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> <https://example.org/trafalgar> .
+_:org1 <http://schema.org/name> "Seaforth Publishing" <https://example.org/trafalgar> .
+_:person1 <http://schema.org/name> "Jane Austen" <https://example.org/trafalgar> .
+<https://example.org/empty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Book> <https://example.org/empty> .
+<https://example.org/empty> <http://schema.org/isbn> "" <https://example.org/empty> .
+<https://example.org/isbn-only> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Book> <https://example.org/isbn-only> .
+<https://example.org/isbn-only> <http://schema.org/isbn> "9781473899803" <https://example.org/isbn-only> .

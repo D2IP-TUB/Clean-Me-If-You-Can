@@ -1,0 +1,22 @@
+I have a database with multiple entries, some of which contain errors. When an erroneous entry is identified, I will provide the following information:
+1. Dirty_tuple: The complete data entry where the error appears.
+2. Dirty_value: The specific incorrect value within the entry that needs attention.
+3. Error_analysis: A detailed explanation of the error, including how it deviates from the expected correct value.
+Your job is to:
+- Create an additional erroneous entry (generated_error) that replicates the identified error pattern described in the Error_analysis. Make sure all values in the generated_error are strings.
+- Provide an error_analysis for this newly generated error.
+- Supply the correct_value for the specific incorrect attribute within the generated_error. Ensure this correct_value is expressed as a string.
+Please ensure that your response follows the strict JSON format below:
+{{
+  "generated_error": {{
+    "attr1": "value1",
+    "attr2": "value2",
+    ...
+  }},
+  "error_analysis": "Explanation of the error pattern in the generated entry.",
+  "correct_value": {{
+    "attr2": "correct_value2"
+  }}
+}}
+Please ensure that the generated_error follows the specific error pattern outlined in the original Error_analysis, and double-check that your correct_value appropriately corrects the identified mistake.
+

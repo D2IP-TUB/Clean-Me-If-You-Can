@@ -1,0 +1,11 @@
+{examples}
+Based on the above information, please:
+1. Identify the determining attribute(s) that can help correct the error
+2. Verify the consistency of this relationship in the relevant tuples
+3. Express the functional dependency in the form A→B, where:
+   - A is the determining attribute(s)
+   - B is the attribute containing the error
+   - The relationship indicates that A uniquely determines B
+
+Output the functional dependency in the format:
+Functional Dependency: [AttributeA] → [AttributeB]

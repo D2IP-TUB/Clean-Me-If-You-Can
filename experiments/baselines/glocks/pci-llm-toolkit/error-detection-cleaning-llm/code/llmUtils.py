@@ -10,7 +10,7 @@ def getClient(llm_package,api_key,base_url):
         client = openAiMod.getClient(api_key,base_url)
     elif llm_package == "google":
         import googleModels as googleMod
-        client = googleMod.getClient()
+        client = googleMod.getClient(api_key)
     else:
         print("no llm package registered, no matching Client found")
         client = None

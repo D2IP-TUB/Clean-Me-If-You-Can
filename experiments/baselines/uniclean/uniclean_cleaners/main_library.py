@@ -42,7 +42,8 @@ pattern_cleaners = [
 ]
 
 # ---------------------------------------------------------------------------
-# Rule set 3: Functional dependency rules (26 FDs from fds_poi_Library_holoclean.txt)
+# Rule set 3: Functional dependency rules (20 active FDs with LHS ≤ 2;
+# the six 3-column FDs are commented out so a run can finish inside the 10 h cap).
 # ---------------------------------------------------------------------------
 fd_cleaners = [
     # --- 1-column source FDs ---
@@ -89,19 +90,13 @@ fd_cleaners = [
     # road, locality → country
     AttrRelation(["road",         "locality"],                          ["country"],      '20'),
 
-    # --- 3-column source FDs ---
-    # name, house_number, locality → postcode
-    AttrRelation(["name", "house_number", "locality"],                  ["postcode"],     '21'),
-    # house_number, road, locality → postcode
-    AttrRelation(["house_number", "road", "locality"],                  ["postcode"],     '22'),
-    # name, road, locality → house_number
-    AttrRelation(["name", "road", "locality"],                          ["house_number"], '23'),
-    # name, house_number, locality → road
-    AttrRelation(["name", "house_number", "locality"],                  ["road"],         '24'),
-    # name, road, locality → postcode
-    AttrRelation(["name", "road", "locality"],                          ["postcode"],     '25'),
-    # name, house_number, road → postcode
-    AttrRelation(["name", "house_number", "road"],                      ["postcode"],     '26'),
+    # --- 3-column source FDs (disabled: LHS ≥ 3, same relaxation as main_full) ---
+    # AttrRelation(["name", "house_number", "locality"],                  ["postcode"],     '21'),
+    # AttrRelation(["house_number", "road", "locality"],                  ["postcode"],     '22'),
+    # AttrRelation(["name", "road", "locality"],                          ["house_number"], '23'),
+    # AttrRelation(["name", "house_number", "locality"],                  ["road"],         '24'),
+    # AttrRelation(["name", "road", "locality"],                          ["postcode"],     '25'),
+    # AttrRelation(["name", "house_number", "road"],                      ["postcode"],     '26'),
 ]
 
 # Full ordered cleaner list: missing → format → FD
@@ -114,7 +109,7 @@ file_load  = 'TestDataset/poi_Library/dirty.csv'
 clean_path = 'TestDataset/poi_Library/clean.csv'
 save_path  = 'TestDataset/result/'
 table_name = 'poi_Library'
-single_max = 10000
+single_max = 1000
 
 
 def parse_args():

@@ -1,0 +1,15 @@
+As an AI assistant, your task is to repair an erroneous value and give a detailed reasoning chain based on the context provided by relevant clean tuples and user-provided repair examples. Let's work this out in a step by step way to be sure we have the right answer. You can follow the chain of thought abstraction below to correct the data:
+1.Pattern Identification:
+Use the relevant clean tuples to infer the correct format, data type, and any other constraints for the erroneous field.
+2.Error Analysis:
+Identify the nature of the error in the erroneous value by comparing it to the expected format and content based on relevant clean tuples and user-provided repair examples.
+3.Data Transformation:
+Apply the necessary transformations or replacements to the erroneous value based on the inferred format and the context provided by the clean tuples or the dirty value itself and give the reason.
+Ensure that the output is a unique and singular correction without multiple choices.
+Make sure you identify the dirty value to be repaired from the prompt exactly.
+Your output must be structured in JSON format and have no text other than json. No other text is allowed before and after json.
+Each time only the erroneous value pointed out by the user needs to be repaired.
+Here are several general examples for your task:
+{general_examples}
+The following are specific repair cases provided by users about the data sets to be repaired. You should learn repair methods for specific datasets based on user-provided repair cases：
+{specific_examples}

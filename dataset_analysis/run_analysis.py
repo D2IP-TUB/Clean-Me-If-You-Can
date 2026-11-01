@@ -1,105 +1,108 @@
 #!/usr/bin/env python3
-"""
-Run v3 error-type analysis on all datasets and produce Table 4 + LaTeX output.
+"""Run the multi-label error taxonomy on every dataset under ../data.
 
-Requires datasets under ../data/ (see dataset_analysis/README.md).
+Writes output/multilabel/<label>/summary.json and a multi-label
+error-type table under output/. The checked-in error_type_table.csv
+is left unchanged.
 """
 from __future__ import annotations
 
+import json
 import os
 import sys
 import time
-from collections import Counter
 from pathlib import Path
 
 import pandas as pd
 
-from error_taxonomy.analyze_error_types import ERROR_TYPES, analyze
+sys.path.insert(0, str(Path(__file__).resolve().parent / "error_taxonomy"))
+from analyze_error_types import canonicalize_summary  # noqa: E402
+from analyze_error_types_multilabel import run_dataset  # noqa: E402
 
 BASE = Path(__file__).resolve().parent
 DATA = BASE.parent / "data"
 OUT = BASE / "output"
+ML_OUT = OUT / "multilabel"
 
-DROP_COLS = ["id", "_id", "provenance_graph_iri", "graph_iri"]
-LANG_COLS = ["name", "road", "locality", "region", "country", "house_number"]
-PARS_COLS = ["name", "road", "locality", "region", "country", "postcode"]
-ABBR_COLS = ["name", "road", "locality", "region", "country", "country_code"]
-CHUNK_SIZE = 50_000
+LANG_COLS = {"name", "road", "locality", "region", "country", "house_number"}
+PARS_COLS = {"name", "road", "locality", "region", "country", "postcode"}
+ABBR_COLS = {"name", "road", "locality", "region", "country", "country_code"}
 
-
-def load_pair(dirty_path: Path, clean_path: Path) -> tuple[pd.DataFrame, pd.DataFrame]:
-    dirty = pd.read_csv(dirty_path, low_memory=False, dtype=str).fillna("")
-    clean = pd.read_csv(clean_path, low_memory=False, dtype=str).fillna("")
-    for col in DROP_COLS:
-        if col in dirty.columns:
-            dirty = dirty.drop(columns=[col])
-        if col in clean.columns:
-            clean = clean.drop(columns=[col])
-    if list(dirty.columns) != list(clean.columns):
-        raise ValueError(
-            f"Column mismatch: {dirty.columns.tolist()} vs {clean.columns.tolist()}"
-        )
-    return dirty, clean
+N_WORKERS = os.cpu_count() or 8
+CHUNK_ROWS = 20_000
 
 
-def run_analysis(label: str, dirty_path: Path, clean_path: Path) -> tuple[int, dict, int]:
+def discover_datasets() -> list[tuple[str, str, str | None, Path, Path]]:
+    """Return (table_label, ml_label, latex_cmd, dirty_path, clean_path)."""
+    datasets: list[tuple[str, str, str | None, Path, Path]] = [
+        (
+            "full_unnamed", "full_unnamed", "\\dsnoname{}",
+            DATA / "full_unnamed" / "dirty.csv",
+            DATA / "full_unnamed" / "clean.csv",
+        ),
+        (
+            "full_named", "full_named", "\\dsname{}",
+            DATA / "full_named" / "dirty.csv",
+            DATA / "full_named" / "clean.csv",
+        ),
+        (
+            "slice_us", "slice_us", "\\usslice{}",
+            DATA / "slices" / "us" / "named" / "dirty.csv",
+            DATA / "slices" / "us" / "named" / "clean.csv",
+        ),
+        (
+            "slice_de", "slice_de", "\\deslice{}",
+            DATA / "slices" / "de" / "named" / "dirty.csv",
+            DATA / "slices" / "de" / "named" / "clean.csv",
+        ),
+        (
+            "slice_ru", "slice_ru", "\\ruslice{}",
+            DATA / "slices" / "ru" / "named" / "dirty.csv",
+            DATA / "slices" / "ru" / "named" / "clean.csv",
+        ),
+    ]
+
+    subsets_dir = DATA / "subsets"
+    if subsets_dir.is_dir():
+        for poi in sorted(subsets_dir.iterdir()):
+            named = poi / "named"
+            dirty = named / "dirty.csv"
+            clean = named / "clean.csv"
+            if dirty.is_file() and clean.is_file():
+                datasets.append((poi.name, f"facility_{poi.name}", None, dirty, clean))
+
+    return datasets
+
+
+def run_one(table_label: str, ml_label: str, dirty_path: Path, clean_path: Path) -> dict:
     print(f"\n{'=' * 60}", flush=True)
-    print(f"[{time.strftime('%H:%M:%S')}] Analyzing: {label}", flush=True)
+    print(f"[{time.strftime('%H:%M:%S')}] Analyzing: {table_label}", flush=True)
     print(f"  dirty: {dirty_path}", flush=True)
     print(f"  clean: {clean_path}", flush=True)
     t0 = time.time()
 
-    dirty, clean = load_pair(dirty_path, clean_path)
-    n_rows = len(dirty)
-    n_cols = len(dirty.columns)
-    total_cells = n_rows * n_cols
-    print(
-        f"  Loaded {n_rows:,} rows × {n_cols} cols = {total_cells:,} cells",
-        flush=True,
+    outdir = ML_OUT / ml_label
+    result = run_dataset(
+        table_label, str(dirty_path), str(clean_path), str(outdir),
+        n_workers=N_WORKERS, chunk_rows=CHUNK_ROWS,
+        lang_cols=LANG_COLS, parsing_cols=PARS_COLS, abbrev_cols=ABBR_COLS,
+        lang_lingua_off_cols={"locality"},
+        lang_word_level_cols=LANG_COLS,
     )
 
-    lang_cols = [c for c in LANG_COLS if c in dirty.columns]
-    pars_cols = [c for c in PARS_COLS if c in dirty.columns]
-    abbr_cols = [c for c in ABBR_COLS if c in dirty.columns]
+    dt = time.time() - t0
+    print(f"  DONE: {table_label} — {dt:.1f}s", flush=True)
+    total_cells = result["total_cells"]
+    state = result["state_counts"]
+    labels = result["label_counts"]
+    for name in ("Clean", "Missing", "Error"):
+        cnt = state.get(name, 0)
+        print(f"    {name:20s}: {cnt:>10,}  ({cnt / total_cells * 100:.2f}%)", flush=True)
+    for name in TYPE_KEYS:
+        cnt = labels.get(name, 0)
+        print(f"    {name:20s}: {cnt:>10,}  ({cnt / total_cells * 100:.2f}%)", flush=True)
 
-    agg_counts: Counter = Counter()
-    n_chunks = (n_rows + CHUNK_SIZE - 1) // CHUNK_SIZE
-    print(f"  Processing {n_chunks} chunks...", flush=True)
-
-    for i in range(n_chunks):
-        t_chunk = time.time()
-        start = i * CHUNK_SIZE
-        end = min(start + CHUNK_SIZE, n_rows)
-        d_chunk = dirty.iloc[start:end].reset_index(drop=True)
-        c_chunk = clean.iloc[start:end].reset_index(drop=True)
-
-        overall_df, _, _cell_dict = analyze(
-            c_chunk,
-            d_chunk,
-            language_cols=lang_cols,
-            parsing_cols=pars_cols,
-            abbrev_cols=abbr_cols,
-            dumper=None,
-        )
-        for et, cnt in zip(overall_df["error_type"], overall_df["count"]):
-            agg_counts[et] += int(cnt)
-
-        elapsed = time.time() - t0
-        rows_done = end
-        eta = (n_rows - rows_done) / (rows_done / elapsed) if rows_done and elapsed else 0
-        print(
-            f"  chunk {i + 1}/{n_chunks}: rows {start:,}-{end:,} "
-            f"({rows_done / n_rows * 100:.1f}%) chunk={time.time() - t_chunk:.1f}s "
-            f"ETA={eta:.0f}s",
-            flush=True,
-        )
-
-    print(f"  DONE: {label} — {time.time() - t0:.1f}s", flush=True)
-    for et in ERROR_TYPES:
-        cnt = agg_counts.get(et, 0)
-        print(f"    {et:20s}: {cnt:>10,}  ({cnt / total_cells * 100:.2f}%)", flush=True)
-
-    return n_rows, dict(agg_counts), total_cells
+    return result
 
 
 def pct(count: int, total: int) -> float:
@@ -114,27 +117,28 @@ def fmt_int(n: int) -> str:
     return f"{n:,}".replace(",", "{,}")
 
 
-def make_row(label: str, n_rows: int, counts: dict, total_cells: int) -> dict:
-    return {
+TYPE_KEYS = [
+    "Special_Character",
+    "Language",
+    "Abbreviation",
+    "Token_Subset",
+    "Typo",
+    "Formatting",
+    "Semantic",
+]
+
+
+def make_row(label: str, n_rows: int, state: dict, labels: dict, total_cells: int) -> dict:
+    row = {
         "label": label,
         "n_rows": n_rows,
-        "Clean": pct(counts.get("Clean", 0), total_cells),
-        "Missing": pct(counts.get("Missing", 0), total_cells),
-        "Parsing_n": counts.get("Parsing", 0),
-        "Parsing_p": pct(counts.get("Parsing", 0), total_cells),
-        "Capitalization": pct(counts.get("Capitalization", 0), total_cells),
-        "Special_Character": pct(counts.get("Special_Character", 0), total_cells),
-        "Name_Reformat": pct(counts.get("Name_Reformat", 0), total_cells),
-        "Language": pct(counts.get("Language", 0), total_cells),
-        "Abbreviation": pct(counts.get("Abbreviation", 0), total_cells),
-        "Token_Subset": pct(counts.get("Token_Subset", 0), total_cells),
-        "Typo": pct(counts.get("Typo", 0), total_cells),
-        "Word_Substitution": pct(
-            counts.get("Word_Substitution", 0) + counts.get("Word_Variant", 0),
-            total_cells,
-        ),
-        "Misc": pct(counts.get("Misc", 0), total_cells),
+        "Clean": pct(state.get("Clean", 0), total_cells),
+        "Missing": pct(state.get("Missing", 0), total_cells),
+        "Error": pct(state.get("Error", 0), total_cells),
     }
+    for key in TYPE_KEYS:
+        row[key] = pct(labels.get(key, 0), total_cells)
+    return row
 
 
 def latex_row(row: dict, label_cmd: str | None = None) -> str:
@@ -144,75 +148,41 @@ def latex_row(row: dict, label_cmd: str | None = None) -> str:
         fmt_int(row["n_rows"]),
         fmt_pct(row["Clean"]),
         fmt_pct(row["Missing"]),
-        str(row["Parsing_n"]),
-        f"{row['Parsing_p']:.3f}\\%",
-        fmt_pct(row["Capitalization"]),
+        fmt_pct(row["Error"]),
         fmt_pct(row["Special_Character"]),
-        fmt_pct(row["Name_Reformat"]),
         fmt_pct(row["Language"]),
         fmt_pct(row["Abbreviation"]),
         fmt_pct(row["Token_Subset"]),
         fmt_pct(row["Typo"]),
-        fmt_pct(row["Word_Substitution"]),
-        fmt_pct(row["Misc"]),
+        fmt_pct(row["Formatting"]),
+        fmt_pct(row["Semantic"]),
     ]
     return " & ".join(cols) + " \\\\"
 
 
-def discover_datasets() -> list[tuple[str, str | None, Path, Path]]:
-    """Return (label, latex_cmd, dirty_path, clean_path) for all datasets."""
-    datasets: list[tuple[str, str | None, Path, Path]] = [
-        (
-            "full_unnamed",
-            "\\dsnoname{}",
-            DATA / "full_unnamed" / "dirty.csv",
-            DATA / "full_unnamed" / "clean.csv",
-        ),
-        (
-            "full_named",
-            "\\dsname{}",
-            DATA / "full_named" / "dirty.csv",
-            DATA / "full_named" / "clean.csv",
-        ),
-        (
-            "slice_us",
-            "\\usslice{}",
-            DATA / "slices" / "us" / "named" / "dirty.csv",
-            DATA / "slices" / "us" / "named" / "clean.csv",
-        ),
-        (
-            "slice_de",
-            "\\deslice{}",
-            DATA / "slices" / "de" / "named" / "dirty.csv",
-            DATA / "slices" / "de" / "named" / "clean.csv",
-        ),
-        (
-            "slice_ru",
-            "\\ruslice{}",
-            DATA / "slices" / "ru" / "named" / "dirty.csv",
-            DATA / "slices" / "ru" / "named" / "clean.csv",
-        ),
-    ]
-
-    subsets_dir = DATA / "subsets"
-    if subsets_dir.is_dir():
-        for poi in sorted(subsets_dir.iterdir()):
-            named = poi / "named"
-            dirty = named / "dirty.csv"
-            clean = named / "clean.csv"
-            if dirty.is_file() and clean.is_file():
-                datasets.append((poi.name, None, dirty, clean))
-
-    return datasets
+def load_summary_row(table_label: str, ml_label: str) -> dict | None:
+    """Rebuild one table row from an existing summary.json."""
+    path = ML_OUT / ml_label / "summary.json"
+    if not path.is_file():
+        return None
+    with open(path) as f:
+        s = canonicalize_summary(json.load(f))
+    state = s.get("state_counts") or {}
+    labels = s.get("label_counts") or {}
+    total = s.get("total_cells") or sum(state.values())
+    return make_row(table_label, s["n_rows"], state, labels, total)
 
 
 def main() -> None:
+    from_summaries = "--from-summaries" in sys.argv
     OUT.mkdir(parents=True, exist_ok=True)
+    ML_OUT.mkdir(parents=True, exist_ok=True)
 
     if not DATA.is_dir() or not any(DATA.iterdir()):
         print(
             f"ERROR: data directory not found or empty: {DATA}\n"
-            "Download the published datasets from HuggingFace and place them under ../data/\n"
+            "Download the published datasets from Zenodo "
+            "(https://zenodo.org/records/20841898) and place them under ../data/\n"
             "See dataset_analysis/README.md for the expected directory layout.",
             file=sys.stderr,
         )
@@ -220,42 +190,66 @@ def main() -> None:
 
     datasets = discover_datasets()
 
-    missing = [(lbl, d, c) for lbl, _, d, c in datasets if not d.is_file() or not c.is_file()]
+    missing = [(lbl, d, c) for lbl, _, _, d, c in datasets if not d.is_file() or not c.is_file()]
     if missing:
-        print("Missing dataset files (stage them under ../data/ first):", file=sys.stderr)
+        print("SKIPPING datasets with missing files (not staged under ../data/):", file=sys.stderr)
         for lbl, d, c in missing:
             print(f"  {lbl}: {d} / {c}", file=sys.stderr)
-        sys.exit(1)
+        missing_labels = {lbl for lbl, _, _ in missing}
+        datasets = [ds for ds in datasets if ds[0] not in missing_labels]
+        if not datasets:
+            print("ERROR: no datasets available to run.", file=sys.stderr)
+            sys.exit(1)
 
     results: list[dict] = []
+    manifest: list[dict] = []
     progress_csv = OUT / "error_type_results_progress.csv"
+    t_start = time.time()
 
-    for label, cmd, dirty_path, clean_path in datasets:
-        n_rows, counts, total_cells = run_analysis(label, dirty_path, clean_path)
-        row = make_row(label, n_rows, counts, total_cells)
+    for table_label, ml_label, cmd, dirty_path, clean_path in datasets:
+        t0 = time.time()
+        if from_summaries:
+            row = load_summary_row(table_label, ml_label)
+            if row is None:
+                print(f"  [--from-summaries] no summary.json for {ml_label}, skipping",
+                      file=sys.stderr)
+                continue
+            print(f"  [--from-summaries] {table_label}")
+        else:
+            ml_result = run_one(table_label, ml_label, dirty_path, clean_path)
+            dt = time.time() - t0
+            manifest.append({"label": ml_label, "outdir": str(ML_OUT / ml_label),
+                             "seconds": round(dt, 1)})
+            with open(ML_OUT / "manifest.json", "w") as f:
+                json.dump(manifest, f, indent=2)
+            row = make_row(table_label, ml_result["n_rows"],
+                           ml_result["state_counts"], ml_result["label_counts"],
+                           ml_result["total_cells"])
         row["cmd"] = cmd
         results.append(row)
         pd.DataFrame([{k: v for k, v in r.items() if k != "cmd"} for r in results]).to_csv(
             progress_csv, index=False
         )
 
+    print(f"\nAll datasets done in {time.time() - t_start:.1f}s. "
+          f"Multi-label outputs under {ML_OUT}")
+
     out_csv = OUT / "error_type_results_all.csv"
     pd.DataFrame([{k: v for k, v in r.items() if k != "cmd"} for r in results]).to_csv(
         out_csv, index=False
     )
-    print(f"\nResults saved to {out_csv}")
+    print(f"Results saved to {out_csv}")
 
-    # LaTeX table (Table 4)
     header = r"""\begin{table*}[t]
 \centering
 \scriptsize
 \setlength{\tabcolsep}{4pt}
-\caption{Dataset variations and their error-type distributions (percentages of total cells). \emph{Parsing} is reported as an absolute count due to its negligible overall frequency. \emph{Word Subst.} aggregates lexical substitutions and word variants.}
+\caption{Address datasets and their multi-label error-type distributions (percentages of total cells). Clean, Missing, and Error partition the cells. A cell can carry more than one error label, so the type columns can sum to more than Error.}
 \label{tab:facility-error-summary}
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{lrrrrrrrrrrrrrr}
+\begin{tabular}{lrrrrrrrrrrrr}
 \toprule
-Slice & Num-rows & Clean & Missing & Parsing (\#) & Parsing (\%) & Capitalization & Special Chars & Name Reformat & Language & Abbreviation & Token Subset & Typo & Word Subst. & Misc \\
+Slice & Num-rows & Clean & Missing & Error & Special Chars & Language & Abbreviation & Token Subset & Typo & Formatting & Semantic \\
 \midrule"""
 
     footer = r"""\bottomrule
@@ -281,11 +275,13 @@ Slice & Num-rows & Clean & Missing & Parsing (\#) & Parsing (\%) & Capitalizatio
 
     latex_text = "\n".join(lines) + "\n"
     latex_path.write_text(latex_text)
-    published_tex = BASE / "error_type_table.tex"
-    published_tex.write_text(latex_text)
-    print(f"LaTeX table saved to {latex_path} and {published_tex}")
+    print(f"LaTeX table saved to {latex_path}")
+    print(
+        "Checked-in dataset_analysis/error_type_table.csv is left unchanged. "
+        "It is the multi-label table and includes books and movies."
+    )
 
-    published_csv = BASE / "error_type_table.csv"
+    published_csv = OUT / "error_type_table.csv"
     pd.DataFrame(
         [
             {
@@ -293,22 +289,19 @@ Slice & Num-rows & Clean & Missing & Parsing (\#) & Parsing (\%) & Capitalizatio
                 "n_rows": r["n_rows"],
                 "clean_pct": round(r["Clean"], 3),
                 "missing_pct": round(r["Missing"], 3),
-                "parsing_n": r["Parsing_n"],
-                "parsing_pct": round(r["Parsing_p"], 3),
-                "capitalization_pct": round(r["Capitalization"], 3),
+                "error_pct": round(r["Error"], 3),
                 "special_character_pct": round(r["Special_Character"], 3),
-                "name_reformat_pct": round(r["Name_Reformat"], 3),
                 "language_pct": round(r["Language"], 3),
                 "abbreviation_pct": round(r["Abbreviation"], 3),
                 "token_subset_pct": round(r["Token_Subset"], 3),
                 "typo_pct": round(r["Typo"], 3),
-                "word_substitution_pct": round(r["Word_Substitution"], 3),
-                "misc_pct": round(r["Misc"], 3),
+                "formatting_pct": round(r["Formatting"], 3),
+                "semantic_pct": round(r["Semantic"], 3),
             }
             for r in results
         ]
     ).to_csv(published_csv, index=False)
-    print(f"Published CSV saved to {published_csv}")
+    print(f"Multi-label CSV saved to {published_csv}")
 
 
 if __name__ == "__main__":

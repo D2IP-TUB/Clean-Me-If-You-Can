@@ -33,7 +33,7 @@ MANUSCRIPT_RESULTS_DIR = os.path.join(EXPERIMENTS_DIR, "manuscript_results")
 
 DEFAULT_SOURCE_DATASETS_DIR = os.environ.get(
     "DATASETS_DIR",
-    os.path.join(DATA_DIR, "merged_named"),
+    DATA_DIR,
 )
 
 EXTERNAL_BASELINE_RESULTS_DIR = os.path.join(
@@ -59,3 +59,10 @@ def system_results_dir(system: str) -> str:
 def cell_error_types_csv(poi_slice: str, version: str) -> str:
     """Path to cell_error_types.csv for a POI slice analysis run."""
     return os.path.join(ANALYSIS_ERRORS_DIR, version, "cell_error_types.csv")
+
+
+def cell_labels_csv(poi_slice: str) -> str:
+    """Multi-label POI annotations (`labels`, types separated by '|')."""
+    return os.path.join(
+        EXPERIMENT_DATASETS_DIR, "effectiveness", poi_slice, "cell_labels.csv"
+    )

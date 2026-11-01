@@ -158,7 +158,7 @@ if [[ $RUNTIME_ONLY -eq 0 ]]; then
     log "=== EFFECTIVENESS EXPERIMENTS (${N_EFF_RUNS} repeats) ==="
 
     # Raha/Baran are handled separately (shared runner); all others have run_{sys}.py
-    EFF_SYSTEMS=(datawig holoclean horizon glocks uniclean)
+    EFF_SYSTEMS=(datawig holoclean horizon glocks uniclean katara)
 
     for run_i in $(seq 1 "$N_EFF_RUNS"); do
         log "--- Effectiveness repeat ${run_i}/${N_EFF_RUNS} ---"
@@ -197,7 +197,7 @@ fi
 if [[ $EFFECTIVENESS_ONLY -eq 0 ]]; then
     log "=== RUNTIME EXPERIMENTS (${N_RUNTIME_RUNS} repeats) ==="
 
-    RT_SYSTEMS=(datawig holoclean horizon glocks uniclean)
+    RT_SYSTEMS=(datawig holoclean horizon glocks uniclean katara)
     for run_i in $(seq 1 "$N_RUNTIME_RUNS"); do
         log "--- Runtime repeat ${run_i}/${N_RUNTIME_RUNS} ---"
 

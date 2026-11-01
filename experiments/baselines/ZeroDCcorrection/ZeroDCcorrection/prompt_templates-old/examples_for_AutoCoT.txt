@@ -1,0 +1,85 @@
+[
+    {
+        "input": [
+             {
+            "Dirty Data Tuple": { "Address": "1025 W ADDISON SX", "City": "CHICAGO"},
+            "Erroneous Value": { "Address": "1025 W ADDISON SX" },
+            "Relevant Clean Tuples": [
+				{"Address": "2900 W 63RD ST",  "City": "CHICAGO"},
+				{"Address": "3401 W BELMONT AVE",  "City": "CHICAGO"}
+			],
+			"Correction": {"Address": "1025 W ADDISON ST"}
+			},
+            {
+            "Dirty Data Tuple": { "Address": "5540 W NORTH AxE", "City": "CHICAGO"},
+            "Erroneous Value": { "Address": "5540 W NORTH AxE" },
+            "Relevant Clean Tuples": [
+				{"Address": "330 N STATE ST",  "City": "CHICAGO"},
+				{"Address": "5130 N SHERIDAN RD",  "City": "CHICAGO"}
+			],
+			"Correction": {"Address": "5540 W NORTH AVE"}
+			}
+        ],
+        "output": [
+            {
+				"chain_of_thought_for_correction": "1.Pattern Identification: The relevant clean tuples suggest that addresses in Chicago follow a consistent pattern: '<number> <direction> <street name> <street type>'. For example, '2900 W 63RD ST' and '3401 W BELMONT AVE' both conform to this pattern. 2.Error Analysis: Upon analyzing the dirty tuple '1025 W ADDISON SX', it appears that the street type 'SX' is likely a typo. In the pattern identified earlier, street types are typically abbreviated as 'ST', 'AVE', 'BLVD', etc. 'SX' does not match any common street type abbreviations, suggesting that it is an error. 3.Data Transformation: Based on the pattern identified and the error analysis, the correct form of the address should be '1025 W ADDISON ST'. The typo 'SX' is replaced by the correct street type 'ST' to conform to the pattern and match the relevant clean tuples",
+            },
+            {
+				"chain_of_thought_for_correction": "1.Pattern Identification: The relevant clean tuples suggest that addresses in Chicago follow a consistent pattern: '<number> <direction> <street name> <street type>'. For example, '330 N STATE ST' and '5130 N SHERIDAN RD' both conform to this pattern. 2.Error Analysis: Upon analyzing the dirty tuple '5540 W NORTH AxE', it appears that the street type 'AxE' is likely a typo. In the pattern identified earlier, street types are typically abbreviated as 'ST', 'RD', 'AVE', etc. 'AxE' does not match any common street type abbreviations, suggesting that it is an error. 3.Data Transformation: Based on the pattern identified and the error analysis, the correct form of the address should be '5540 W NORTH AVE'. The typo 'AxE' is replaced by the correct street type 'AVE' (Avenue) to conform to the pattern and match common street type abbreviations.",
+			}
+        ]
+    },
+    {
+        "input": [
+            {
+            "Dirty Data Tuple": { "AKA Name": "HAPPY FOODS", "Facility Type": "NULL" },
+            "Erroneous Value": { "Facility Type": "NULL"},
+            "Relevant Clean Tuples": [
+                { "AKA Name": "HAPPY FOODS", "Facility Type": "grocery store"},
+                { "AKA Name": "HAPPY FOODS", "Facility Type": "grocery store"},
+				{ "AKA Name": "HAPPY FISH AND CHICKEN", "Facility Type": "Restaurant"},
+            ],
+			"Correction": {"Facility Type": "grocery store"}
+        }
+		],
+        "output": [
+            {
+				"chain_of_thought_for_correction": "1.Pattern Identification: In the Relevant Clean Tuples, we observe that establishments with the exact name 'HAPPY FOODS' are consistently classified as 'grocery store'. This pattern appears twice, suggesting a strong correlation between the name and facility type. 2.Error Analysis: The Dirty Data Tuple has a 'NULL' value for 'Facility Type', which is clearly an error as every business should have a designated facility type. This null value is likely due to missing or incomplete data entry. 3.Data Transformation: Based on the pattern identified in step 1, we can confidently transform the 'NULL' value in the Dirty Data Tuple to 'grocery store'. This transformation is supported by multiple instances of 'HAPPY FOODS' being categorized as 'grocery store' in the Relevant Clean Tuples",
+            }
+        ]
+    },
+    {
+        "input": {
+			"Dirty Data Tuple": { "Inspection ID": "557281", "Inspection Date": "3-17-2011T00:00:00.000" },
+			"Erroneous Value": { "Inspection Date": "3-17-2011T00:00:00.000" },
+			"Relevant Clean Tuples": [
+				{"Inspection ID": "1300676", "Inspection Date": "2012-11-29t00:00:00.000"},
+				{"Inspection ID": "68280", "Inspection Date": "2010-01-28t00:00:00.000"},
+				{"Inspection ID": "2312305", "Inspection Date": "2019-09-10t00:00:00.000"}
+			],
+			"Correction": { "Inspection Date": "2011-03-17t00:00:00.000" }
+
+		},
+        "output": [
+		{
+			"chain_of_thought_for_correction": "1.Pattern Identification: The relevant clean tuples suggest that the Inspection Date follows a consistent pattern: 'YYYY-MM-DDt00:00:00.000'. For example, '2012-11-29t00:00:00.000', '2010-01-28t00:00:00.000', and '2019-09-10t00:00:00.000' all conform to this pattern. 2.Upon analyzing the dirty tuple, we see that the Inspection Date '3-17-2011T00:00:00.000' does not conform to the identified pattern. The issues are:a) The date format is MM-DD-YYYY instead of YYYY-MM-DD. b) The 'T' separator between date and time is uppercase instead of lowercase. 3.Data Transformation: Based on the pattern identified and the error analysis, the correct form of the Inspection Date should be '2011-03-17t00:00:00.000'. This transformation involves:a) Reordering the date components from MM-DD-YYYY to YYYY-MM-DD.b) Changing the 'T' separator to lowercase 't'.c) Maintaining the time component as is, since it's already in the correct format.",
+        }
+		]
+    },
+	{
+		"input": {
+			"Dirty Data Tuple": { "City": "CHICAGO", "State": "CA"},
+			"Erroneous Value": { "State": "CA" },
+			"Relevant Clean Tuples": [
+				{"City": "CHICAGO", "State": "il"},
+				{"City": "CHICAGO", "State": "il"}
+			],
+			"Correction": {"State": "il"}
+		},
+		"output": [
+			{
+				"chain_of_thought_for_correction": "1.Pattern Identification: The relevant clean tuples suggest that the state abbreviation for Chicago is consistently 'il' (lowercase). Both clean tuples show {'City': 'CHICAGO', 'State': 'il'}. 2.Error Analysis:  In the dirty data tuple, we see {'City': 'CHICAGO', 'State': 'CA'}. The error is in the State field, where 'CA' (uppercase) is used instead of 'il' (lowercase). 'CA' is typically the abbreviation for California, which is incorrect for Chicago. 3.Data Transformation: Based on the pattern identified and the error analysis, the correct form of the State abbreviation should be 'il' (lowercase). The erroneous 'CA' is replaced with 'il' to match the consistent pattern seen in the relevant clean tuples. The City remains 'CHICAGO' (uppercase) as it was correct in the original data.",
+			}
+		]
+	}
+]

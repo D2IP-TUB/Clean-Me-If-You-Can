@@ -14,6 +14,7 @@ Provides:
 
 import json
 import os
+import re
 import shutil
 import signal
 import subprocess
@@ -22,6 +23,9 @@ import threading
 import time
 from datetime import datetime
 from typing import Optional
+
+# full_10000, full_100000_distinct, full_full → 10000 / 100000 / -1
+_RUNTIME_SIZE_RE = re.compile(r"_(\d+)(?:_|$)")
 
 import psutil
 
@@ -113,11 +117,8 @@ def list_runtime_datasets(cfg: dict, exp_datasets_dir: str) -> list:
         dirty = os.path.join(sub_dir, "dirty.csv")
         clean = os.path.join(sub_dir, "clean.csv")
         if os.path.exists(dirty) and os.path.exists(clean):
-            parts = sub.rsplit("_", 1)
-            try:
-                n = int(parts[-1])
-            except ValueError:
-                n = -1  # "full"
+            match = _RUNTIME_SIZE_RE.search(sub)
+            n = int(match.group(1)) if match else -1  # "full" / unparseable
             entries.append({"name": sub, "dirty": dirty, "clean": clean, "n_records": n})
     entries.sort(key=lambda e: e["n_records"] if e["n_records"] >= 0 else 10**12)
     return entries
@@ -226,20 +227,38 @@ def purge_raha_cache(dataset_dir: str):
             print(f"  [purge] {full}")
 
 
-def purge_holoclean_db(db_name: str = "holo"):
-    """Drop and recreate the HoloClean PostgreSQL database for a fresh run."""
+def purge_holoclean_db(
+    db_name: str = "holo",
+    db_user: str = "holocleanuser",
+    db_host: str = "127.0.0.1",
+    db_port: str = "5432",
+    db_pwd: str = "",
+):
+    """Reset HoloClean state by dropping all user tables in the target database.
+
+    Prefer dropping tables over DROP DATABASE: on many installs holocleanuser can
+    create objects in `holo` but does not own the database itself.
+    """
+    env = os.environ.copy()
+    if db_pwd:
+        env["PGPASSWORD"] = db_pwd
+    psql = [
+        "psql", "-h", db_host, "-p", str(db_port), "-U", db_user, "-d", db_name,
+        "-v", "ON_ERROR_STOP=1",
+    ]
+    drop_sql = (
+        "DO $$ DECLARE r RECORD; BEGIN "
+        "FOR r IN (SELECT tablename FROM pg_tables WHERE schemaname = 'public') LOOP "
+        "EXECUTE 'DROP TABLE IF EXISTS public.' || quote_ident(r.tablename) || ' CASCADE'; "
+        "END LOOP; END $$;"
+    )
     try:
-        subprocess.run(
-            ["psql", "-U", "holocleanuser", "-c", f"DROP DATABASE IF EXISTS {db_name};"],
-            check=True, capture_output=True,
-        )
-        subprocess.run(
-            ["psql", "-U", "holocleanuser", "-c", f"CREATE DATABASE {db_name};"],
-            check=True, capture_output=True,
-        )
-        print(f"  [purge] HoloClean DB '{db_name}' reset")
+        subprocess.run(psql + ["-c", drop_sql], check=True, capture_output=True, env=env)
+        print(f"  [purge] HoloClean DB '{db_name}' tables cleared")
     except Exception as e:
         print(f"  [warn] Could not reset HoloClean DB: {e}")
+        if getattr(e, "stderr", None):
+            print(f"  [warn] stderr: {e.stderr.decode(errors='replace')[:500]}")
 
 
 def purge_datawig_cache(dataset_dir: str):
@@ -259,7 +278,7 @@ def run_with_timeout(
     cmd: list,
     cwd: str,
     env: dict,
-    time_limit: int,
+    time_limit: Optional[int],
     stdout_log: str,
     stderr_log: str,
     memory_limit_mb: Optional[float] = None,
@@ -304,7 +323,8 @@ def run_with_timeout(
         t.start()
 
         try:
-            proc.wait(timeout=time_limit)
+            # None / 0 / negative: no wall-clock cap (LLM jobs).
+            proc.wait(timeout=time_limit if time_limit and time_limit > 0 else None)
         except subprocess.TimeoutExpired:
             timed_out = True
             try:

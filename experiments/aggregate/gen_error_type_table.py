@@ -5,18 +5,15 @@ average across 3 runs, and produce:
   - experiments_data_results/results/error_type_table.tex  (filled LaTeX table)
 
 Error-type → table column mapping
-  Missing          → Missing
-  Parsing          → Pars.(#)   (single parsing type; Pars.(%) stays --)
-  Capitalization   → Capital.
-  Special_Character→ Spec. Chars
-  Name_Reformat    → Name Ref.
-  Language         → Lang.
-  Abbreviation     → Abbrev.
-  Token_Subset     → Tok. Subset
-  Typo             → Typo
-  Word_Variant     → Word Var.
-  Word_Substitution→ Word Sub.
-  Misc             → Misc
+  Missing           → Missing
+  Special_Character → Spec. Chars
+  Language          → Lang.
+  Abbreviation      → Abbrev.
+  Token_Subset      → Tok. Subset
+  Typo              → Typo
+  Formatting        → Formatting
+  Semantic          → Semantic
+  Unresolved_Type   → Unresolved
 """
 
 import os
@@ -30,15 +27,15 @@ from paths import (  # noqa: E402
     AGGREGATE_DIR,
     EXTERNAL_BASELINE_RESULTS_DIR,
     RESULTS_DIR,
-    cell_error_types_csv,
+    cell_labels_csv,
 )
 
 MAIN_RESULTS = RESULTS_DIR
 EXT_RESULTS = EXTERNAL_BASELINE_RESULTS_DIR
 
 CELL_ERROR_TYPES = {
-    "poi_Library": cell_error_types_csv("poi_Library", "v3_20260527-153844"),
-    "poi_ShoppingCenter": cell_error_types_csv("poi_ShoppingCenter", "v3_20260527-154003"),
+    "poi_Library": cell_labels_csv("poi_Library"),
+    "poi_ShoppingCenter": cell_labels_csv("poi_ShoppingCenter"),
 }
 
 # (system_name, results_root_dir, dataset_prefix_override, rerun_root)
@@ -65,16 +62,14 @@ from eval_by_error_type import load_cell_error_types, evaluate  # noqa: E402
 # ---------------------------------------------------------------------------
 COL_MAP = [
     ("Missing",          "Missing"),
-    ("Parsing",          "Parsing"),        # header updated at runtime with %
-    ("Capital.",         "Capitalization"),
     ("Spec. Chars",      "Special_Character"),
-    ("Name Ref.",        "Name_Reformat"),
     ("Lang.",            "Language"),
     ("Abbrev.",          "Abbreviation"),
     ("Tok. Subset",      "Token_Subset"),
     ("Typo",             "Typo"),
-    ("Word Sub.",        "Word_Substitution"),
-    ("Misc",             "Misc"),
+    ("Formatting",       "Formatting"),
+    ("Semantic",         "Semantic"),
+    ("Unresolved",       "Unresolved_Type"),
 ]
 COL_HEADERS = [c[0] for c in COL_MAP]  # may be updated in main()
 SCORE_COLS  = ["det_tp","det_fp","det_fn","det_precision","det_recall","det_f1",

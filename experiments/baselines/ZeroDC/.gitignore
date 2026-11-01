@@ -1,0 +1,11 @@
+# Local debugging scripts
+_tmp_*.py
+
+# Local experiment and test results
+stability_*/
+runs_*/
+movies_badcase_baseline_*/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]

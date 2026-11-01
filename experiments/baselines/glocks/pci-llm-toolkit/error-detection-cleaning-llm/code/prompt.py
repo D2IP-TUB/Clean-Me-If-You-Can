@@ -2,6 +2,38 @@
 import re
 import pandas as pd
 
+# Display labels used in prompts / parseAnswer (column_name → label).
+_FIELD_DISPLAY = {
+    "house_number": "House Number",
+    "country_code": "Country Code",
+    "date_published": "Date Published",
+    "number_of_pages": "Number Of Pages",
+}
+
+# Other-domain prompt IDs (detection / correction).
+_OTHER_DETECTION_IDS = {"p21", "p23"}
+_OTHER_CORRECTION_IDS = {"p22", "p24"}
+_OTHER_PROMPT_FIELDS = {
+    "p21": ["title", "author", "isbn", "date_published", "publisher", "number_of_pages"],
+    "p22": ["title", "author", "isbn", "date_published", "publisher", "number_of_pages"],
+    "p23": ["title", "director", "actor", "date_published", "duration", "genre"],
+    "p24": ["title", "director", "actor", "date_published", "duration", "genre"],
+}
+
+
+def _field_display(field: str) -> str:
+    if field in _FIELD_DISPLAY:
+        return _FIELD_DISPLAY[field]
+    if field == "_id":
+        return "Id"
+    return field.replace("_", " ").title()
+
+
+def _corr_label(field: str) -> str:
+    """Correction answer label, e.g. date_published → Date_Published_corr."""
+    return _field_display(field).replace(" ", "_") + "_corr"
+
+
 class llmPrompt:
     promptId : str = str()
     promptStr : str = str()
@@ -30,6 +62,8 @@ class llmPrompt:
     
     def setValues(self,row):
         for key, value in self.colNameMatchingDict.items():
+            if key not in row.index:
+                continue
             self.promptVarDict[value] = None if pd.isna(row[key]) else row[key]
     
     def setColNameDict(self,colNameMatchingDictVal):
@@ -46,15 +80,8 @@ class llmPrompt:
             error_fields_formatted = ""
             for field in error_fields_list:
                 if field == "_id":
-                    display_field = "Id"
-                elif field == "house_number":
-                    display_field = "House Number"
-                elif field == "country_code":
-                    display_field = "Country Code"
-                else:
-                    # Capitalize first letter
-                    display_field = field.capitalize()
-                
+                    continue
+                display_field = _field_display(field)
                 error_fields_formatted += f'    "{display_field}": "contains error",\n'
             
             # Remove the last comma and newline
@@ -83,6 +110,21 @@ def extractLineVal(answerStr,patternStr):
             return ''
     else:
         return ''
+
+
+def _parse_labeled_fields(answerStr, fields, correction: bool) -> dict:
+    """Extract per-field answers using display labels; rest-of-line capture."""
+    out = {}
+    for col in fields:
+        if correction:
+            label = _corr_label(col)
+        else:
+            label = _field_display(col)
+        # Rest of line after "Label: " — permissive for titles/names with punctuation.
+        pat = rf"{re.escape(label)}:[^\n]*"
+        out[col] = extractLineVal(answerStr, pat).strip()
+    return out
+
 
 def parseAnswer(answerStr,prompt:llmPrompt,id:int):
     resDict = dict()
@@ -122,47 +164,15 @@ def parseAnswer(answerStr,prompt:llmPrompt,id:int):
                    'PromptId': prompt.promptId,
                    'Prompt': prompt.getPrompt(), 'Antwort': answerStr}
 
-    # elif prompt.promptId in ['p1','p2','p3','p7','p8','p9','p10','p11','p12','p13','p15','p16','p18']:
-    #     strRes = extractLineVal(answerStr,r"Stra[sß]e:[ \w.-/]*").strip().lower()
-    #     hnRes = extractLineVal(answerStr,r"Hausnummer:[ \w.-/]*").strip().lower()
-    #     stRes = extractLineVal(answerStr,r"Stiege:[ \w.-/]*").strip().lower()
-    #     tnRes = extractLineVal(answerStr,r"Türnummer:[ \w.-/]*").strip().lower()
-    #     plzRes = extractLineVal(answerStr,r"Postleitzahl:[ \w.-/]*").strip().lower()
-    #     ortRes = extractLineVal(answerStr,r"Ort:[ \w.-/]*").strip().lower()
-    #     resDict = {'id':id,'Strasse':strRes,'Hausnummer':hnRes,'Stiege':stRes,
-    #                'Türnummer':tnRes,'Postleitzahl':plzRes,'Ort':ortRes,
-    #                'PromptId':prompt.promptId,
-    #                'Prompt':prompt.getPrompt(),'Antwort':answerStr}
-        
-    # elif prompt.promptId in ['p1']:                
-    #     nnRes = extractLineVal(answerStr,r"Nachname:[ \w.-/]*").strip().lower()
-    #     vnRes = extractLineVal(answerStr,r"Vorname:[ \w.-/]*").strip().lower()
-    #     gebDatRes = extractLineVal(answerStr,r"Geburtsdatum:[ \w.-/]*").strip().lower()
-    #     emailRes = extractLineVal(answerStr,r"Email:[ \w.-/]*").strip().lower()
-    #     lvorRes = extractLineVal(answerStr,r"Laendervorwahl:[ \w.-/]*").strip().lower()
-    #     vorRes = extractLineVal(answerStr,r"Vorwahl:[ \w.-/]*").strip().lower()
-    #     telnrRes = extractLineVal(answerStr,r"Telefonnummer:[ \w.-/]*").strip().lower()
+    elif prompt.promptId in _OTHER_DETECTION_IDS or prompt.promptId in _OTHER_CORRECTION_IDS:
+        fields = _OTHER_PROMPT_FIELDS[prompt.promptId]
+        parsed = _parse_labeled_fields(
+            answerStr, fields, correction=(prompt.promptId in _OTHER_CORRECTION_IDS)
+        )
+        resDict = {'id': id, **parsed,
+                   'PromptId': prompt.promptId,
+                   'Prompt': prompt.getPrompt(), 'Antwort': answerStr}
 
-    #     strRes = extractLineVal(answerStr,r"Stra[sß]e:[ \w.-/]*").strip().lower()
-    #     hnRes = extractLineVal(answerStr,r"Hausnummer:[ \w.-/]*").strip().lower()
-    #     stRes = extractLineVal(answerStr,r"Stiege:[ \w.-/]*").strip().lower()
-    #     tnRes = extractLineVal(answerStr,r"Türnummer:[ \w.-/]*").strip().lower()
-    #     plzRes = extractLineVal(answerStr,r"Postleitzahl:[ \w.-/]*").strip().lower()
-    #     ortRes = extractLineVal(answerStr,r"Ort:[ \w.-/]*").strip().lower()
-    #     landRes = extractLineVal(answerStr,r"Land:[ \w.-/]*").strip().lower()
-
-    #     resDict = {'id':id,
-    #                'Nachname':nnRes, 'Vorname':vnRes,'Geburtsdatum':gebDatRes,
-    #                'Email':emailRes,'Laendervorwahl':lvorRes,
-    #                'Vorwahl':vorRes,'Telefonnummer':telnrRes,
-    #                'Strasse':strRes,'Hausnummer':hnRes,'Stiege':stRes,
-    #                'Türnummer':tnRes,'Postleitzahl':plzRes,'Ort':ortRes,
-    #                'Land':landRes,
-    #                'PromptId':prompt.promptId,
-    #                'Prompt':prompt.getPrompt(),'Antwort':answerStr}
-
-    # elif prompt.promptId in ['p5']:
-    #     'blub'
     else:
         print(f'{prompt.promptId} does not exist')
     

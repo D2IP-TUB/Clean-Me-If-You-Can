@@ -142,7 +142,7 @@ file_load  = 'TestDataset/poi_ShoppingCenter/dirty.csv'
 clean_path = 'TestDataset/poi_ShoppingCenter/clean.csv'
 save_path  = 'TestDataset/result/'
 table_name = 'poi_ShoppingCenter'
-single_max = 1000
+single_max = 500
 
 
 def parse_args():

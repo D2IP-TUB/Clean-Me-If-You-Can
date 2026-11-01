@@ -1,6 +1,6 @@
 # Clean Me If You Can
 
-A large collection of real-world postal addresses with ground truth for data cleaning benchmarking.
+A large collection of real-world postal addresses with ground truth for data cleaning benchmarking. The same repository includes a books corpus from the Web Data Commons crawl with Open Library ground truth, and the movie dirty tables from that crawl.
 
 **Paper:** *Clean Me If You Can: A Large Collection of Real-World Addresses for Data Cleaning Benchmarking* 
 
@@ -14,8 +14,12 @@ A large collection of real-world postal addresses with ground truth for data cle
 |-----------|---------|
 | [`dataset_creation/`](dataset_creation/) | WDC extraction → OSM Nominatim validation → pack pipeline (Section 4) |
 | [`dataset_analysis/`](dataset_analysis/) | Statistics, error taxonomy, slice generation (Section 5) |
+| [`benchmark_customization_scripts/`](benchmark_customization_scripts/) | Drop columns or restore selected error types to ground truth (Section 5.2.2) |
 | [`experiments/`](experiments/) | Baseline systems + experiment harness (Section 6) |
-| `data/` | Published datasets — **gitignored**; see [Get the data](#get-the-data) below |
+| `data/` | Address datasets — **gitignored**; see [Get the data](#get-the-data) below |
+| `other_domains_books.zip` | Books corpus, unpacked into `other_domains_data/books/` |
+| `other_domains_books_samples.zip` | Book experiment samples, unpacked into `other_domains_data/effectiveness_other_domains/books/` |
+| `other_domains_movies.zip` | Movie crawl dirty table, unpacked into `other_domains_data/movies/dirty.csv` |
 
 ---
 
@@ -26,64 +30,94 @@ Each dataset ships as a paired `dirty.csv` / `clean.csv` with columns:
 
 | Dataset | Rows | Description |
 |---------|------|-------------|
-| `full_named` | ~4.3M | All records with an entity name |
-| `full_unnamed` | ~9.3M | All records without an entity name |
-| `slices/us/named` | ~350k | US-only slice (Section 5.1.1) |
-| `slices/de/named` | ~230k | Germany-only slice (Section 5.1.1) |
-| `slices/ru/named` | ~120k | Russia-only slice (Section 6 experiments) |
-| `subsets/<POI>/named` | varies | 22 Schema.org POI types (Hotel, Library, …) |
+| `full_named` | 4,335,421 | All records with an entity name |
+| `full_unnamed` | 9,312,725 | All records without an entity name |
+| `slices/us/named` | 2,267,134 | US-only slice, with an entity name |
+| `slices/us/unnamed` | 4,447,612 | US-only slice, without an entity name |
+| `slices/de/named` | 374,503 | Germany-only slice, with an entity name |
+| `slices/de/unnamed` | 1,072,166 | Germany-only slice, without an entity name |
+| `slices/ru/named` | 194,229 | Russia-only slice, with an entity name |
+| `slices/ru/unnamed` | 340,697 | Russia-only slice, without an entity name |
+| `subsets/<POI>/named` | see below | 22 Schema.org POI types, with an entity name |
+| `subsets/<POI>/unnamed` | see below | 22 Schema.org POI types, without an entity name |
 
-> **License note:** Ground-truth data derived from OpenStreetMap is licensed under
+POI subset sizes (rows):
+
+| POI | Named | Unnamed |
+|-----|------:|--------:|
+| AdministrativeArea | 10,657 | 25,520 |
+| City | 63,615 | 90,582 |
+| CollegeOrUniversity | 55,429 | 82,900 |
+| Country | 224,170 | 303,712 |
+| EducationalOrganization | 38,629 | 78,158 |
+| Event | 1,830,143 | 2,107,300 |
+| GeoCoordinates | 1,784,594 | 2,541,065 |
+| GovernmentOrganization | 10,323 | 13,723 |
+| Hospital | 20,720 | 34,623 |
+| Hotel | 413,303 | 418,177 |
+| JobPosting | 10,440 | 338,008 |
+| LandmarksOrHistoricalBuildings | 1,804 | 1,489 |
+| Library | 5,370 | 5,129 |
+| LocalBusiness | 860,576 | 1,387,885 |
+| Museum | 5,507 | 6,087 |
+| Park | 1,055 | 941 |
+| Place | 2,243,749 | 3,965,102 |
+| School | 6,559 | 7,813 |
+| ShoppingCenter | 3,478 | 8,234 |
+| SkiResort | 1,350 | 1,566 |
+| SportsEvent | 130,076 | 137,855 |
+| SportsTeam | 87,617 | 99,798 |
+
+### Books and movies
+
+Error rates use these content columns. `id`, `provenance_graph_iri`, and the catalogue keys are the same on the dirty and clean side, so they are not part of those cell counts.
+
+| Dataset | Rows | Content columns |
+|---------|-----:|-----------------|
+| books | 649,664 | `title`, `author`, `isbn`, `date_published`, `publisher`, `number_of_pages` |
+| movies | 88,100 | `title`, `director`, `actor`, `date_published`, `duration`, `genre` |
+
+Book files also carry `openlibrary_key`, `work_key`, and `match`. The published movie dirty file carries `id`, the six content columns, and `provenance_graph_iri`. Book experiment samples, at the native error rate and at 5%, 10%, and 20%, ship in `other_domains_books_samples.zip`. The clean movie table and the movie experiment samples are IMDb data. IMDb's non-commercial terms prohibit publishing them. Download the IMDb files and run the scripts in [`dataset_creation/other_domains/README.md`](dataset_creation/other_domains/README.md) to build those tables locally.
+
+Rebuild steps: [`dataset_creation/other_domains/README.md`](dataset_creation/other_domains/README.md).
+
+> **License note:** Address ground truth derived from OpenStreetMap is licensed under
 > [ODbL 1.0](https://opendatacommons.org/licenses/odbl/1-0/).
+> Book ground truth comes from the Open Library dump, dedicated to the public domain under [CC0 1.0](https://openlibrary.org/help/faq/using).
+> Movie ground truth comes from the [IMDb non-commercial datasets](https://developer.imdb.com/non-commercial-datasets/). Those terms allow a personal, non-commercial local copy. They prohibit republishing the data or turning it into another movie database, so this repository cannot include the clean movie table or the movie experiment samples. It ships only the crawl dirty table. Anyone can download the IMDb datasets and run [`dataset_creation/other_domains/README.md`](dataset_creation/other_domains/README.md) (`python -m movies.download_imdb`, then index, validate, pack, and merge) to rebuild the clean table on their own machine.
 > Source code in this repository is MIT-licensed.
 
 ---
 
-## Error type distribution (Table 4)
+## Error types
 
-Percentages are over all address-field cells per slice. *Parsing* is shown as an absolute
-count (and as a percentage) because it is rare overall. *Word Subst.* aggregates
-lexical substitutions and word variants (same-slot related-word changes).
+`Clean`, `Missing`, `Special_Character`, `Abbreviation`, `Language`, `Formatting`, `Token_Subset`, `Typo`, `Semantic`, `Unresolved_Type`.
 
-| Slice | Rows | Clean | Missing | Parsing (#) | Parsing (%) | Cap. | Spec. | Name | Lang. | Abbr. | Token | Typo | Word Subst. | Misc |
-|-------|-----:|------:|------:|------------:|------------:|-----:|------:|-----:|------:|------:|------:|-----:|------------:|-----:|
-| `full_named` | 4,338,109 | 51.1% | 23.7% | 8,830 | 0.025% | 2.1% | 0.8% | 0.6% | 6.9% | 9.3% | 2.6% | 1.2% | 0.2% | 1.5% |
-| `full_unnamed` | 9,317,886 | 47.3% | 28.6% | 500 | 0.001% | 1.7% | 0.8% | 0.3% | 6.4% | 9.5% | 1.8% | 1.3% | 0.4% | 1.9% |
-| `slices/us/named` | 2,267,895 | 52.9% | 20.1% | 6,940 | 0.038% | 1.0% | 0.5% | 0.1% | 7.0% | 14.9% | 2.2% | 0.7% | 0.0% | 0.5% |
-| `slices/de/named` | 374,533 | 53.5% | 30.0% | 91 | 0.003% | 1.9% | 1.2% | 0.3% | 5.3% | 1.2% | 2.7% | 0.3% | 0.0% | 3.6% |
-| `slices/ru/named` | 194,274 | 51.9% | 29.6% | 0 | 0.000% | 7.8% | 0.3% | 0.1% | 2.2% | 0.4% | 0.7% | 6.4% | 0.2% | 0.3% |
-| AdministrativeArea | 10,657 | 45.4% | 24.0% | 15 | 0.018% | 0.6% | 1.1% | 0.2% | 10.5% | 13.8% | 2.4% | 0.8% | 0.0% | 1.4% |
-| City | 63,615 | 45.9% | 21.8% | 136 | 0.027% | 1.5% | 0.9% | 1.3% | 12.9% | 10.3% | 3.2% | 0.8% | 0.1% | 1.4% |
-| CollegeOrUniversity | 55,429 | 52.4% | 19.7% | 27 | 0.006% | 0.4% | 1.4% | 0.2% | 8.7% | 12.5% | 2.6% | 1.0% | 0.0% | 1.0% |
-| Country | 224,170 | 46.5% | 31.6% | 732 | 0.041% | 7.5% | 0.3% | 0.2% | 3.5% | 2.0% | 0.9% | 6.9% | 0.2% | 0.4% |
-| EducationalOrganization | 38,629 | 41.7% | 32.0% | 67 | 0.022% | 0.7% | 0.2% | 0.2% | 7.6% | 10.4% | 3.1% | 2.7% | 0.1% | 1.3% |
-| Event | 1,830,143 | 52.4% | 25.2% | 4,020 | 0.027% | 1.5% | 0.7% | 0.3% | 6.0% | 9.2% | 2.8% | 0.8% | 0.1% | 1.0% |
-| GeoCoordinates | 1,784,594 | 56.1% | 16.0% | 3,998 | 0.028% | 1.7% | 0.9% | 0.6% | 6.8% | 12.3% | 2.6% | 1.0% | 0.3% | 1.7% |
-| GovernmentOrganization | 10,323 | 53.2% | 17.5% | 1 | 0.001% | 0.7% | 0.2% | 0.1% | 2.1% | 6.8% | 12.4% | 0.4% | 0.5% | 6.1% |
-| Hospital | 20,720 | 48.3% | 23.1% | 11 | 0.007% | 0.6% | 1.8% | 0.4% | 6.9% | 12.0% | 3.5% | 1.9% | 0.0% | 1.4% |
-| Hotel | 413,303 | 52.1% | 19.9% | 311 | 0.009% | 2.1% | 1.0% | 1.5% | 11.5% | 6.1% | 3.1% | 1.0% | 0.1% | 1.6% |
-| JobPosting | 10,440 | 38.5% | 34.5% | 18 | 0.022% | 2.9% | 1.2% | 0.3% | 8.1% | 4.7% | 3.8% | 1.0% | 0.0% | 4.9% |
-| LandmarksOrHistoricalBuildings | 1,804 | 39.8% | 41.3% | 9 | 0.062% | 5.6% | 0.6% | 1.1% | 2.4% | 0.9% | 2.3% | 0.3% | 0.1% | 5.6% |
-| Library | 5,370 | 51.7% | 27.3% | 10 | 0.023% | 2.8% | 0.4% | 0.6% | 2.0% | 5.8% | 1.6% | 1.1% | 0.0% | 6.6% |
-| LocalBusiness | 860,576 | 52.2% | 21.4% | 1,534 | 0.022% | 2.4% | 1.0% | 0.5% | 7.1% | 9.8% | 2.6% | 0.8% | 0.2% | 2.0% |
-| Museum | 5,507 | 58.5% | 23.9% | 15 | 0.034% | 2.9% | 0.8% | 0.4% | 3.3% | 3.5% | 1.8% | 0.4% | 0.1% | 4.3% |
-| Park | 1,055 | 40.8% | 30.0% | 1 | 0.012% | 1.2% | 0.2% | 0.6% | 13.0% | 6.0% | 7.1% | 0.6% | 0.3% | 0.3% |
-| Place | 2,243,749 | 49.9% | 27.2% | 4,753 | 0.026% | 1.7% | 0.7% | 0.3% | 6.3% | 9.2% | 2.7% | 0.7% | 0.1% | 1.2% |
-| School | 6,559 | 53.1% | 20.6% | 2 | 0.004% | 1.2% | 1.2% | 0.2% | 7.1% | 12.9% | 2.3% | 0.3% | 0.0% | 1.1% |
-| ShoppingCenter | 3,478 | 45.8% | 22.4% | 13 | 0.047% | 3.1% | 0.2% | 7.3% | 4.2% | 7.1% | 2.5% | 6.5% | 0.2% | 0.6% |
-| SkiResort | 1,350 | 28.5% | 40.9% | 0 | 0.000% | 1.8% | 0.4% | 0.3% | 16.2% | 5.0% | 4.2% | 0.2% | 0.0% | 2.5% |
-| SportsEvent | 130,076 | 28.5% | 49.1% | 569 | 0.055% | 0.2% | 0.2% | 0.0% | 7.5% | 13.0% | 0.7% | 0.3% | 0.0% | 0.5% |
-| SportsTeam | 87,617 | 28.6% | 45.8% | 296 | 0.042% | 0.3% | 0.2% | 0.0% | 10.6% | 13.1% | 0.8% | 0.3% | 0.0% | 0.4% |
+Definitions: [`dataset_analysis/README.md`](dataset_analysis/README.md).
+Measured multi-label percentages for the full sets, the country slices, all 22 POI subsets (named and unnamed), and the books and movies corpora are in [`dataset_analysis/error_type_table.csv`](dataset_analysis/error_type_table.csv) and [`dataset_analysis/error_type_table.tex`](dataset_analysis/error_type_table.tex). Clean, Missing, and Error partition the cells. A cell can carry more than one error label, so the type columns can sum to more than Error.
 
-Reproduce with `python dataset_analysis/run_analysis.py` (regenerates
-[`dataset_analysis/error_type_table.csv`](dataset_analysis/error_type_table.csv) 
-Taxonomy definitions: [`dataset_analysis/README.md`](dataset_analysis/README.md).
+Full sets, country slices, books, and movies (percent of cells):
+
+| Dataset | Variant | Clean | Missing | Error | Special char. | Language | Abbreviation | Token subset | Typo | Formatting | Semantic |
+|---------|---------|------:|--------:|------:|--------------:|---------:|-------------:|-------------:|-----:|-----------:|---------:|
+| full_named | named | 54.189 | 23.658 | 22.153 | 0.947 | 1.32 | 13.453 | 4.452 | 0.361 | 0.26 | 1.9 |
+| full_unnamed | unnamed | 49.853 | 28.564 | 21.583 | 1.14 | 1.291 | 14.116 | 2.663 | 0.313 | 0.184 | 2.601 |
+| US | named | 54.259 | 20.108 | 25.633 | 0.561 | 0.258 | 19.944 | 4.093 | 0.098 | 0.22 | 1.037 |
+| DE | named | 54.795 | 30.006 | 15.2 | 2.129 | 2.679 | 5.285 | 4.116 | 0.288 | 0.203 | 0.967 |
+| RU | named | 57.627 | 36.965 | 5.409 | 0.419 | 0.15 | 2.122 | 1.699 | 0.142 | 0.477 | 0.885 |
+| US | unnamed | 49.445 | 25.252 | 25.303 | 0.623 | 0.185 | 21.206 | 2.267 | 0.06 | 0.142 | 1.348 |
+| DE | unnamed | 57.034 | 30.142 | 12.824 | 2.287 | 2.812 | 6.507 | 1.086 | 0.173 | 0.003 | 1.009 |
+| RU | unnamed | 43.481 | 45.119 | 11.4 | 0.458 | 0.19 | 5.027 | 2.835 | 0.283 | 1.314 | 2.585 |
+| books |  | 24.487 | 26.163 | 49.349 | 2.006 | 2.778 | 1.08 | 19.273 | 0.953 | 14.692 | 9.467 |
+| movies |  | 19.065 | 33.213 | 47.722 | 0.47 | 9.607 | 0.198 | 18.86 | 0.306 | 4.897 | 13.453 |
+
+`python dataset_analysis/run_analysis.py` writes a multi-label address table under `dataset_analysis/output/` and does not change the checked-in table. Books and movies are classified by `python dataset_analysis/run_other_domains_multilabel.py`.
 
 ---
 
 ## Get the data
 
-The datasets are hosted on Zenodo:
+The address datasets are hosted on Zenodo:
 
 **https://zenodo.org/records/20841898**
 
@@ -98,17 +132,38 @@ data/
   full_unnamed/clean.csv
   slices/us/named/dirty.csv
   slices/us/named/clean.csv
+  slices/us/unnamed/dirty.csv
+  slices/us/unnamed/clean.csv
   slices/de/named/dirty.csv
   slices/de/named/clean.csv
-  slices/ru/named/dirty.csv       
+  slices/de/unnamed/dirty.csv
+  slices/de/unnamed/clean.csv
+  slices/ru/named/dirty.csv
   slices/ru/named/clean.csv
-  subsets/<POI>/named/dirty.csv   # one directory per POI type
+  slices/ru/unnamed/dirty.csv
+  slices/ru/unnamed/clean.csv
+  subsets/<POI>/named/dirty.csv     # one directory per POI type
   subsets/<POI>/named/clean.csv
+  subsets/<POI>/unnamed/dirty.csv
+  subsets/<POI>/unnamed/clean.csv
 ```
 
-If you want to **rebuild the datasets from scratch** (from raw WDC N-Quads),
-see [dataset_creation/README.md](dataset_creation/README.md) — this takes days
-and requires significant infrastructure (full OSM planet, ~1.5 TB).
+Books ship in this repository as `other_domains_books.zip` (97 MB). The book experiment samples ship as `other_domains_books_samples.zip` (4 MB). The movie crawl dirty table ships as `other_domains_movies.zip`: `movies/dirty.csv`. The IMDb clean table and movie experiment samples cannot be published. Download the [IMDb non-commercial datasets](https://developer.imdb.com/non-commercial-datasets/) and run the scripts in [dataset_creation/other_domains/README.md](dataset_creation/other_domains/README.md) to build `movies/clean.csv` locally, then place it beside the dirty file.
+
+```bash
+unzip other_domains_books.zip
+unzip other_domains_books_samples.zip
+mkdir -p data other_domains_data/movies
+ln -sfn ../other_domains_data/books data/books
+ln -sfn ../other_domains_data/movies data/movies
+```
+
+The symlinks are what `dataset_analysis/run_other_domains_multilabel.py` reads. The unpacked CSVs are gitignored.
+
+To **rebuild the address datasets from scratch** (from raw WDC N-Quads),
+see [dataset_creation/README.md](dataset_creation/README.md). That takes days
+and requires a full OSM planet (~1.5 TB). Books and movies are rebuilt with
+[dataset_creation/other_domains/README.md](dataset_creation/other_domains/README.md).
 
 ---
 
@@ -123,8 +178,11 @@ python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 python -m nltk.downloader wordnet omw-1.4
 
-# Run the full Table 4 analysis (needs all datasets under ../data/)
+# Address error-type table (needs the Zenodo datasets under ../data/)
 python run_analysis.py
+
+# Books and movies (after the symlinks above)
+python run_other_domains_multilabel.py
 
 # Or analyze a single dirty/clean pair with heatmaps
 python run_single_dataset.py ../data/full_named/dirty.csv ../data/full_named/clean.csv output/full_named
@@ -147,6 +205,8 @@ The harness runs DataWig, HoloClean, Horizon, Glocks, Raha, Baran, and UniClean.
 Each baseline has its own prerequisites; see
 [`experiments/README.md`](experiments/README.md) for the full per-baseline
 setup (PostgreSQL, Java JDK, API keys, PySpark).
+
+Books and movies use [`experiments/harness/config_other_domains.json`](experiments/harness/config_other_domains.json), which reads `other_domains_data/{books,movies}/{dirty,clean}.csv`. The book 10k samples are in `other_domains_books_samples.zip`. Movie runs need `movies/clean.csv`, which you build by downloading IMDb and running the scripts in [`dataset_creation/other_domains/README.md`](dataset_creation/other_domains/README.md). Those IMDb-derived tables stay on your machine.
 
 ---
 

@@ -162,7 +162,7 @@ def run_datawig_effectiveness(dataset: dict, cfg: dict, results_base: str, rep: 
     log(f"  -> {run_dir}")
 
 
-def run_datawig_runtime(dataset: dict, cfg: dict, results_base: str):
+def run_datawig_runtime(dataset: dict, cfg: dict, results_base: str, rep: int = 1):
     sys_cfg = cfg["systems"]["datawig"]
     n_train = sys_cfg["num_training_samples"]
     threshold = sys_cfg["confidence_threshold"]
@@ -174,7 +174,7 @@ def run_datawig_runtime(dataset: dict, cfg: dict, results_base: str):
 
     run_dir = setup_run_dir(results_base, "datawig_runtime", dataset["name"])
     models_dir = os.path.join(run_dir, "models")
-    log(f"DataWig runtime | {dataset['name']} | n={dataset['n_records']}")
+    log(f"DataWig runtime | {dataset['name']} | n={dataset['n_records']} | rep={rep}")
 
     dirty_df = pd.read_csv(dataset["dirty"], dtype=str, keep_default_na=False)
     clean_df = pd.read_csv(dataset["clean"], dtype=str, keep_default_na=False)
@@ -210,11 +210,13 @@ def run_datawig_runtime(dataset: dict, cfg: dict, results_base: str):
         "dataset": dataset["name"],
         "n_records": dataset["n_records"],
         "mode": "runtime",
+        "repetition": rep,
         "timed_out": timed_out,
         "oom": oom,
     }
     record_runtime(run_dir, run_config, tracker.elapsed, tracker.peak_mb)
     log(f"  -> {tracker.elapsed:.1f}s  {tracker.peak_mb:.0f}MB  timed_out={timed_out}  oom={oom}")
+    return timed_out or oom
 
 
 def main():
@@ -223,6 +225,10 @@ def main():
     parser.add_argument("--config", default=os.path.join(EXPERIMENTS_DIR, "config.json"))
     parser.add_argument("--datasets-dir", default=os.path.join(EXPERIMENTS_DIR, "experiment_datasets"))
     parser.add_argument("--results-dir", default=os.path.join(EXPERIMENTS_DIR, "results"))
+    parser.add_argument("--reps", type=int, default=None,
+                        help="How many repetitions to run (default: n_effectiveness_runs)")
+    parser.add_argument("--first-rep", type=int, default=1,
+                        help="Repetition number to start from")
     parser.add_argument("--filter-datasets", default=None,
                         help="Comma-separated substrings; only datasets whose name contains at least one are run")
     args = parser.parse_args()
@@ -235,14 +241,15 @@ def main():
         return
 
     if args.mode == "effectiveness":
-        n_reps = cfg.get("experiment", {}).get("n_effectiveness_runs", 3)
+        n_reps = args.reps if args.reps is not None else cfg.get("experiment", {}).get("n_effectiveness_runs", 3)
         datasets = list_effectiveness_datasets(cfg, args.datasets_dir)
         if args.filter_datasets:
             filters = [f.strip() for f in args.filter_datasets.split(",") if f.strip()]
             datasets = [ds for ds in datasets if any(f in ds["name"] for f in filters)]
-        log(f"Found {len(datasets)} effectiveness datasets, {n_reps} repetitions")
-        for rep in range(1, n_reps + 1):
-            log(f"=== Effectiveness repetition {rep}/{n_reps} ===")
+        last_rep = args.first_rep + n_reps - 1
+        log(f"Found {len(datasets)} effectiveness datasets, repetitions {args.first_rep}-{last_rep}")
+        for rep in range(args.first_rep, last_rep + 1):
+            log(f"=== Effectiveness repetition {rep}/{last_rep} ===")
             for ds in datasets:
                 run_datawig_effectiveness(ds, cfg, args.results_dir, rep=rep)
     else:
@@ -250,8 +257,15 @@ def main():
         if args.filter_datasets:
             filters = [f.strip() for f in args.filter_datasets.split(",") if f.strip()]
             datasets = [ds for ds in datasets if any(f in ds["name"] for f in filters)]
-        for ds in datasets:
-            run_datawig_runtime(ds, cfg, args.results_dir)
+        n_reps = args.reps if args.reps is not None else cfg.get("experiment", {}).get("n_runtime_runs", 1)
+        last_rep = args.first_rep + n_reps - 1
+        log(f"Found {len(datasets)} runtime datasets, repetitions {args.first_rep}-{last_rep}")
+        for rep in range(args.first_rep, last_rep + 1):
+            log(f"=== Runtime repetition {rep}/{last_rep} ===")
+            for ds in datasets:
+                if run_datawig_runtime(ds, cfg, args.results_dir, rep=rep):
+                    log("DataWig timeout/OOM — skipping remaining sizes and repetitions")
+                    return
 
 
 if __name__ == "__main__":

@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-"""
-Run v3 error-type analysis on one dirty/clean pair with heatmaps.
+"""Run the error taxonomy on one dirty/clean pair.
 
-Wrapper around error_taxonomy/analyze_error_types.py CLI.
+Extra arguments are forwarded to error_taxonomy/analyze_error_types.py.
 """
 from __future__ import annotations
 
@@ -16,14 +15,22 @@ SCRIPT = Path(__file__).resolve().parent / "error_taxonomy" / "analyze_error_typ
 def main() -> None:
     if len(sys.argv) < 3:
         print(
-            "Usage: python run_single_dataset.py <dirty.csv> <clean.csv> [output_dir]",
+            "Usage: python run_single_dataset.py <dirty.csv> <clean.csv> [output_dir] "
+            "[--language_columns ...] [--parsing_columns ...] [--abbrev_columns ...]",
             file=sys.stderr,
         )
         sys.exit(1)
 
     dirty = Path(sys.argv[1]).resolve()
     clean = Path(sys.argv[2]).resolve()
-    out = Path(sys.argv[3]).resolve() if len(sys.argv) > 3 else Path("output/single_run")
+    rest = sys.argv[3:]
+    out_arg = None
+    if rest and not rest[0].startswith("-"):
+        out_arg = rest[0]
+        rest = rest[1:]
+    if rest and rest[0] == "--":
+        rest = rest[1:]
+    out = Path(out_arg).resolve() if out_arg else Path("output/single_run")
 
     cmd = [
         sys.executable,
@@ -34,6 +41,7 @@ def main() -> None:
         str(clean),
         "--output_dir",
         str(out),
+        *rest,
     ]
     raise SystemExit(subprocess.call(cmd))
 

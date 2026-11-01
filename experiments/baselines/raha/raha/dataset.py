@@ -44,11 +44,13 @@ class Dataset:
     def value_normalizer(value):
         """
         This method takes a value and minimally normalizes it.
+        Lowercased so a capitalization difference is not an error.
+        Use lower, not casefold: casefold maps German ẞ to "ss".
         """
         value = html.unescape(value)
         value = re.sub("[\t\n ]+", " ", value, re.UNICODE)
         value = value.strip("\t\n ")
-        return value
+        return value.lower()
 
     def read_csv_dataset(self, dataset_path):
         """

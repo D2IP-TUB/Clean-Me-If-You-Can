@@ -10,13 +10,13 @@ import sys
 import pandas as pd
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
-from paths import AGGREGATE_DIR, cell_error_types_csv, system_results_dir  # noqa: E402
+from paths import AGGREGATE_DIR, cell_labels_csv, system_results_dir  # noqa: E402
 
 RESULTS_DIR = system_results_dir("datawig")
 
 CELL_ERROR_TYPES = {
-    "poi_Library": cell_error_types_csv("poi_Library", "v3_20260527-153844"),
-    "poi_ShoppingCenter": cell_error_types_csv("poi_ShoppingCenter", "v3_20260527-154003"),
+    "poi_Library": cell_labels_csv("poi_Library"),
+    "poi_ShoppingCenter": cell_labels_csv("poi_ShoppingCenter"),
 }
 
 sys.path.insert(0, AGGREGATE_DIR)
